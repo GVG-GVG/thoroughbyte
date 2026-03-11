@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option A — Sample Scorecard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #fff; color: #1a2332; padding: 48px 28px; }
+  .container { max-width: 1140px; margin: 0 auto; }
+  .section-tag { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #c8963e; margin-bottom: 10px; }
+  h2 { font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 16px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .col-text p { margin-bottom: 14px; font-size: 17px; line-height: 1.65; color: #5a6a7e; }
+
+  /* Scorecard */
+  .scorecard {
+    background: #1a2332;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+  }
+  .sc-header {
+    background: rgba(0,0,0,0.3);
+    padding: 16px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .sc-badge { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #c8963e; }
+  .sc-sale { font-size: 12px; color: #8a9bae; }
+  .sc-body { padding: 24px; }
+  .sc-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+  .sc-horse { font-size: 22px; font-weight: 700; }
+  .sc-sire { font-size: 13px; color: #8a9bae; margin-top: 2px; }
+  .sc-score-block { text-align: center; }
+  .sc-score {
+    font-size: 48px; font-weight: 800; color: #c8963e; line-height: 1;
+  }
+  .sc-score-label { font-size: 10px; letter-spacing: 2px; color: #8a9bae; font-weight: 600; }
+  .sc-tier-badge {
+    display: inline-block; margin-top: 6px;
+    padding: 4px 14px; border-radius: 4px;
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+    background: rgba(45,106,79,0.2); color: #3d8b5e;
+  }
+  .sc-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+  .sc-metric {
+    background: rgba(255,255,255,0.04);
+    border-radius: 6px; padding: 14px; text-align: center;
+  }
+  .sc-metric-val { font-size: 20px; font-weight: 700; color: #fff; }
+  .sc-metric-label { font-size: 10px; color: #8a9bae; letter-spacing: 1px; font-weight: 600; margin-top: 2px; }
+  .sc-meter { margin-bottom: 16px; }
+  .sc-meter-label { display: flex; justify-content: space-between; font-size: 11px; color: #8a9bae; margin-bottom: 6px; font-weight: 600; }
+  .sc-meter-track {
+    height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px; overflow: hidden;
+    position: relative;
+  }
+  .sc-meter-fill {
+    height: 100%; border-radius: 5px;
+    background: linear-gradient(90deg, #b83c3c, #c87a5a, #bfb350, #6aae78, #2d6a4f);
+  }
+  .sc-meter-marker {
+    position: absolute; top: -4px;
+    width: 3px; height: 18px; background: #fff; border-radius: 2px;
+  }
+  .sc-note { font-size: 12px; color: #8a9bae; line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 14px; }
+  .sc-note strong { color: #c8963e; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="two-col">
+    <div class="col-text">
+      <p class="section-tag">WHAT WE BUILT</p>
+      <h2>A rating system calibrated to real outcomes.</h2>
+      <p>
+        Every horse that breezes at an under-tack show generates data far
+        richer than the clock time posted on the board. ThoroughByte captures
+        multiple performance dimensions from each breeze and runs them
+        through a composite model that accounts for environmental noise,
+        sex-specific baselines, and distance benchmarks.
+      </p>
+      <p>
+        The output is a single score (0&ndash;100) and a tier classification
+        &mdash; ELITE, STRONG, ABOVE AVG, AVERAGE, BELOW AVG, or WEAK &mdash;
+        that tells you where a horse stands relative to the entire sale
+        population. No opinions. No pedigree bias. Just the athletic signal
+        extracted from the breeze itself.
+      </p>
+    </div>
+    <div>
+      <div class="scorecard">
+        <div class="sc-header">
+          <span class="sc-badge">SAMPLE SCORECARD</span>
+          <span class="sc-sale">2024 OBS March &middot; Hip #247</span>
+        </div>
+        <div class="sc-body">
+          <div class="sc-top">
+            <div>
+              <div class="sc-horse">Hip #247</div>
+              <div class="sc-sire">by Volatile &mdash; c, :10.0 furlong</div>
+            </div>
+            <div class="sc-score-block">
+              <div class="sc-score">82</div>
+              <div class="sc-score-label">TB SCORE</div>
+              <div class="sc-tier-badge">ELITE</div>
+            </div>
+          </div>
+          <div class="sc-metrics">
+            <div class="sc-metric">
+              <div class="sc-metric-val">94th</div>
+              <div class="sc-metric-label">PERCENTILE</div>
+            </div>
+            <div class="sc-metric">
+              <div class="sc-metric-val">1 / 247</div>
+              <div class="sc-metric-label">RANK (COLTS)</div>
+            </div>
+            <div class="sc-metric">
+              <div class="sc-metric-val">+2.4</div>
+              <div class="sc-metric-label">vs. SESSION AVG</div>
+            </div>
+          </div>
+          <div class="sc-meter">
+            <div class="sc-meter-label"><span>WEAK</span><span>ELITE</span></div>
+            <div class="sc-meter-track">
+              <div class="sc-meter-fill" style="width:100%"></div>
+              <div class="sc-meter-marker" style="left:82%"></div>
+            </div>
+          </div>
+          <p class="sc-note">
+            Score reflects <strong>20+ weighted inputs</strong> normalized for track variant,
+            weather, and session depth. Delivered before sale day.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

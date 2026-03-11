@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "src/app/api/generate-card/route.ts": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}

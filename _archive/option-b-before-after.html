@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option B — Before / After</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #fff; color: #1a2332; padding: 48px 28px; }
+  .container { max-width: 1140px; margin: 0 auto; }
+  .section-tag { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #c8963e; margin-bottom: 10px; }
+  h2 { font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 16px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .col-text p { margin-bottom: 14px; font-size: 17px; line-height: 1.65; color: #5a6a7e; }
+
+  /* Before / After cards */
+  .ba-stack { display: flex; flex-direction: column; gap: 16px; }
+  .ba-card {
+    border-radius: 10px; padding: 24px; position: relative;
+  }
+  .ba-before {
+    background: #f5f7fa; border: 1px solid #dfe4ea;
+  }
+  .ba-after {
+    background: #1a2332; color: #fff;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .ba-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; margin-bottom: 14px;
+  }
+  .ba-before .ba-label { color: #8a9bae; }
+  .ba-after .ba-label { color: #c8963e; }
+  .ba-horse { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+  .ba-sub { font-size: 13px; color: #8a9bae; margin-bottom: 16px; }
+  .ba-after .ba-sub { color: #8a9bae; }
+  .ba-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .ba-stat {
+    flex: 1 1 0; min-width: 100px;
+    background: rgba(0,0,0,0.06); border-radius: 6px;
+    padding: 12px; text-align: center;
+  }
+  .ba-after .ba-stat { background: rgba(255,255,255,0.06); }
+  .ba-stat-val { font-size: 20px; font-weight: 700; }
+  .ba-before .ba-stat-val { color: #1a2332; }
+  .ba-after .ba-stat-val { color: #fff; }
+  .ba-stat-label { font-size: 10px; color: #8a9bae; letter-spacing: 1px; font-weight: 600; margin-top: 2px; }
+  .ba-highlight { color: #c8963e; }
+  .ba-dim { color: #a0a0a0; }
+
+  .ba-arrow {
+    display: flex; justify-content: center; align-items: center;
+    color: #c8963e; font-size: 12px; font-weight: 700; letter-spacing: 2px;
+    gap: 8px;
+  }
+  .ba-arrow svg { flex-shrink: 0; }
+
+  .ba-verdict {
+    font-size: 13px; color: #8a9bae; line-height: 1.5;
+    margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 12px;
+  }
+  .ba-verdict strong { color: #3d8b5e; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="two-col">
+    <div class="col-text">
+      <p class="section-tag">WHAT WE BUILT</p>
+      <h2>A rating system calibrated to real outcomes.</h2>
+      <p>
+        Every horse that breezes at an under-tack show generates data far
+        richer than the clock time posted on the board. ThoroughByte captures
+        multiple performance dimensions from each breeze and runs them
+        through a composite model that accounts for environmental noise,
+        sex-specific baselines, and distance benchmarks.
+      </p>
+      <p>
+        The output is a single score (0&ndash;100) and a tier classification
+        &mdash; ELITE, STRONG, ABOVE AVG, AVERAGE, BELOW AVG, or WEAK &mdash;
+        that tells you where a horse stands relative to the entire sale
+        population. No opinions. No pedigree bias. Just the athletic signal
+        extracted from the breeze itself.
+      </p>
+    </div>
+    <div>
+      <div class="ba-stack">
+        <div class="ba-card ba-before">
+          <div class="ba-label">WHAT THE MARKET SAW</div>
+          <div class="ba-horse">Speed King <span style="font-weight:500;font-size:14px;color:#8a9bae">by Volatile</span></div>
+          <div class="ba-sub">2024 OBS March &middot; :10.0 furlong</div>
+          <div class="ba-row">
+            <div class="ba-stat">
+              <div class="ba-stat-val">:10.0</div>
+              <div class="ba-stat-label">CLOCK TIME</div>
+            </div>
+            <div class="ba-stat">
+              <div class="ba-stat-val ba-dim">$100K</div>
+              <div class="ba-stat-label">SALE PRICE</div>
+            </div>
+            <div class="ba-stat">
+              <div class="ba-stat-val ba-dim">Mid-pack</div>
+              <div class="ba-stat-label">MARKET VIEW</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ba-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          THOROUGHBYTE ANALYSIS
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        </div>
+
+        <div class="ba-card ba-after">
+          <div class="ba-label">WHAT OUR MODEL SAW</div>
+          <div class="ba-horse">Speed King</div>
+          <div class="ba-sub">Pre-sale ThoroughByte rating</div>
+          <div class="ba-row">
+            <div class="ba-stat">
+              <div class="ba-stat-val ba-highlight">68.6</div>
+              <div class="ba-stat-label">TB SCORE</div>
+            </div>
+            <div class="ba-stat">
+              <div class="ba-stat-val ba-highlight">STRONG</div>
+              <div class="ba-stat-label">TIER</div>
+            </div>
+            <div class="ba-stat">
+              <div class="ba-stat-val ba-highlight">Top 20%</div>
+              <div class="ba-stat-label">PERCENTILE</div>
+            </div>
+          </div>
+          <p class="ba-verdict">
+            18 months later: <strong>$830,190 earned</strong> &mdash; a +730% return on a $100K purchase.
+            The clock said average. The algorithm said buy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

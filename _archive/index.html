@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThoroughByte — Breeze Intelligence for Two-Year-Old Sales</title>
+  <meta name="description" content="Multi-factor breeze analysis that rates every two-year-old before they race. Validated against 1,474 horses and $89M in real earnings.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='16' width='100' height='100' fill='%231a2332'/><text x='50' y='68' font-size='56' font-weight='700' font-family='system-ui' text-anchor='middle' fill='%23c8963e'>TB</text></svg>">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ThoroughByte — Breeze Intelligence for Two-Year-Old Sales">
+  <meta property="og:description" content="A proprietary algorithmic model that predicts racetrack performance before the starting gate opens. Validated against 1,474 horses and $89M in real earnings.">
+  <meta property="og:url" content="https://thoroughbyte.com">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ThoroughByte — Breeze Intelligence">
+  <meta name="twitter:description" content="Proprietary 2YO rating system validated against $89M in real earnings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-light">Thorough</span><span class="logo-bold">Byte</span>
+      </a>
+      <div class="nav-links">
+        <a href="#what-we-do">What We Do</a>
+        <a href="#performance">Performance</a>
+        <a href="#alpha">Alpha</a>
+        <a href="#product">Product</a>
+        <a href="#contact" class="nav-cta">Get Access</a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-tag">BREEZE INTELLIGENCE</p>
+        <h1>A proprietary algorithmic model that predicts racetrack performance before the starting gate opens.</h1>
+        <p class="hero-sub">
+          Every buyer at the under-tack show sees the same clock. ThoroughByte
+          goes deeper &mdash; our model synthesizes <em>20+ data points</em> from
+          each breeze into a single 0&ndash;100 score, normalizing for
+          environmental variables and isolating the true athletic signal
+          &mdash; delivered <em>before</em> sale day.
+        </p>
+        <div class="hero-actions">
+          <a href="#performance" class="btn btn-primary">See the Proof</a>
+          <a href="#contact" class="btn btn-outline">Request Access</a>
+        </div>
+      </div>
+      <div class="hero-proof">
+        <div class="proof-header">
+          <span class="proof-badge">2024 OBS RESULTS</span>
+          <span class="proof-sample">1,474 horses &middot; $89M in earnings &middot; 18 months post-sale</span>
+        </div>
+
+        <!-- Visual earnings staircase -->
+        <div class="staircase">
+          <div class="stair-label-head">
+            <span>Tier</span><span>Avg Earnings</span>
+          </div>
+          <div class="stair-row">
+            <span class="stair-tier stair-t-elite">ELITE</span>
+            <div class="stair-track"><div class="stair-bar stair-b-elite" style="width:100%"></div></div>
+            <span class="stair-val">$137,780</span>
+          </div>
+          <div class="stair-row">
+            <span class="stair-tier stair-t-strong">STRONG</span>
+            <div class="stair-track"><div class="stair-bar stair-b-strong" style="width:69%"></div></div>
+            <span class="stair-val">$94,871</span>
+          </div>
+          <div class="stair-row">
+            <span class="stair-tier stair-t-above">ABOVE AVG</span>
+            <div class="stair-track"><div class="stair-bar stair-b-above" style="width:39%"></div></div>
+            <span class="stair-val">$53,312</span>
+          </div>
+          <div class="stair-row">
+            <span class="stair-tier stair-t-avg">AVERAGE</span>
+            <div class="stair-track"><div class="stair-bar stair-b-avg" style="width:34%"></div></div>
+            <span class="stair-val">$46,631</span>
+          </div>
+          <div class="stair-row">
+            <span class="stair-tier stair-t-below">BELOW AVG</span>
+            <div class="stair-track"><div class="stair-bar stair-b-below" style="width:24%"></div></div>
+            <span class="stair-val">$32,987</span>
+          </div>
+          <div class="stair-row">
+            <span class="stair-tier stair-t-weak">WEAK</span>
+            <div class="stair-track"><div class="stair-bar stair-b-weak" style="width:12%"></div></div>
+            <span class="stair-val">$16,536</span>
+          </div>
+        </div>
+
+        <!-- Knockout stats -->
+        <div class="proof-bottom">
+          <div class="proof-ko">
+            <span class="ko-num">34<span class="ko-of">/47</span></span>
+            <span class="ko-label">Graded Stakes Winners from top 2 tiers</span>
+          </div>
+          <div class="proof-ko-divider"></div>
+          <div class="proof-ko">
+            <span class="ko-num">1</span>
+            <span class="ko-label">Graded Stakes Winners from bottom 2 tiers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="section" id="what-we-do">
+    <div class="container">
+      <div class="two-col">
+        <div class="col-text">
+          <p class="section-tag">WHAT WE BUILT</p>
+          <h2>A rating system calibrated to real outcomes.</h2>
+          <p>
+            Every horse that breezes at an under-tack show generates data far
+            richer than the clock time posted on the board. ThoroughByte captures
+            multiple performance dimensions from each breeze and runs them
+            through a composite model that accounts for environmental noise,
+            sex-specific baselines, and distance benchmarks.
+          </p>
+          <p>
+            The output is a single score (0&ndash;100) and a tier classification
+            &mdash; ELITE, STRONG, ABOVE AVG, AVERAGE, BELOW AVG, or WEAK &mdash;
+            that tells you where a horse stands relative to the entire sale
+            population. No opinions. No pedigree bias. Just the athletic signal
+            extracted from the breeze itself.
+          </p>
+          <div class="sample-report-inline">
+            <p class="sample-report-label">SAMPLE REPORT</p>
+            <a href="sample-report.png" target="_blank" class="sample-report-wrap">
+              <img src="sample-report.png" alt="Sample ThoroughByte ranking report showing horses sorted by hip with color-coded tiers" class="sample-report-img" loading="lazy">
+            </a>
+          </div>
+        </div>
+        <div class="col-visual">
+          <div class="compare-stack">
+            <!-- What the market saw -->
+            <div class="compare-market">
+              <div class="compare-label">WHAT THE MARKET SAW</div>
+              <div class="compare-horse">Hip 951</div>
+              <div class="market-pedigree">
+                <div class="market-ped-row">
+                  <span class="market-ped-label">Sire</span>
+                  <span class="market-ped-val">Volatile</span>
+                </div>
+                <div class="market-ped-row">
+                  <span class="market-ped-label">Dam</span>
+                  <span class="market-ped-val">Athenian Beauty</span>
+                </div>
+                <div class="market-ped-row">
+                  <span class="market-ped-label">Sex / Dist</span>
+                  <span class="market-ped-val">Colt &middot; 1/8</span>
+                </div>
+              </div>
+              <div class="market-clock">
+                <span class="market-clock-val">:10.1</span>
+                <span class="market-clock-label">furlong time</span>
+              </div>
+              <p class="market-note">Pedigree page and a clock time. No context for track variant, session depth, stride mechanics, or environmental conditions.</p>
+            </div>
+
+            <!-- Arrow -->
+            <div class="compare-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+              THOROUGHBYTE ANALYSIS
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+
+            <!-- What our model saw — scorecard -->
+            <div class="compare-scorecard">
+              <div class="sc-header">
+                <span class="sc-badge">WHAT OUR MODEL SAW</span>
+                <span class="sc-sale">2024 OBS April &middot; Hip 951</span>
+              </div>
+              <div class="sc-body">
+                <div class="sc-top">
+                  <div>
+                    <div class="sc-horse">Hip 951</div>
+                    <div class="sc-sire">by Volatile &mdash; c, 1/8</div>
+                    <div class="sc-dam">Dam: Athenian Beauty</div>
+                  </div>
+                  <div class="sc-score-block">
+                    <div class="sc-score">68.6</div>
+                    <div class="sc-score-label">TB SCORE</div>
+                    <div class="sc-tier-badge sc-tier-strong">STRONG</div>
+                  </div>
+                </div>
+
+                <!-- Breeze inputs the model ingested -->
+                <div class="sc-inputs-label">BREEZE DATA INGESTED</div>
+                <div class="sc-metrics sc-metrics-4">
+                  <div class="sc-metric">
+                    <div class="sc-metric-val">25.7&prime;</div>
+                    <div class="sc-metric-label">STRIDE LENGTH</div>
+                  </div>
+                  <div class="sc-metric">
+                    <div class="sc-metric-val">:10.1</div>
+                    <div class="sc-metric-label">1/8 OUT</div>
+                  </div>
+                  <div class="sc-metric">
+                    <div class="sc-metric-val">:21.0</div>
+                    <div class="sc-metric-label">1/4 OUT</div>
+                  </div>
+                  <div class="sc-metric sc-metric-prop">
+                    <div class="sc-metric-val">11.74</div>
+                    <div class="sc-metric-label">DECELERATION</div>
+                    <div class="sc-prop-inline">Proprietary &mdash; only from ThoroughByte</div>
+                  </div>
+                </div>
+
+                <!-- Model output -->
+                <div class="sc-inputs-label">MODEL OUTPUT</div>
+                <div class="sc-metrics">
+                  <div class="sc-metric">
+                    <div class="sc-metric-val">Top 22%</div>
+                    <div class="sc-metric-label">PERCENTILE</div>
+                  </div>
+                  <div class="sc-metric">
+                    <div class="sc-metric-val">106 / 483</div>
+                    <div class="sc-metric-label">RANK (COLTS)</div>
+                  </div>
+                  <div class="sc-metric">
+                    <div class="sc-metric-val">50.0</div>
+                    <div class="sc-metric-label">SESSION AVG</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sc-outcome">
+                <div class="sc-outcome-label">18 MONTHS LATER</div>
+                <div class="sc-outcome-row">
+                  <div>
+                    <div class="sc-outcome-name">Speed King</div>
+                    <div class="sc-outcome-record">9-3-1-0 &middot; Graded Black-Type Winner</div>
+                  </div>
+                  <div class="sc-outcome-earn">$830,190</div>
+                </div>
+                <div class="sc-outcome-return">+730% return on a $100K purchase</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFORMANCE: EARNINGS -->
+  <section class="section section-dark" id="performance">
+    <div class="container">
+      <p class="section-tag">THE PROOF</p>
+      <h2>Every metric drops monotonically from ELITE to WEAK.</h2>
+      <p class="section-intro">
+        We tracked 1,474 horses from the 2024 OBS March and April sales through
+        18 months of racing. Every rating was generated <em>before</em> any horse
+        entered a starting gate. Here's what happened.
+      </p>
+
+      <!-- Tier overview strip -->
+      <div class="tier-strip">
+        <div class="tier-item">
+          <span class="tier-dot tier-c-elite"></span>
+          <span class="tier-name">ELITE</span>
+          <span class="tier-count">75 horses</span>
+        </div>
+        <div class="tier-item">
+          <span class="tier-dot tier-c-strong"></span>
+          <span class="tier-name">STRONG</span>
+          <span class="tier-count">280 horses</span>
+        </div>
+        <div class="tier-item">
+          <span class="tier-dot tier-c-above"></span>
+          <span class="tier-name">ABOVE AVG</span>
+          <span class="tier-count">516 horses</span>
+        </div>
+        <div class="tier-item">
+          <span class="tier-dot tier-c-avg"></span>
+          <span class="tier-name">AVERAGE</span>
+          <span class="tier-count">412 horses</span>
+        </div>
+        <div class="tier-item">
+          <span class="tier-dot tier-c-below"></span>
+          <span class="tier-name">BELOW AVG</span>
+          <span class="tier-count">137 horses</span>
+        </div>
+        <div class="tier-item">
+          <span class="tier-dot tier-c-weak"></span>
+          <span class="tier-name">WEAK</span>
+          <span class="tier-count">54 horses</span>
+        </div>
+      </div>
+
+      <!-- Charts row 1: Earnings -->
+      <div class="chart-section">
+        <div class="chart-card chart-card-wide">
+          <h3 class="chart-title">Average Earnings by Tier</h3>
+          <p class="chart-subtitle">ELITE horses earned $137,780 on average &mdash; 8.3x the $16,536 earned by WEAK.</p>
+          <div class="chart-wrap"><canvas id="chartEarnings"></canvas></div>
+        </div>
+      </div>
+
+      <!-- Charts row 2: Win Rate + Black-Type -->
+      <div class="chart-section chart-section-duo">
+        <div class="chart-card">
+          <h3 class="chart-title">Race Winner Rate</h3>
+          <p class="chart-subtitle">Percentage of starters that won at least one race.</p>
+          <div class="chart-wrap"><canvas id="chartWinRate"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3 class="chart-title">Black-Type Rate</h3>
+          <p class="chart-subtitle">Stakes-quality performance drops from 31% (ELITE) to 0% (WEAK).</p>
+          <div class="chart-wrap"><canvas id="chartBlackType"></canvas></div>
+        </div>
+      </div>
+
+      <!-- Graded Stakes Winners -->
+      <div class="chart-section">
+        <div class="chart-card chart-card-wide">
+          <h3 class="chart-title">Where Did the Graded Stakes Winners Come From?</h3>
+          <p class="chart-subtitle">34 of 47 Graded Stakes Winners came from our top two tiers. Just 1 from BELOW AVG or WEAK.</p>
+          <div class="chart-section-duo chart-inner-duo">
+            <div class="chart-wrap"><canvas id="chartGSW"></canvas></div>
+            <div class="gsw-callout">
+              <div class="gsw-big">34<span class="gsw-of">/47</span></div>
+              <p>Graded Stakes Winners from ELITE + STRONG</p>
+              <div class="gsw-detail">
+                <span>15 ELITE</span>
+                <span>19 STRONG</span>
+                <span>6 ABOVE AVG</span>
+                <span>6 AVERAGE</span>
+                <span>1 BELOW AVG</span>
+              </div>
+              <p class="gsw-note">These two tiers represent only 24% of the population but produced 72% of the graded stakes winners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Score Decile -->
+      <div class="chart-section">
+        <div class="chart-card chart-card-wide">
+          <h3 class="chart-title">Earnings by Score Decile</h3>
+          <p class="chart-subtitle">Horses binned into deciles by algorithm score. The top decile averaged $119K with 25 stakes winners.</p>
+          <div class="chart-wrap"><canvas id="chartDecile"></canvas></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKET MISSES -->
+  <section class="section" id="alpha">
+    <div class="container">
+      <p class="section-tag">FINDING ALPHA</p>
+      <h2>The market underprices talent.<br>We find it.</h2>
+      <p class="section-intro">
+        A "Market Miss" is a horse rated ELITE or STRONG that sold for $100K or less
+        but went on to earn more than $50K on the track. In 2024, the algorithm
+        flagged 36 of them. Here are the top 10.
+      </p>
+
+      <!-- Horizontal bar chart -->
+      <div class="chart-card chart-card-light">
+        <div class="chart-wrap chart-wrap-tall"><canvas id="chartAlpha"></canvas></div>
+      </div>
+
+      <!-- Table -->
+      <div class="misses-table-wrap">
+        <table class="misses-table">
+          <thead>
+            <tr>
+              <th>Horse</th>
+              <th>Sire</th>
+              <th>Tier</th>
+              <th>Score</th>
+              <th>Sale Price</th>
+              <th>Earnings</th>
+              <th>Return</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Speed King</strong></td>
+              <td>Volatile</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>68.6</td>
+              <td>$100,000</td>
+              <td class="earnings">$830,190</td>
+              <td class="positive">+730%</td>
+            </tr>
+            <tr>
+              <td><strong>Bam's Bliss Kiss</strong></td>
+              <td>Solomini</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>70.4</td>
+              <td>$95,000</td>
+              <td class="earnings">$286,290</td>
+              <td class="positive">+201%</td>
+            </tr>
+            <tr>
+              <td><strong>Naughty Rascal</strong></td>
+              <td>Rogueish</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>72.2</td>
+              <td>$39,000</td>
+              <td class="earnings">$243,975</td>
+              <td class="positive">+526%</td>
+            </tr>
+            <tr>
+              <td><strong>Starship Impulsive</strong></td>
+              <td>Improbable</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>72.3</td>
+              <td>$50,000</td>
+              <td class="earnings">$218,210</td>
+              <td class="positive">+336%</td>
+            </tr>
+            <tr>
+              <td><strong>In My Memories</strong></td>
+              <td>Jimmy Creed</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>77.3</td>
+              <td>$40,000</td>
+              <td class="earnings">$212,934</td>
+              <td class="positive">+432%</td>
+            </tr>
+            <tr>
+              <td><strong>Artislas</strong></td>
+              <td>Catalina Cruiser</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>75.0</td>
+              <td>$100,000</td>
+              <td class="earnings">$209,500</td>
+              <td class="positive">+110%</td>
+            </tr>
+            <tr>
+              <td><strong>R Morning Brew</strong></td>
+              <td>Curlin's Honor</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>79.3</td>
+              <td>$30,000</td>
+              <td class="earnings">$188,842</td>
+              <td class="positive">+530%</td>
+            </tr>
+            <tr>
+              <td><strong>Mrs Worldwide</strong></td>
+              <td>Global Campaign</td>
+              <td><span class="tag tag-elite">ELITE</span></td>
+              <td>80.7</td>
+              <td>$100,000</td>
+              <td class="earnings">$173,350</td>
+              <td class="positive">+73%</td>
+            </tr>
+            <tr>
+              <td><strong>R Pretty Kitty</strong></td>
+              <td>Instilled Regard</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>70.3</td>
+              <td>$30,000</td>
+              <td class="earnings">$142,693</td>
+              <td class="positive">+376%</td>
+            </tr>
+            <tr>
+              <td><strong>Powdered Sugar</strong></td>
+              <td>Gift Box</td>
+              <td><span class="tag tag-strong">STRONG</span></td>
+              <td>66.2</td>
+              <td>$95,000</td>
+              <td class="earnings">$135,440</td>
+              <td class="positive">+43%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT -->
+  <section class="section section-dark" id="product">
+    <div class="container">
+      <p class="section-tag">THE PRODUCT</p>
+      <h2>What you get.</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Pre-Sale Rankings</h3>
+          <p>
+            Complete ranked reports delivered before each sale day. Every horse
+            scored, tiered, and ranked within sex and distance cohorts.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Sire Analytics</h3>
+          <p>
+            See which stallions are producing the highest-rated breezes.
+            Aggregate sire performance across the entire sale.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/><circle cx="12" cy="7" r="3"/></svg>
+          </div>
+          <h3>Dam Annotations</h3>
+          <p>
+            Black-type dam production overlaid on every ranking. BTW, BTP,
+            and BTProd flags so you see the full picture at a glance.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Value Flags</h3>
+          <p>
+            Algorithmic identification of high-rated horses likely to be
+            undervalued by the market &mdash; the steals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA / CONTACT -->
+  <section class="section" id="contact">
+    <div class="container container-narrow">
+      <p class="section-tag">GET STARTED</p>
+      <h2>Ready for an edge?</h2>
+      <p class="section-intro">
+        ThoroughByte is currently available for the 2026 OBS sale season.
+        Contact us to discuss access and pricing.
+      </p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <select name="role">
+            <option value="" disabled selected>I am a...</option>
+            <option value="agent">Bloodstock Agent</option>
+            <option value="trainer">Trainer</option>
+            <option value="owner">Owner / Syndicate</option>
+            <option value="farm">Farm / Consigner</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <textarea name="message" placeholder="Tell us about your operation (optional)" rows="3"></textarea>
+        <button type="submit" class="btn btn-primary btn-full">Request Access</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-light">Thorough</span><span class="logo-bold">Byte</span>
+        <p class="footer-tagline">Breeze Intelligence</p>
+      </div>
+      <div class="footer-links">
+        <a href="#what-we-do">What We Do</a>
+        <a href="#performance">Performance</a>
+        <a href="#alpha">Alpha</a>
+        <a href="#product">Product</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-legal">&copy; 2026 ThoroughByte. All rights reserved. All data verified against Equibase records.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
