@@ -122,7 +122,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:transparent;display
 .horse-name{color:#fff;font-size:22px;font-weight:700;line-height:1.2;margin-bottom:4px}
 .horse-sub{color:var(--slate);font-size:12px;font-weight:500}
 .horse-sub span{color:var(--gold-light)}
-.card-photo{width:100%;height:220px;object-fit:cover;display:block}
+.card-photo{width:100%;height:auto;max-height:300px;object-fit:contain;background:var(--navy);display:block}
 .tier-banner{text-align:center;padding:10px 24px;font-size:13px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:#fff;display:flex;align-items:center;gap:12px;justify-content:center;background:${tc.bg}}
 .tier-line{flex:1;height:1px;background:rgba(255,255,255,.3)}
 .rating-section{display:flex;align-items:center;gap:20px;padding:18px 24px 14px}
@@ -232,7 +232,7 @@ export async function renderProfileCard(horse: EnrichedHorse): Promise<Buffer> {
 
   const browser = await puppeteer.default.launch({
     args: chromium.default.args,
-    defaultViewport: { width: 480, height: 1200 },
+    defaultViewport: { width: 480, height: 1200, deviceScaleFactor: 2 },
     executablePath: await chromium.default.executablePath(),
     headless: true,
   });
