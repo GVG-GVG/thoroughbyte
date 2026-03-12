@@ -35,7 +35,7 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   // Protected routes: redirect unauthenticated users to sign-in
-  const protectedPaths = ['/dashboard'];
+  const protectedPaths = ['/dashboard', '/admin'];
   const isProtected = protectedPaths.some((path) =>
     request.nextUrl.pathname.startsWith(path)
   );
@@ -45,6 +45,21 @@ export async function updateSession(request: NextRequest) {
     url.pathname = '/auth/signin';
     url.searchParams.set('redirect', request.nextUrl.pathname);
     return NextResponse.redirect(url);
+  }
+
+  // Admin routes: check role
+  if (request.nextUrl.pathname.startsWith('/admin') && user) {
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('role')
+      .eq('id', user.id)
+      .single();
+
+    if (!profile || profile.role !== 'admin') {
+      const url = request.nextUrl.clone();
+      url.pathname = '/dashboard';
+      return NextResponse.redirect(url);
+    }
   }
 
   // If user is signed in and visits auth pages, redirect to dashboard
