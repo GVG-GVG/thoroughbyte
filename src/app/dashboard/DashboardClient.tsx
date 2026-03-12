@@ -138,7 +138,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
             </p>
           </div>
           <div className="credits-count">
-            <span className="credits-num">{plan === 'pro' ? 'Ã¢ÂÂ' : credits}</span>
+            <span className="credits-num">{plan === 'pro' ? '\u221E' : credits}</span>
             <span className="credits-label">{plan === 'free' ? 'of 5' : ''}</span>
           </div>
         </div>
