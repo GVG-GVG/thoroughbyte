@@ -108,8 +108,8 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
         return;
       }
 
-      // Update credits (consumed one unless it was already generated)
-      if (!data.already_generated) {
+      // Update credits (consumed one unless it was already generated or pro plan)
+      if (!data.already_generated && plan === 'free') {
         setCredits(prev => Math.max(0, prev - 1));
       }
 
@@ -170,15 +170,17 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
           <div className="credits-info">
             <h2>{plan === 'free' ? 'Free Plan' : 'Pro Plan'}</h2>
             <p>
-              {credits > 0
-                ? `You have ${credits} profile card${credits === 1 ? '' : 's'} remaining.`
-                : 'You\'ve used all your free profile cards.'
+              {plan === 'pro'
+                ? 'Unlimited profile card generation.'
+                : credits > 0
+                  ? `You have ${credits} profile card${credits === 1 ? '' : 's'} remaining.`
+                  : 'You\'ve used all your free profile cards.'
               }
             </p>
           </div>
           <div className="credits-count">
-            <span className="credits-num">{credits}</span>
-            <span className="credits-label">of {plan === 'free' ? '5' : 'unlimited'}</span>
+            <span className="credits-num">{plan === 'pro' ? 'â' : credits}</span>
+            <span className="credits-label">{plan === 'free' ? 'of 5' : ''}</span>
           </div>
         </div>
 
@@ -258,7 +260,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
                   onClick={handleGenerate}
                   disabled={generating}
                 >
-                  {generating ? 'Generating Card...' : 'Generate Profile Card (uses 1 credit)'}
+                  {generating ? 'Generating Card...' : plan === 'pro' ? 'Generate Profile Card' : 'Generate Profile Card (uses 1 credit)'}
                 </button>
               </div>
             )}
