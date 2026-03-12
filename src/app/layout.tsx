@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "https://thoroughbyte.com",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "ThoroughByte — Breeze Intelligence",
     description: "Proprietary 2YO rating system validated against $89M in real earnings.",
   },
