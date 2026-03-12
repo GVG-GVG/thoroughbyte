@@ -1,4 +1,4 @@
-/* ThoroughByte â Global Styles (ported from static site) */
+/* ThoroughByte Ã¢ÂÂ Global Styles (ported from static site) */
 
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -154,9 +154,10 @@ h3 { font-size: 20px; margin-bottom: 6px; }
 /* Horse Card (inline landing page version) */
 .compare-card-wrap { display: flex; flex-direction: column; }
 .compare-card-wrap .compare-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--gold); margin-bottom: 10px; }
-.compare-card-wrap .sc-outcome { background: rgba(0,0,0,0.35); padding: 20px 24px; border-top: 2px solid var(--gold); border-radius: 0 0 10px 10px; }
+.compare-card-wrap .sc-outcome { background: #1a2332; padding: 20px 24px; border-top: 2px solid var(--gold); border-radius: 0 0 10px 10px; }
 .hc { background: #fff; border-radius: 10px 10px 0 0; overflow: hidden; font-family: 'Inter', -apple-system, sans-serif; color: #1a2332; }
 .hc-header { background: linear-gradient(135deg, #1a2332, #243044); padding: 16px 20px 12px; display: flex; justify-content: space-between; align-items: flex-start; }
+.hc-photo { width: 100%; display: block; max-height: 280px; object-fit: cover; object-position: center 20%; }
 .hc-brand { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: #c8963e; }
 .hc-hip-badge { background: #c8963e; color: #1a2332; font-size: 12px; font-weight: 800; padding: 3px 12px; border-radius: 16px; letter-spacing: .5px; }
 .hc-name-row { padding: 0 20px 14px; background: linear-gradient(135deg, #1a2332, #243044); }
