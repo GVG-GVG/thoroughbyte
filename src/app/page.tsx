@@ -14,11 +14,11 @@ export default function Home() {
         <div className="hero-inner">
           <div className="hero-content">
             <p className="hero-tag">BREEZE INTELLIGENCE</p>
-            <h1>A proprietary algorithmic model that predicts racetrack performance before the starting gate opens.</h1>
+            <h1>A proprietary algorithmic model that predicts racehorse performance before the starting gate opens.</h1>
             <p className="hero-sub">
               Every buyer at the under-tack show sees the same clock. ThoroughByte
               goes deeper &mdash; our model synthesizes <em>20+ data points</em> from
-              each breeze into a single 0–100 score, normalizing for
+              each breeze into a single 0â100 score, normalizing for
               environmental variables and isolating the true athletic signal
               &mdash; delivered <em>before</em> sale day.
             </p>
@@ -101,7 +101,7 @@ export default function Home() {
                 sex-specific baselines, and distance benchmarks.
               </p>
               <p>
-                The output is a single score (0–100) and a tier classification
+                The output is a single score (0â100) and a tier classification
                 &mdash; ELITE, STRONG, ABOVE AVG, AVERAGE, BELOW AVG, or WEAK &mdash;
                 that tells you where a horse stands relative to the entire sale
                 population. No opinions. No pedigree bias. Just the athletic signal
@@ -155,63 +155,62 @@ export default function Home() {
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
                 </div>
 
-                {/* What our model saw — scorecard */}
-                <div className="compare-scorecard">
-                  <div className="sc-header">
-                    <span className="sc-badge">WHAT OUR MODEL SAW</span>
-                    <span className="sc-sale">2024 OBS April &middot; Hip 951</span>
-                  </div>
-                  <div className="sc-body">
-                    <div className="sc-top">
-                      <div>
-                        <div className="sc-horse">Hip 951</div>
-                        <div className="sc-sire">by Volatile &mdash; c, 1/8</div>
-                        <div className="sc-dam">Dam: Athenian Beauty</div>
+                {/* What our model saw â actual horse card */}
+                <div className="compare-card-wrap">
+                  <div className="compare-label">WHAT OUR MODEL SAW</div>
+                  <div className="hc">
+                    <div className="hc-header">
+                      <span className="hc-brand">THOROUGHBYTE</span>
+                      <span className="hc-hip-badge">HIP 951</span>
+                    </div>
+                    <div className="hc-name-row">
+                      <div className="hc-name">Volatile &mdash; Athenian Beauty</div>
+                      <div className="hc-sub">Colt &bull; FL-bred &bull; <span>Wavertree Stables Inc</span></div>
+                    </div>
+                    <div className="hc-tier-banner hc-tier-strong">
+                      <div className="hc-tier-line"></div>
+                      STRONG
+                      <div className="hc-tier-line"></div>
+                    </div>
+                    <div className="hc-rating-section">
+                      <div className="hc-ring-wrap">
+                        <svg className="hc-ring-bg" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="#eef1f5" strokeWidth="6" /></svg>
+                        <svg className="hc-ring-fill" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="#5a9e68" strokeWidth="6" strokeLinecap="round" strokeDasharray="213.63" strokeDashoffset="67.09" /></svg>
+                        <div className="hc-ring-val">68.6</div>
                       </div>
-                      <div className="sc-score-block">
-                        <div className="sc-score">68.6</div>
-                        <div className="sc-score-label">TB SCORE</div>
-                        <div className="sc-tier-badge sc-tier-strong">STRONG</div>
+                      <div className="hc-rating-meta">
+                        <div className="hc-meta-label">THOROUGHBYTE RATING</div>
+                        <div className="hc-rank-row">
+                          <div className="hc-rank-item"><div className="hc-rank-num">#106</div><div className="hc-rank-lbl">Overall Rank</div></div>
+                          <div className="hc-rank-item"><div className="hc-rank-num">Top 22%</div><div className="hc-rank-lbl">Percentile</div></div>
+                          <div className="hc-rank-item"><div className="hc-rank-num">1/8 mi</div><div className="hc-rank-lbl">Breeze Dist</div></div>
+                        </div>
                       </div>
                     </div>
-
-                    {/* Breeze inputs the model ingested */}
-                    <div className="sc-inputs-label">BREEZE DATA INGESTED</div>
-                    <div className="sc-metrics sc-metrics-4">
-                      <div className="sc-metric">
-                        <div className="sc-metric-val">25.7&prime;</div>
-                        <div className="sc-metric-label">STRIDE LENGTH</div>
-                      </div>
-                      <div className="sc-metric">
-                        <div className="sc-metric-val">:10.1</div>
-                        <div className="sc-metric-label">1/8 OUT</div>
-                      </div>
-                      <div className="sc-metric">
-                        <div className="sc-metric-val">:21.0</div>
-                        <div className="sc-metric-label">1/4 OUT</div>
-                      </div>
-                      <div className="sc-metric sc-metric-prop">
-                        <div className="sc-metric-val">11.74</div>
-                        <div className="sc-metric-label">DECELERATION</div>
-                        <div className="sc-prop-inline">Proprietary &mdash; only from ThoroughByte</div>
-                      </div>
+                    <div className="hc-stats-grid">
+                      <div className="hc-stat"><div className="hc-stat-val">10.1s</div><div className="hc-stat-lbl">Breeze Time</div></div>
+                      <div className="hc-stat"><div className="hc-stat-val">10.1s</div><div className="hc-stat-lbl">1/8 Out</div></div>
+                      <div className="hc-stat"><div className="hc-stat-val">21.0s</div><div className="hc-stat-lbl">1/4 Out</div></div>
+                      <div className="hc-stat"><div className="hc-stat-val">25.7&prime;</div><div className="hc-stat-lbl">Stride</div></div>
+                      <div className="hc-stat"><div className="hc-stat-val">11.74s</div><div className="hc-stat-lbl">Decel</div></div>
+                      <div className="hc-stat"><div className="hc-stat-val hc-val-green">$100,000</div><div className="hc-stat-lbl">Sale Price</div></div>
                     </div>
-
-                    {/* Model output */}
-                    <div className="sc-inputs-label">MODEL OUTPUT</div>
-                    <div className="sc-metrics">
-                      <div className="sc-metric">
-                        <div className="sc-metric-val">Top 22%</div>
-                        <div className="sc-metric-label">PERCENTILE</div>
-                      </div>
-                      <div className="sc-metric">
-                        <div className="sc-metric-val">106 / 483</div>
-                        <div className="sc-metric-label">RANK (COLTS)</div>
-                      </div>
-                      <div className="sc-metric">
-                        <div className="sc-metric-val">50.0</div>
-                        <div className="sc-metric-label">SESSION AVG</div>
-                      </div>
+                    <div className="hc-bars-section">
+                      <div className="hc-section-title">PERFORMANCE VS. PEER GROUP</div>
+                      <div className="hc-bar-row"><span className="hc-bar-label">Time</span><span className="hc-bar-track"><span className="hc-bar-fill hc-fill-strong" style={{ width: '72%' }}></span></span><span className="hc-bar-val">10.1s</span><span className="hc-bar-peer">avg 10.3s</span></div>
+                      <div className="hc-bar-row"><span className="hc-bar-label">Stride</span><span className="hc-bar-track"><span className="hc-bar-fill hc-fill-strong" style={{ width: '78%' }}></span></span><span className="hc-bar-val">25.7&prime;</span><span className="hc-bar-peer">avg 24.8&prime;</span></div>
+                      <div className="hc-bar-row"><span className="hc-bar-label">1/8 Out</span><span className="hc-bar-track"><span className="hc-bar-fill hc-fill-strong" style={{ width: '72%' }}></span></span><span className="hc-bar-val">10.1s</span><span className="hc-bar-peer">avg 10.3s</span></div>
+                      <div className="hc-bar-row"><span className="hc-bar-label">1/4 Out</span><span className="hc-bar-track"><span className="hc-bar-fill hc-fill-strong" style={{ width: '68%' }}></span></span><span className="hc-bar-val">21.0s</span><span className="hc-bar-peer">avg 21.4s</span></div>
+                      <div className="hc-bar-row"><span className="hc-bar-label">Decel</span><span className="hc-bar-track"><span className="hc-bar-fill hc-fill-strong" style={{ width: '70%' }}></span></span><span className="hc-bar-val">11.74s</span><span className="hc-bar-peer">avg 12.1s</span></div>
+                    </div>
+                    <div className="hc-scouting">
+                      <div className="hc-section-title">SCOUTING REPORT</div>
+                      <p className="hc-scouting-text">This Volatile colt posted a well-above-average breeze, placing in the <strong className="hc-highlight">top 22%</strong> among the 483 colts who breezed 1/8 mile at this sale. At <strong>10.1s</strong>, the breeze time came in 0.2s quicker than the 10.3s average. A standout feature: the <strong>25.7-foot stride</strong> was among the longest in the group (avg 24.8&prime;), suggesting an efficient mover. Deceleration through the gallop-out clocked at <strong>11.74s</strong>, better than the 12.1s peer average &mdash; indicating the horse was still running hard past the wire.</p>
+                      <p className="hc-peer-note">Compared against 483 colts who breezed 1/8 mile at OBS April 2024.</p>
+                    </div>
+                    <div className="hc-footer">
+                      <span className="hc-footer-info">OBS April 2024 &bull; 1/8 Mile Breeze</span>
+                      <span className="hc-footer-logo">Thorough<span>Byte</span></span>
                     </div>
                   </div>
                   <div className="sc-outcome">
