@@ -21,28 +21,6 @@ interface GeneratedProfile {
   created_at: string;
 }
 
-interface SearchResult {
-  hip: number;
-  sire: string;
-  dam: string;
-  sex: string;
-  state: string;
-  consigner: string;
-  tier: string;
-  rating: number;
-  rank: number;
-  totalRanked: number;
-  time: number;
-  stride: number;
-  eighth: number;
-  quarter: number;
-  decel: number;
-  dist: string;
-  saleStatus: string;
-  salePrice: number;
-  pctl: { time: number; stride: number; eighth: number; quarter: number; decel: number; rating: number };
-}
-
 interface Props {
   user: User;
   profile: Profile | null;
@@ -51,10 +29,9 @@ interface Props {
 
 export default function DashboardClient({ user, profile, generatedProfiles: initialProfiles }: Props) {
   const [hipSearch, setHipSearch] = useState('');
-  const [searchResult, setSearchResult] = useState<SearchResult | null>(null);
   const [searchError, setSearchError] = useState('');
-  const [searching, setSearching] = useState(false);
   const [generating, setGenerating] = useState(false);
+  const [generatingStatus, setGeneratingStatus] = useState('');
   const [generatedProfiles, setGeneratedProfiles] = useState(initialProfiles);
   const [credits, setCredits] = useState(profile?.credits_remaining ?? 0);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
@@ -68,48 +45,38 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
     window.location.href = '/';
   };
 
-  const handleSearch = useCallback(async (e: React.FormEvent) => {
+  const handleLookup = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
     setSearchError('');
-    setSearchResult(null);
-    setSearching(true);
+    setGenerating(true);
+    setGeneratingStatus('Looking up hip...');
 
     try {
-      const res = await fetch(`/api/search?hip=${encodeURIComponent(hipSearch)}`);
-      const data = await res.json();
+      // Step 1: Search for the horse
+      const searchRes = await fetch(`/api/search?hip=${encodeURIComponent(hipSearch)}`);
+      const searchData = await searchRes.json();
 
-      if (!res.ok) {
-        setSearchError(data.error || 'Search failed');
+      if (!searchRes.ok) {
+        setSearchError(searchData.error || 'Hip not found');
         return;
       }
 
-      setSearchResult(data.horse);
-    } catch {
-      setSearchError('Network error. Please try again.');
-    } finally {
-      setSearching(false);
-    }
-  }, [hipSearch]);
-
-  const handleGenerate = useCallback(async () => {
-    if (!searchResult) return;
-    setGenerating(true);
-
-    try {
-      const res = await fetch('/api/generate-card', {
+      // Step 2: Automatically generate the horse card
+      setGeneratingStatus('Generating horse card...');
+      const genRes = await fetch('/api/generate-card', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ hip: searchResult.hip }),
+        body: JSON.stringify({ hip: searchData.horse.hip }),
       });
-      const data = await res.json();
+      const genData = await genRes.json();
 
-      if (!res.ok) {
-        setSearchError(data.error || 'Card generation failed');
+      if (!genRes.ok) {
+        setSearchError(genData.error || 'Card generation failed');
         return;
       }
 
       // Update credits (consumed one unless it was already generated or pro plan)
-      if (!data.already_generated && plan === 'free') {
+      if (!genData.already_generated && plan === 'free') {
         setCredits(prev => Math.max(0, prev - 1));
       }
 
@@ -124,23 +91,15 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       if (profiles) setGeneratedProfiles(profiles);
 
       // Show the generated card
-      setSelectedCard(data.card_image_url);
-      setSearchResult(null);
+      setSelectedCard(genData.card_image_url);
       setHipSearch('');
     } catch {
-      setSearchError('Generation failed. Please try again.');
+      setSearchError('Something went wrong. Please try again.');
     } finally {
       setGenerating(false);
+      setGeneratingStatus('');
     }
-  }, [searchResult, user.id]);
-
-  const tierColor = (tier: string): string => {
-    const map: Record<string, string> = {
-      'ELITE': '#2d6a4f', 'STRONG': '#5a9e68', 'ABOVE AVG': '#3a8abf',
-      'AVERAGE': '#b0a030', 'BELOW AVG': '#c07840', 'WEAK': '#c04040'
-    };
-    return map[tier] || '#888';
-  };
+  }, [hipSearch, user.id, plan]);
 
   return (
     <div className="dash-page">
@@ -162,7 +121,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       <div className="dash-content">
         <div className="dash-welcome">
           <h1>Welcome back, {name}</h1>
-          <p>Generate horse profile cards from OBS March 2026 breeze data.</p>
+          <p>Generate horse cards from OBS March 2026 breeze data.</p>
         </div>
 
         {/* Credits */}
@@ -171,15 +130,15 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
             <h2>{plan === 'free' ? 'Free Plan' : 'Pro Plan'}</h2>
             <p>
               {plan === 'pro'
-                ? 'Unlimited profile card generation.'
+                ? 'Unlimited horse card generation.'
                 : credits > 0
-                  ? `You have ${credits} profile card${credits === 1 ? '' : 's'} remaining.`
-                  : 'You\'ve used all your free profile cards.'
+                  ? `You have ${credits} horse card${credits === 1 ? '' : 's'} remaining.`
+                  : 'You\'ve used all your free horse cards.'
               }
             </p>
           </div>
           <div className="credits-count">
-            <span className="credits-num">{plan === 'pro' ? 'â' : credits}</span>
+            <span className="credits-num">{plan === 'pro' ? 'Ã¢ÂÂ' : credits}</span>
             <span className="credits-label">{plan === 'free' ? 'of 5' : ''}</span>
           </div>
         </div>
@@ -188,7 +147,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
         {credits === 0 && plan === 'free' && (
           <div className="upgrade-banner">
             <div>
-              <h3>Unlock unlimited profile cards</h3>
+              <h3>Unlock unlimited horse cards</h3>
               <p>Upgrade to Pro for full access to all 638 horses at OBS March 2026.</p>
             </div>
             <button className="upgrade-btn">Upgrade to Pro</button>
@@ -198,8 +157,8 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
         {/* Hip search */}
         {(credits > 0 || plan === 'pro') && (
           <div className="search-section">
-            <h2>Generate a Profile Card</h2>
-            <form onSubmit={handleSearch}>
+            <h2>Generate a Horse Card</h2>
+            <form onSubmit={handleLookup}>
               <div className="search-row">
                 <input
                   type="number"
@@ -210,60 +169,15 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
                   min={1}
                   max={999}
                   required
+                  disabled={generating}
                 />
-                <button type="submit" className="search-btn" disabled={!hipSearch || searching}>
-                  {searching ? 'Searching...' : 'Look Up'}
+                <button type="submit" className="search-btn" disabled={!hipSearch || generating}>
+                  {generating ? generatingStatus : plan === 'pro' ? 'Generate Card' : 'Generate Card (1 credit)'}
                 </button>
               </div>
             </form>
 
             {searchError && <div className="search-error">{searchError}</div>}
-
-            {/* Search result preview */}
-            {searchResult && (
-              <div className="search-preview">
-                <div className="preview-header">
-                  <div>
-                    <div className="preview-hip">Hip {searchResult.hip}</div>
-                    <div className="preview-name">{searchResult.sire} &mdash; {searchResult.dam}</div>
-                    <div className="preview-meta">
-                      {searchResult.sex === 'C' ? 'Colt' : 'Filly'} &bull; {searchResult.state}-bred &bull; {searchResult.consigner}
-                    </div>
-                  </div>
-                  <div className="preview-rating">
-                    <div className="preview-rating-num">{searchResult.rating}</div>
-                    <div className="preview-tier" style={{ color: tierColor(searchResult.tier) }}>
-                      {searchResult.tier}
-                    </div>
-                  </div>
-                </div>
-                <div className="preview-stats">
-                  <div className="preview-stat">
-                    <span className="preview-stat-val">{searchResult.time}s</span>
-                    <span className="preview-stat-lbl">Time</span>
-                  </div>
-                  <div className="preview-stat">
-                    <span className="preview-stat-val">{searchResult.stride}&apos;</span>
-                    <span className="preview-stat-lbl">Stride</span>
-                  </div>
-                  <div className="preview-stat">
-                    <span className="preview-stat-val">#{searchResult.rank}</span>
-                    <span className="preview-stat-lbl">Rank</span>
-                  </div>
-                  <div className="preview-stat">
-                    <span className="preview-stat-val">{searchResult.dist} mi</span>
-                    <span className="preview-stat-lbl">Distance</span>
-                  </div>
-                </div>
-                <button
-                  className="generate-btn"
-                  onClick={handleGenerate}
-                  disabled={generating}
-                >
-                  {generating ? 'Generating Card...' : plan === 'pro' ? 'Generate Profile Card' : 'Generate Profile Card (uses 1 credit)'}
-                </button>
-              </div>
-            )}
           </div>
         )}
 
@@ -271,7 +185,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
         {selectedCard && (
           <div className="card-viewer">
             <div className="card-viewer-header">
-              <h2>Generated Profile Card</h2>
+              <h2>Horse Card</h2>
               <div className="card-viewer-actions">
                 <a href={selectedCard} download className="card-download-btn">Download PNG</a>
                 <button className="card-close-btn" onClick={() => setSelectedCard(null)}>Close</button>
@@ -285,11 +199,11 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
 
         {/* Previously generated profiles */}
         <div className="profiles-section">
-          <h2>Your Profile Cards</h2>
+          <h2>Your Horse Cards</h2>
           {generatedProfiles.length === 0 ? (
             <div className="empty-state">
-              <p>No profile cards generated yet.</p>
-              <p className="empty-hint">Search for a hip number above to generate your first card.</p>
+              <p>No horse cards generated yet.</p>
+              <p className="empty-hint">Enter a hip number above to generate your first card.</p>
             </div>
           ) : (
             <div className="profiles-grid">
