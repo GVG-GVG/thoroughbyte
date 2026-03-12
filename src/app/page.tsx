@@ -18,7 +18,7 @@ export default function Home() {
             <p className="hero-sub">
               Every buyer at the under-tack show sees the same clock. ThoroughByte
               goes deeper &mdash; our model synthesizes <em>20+ data points</em> from
-              each breeze into a single 0â100 score, normalizing for
+              each breeze into a single 0&ndash;100 score, normalizing for
               environmental variables and isolating the true athletic signal
               &mdash; delivered <em>before</em> sale day.
             </p>
@@ -101,7 +101,7 @@ export default function Home() {
                 sex-specific baselines, and distance benchmarks.
               </p>
               <p>
-                The output is a single score (0â100) and a tier classification
+                The output is a single score (0–100) and a tier classification
                 &mdash; ELITE, STRONG, ABOVE AVG, AVERAGE, BELOW AVG, or WEAK &mdash;
                 that tells you where a horse stands relative to the entire sale
                 population. No opinions. No pedigree bias. Just the athletic signal
@@ -155,7 +155,7 @@ export default function Home() {
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
                 </div>
 
-                {/* What our model saw â actual horse card */}
+                {/* What our model saw — actual horse card */}
                 <div className="compare-card-wrap">
                   <div className="compare-label">WHAT OUR MODEL SAW</div>
                   <div className="hc">
@@ -167,7 +167,8 @@ export default function Home() {
                       <div className="hc-name">Volatile &mdash; Athenian Beauty</div>
                       <div className="hc-sub">Colt &bull; FL-bred &bull; <span>Wavertree Stables Inc</span></div>
                     </div>
-                    <div className="hc-tier-banner hc-tier-strong">
+                                        <img src="https://obscatalog.com/2024/136/951p.jpg" alt="Hip 951 — Volatile colt at OBS Spring 2024" className="hc-photo" />
+<div className="hc-tier-banner hc-tier-strong">
                       <div className="hc-tier-line"></div>
                       STRONG
                       <div className="hc-tier-line"></div>
