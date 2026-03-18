@@ -35,9 +35,39 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
   const [generatedProfiles, setGeneratedProfiles] = useState(initialProfiles);
   const [credits, setCredits] = useState(profile?.credits_remaining ?? 0);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
+  const [upgrading, setUpgrading] = useState(false);
 
   const plan = profile?.plan ?? 'free';
   const name = profile?.full_name || user.email?.split('@')[0] || 'there';
+
+  const handleUpgrade = async () => {
+    setUpgrading(true);
+    try {
+      const res = await fetch('/api/stripe/checkout', { method: 'POST' });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        setSearchError(data.error || 'Failed to start checkout');
+      }
+    } catch {
+      setSearchError('Failed to connect to payment provider.');
+    } finally {
+      setUpgrading(false);
+    }
+  };
+
+  const handleManageSubscription = async () => {
+    try {
+      const res = await fetch('/api/stripe/portal', { method: 'POST' });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      }
+    } catch {
+      setSearchError('Failed to open billing portal.');
+    }
+  };
 
   const handleSignOut = async () => {
     const supabase = createClient();
@@ -136,6 +166,11 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
                   : 'You\'ve used all your free horse cards.'
               }
             </p>
+            {plan === 'pro' && (
+              <button className="manage-sub-btn" onClick={handleManageSubscription}>
+                Manage Subscription
+              </button>
+            )}
           </div>
           <div className="credits-count">
             <span className="credits-num">{plan === 'pro' ? '\u221E' : credits}</span>
@@ -150,7 +185,9 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
               <h3>Unlock unlimited horse cards</h3>
               <p>Upgrade to Pro for full access to all 638 horses at OBS March 2026.</p>
             </div>
-            <button className="upgrade-btn">Upgrade to Pro</button>
+            <button className="upgrade-btn" onClick={handleUpgrade} disabled={upgrading}>
+              {upgrading ? 'Redirecting...' : 'Upgrade to Pro'}
+            </button>
           </div>
         )}
 

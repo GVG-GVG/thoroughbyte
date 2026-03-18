@@ -292,6 +292,30 @@
   background: var(--gold-light);
 }
 
+.upgrade-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.manage-sub-btn {
+  margin-top: 8px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  background: none;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.manage-sub-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
 /* Search error */
 .search-error {
   margin-top: 12px;

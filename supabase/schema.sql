@@ -11,6 +11,7 @@ create table public.profiles (
   role text check (role in ('agent', 'trainer', 'owner', 'farm', 'other', 'admin')),
   plan text not null default 'free' check (plan in ('free', 'pro')),
   credits_remaining integer not null default 5,
+  stripe_customer_id text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
