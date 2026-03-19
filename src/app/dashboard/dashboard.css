@@ -806,6 +806,7 @@
   width: 100%;
   font-size: 13px;
   border-collapse: collapse;
+  table-layout: auto;
 }
 
 .rl-table th {
@@ -860,24 +861,25 @@
 .rl-hip {
   font-weight: 700;
   color: var(--navy);
-  padding-left: 10px;
-  padding-right: 8px;
+  width: 1%;
+  white-space: nowrap;
 }
 
 .rl-rank {
-  padding-left: 8px;
-  padding-right: 8px;
+  width: 1%;
   white-space: nowrap;
 }
 
 .rl-tier-cell {
-  padding-left: 6px;
-  padding-right: 6px;
+  width: 1%;
+  white-space: nowrap;
 }
 
 .rl-score {
   font-weight: 700;
   font-variant-numeric: tabular-nums;
+  width: 1%;
+  white-space: nowrap;
 }
 
 .rl-sire {
