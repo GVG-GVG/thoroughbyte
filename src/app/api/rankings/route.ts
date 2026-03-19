@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import march2026 from '@/lib/horse-data.json';
+import march2025 from '@/lib/horse-data-obs-march-2025.json';
+import april2025 from '@/lib/horse-data-obs-april-2025.json';
 import march2024 from '@/lib/horse-data-obs-march-2024.json';
 import april2024 from '@/lib/horse-data-obs-april-2024.json';
 
@@ -27,8 +29,10 @@ interface RawHorse {
 
 const SALE_MAP: Record<string, RawHorse[]> = {
   'obs-march-2026': march2026 as RawHorse[],
-  'obs-march-2024': march2024 as RawHorse[],
+  'obs-april-2025': april2025 as RawHorse[],
+  'obs-march-2025': march2025 as RawHorse[],
   'obs-april-2024': april2024 as RawHorse[],
+  'obs-march-2024': march2024 as RawHorse[],
 };
 
 function parsePrice(s: string): number {

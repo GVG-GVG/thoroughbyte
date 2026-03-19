@@ -33,6 +33,8 @@ type Tab = 'horses' | 'consigners' | 'cards';
 
 const SALES = [
   { id: 'obs-march-2026', label: 'OBS March 2026', count: 638 },
+  { id: 'obs-april-2025', label: 'OBS April 2025', count: 902 },
+  { id: 'obs-march-2025', label: 'OBS March 2025', count: 650 },
   { id: 'obs-april-2024', label: 'OBS April 2024', count: 807 },
   { id: 'obs-march-2024', label: 'OBS March 2024', count: 667 },
 ] as const;
