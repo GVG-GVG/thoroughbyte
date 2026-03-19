@@ -1,12 +1,10 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
 import RankedList from '@/components/RankedList';
-import HorseCard from '@/components/HorseCard';
 import ConsignerTable from '@/components/ConsignerTable';
-import type { Horse } from '@/components/RankedList';
 
 interface Profile {
   id: string;
@@ -39,8 +37,15 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
   const [generatedProfiles, setGeneratedProfiles] = useState(initialProfiles);
   const [credits, setCredits] = useState(profile?.credits_remaining ?? 0);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
-  const [selectedHorse, setSelectedHorse] = useState<Horse | null>(null);
   const [upgrading, setUpgrading] = useState(false);
+  const cardViewerRef = useRef<HTMLDivElement>(null);
+
+  // Scroll card viewer into view when a card is shown
+  useEffect(() => {
+    if (selectedCard && cardViewerRef.current) {
+      cardViewerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [selectedCard]);
 
   const plan = profile?.plan ?? 'free';
   const name = profile?.full_name || user.email?.split('@')[0] || 'there';
@@ -80,28 +85,16 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
     window.location.href = '/';
   };
 
-  const handleLookup = useCallback(async (e: React.FormEvent) => {
-    e.preventDefault();
+  const generateCard = useCallback(async (hip: number) => {
     setSearchError('');
     setGenerating(true);
-    setGeneratingStatus('Looking up hip...');
+    setGeneratingStatus('Generating horse card...');
 
     try {
-      // Step 1: Search for the horse
-      const searchRes = await fetch(`/api/search?hip=${encodeURIComponent(hipSearch)}`);
-      const searchData = await searchRes.json();
-
-      if (!searchRes.ok) {
-        setSearchError(searchData.error || 'Hip not found');
-        return;
-      }
-
-      // Step 2: Automatically generate the horse card
-      setGeneratingStatus('Generating horse card...');
       const genRes = await fetch('/api/generate-card', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ hip: searchData.horse.hip }),
+        body: JSON.stringify({ hip }),
       });
       const genData = await genRes.json();
 
@@ -134,7 +127,32 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       setGenerating(false);
       setGeneratingStatus('');
     }
-  }, [hipSearch, user.id, plan]);
+  }, [user.id, plan]);
+
+  const handleLookup = useCallback(async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSearchError('');
+    setGenerating(true);
+    setGeneratingStatus('Looking up hip...');
+
+    try {
+      const searchRes = await fetch(`/api/search?hip=${encodeURIComponent(hipSearch)}`);
+      const searchData = await searchRes.json();
+
+      if (!searchRes.ok) {
+        setSearchError(searchData.error || 'Hip not found');
+        setGenerating(false);
+        setGeneratingStatus('');
+        return;
+      }
+
+      await generateCard(searchData.horse.hip);
+    } catch {
+      setSearchError('Something went wrong. Please try again.');
+      setGenerating(false);
+      setGeneratingStatus('');
+    }
+  }, [hipSearch, generateCard]);
 
   return (
     <div className="dash-page">
@@ -198,20 +216,14 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
 
         {/* Interactive Ranked List */}
         {(credits > 0 || plan === 'pro') && (
-          <RankedList onSelectHip={(hip, horse) => {
-            setHipSearch(hip.toString());
-            setSelectedHorse(horse);
+          <RankedList onSelectHip={(hip) => {
+            generateCard(hip);
           }} />
         )}
 
         {/* Consigner Ratings */}
         {(credits > 0 || plan === 'pro') && (
           <ConsignerTable />
-        )}
-
-        {/* Horse detail card overlay */}
-        {selectedHorse && (
-          <HorseCard horse={selectedHorse} onClose={() => setSelectedHorse(null)} />
         )}
 
         {/* Hip search */}
@@ -241,9 +253,21 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
           </div>
         )}
 
+        {/* Generating indicator */}
+        {generating && !selectedCard && (
+          <div className="card-viewer">
+            <div className="card-viewer-header">
+              <h2>{generatingStatus || 'Generating...'}</h2>
+            </div>
+            <div className="card-viewer-img-wrap" style={{ padding: '48px', textAlign: 'center', color: '#888' }}>
+              Generating horse card...
+            </div>
+          </div>
+        )}
+
         {/* Full-size card viewer */}
         {selectedCard && (
-          <div className="card-viewer">
+          <div className="card-viewer" ref={cardViewerRef}>
             <div className="card-viewer-header">
               <h2>Horse Card</h2>
               <div className="card-viewer-actions">
