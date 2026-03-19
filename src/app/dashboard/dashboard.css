@@ -783,6 +783,66 @@
   border-color: var(--gold);
 }
 
+.rl-export-group {
+  position: relative;
+  flex: 0 0 auto;
+  min-width: auto;
+}
+
+.rl-export-btn {
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.rl-export-btn:hover {
+  background: var(--navy-light);
+}
+
+.rl-export-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  z-index: 20;
+  overflow: hidden;
+  min-width: 160px;
+}
+
+.rl-export-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-family: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.1s;
+}
+
+.rl-export-menu button:hover {
+  background: var(--light-bg);
+}
+
+.rl-export-menu button:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
 .rl-clear-btn {
   margin-top: 10px;
   padding: 4px 12px;
@@ -1035,6 +1095,11 @@
   cursor: pointer;
 }
 .ct-clear-btn:hover { color: var(--navy); border-color: var(--text-muted); }
+
+.ct-export-group {
+  position: relative;
+  margin-left: auto;
+}
 
 .ct-table-scroll {
   overflow-x: auto;

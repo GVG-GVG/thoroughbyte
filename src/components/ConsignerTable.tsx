@@ -1,6 +1,8 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
+import { jsPDF } from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 interface ConsignerRow {
   rank: number;
@@ -128,6 +130,51 @@ export default function ConsignerTable() {
 
   const arrow = (field: SortField) => sortField === field ? (sortDir === 'asc' ? ' \u25B2' : ' \u25BC') : '';
 
+  const [exportOpen, setExportOpen] = useState(false);
+  const exportRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (exportRef.current && !exportRef.current.contains(e.target as Node)) setExportOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  const exportPdf = useCallback((useFiltered: boolean) => {
+    setExportOpen(false);
+    const rows = useFiltered ? sorted : data;
+    const doc = new jsPDF({ orientation: 'landscape', unit: 'pt', format: 'letter' });
+    const subtitle = useFiltered && sorted.length !== data.length
+      ? `Filtered: ${rows.length} of ${data.length} consigners`
+      : `${rows.length} consigners`;
+
+    doc.setFontSize(14);
+    doc.text('OBS 2024 Consigner Ratings', 40, 30);
+    doc.setFontSize(9);
+    doc.setTextColor(120);
+    doc.text(subtitle, 40, 44);
+    doc.setTextColor(0);
+
+    autoTable(doc, {
+      startY: 54,
+      head: [['#', 'Consigner', 'Tier', 'Score', 'Horses', 'Sold', 'Sale%', 'Total Sales', 'Avg Price', '% Start', '% Win', '% SW', '% GSW', 'Adj Start', 'Adj Win', 'Adj SW', 'Adj GSW']],
+      body: rows.map(c => [
+        c.rank, c.consigner, c.tier, c.score.toFixed(1),
+        c.horses, c.sold, fmtPct(c.salePct),
+        c.totalSales, c.avgPrice,
+        fmtPct(c.pctStart), fmtPct(c.pctWin), fmtPct(c.pctSW), fmtPct(c.pctGSW),
+        fmtPct(c.adjStart), fmtPct(c.adjWin), fmtPct(c.adjSW), fmtPct(c.adjGSW),
+      ]),
+      styles: { fontSize: 6.5, cellPadding: 2.5 },
+      headStyles: { fillColor: [18, 30, 50], fontSize: 6.5, fontStyle: 'bold' },
+      alternateRowStyles: { fillColor: [245, 245, 245] },
+      margin: { left: 40, right: 40 },
+    });
+
+    doc.save('obs-2024-consigner-ratings.pdf');
+  }, [sorted, data]);
+
   if (loading) return <div className="ct-loading">Loading consigner ratings...</div>;
 
   return (
@@ -168,6 +215,17 @@ export default function ConsignerTable() {
             Clear filters
           </button>
         )}
+        <div className="ct-export-group" ref={exportRef}>
+          <button className="rl-export-btn" onClick={() => setExportOpen(o => !o)}>
+            Export PDF
+          </button>
+          {exportOpen && (
+            <div className="rl-export-menu">
+              <button onClick={() => exportPdf(true)}>Filtered ({sorted.length})</button>
+              <button onClick={() => exportPdf(false)}>All ({data.length})</button>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="ct-table-scroll">

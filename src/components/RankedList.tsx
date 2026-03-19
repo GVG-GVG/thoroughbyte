@@ -1,6 +1,8 @@
 'use client';
 
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { jsPDF } from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 interface Horse {
   hip: number;
@@ -169,6 +171,51 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     return sortDir === 'asc' ? ' ▲' : ' ▼';
   };
 
+  const [exportOpen, setExportOpen] = useState(false);
+  const exportRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (exportRef.current && !exportRef.current.contains(e.target as Node)) setExportOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  const exportPdf = useCallback((useFiltered: boolean) => {
+    setExportOpen(false);
+    const rows = useFiltered ? filtered : horses;
+    const doc = new jsPDF({ orientation: 'landscape', unit: 'pt', format: 'letter' });
+    const title = saleLabel ? `${saleLabel} Breeze Analytics` : 'Horse Ratings';
+    const subtitle = useFiltered && filtered.length !== horses.length
+      ? `Filtered: ${rows.length} of ${horses.length} horses`
+      : `${rows.length} horses`;
+
+    doc.setFontSize(14);
+    doc.text(title, 40, 30);
+    doc.setFontSize(9);
+    doc.setTextColor(120);
+    doc.text(subtitle, 40, 44);
+    doc.setTextColor(0);
+
+    autoTable(doc, {
+      startY: 54,
+      head: [['Hip', 'Rank', 'Tier', 'Score', 'Sex', 'Sire', 'Dam', 'Time', '1/8 Out', '1/4 Out', 'Stride', 'Decel', 'State', 'Consigner']],
+      body: rows.map(h => [
+        h.hip, `#${h.rank}`, h.tier, h.rating.toFixed(1),
+        h.sex === 'C' ? 'Colt' : 'Filly', h.sire, h.dam,
+        `${h.time.toFixed(1)}s`, `${h.eighthOut.toFixed(1)}s`, `${h.quarterOut.toFixed(1)}s`,
+        `${h.stride.toFixed(1)}'`, `${h.decel.toFixed(2)}s`, h.state, h.consigner,
+      ]),
+      styles: { fontSize: 7, cellPadding: 3 },
+      headStyles: { fillColor: [18, 30, 50], fontSize: 7, fontStyle: 'bold' },
+      alternateRowStyles: { fillColor: [245, 245, 245] },
+      margin: { left: 40, right: 40 },
+    });
+
+    doc.save(`${(saleLabel || 'horse-ratings').replace(/\s+/g, '-').toLowerCase()}.pdf`);
+  }, [filtered, horses, saleLabel]);
+
   if (loading) {
     return <div className="rl-loading">Loading ranked list...</div>;
   }
@@ -240,6 +287,18 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
               value={hipSearch}
               onChange={e => setHipSearch(e.target.value)}
             />
+          </div>
+          <div className="rl-filter-group rl-export-group" ref={exportRef}>
+            <label className="rl-filter-label">&nbsp;</label>
+            <button className="rl-export-btn" onClick={() => setExportOpen(o => !o)}>
+              Export PDF
+            </button>
+            {exportOpen && (
+              <div className="rl-export-menu">
+                <button onClick={() => exportPdf(true)}>Filtered ({filtered.length})</button>
+                <button onClick={() => exportPdf(false)}>All ({horses.length})</button>
+              </div>
+            )}
           </div>
         </div>
         {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || sireFilter || hipSearch) && (
