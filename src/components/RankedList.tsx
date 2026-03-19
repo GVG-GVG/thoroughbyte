@@ -44,6 +44,15 @@ const TIER_CLASSES: Record<string, string> = {
   'WEAK': 'rl-tier-weak',
 };
 
+const TIER_ROW_CLASSES: Record<string, string> = {
+  'ELITE': 'rl-row-elite',
+  'STRONG': 'rl-row-strong',
+  'ABOVE AVG': 'rl-row-above',
+  'AVERAGE': 'rl-row-avg',
+  'BELOW AVG': 'rl-row-below',
+  'WEAK': 'rl-row-weak',
+};
+
 interface Props {
   onSelectHip?: (hip: number) => void;
 }
@@ -57,6 +66,7 @@ export default function RankedList({ onSelectHip }: Props) {
   const [sexFilter, setSexFilter] = useState<string>('');
   const [sectionFilter, setSectionFilter] = useState<string>('');
   const [stateFilter, setStateFilter] = useState<string>('');
+  const [sireFilter, setSireFilter] = useState<string>('');
   const [hipSearch, setHipSearch] = useState<string>('');
 
   useEffect(() => {
@@ -73,6 +83,12 @@ export default function RankedList({ onSelectHip }: Props) {
   const uniqueStates = useMemo(() => {
     const states = new Set(horses.map(h => h.state).filter(Boolean));
     return Array.from(states).sort();
+  }, [horses]);
+
+  // Get unique sires for filter dropdown
+  const uniqueSires = useMemo(() => {
+    const sires = new Set(horses.map(h => h.sire).filter(Boolean));
+    return Array.from(sires).sort();
   }, [horses]);
 
   const handleSort = useCallback((field: SortField) => {
@@ -106,6 +122,9 @@ export default function RankedList({ onSelectHip }: Props) {
     if (stateFilter) {
       result = result.filter(h => h.state === stateFilter);
     }
+    if (sireFilter) {
+      result = result.filter(h => h.sire === sireFilter);
+    }
     if (hipSearch) {
       result = result.filter(h => h.hip.toString().includes(hipSearch));
     }
@@ -129,7 +148,7 @@ export default function RankedList({ onSelectHip }: Props) {
     });
 
     return result;
-  }, [horses, tierFilter, sexFilter, sectionFilter, stateFilter, hipSearch, sortField, sortDir]);
+  }, [horses, tierFilter, sexFilter, sectionFilter, stateFilter, sireFilter, hipSearch, sortField, sortDir]);
 
   const sortIcon = (field: SortField) => {
     if (sortField !== field) return '';
@@ -190,6 +209,15 @@ export default function RankedList({ onSelectHip }: Props) {
             </select>
           </div>
           <div className="rl-filter-group">
+            <label className="rl-filter-label">Sire</label>
+            <select value={sireFilter} onChange={e => setSireFilter(e.target.value)} className="rl-select">
+              <option value="">All</option>
+              {uniqueSires.map(s => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+          <div className="rl-filter-group">
             <label className="rl-filter-label">Hip #</label>
             <input
               type="text"
@@ -200,10 +228,10 @@ export default function RankedList({ onSelectHip }: Props) {
             />
           </div>
         </div>
-        {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || hipSearch) && (
+        {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || sireFilter || hipSearch) && (
           <button
             className="rl-clear-btn"
-            onClick={() => { setTierFilter([]); setSexFilter(''); setSectionFilter(''); setStateFilter(''); setHipSearch(''); }}
+            onClick={() => { setTierFilter([]); setSexFilter(''); setSectionFilter(''); setStateFilter(''); setSireFilter(''); setHipSearch(''); }}
           >
             Clear all filters
           </button>
@@ -236,7 +264,7 @@ export default function RankedList({ onSelectHip }: Props) {
               filtered.map(h => (
                 <tr
                   key={h.hip}
-                  className="rl-row"
+                  className={`rl-row ${TIER_ROW_CLASSES[h.tier] ?? ''}`}
                   onClick={() => onSelectHip?.(h.hip)}
                 >
                   <td className="rl-hip">{h.hip}</td>
