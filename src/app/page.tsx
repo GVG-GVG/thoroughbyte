@@ -86,74 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* HOW TO USE ON SALE WEEK */}
-      <section className="section" id="how-to-use">
-        <div className="container">
-          <p className="section-tag">YOUR EDGE ON SALE DAY</p>
-          <h2>Four steps between you and the best athletes in the sale.</h2>
-          <div className="steps-vertical">
-            <div className="step-item">
-              <span className="step-num">1</span>
-              <div className="step-body">
-                <h3>Receive your rankings the same day horses breeze.</h3>
-                <p>
-                  Scores go live the same day each horse breezes &mdash; not the night before,
-                  not the morning of the sale. As the breeze show unfolds, you receive a ranked
-                  list of every horse that worked: scored, tiered, and sorted within sex and
-                  distance cohorts. This gives you more time to evaluate the data, locate your
-                  top prospects on the grounds, and build your shortlist before the sale ring opens.
-                </p>
-              </div>
-            </div>
-            <div className="step-item">
-              <span className="step-num">2</span>
-              <div className="step-body">
-                <h3>Filter by tier in the interactive ranked list.</h3>
-                <p>
-                  Open the ranked sale list in your dashboard. Sort by any column &mdash; hip, score,
-                  tier, percentile, stride length, deceleration. Filter by tier to isolate ELITE and
-                  STRONG horses. Filter by cohort to focus on colts or fillies at your preferred breeze
-                  distance. Filter by state-bred designation to zero in on horses eligible for state-bred
-                  programs. Search by hip number to pull up a specific horse instantly. Click any row
-                  to open the full horse card. Need the list offline? Export as a PDF.
-                </p>
-              </div>
-            </div>
-            <div className="step-item">
-              <span className="step-num">3</span>
-              <div className="step-body">
-                <h3>Challenge the market&rsquo;s assumptions.</h3>
-                <p>
-                  A :10.1 breeze on Day 1 is not the same as a :10.1 breeze on Day 3.
-                  It may not even be the same as a :10.1 breeze three sets later on the same morning.
-                  Track conditions shift constantly &mdash; and not always in the same direction.
-                  A sealed surface that started deep and cuppy can dry out and turn fast by midmorning.
-                  The next day, a freshly harrowed track might ride fast early and deteriorate as hundreds
-                  of horses churn through it. Weather changes between sets. Moisture levels shift.
-                </p>
-                <p>
-                  ThoroughByte normalizes for all of it: session depth, track variant, set-to-set surface
-                  changes, and environmental conditions. The model doesn&rsquo;t assume conditions move in
-                  one direction &mdash; it measures which direction they actually moved and adjusts accordingly.
-                </p>
-              </div>
-            </div>
-            <div className="step-item">
-              <span className="step-num">4</span>
-              <div className="step-body">
-                <h3>Buy with conviction.</h3>
-                <p>
-                  Walk into the sale ring knowing the difference between a horse the market priced
-                  correctly and one it didn&rsquo;t. ThoroughByte won&rsquo;t replace your eye or your
-                  experience &mdash; it gives both of them better information to work with.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHAT WE DO */}
+      {/* WHAT WE BUILT */}
       <section className="section" id="what-we-do">
         <div className="container">
           <div className="two-col">
@@ -234,8 +167,8 @@ export default function Home() {
                       <div className="hc-name">Volatile &mdash; Athenian Beauty</div>
                       <div className="hc-sub">Colt &bull; FL-bred &bull; <span>Wavertree Stables Inc</span></div>
                     </div>
-                                        <img src="https://obscatalog.com/2024/136/951p.jpg" alt="Hip 951 — Volatile colt at OBS Spring 2024" className="hc-photo" />
-<div className="hc-tier-banner hc-tier-strong">
+                    <img src="https://obscatalog.com/2024/136/951p.jpg" alt="Hip 951 — Volatile colt at OBS Spring 2024" className="hc-photo" />
+                    <div className="hc-tier-banner hc-tier-strong">
                       <div className="hc-tier-line"></div>
                       STRONG
                       <div className="hc-tier-line"></div>
@@ -299,7 +232,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PERFORMANCE: EARNINGS */}
+      {/* PERFORMANCE: EARNINGS / THE PROOF */}
       <section className="section section-dark" id="performance">
         <div className="container">
           <p className="section-tag">THE PROOF</p>
@@ -346,6 +279,73 @@ export default function Home() {
 
           {/* Charts */}
           <Charts />
+        </div>
+      </section>
+
+      {/* HOW TO USE ON SALE WEEK */}
+      <section className="section" id="how-to-use">
+        <div className="container">
+          <p className="section-tag">YOUR EDGE ON SALE DAY</p>
+          <h2>Four steps between you and the best athletes in the sale.</h2>
+          <div className="steps-vertical">
+            <div className="step-item">
+              <span className="step-num">1</span>
+              <div className="step-body">
+                <h3>Receive your rankings the same day horses breeze.</h3>
+                <p>
+                  Scores go live the same day each horse breezes &mdash; not the night before,
+                  not the morning of the sale. As the breeze show unfolds, you receive a ranked
+                  list of every horse that worked: scored, tiered, and sorted within sex and
+                  distance cohorts. This gives you more time to evaluate the data, locate your
+                  top prospects on the grounds, and build your shortlist before the sale ring opens.
+                </p>
+              </div>
+            </div>
+            <div className="step-item">
+              <span className="step-num">2</span>
+              <div className="step-body">
+                <h3>Filter by tier in the interactive ranked list.</h3>
+                <p>
+                  Open the ranked sale list in your dashboard. Sort by any column &mdash; hip, score,
+                  tier, percentile, stride length, deceleration. Filter by tier to isolate ELITE and
+                  STRONG horses. Filter by cohort to focus on colts or fillies at your preferred breeze
+                  distance. Filter by state-bred designation to zero in on horses eligible for state-bred
+                  programs. Search by hip number to pull up a specific horse instantly. Click any row
+                  to open the full horse card. Need the list offline? Export as a PDF.
+                </p>
+              </div>
+            </div>
+            <div className="step-item">
+              <span className="step-num">3</span>
+              <div className="step-body">
+                <h3>Challenge the market&rsquo;s assumptions.</h3>
+                <p>
+                  A :10.1 breeze on Day 1 is not the same as a :10.1 breeze on Day 3.
+                  It may not even be the same as a :10.1 breeze three sets later on the same morning.
+                  Track conditions shift constantly &mdash; and not always in the same direction.
+                  A sealed surface that started deep and cuppy can dry out and turn fast by midmorning.
+                  The next day, a freshly harrowed track might ride fast early and deteriorate as hundreds
+                  of horses churn through it. Weather changes between sets. Moisture levels shift.
+                </p>
+                <p>
+                  ThoroughByte normalizes for all of it: session depth, track variant, set-to-set surface
+                  changes, and environmental conditions. The model doesn&rsquo;t assume conditions move in
+                  one direction &mdash; it measures which direction they actually moved and adjusts accordingly.
+                </p>
+              </div>
+            </div>
+            <div className="step-item">
+              <span className="step-num">4</span>
+              <div className="step-body">
+                <h3>Buy with conviction.</h3>
+                <p>
+                  Walk into the sale ring knowing the difference between a horse the market priced
+                  correctly and one it didn&rsquo;t. ThoroughByte won&rsquo;t replace your eye or your
+                  experience &mdash; it gives both of them better information to work with.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
