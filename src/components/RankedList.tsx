@@ -56,10 +56,11 @@ const TIER_ROW_CLASSES: Record<string, string> = {
 export type { Horse };
 
 interface Props {
+  sale?: string;
   onSelectHip?: (hip: number, horse: Horse) => void;
 }
 
-export default function RankedList({ onSelectHip }: Props) {
+export default function RankedList({ sale = 'obs-march-2026', onSelectHip }: Props) {
   const [horses, setHorses] = useState<Horse[]>([]);
   const [loading, setLoading] = useState(true);
   const [sortField, setSortField] = useState<SortField>('rank');
@@ -72,14 +73,24 @@ export default function RankedList({ onSelectHip }: Props) {
   const [hipSearch, setHipSearch] = useState<string>('');
 
   useEffect(() => {
-    fetch('/api/rankings')
+    setLoading(true);
+    setHorses([]);
+    setTierFilter([]);
+    setSexFilter('');
+    setSectionFilter('');
+    setStateFilter('');
+    setSireFilter('');
+    setHipSearch('');
+    setSortField('rank');
+    setSortDir('asc');
+    fetch(`/api/rankings?sale=${encodeURIComponent(sale)}`)
       .then(res => res.json())
       .then(data => {
         setHorses(data.horses);
         setLoading(false);
       })
       .catch(() => setLoading(false));
-  }, []);
+  }, [sale]);
 
   // Get unique states for filter dropdown
   const uniqueStates = useMemo(() => {

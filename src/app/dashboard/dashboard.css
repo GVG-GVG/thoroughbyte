@@ -301,9 +301,35 @@
 /* ═══ Dashboard Tabs ═══ */
 .dash-tabs {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 0;
   border-bottom: 2px solid var(--border);
   margin-bottom: 24px;
+}
+
+.dash-tabs-left {
+  display: flex;
+  gap: 0;
+}
+
+.dash-sale-select {
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--navy);
+  cursor: pointer;
+  transition: border-color 0.2s;
+  margin-bottom: 4px;
+}
+
+.dash-sale-select:focus {
+  outline: none;
+  border-color: var(--gold);
 }
 
 .dash-tab {
@@ -896,8 +922,10 @@
     flex-direction: column;
     text-align: center;
   }
-  .dash-tabs { gap: 0; }
+  .dash-tabs { gap: 0; flex-wrap: wrap; }
+  .dash-tabs-left { flex-wrap: wrap; }
   .dash-tab { padding: 10px 14px; font-size: 13px; }
+  .dash-sale-select { width: 100%; margin-top: 8px; }
   .rl-wrap { padding: 16px; }
   .rl-filter-row { flex-direction: column; }
   .rl-table { font-size: 12px; }

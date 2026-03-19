@@ -31,8 +31,15 @@ interface Props {
 
 type Tab = 'horses' | 'consigners' | 'cards';
 
+const SALES = [
+  { id: 'obs-march-2026', label: 'OBS March 2026', count: 638 },
+  { id: 'obs-april-2024', label: 'OBS April 2024', count: 807 },
+  { id: 'obs-march-2024', label: 'OBS March 2024', count: 667 },
+] as const;
+
 export default function DashboardClient({ user, profile, generatedProfiles: initialProfiles }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>('horses');
+  const [selectedSale, setSelectedSale] = useState('obs-march-2026');
   const [hipSearch, setHipSearch] = useState('');
   const [searchError, setSearchError] = useState('');
   const [generating, setGenerating] = useState(false);
@@ -171,7 +178,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       <div className="dash-content">
         <div className="dash-welcome">
           <h1>Welcome back, {name}</h1>
-          <p>OBS March 2026 breeze analytics.</p>
+          <p>{SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'} breeze analytics.</p>
         </div>
 
         {/* Credits */}
@@ -214,37 +221,50 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
         {/* Tab navigation */}
         {hasAccess && (
           <div className="dash-tabs">
-            <button
-              className={`dash-tab${activeTab === 'horses' ? ' dash-tab-active' : ''}`}
-              onClick={() => setActiveTab('horses')}
+            <div className="dash-tabs-left">
+              <button
+                className={`dash-tab${activeTab === 'horses' ? ' dash-tab-active' : ''}`}
+                onClick={() => setActiveTab('horses')}
+              >
+                Horse Ratings
+              </button>
+              <button
+                className={`dash-tab${activeTab === 'consigners' ? ' dash-tab-active' : ''}`}
+                onClick={() => setActiveTab('consigners')}
+              >
+                Consigner Ratings
+              </button>
+              <button
+                className={`dash-tab${activeTab === 'cards' ? ' dash-tab-active' : ''}`}
+                onClick={() => setActiveTab('cards')}
+              >
+                My Horse Cards
+                {generatedProfiles.length > 0 && (
+                  <span className="dash-tab-badge">{generatedProfiles.length}</span>
+                )}
+              </button>
+            </div>
+            <select
+              className="dash-sale-select"
+              value={selectedSale}
+              onChange={e => setSelectedSale(e.target.value)}
             >
-              Horse Ratings
-            </button>
-            <button
-              className={`dash-tab${activeTab === 'consigners' ? ' dash-tab-active' : ''}`}
-              onClick={() => setActiveTab('consigners')}
-            >
-              Consigner Ratings
-            </button>
-            <button
-              className={`dash-tab${activeTab === 'cards' ? ' dash-tab-active' : ''}`}
-              onClick={() => setActiveTab('cards')}
-            >
-              My Horse Cards
-              {generatedProfiles.length > 0 && (
-                <span className="dash-tab-badge">{generatedProfiles.length}</span>
-              )}
-            </button>
+              {SALES.map(s => (
+                <option key={s.id} value={s.id}>{s.label} ({s.count})</option>
+              ))}
+            </select>
           </div>
         )}
 
         {/* ═══ Horse Ratings Tab ═══ */}
         {hasAccess && activeTab === 'horses' && (
           <>
-            <RankedList onSelectHip={(hip) => {
-              generateCard(hip);
-            }} />
-
+            <RankedList
+              sale={selectedSale}
+              onSelectHip={(hip) => {
+                generateCard(hip);
+              }}
+            />
           </>
         )}
 
