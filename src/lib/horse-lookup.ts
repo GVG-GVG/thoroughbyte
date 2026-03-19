@@ -89,10 +89,10 @@ interface SaleMeta {
 
 const SALE_META: Record<string, SaleMeta> = {
   'obs-march-2026': { label: 'OBS March 2026', year: '2026', photoUrlPrefix: 'https://obscatalog.com/2026/149/' },
-  'obs-april-2025': { label: 'OBS April 2025', year: '2025', photoUrlPrefix: null },
-  'obs-march-2025': { label: 'OBS March 2025', year: '2025', photoUrlPrefix: null },
-  'obs-april-2024': { label: 'OBS April 2024', year: '2024', photoUrlPrefix: null },
-  'obs-march-2024': { label: 'OBS March 2024', year: '2024', photoUrlPrefix: null },
+  'obs-april-2025': { label: 'OBS April 2025', year: '2025', photoUrlPrefix: 'https://obscatalog.com/2025/144/' },
+  'obs-march-2025': { label: 'OBS March 2025', year: '2025', photoUrlPrefix: 'https://obscatalog.com/2025/142/' },
+  'obs-april-2024': { label: 'OBS April 2024', year: '2024', photoUrlPrefix: 'https://obscatalog.com/2024/137/' },
+  'obs-march-2024': { label: 'OBS March 2024', year: '2024', photoUrlPrefix: 'https://obscatalog.com/2024/135/' },
 };
 
 const SALE_DATA: Record<string, RawHorse[]> = {
