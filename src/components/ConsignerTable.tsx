@@ -48,6 +48,14 @@ function pctVal(v: string | null): number {
   return parseFloat(v);
 }
 
+function parseMoney(v: string): number {
+  if (!v || v === '-' || v === '$0') return 0;
+  const cleaned = v.replace(/[$,]/g, '');
+  if (cleaned.endsWith('M')) return parseFloat(cleaned) * 1_000_000;
+  if (cleaned.endsWith('K')) return parseFloat(cleaned) * 1_000;
+  return parseFloat(cleaned) || 0;
+}
+
 function fmtPct(v: string | null): string {
   if (v === null || v === undefined || v === '' || v === '-') return '—';
   return v + '%';
@@ -93,6 +101,12 @@ export default function ConsignerTable() {
       if (['salePct', 'pctStart', 'pctWin', 'pctSW', 'pctGSW', 'adjStart', 'adjWin', 'adjSW', 'adjGSW'].includes(field)) {
         aVal = pctVal(aVal as string | null);
         bVal = pctVal(bVal as string | null);
+      }
+
+      // For currency fields, parse "$10.8M" / "$246K" / "$0" to numeric
+      if (field === 'totalSales' || field === 'avgPrice') {
+        aVal = parseMoney(aVal as string);
+        bVal = parseMoney(bVal as string);
       }
 
       if (typeof aVal === 'string' && typeof bVal === 'string') {
