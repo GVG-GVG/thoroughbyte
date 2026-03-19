@@ -987,6 +987,26 @@
   color: #3a1a5e;
 }
 
+.rl-bt-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: var(--slate, #8a94a6);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.rl-bt-legend-label {
+  font-weight: 600;
+  color: var(--dark, #1a1a2e);
+  margin-right: 4px;
+}
+
+.rl-bt-legend-desc {
+  margin-right: 10px;
+}
+
 .rl-consigner {
   max-width: 180px;
   overflow: hidden;

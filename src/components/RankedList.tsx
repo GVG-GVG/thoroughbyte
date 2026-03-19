@@ -315,6 +315,14 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
         )}
       </div>
 
+      {/* BT Legend */}
+      <div className="rl-bt-legend">
+        <span className="rl-bt-legend-label">Dam Black-Type:</span>
+        <span className="rl-bt-tag rl-bt-btw">BTW</span><span className="rl-bt-legend-desc">Black-Type Winner</span>
+        <span className="rl-bt-tag rl-bt-btp">BTP</span><span className="rl-bt-legend-desc">Black-Type Placed</span>
+        <span className="rl-bt-tag rl-bt-btprod">BTProd</span><span className="rl-bt-legend-desc">Black-Type Producer</span>
+      </div>
+
       {/* Table */}
       <div className="rl-table-wrap">
         <table className="rl-table">
