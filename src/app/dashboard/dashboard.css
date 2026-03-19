@@ -949,9 +949,42 @@
 }
 
 .rl-dam {
-  max-width: 140px;
+  max-width: 200px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.rl-dam-bt {
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.rl-bt-tag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-left: 4px;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.rl-bt-btw {
+  background: #ffd700;
+  color: #4a3800;
+}
+
+.rl-bt-btp {
+  background: #c0c0c0;
+  color: #333;
+}
+
+.rl-bt-btprod {
+  background: #d4a8ff;
+  color: #3a1a5e;
 }
 
 .rl-consigner {

@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
 import RankedList from '@/components/RankedList';
 import ConsignerTable from '@/components/ConsignerTable';
+import SirePerformance from '@/components/SirePerformance';
 
 interface Profile {
   id: string;
@@ -29,7 +30,7 @@ interface Props {
   generatedProfiles: GeneratedProfile[];
 }
 
-type Tab = 'horses' | 'consigners' | 'cards';
+type Tab = 'horses' | 'consigners' | 'sires' | 'cards';
 
 const SALES = [
   { id: 'obs-march-2026', label: 'OBS March 2026', count: 638 },
@@ -236,6 +237,12 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
                 Consigner Ratings
               </button>
               <button
+                className={`dash-tab${activeTab === 'sires' ? ' dash-tab-active' : ''}`}
+                onClick={() => setActiveTab('sires')}
+              >
+                Sire Performance
+              </button>
+              <button
                 className={`dash-tab${activeTab === 'cards' ? ' dash-tab-active' : ''}`}
                 onClick={() => setActiveTab('cards')}
               >
@@ -273,6 +280,14 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
         {/* ═══ Consigner Ratings Tab ═══ */}
         {hasAccess && activeTab === 'consigners' && (
           <ConsignerTable />
+        )}
+
+        {/* ═══ Sire Performance Tab ═══ */}
+        {hasAccess && activeTab === 'sires' && (
+          <SirePerformance
+            sale={selectedSale}
+            saleLabel={SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'}
+          />
         )}
 
         {/* ═══ My Horse Cards Tab ═══ */}

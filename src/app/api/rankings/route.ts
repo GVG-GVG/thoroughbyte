@@ -25,6 +25,9 @@ interface RawHorse {
   section: string;
   sale_status: string;
   sale_price: string;
+  btw?: boolean;
+  btp?: boolean;
+  btprod?: boolean;
 }
 
 const SALE_MAP: Record<string, RawHorse[]> = {
@@ -60,6 +63,9 @@ function transform(rawData: RawHorse[]) {
     day: parseInt(h.day, 10) || 0,
     saleStatus: h.sale_status,
     salePrice: parsePrice(h.sale_price),
+    btw: h.btw ?? false,
+    btp: h.btp ?? false,
+    btprod: h.btprod ?? false,
   }));
 }
 

@@ -23,6 +23,9 @@ interface Horse {
   day: number;
   saleStatus: string;
   salePrice: number;
+  btw: boolean;
+  btp: boolean;
+  btprod: boolean;
 }
 
 type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'dam' | 'consigner' | 'state';
@@ -203,7 +206,8 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
       head: [['Hip', 'Rank', 'Tier', 'Score', 'Sex', 'Sire', 'Dam', 'Time', '1/8 Out', '1/4 Out', 'Stride', 'Decel', 'State', 'Consigner']],
       body: rows.map(h => [
         h.hip, `#${h.rank}`, h.tier, h.rating.toFixed(1),
-        h.sex === 'C' ? 'Colt' : 'Filly', h.sire, h.dam,
+        h.sex === 'C' ? 'Colt' : 'Filly', h.sire,
+        h.dam + [h.btw && ' BTW', h.btp && ' BTP', h.btprod && ' BTProd'].filter(Boolean).join(''),
         `${h.time.toFixed(1)}s`, `${h.eighthOut.toFixed(1)}s`, `${h.quarterOut.toFixed(1)}s`,
         `${h.stride.toFixed(1)}'`, `${h.decel.toFixed(2)}s`, h.state, h.consigner,
       ]),
@@ -348,7 +352,12 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                   <td className="rl-score">{h.rating.toFixed(1)}</td>
                   <td>{h.sex === 'C' ? 'Colt' : 'Filly'}</td>
                   <td className="rl-sire">{h.sire}</td>
-                  <td className="rl-dam">{h.dam}</td>
+                  <td className={`rl-dam${(h.btw || h.btp || h.btprod) ? ' rl-dam-bt' : ''}`}>
+                    {h.dam}
+                    {h.btw && <span className="rl-bt-tag rl-bt-btw" title="Black-Type Winner">BTW</span>}
+                    {h.btp && <span className="rl-bt-tag rl-bt-btp" title="Black-Type Placed">BTP</span>}
+                    {h.btprod && <span className="rl-bt-tag rl-bt-btprod" title="Black-Type Producer">BTProd</span>}
+                  </td>
                   <td>{h.time.toFixed(1)}s</td>
                   <td>{h.eighthOut.toFixed(1)}s</td>
                   <td>{h.quarterOut.toFixed(1)}s</td>
