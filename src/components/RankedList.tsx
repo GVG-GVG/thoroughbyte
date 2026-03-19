@@ -57,10 +57,11 @@ export type { Horse };
 
 interface Props {
   sale?: string;
+  saleLabel?: string;
   onSelectHip?: (hip: number, horse: Horse) => void;
 }
 
-export default function RankedList({ sale = 'obs-march-2026', onSelectHip }: Props) {
+export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelectHip }: Props) {
   const [horses, setHorses] = useState<Horse[]>([]);
   const [loading, setLoading] = useState(true);
   const [sortField, setSortField] = useState<SortField>('rank');
@@ -175,7 +176,7 @@ export default function RankedList({ sale = 'obs-march-2026', onSelectHip }: Pro
   return (
     <div className="rl-wrap">
       <div className="rl-header">
-        <h2>Ranked Sale List</h2>
+        <h2>{saleLabel ? `${saleLabel} Breeze Analytics` : 'Ranked Sale List'}</h2>
         <span className="rl-count">{filtered.length} of {horses.length} horses</span>
       </div>
 

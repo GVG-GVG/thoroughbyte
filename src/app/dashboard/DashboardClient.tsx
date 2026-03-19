@@ -180,7 +180,6 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       <div className="dash-content">
         <div className="dash-welcome">
           <h1>Welcome back, {name}</h1>
-          <p>{SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'} breeze analytics.</p>
         </div>
 
         {/* Credits */}
@@ -263,6 +262,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
           <>
             <RankedList
               sale={selectedSale}
+              saleLabel={SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'}
               onSelectHip={(hip) => {
                 generateCard(hip);
               }}
