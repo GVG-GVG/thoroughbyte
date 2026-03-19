@@ -86,6 +86,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* HOW TO USE ON SALE WEEK */}
+      <section className="section" id="how-to-use">
+        <div className="container">
+          <p className="section-tag">YOUR EDGE ON SALE DAY</p>
+          <h2>Four steps between you and the best athletes in the sale.</h2>
+          <div className="steps-vertical">
+            <div className="step-item">
+              <span className="step-num">1</span>
+              <div className="step-body">
+                <h3>Receive your rankings the same day horses breeze.</h3>
+                <p>
+                  Scores go live the same day each horse breezes &mdash; not the night before,
+                  not the morning of the sale. As the breeze show unfolds, you receive a ranked
+                  list of every horse that worked: scored, tiered, and sorted within sex and
+                  distance cohorts. This gives you more time to evaluate the data, locate your
+                  top prospects on the grounds, and build your shortlist before the sale ring opens.
+                </p>
+              </div>
+            </div>
+            <div className="step-item">
+              <span className="step-num">2</span>
+              <div className="step-body">
+                <h3>Filter by tier in the interactive ranked list.</h3>
+                <p>
+                  Open the ranked sale list in your dashboard. Sort by any column &mdash; hip, score,
+                  tier, percentile, stride length, deceleration. Filter by tier to isolate ELITE and
+                  STRONG horses. Filter by cohort to focus on colts or fillies at your preferred breeze
+                  distance. Filter by state-bred designation to zero in on horses eligible for state-bred
+                  programs. Search by hip number to pull up a specific horse instantly. Click any row
+                  to open the full horse card. Need the list offline? Export as a PDF.
+                </p>
+              </div>
+            </div>
+            <div className="step-item">
+              <span className="step-num">3</span>
+              <div className="step-body">
+                <h3>Challenge the market&rsquo;s assumptions.</h3>
+                <p>
+                  A :10.1 breeze on Day 1 is not the same as a :10.1 breeze on Day 3.
+                  It may not even be the same as a :10.1 breeze three sets later on the same morning.
+                  Track conditions shift constantly &mdash; and not always in the same direction.
+                  A sealed surface that started deep and cuppy can dry out and turn fast by midmorning.
+                  The next day, a freshly harrowed track might ride fast early and deteriorate as hundreds
+                  of horses churn through it. Weather changes between sets. Moisture levels shift.
+                </p>
+                <p>
+                  ThoroughByte normalizes for all of it: session depth, track variant, set-to-set surface
+                  changes, and environmental conditions. The model doesn&rsquo;t assume conditions move in
+                  one direction &mdash; it measures which direction they actually moved and adjusts accordingly.
+                </p>
+              </div>
+            </div>
+            <div className="step-item">
+              <span className="step-num">4</span>
+              <div className="step-body">
+                <h3>Buy with conviction.</h3>
+                <p>
+                  Walk into the sale ring knowing the difference between a horse the market priced
+                  correctly and one it didn&rsquo;t. ThoroughByte won&rsquo;t replace your eye or your
+                  experience &mdash; it gives both of them better information to work with.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHAT WE DO */}
       <section className="section" id="what-we-do">
         <div className="container">
@@ -290,7 +357,13 @@ export default function Home() {
           <p className="section-intro">
             A "Market Miss" is a horse rated ELITE or STRONG that sold for $100K or less
             but went on to earn more than $50K on the track. In 2024, the algorithm
-            flagged 36 of them. Here are the top 10.
+            flagged 36 of them.
+          </p>
+          <p className="bridge-sentence">
+            This is exactly the kind of horse ThoroughByte is built to surface before the sale
+            ring prices it correctly. Every horse in the table below was algorithmically flagged
+            as high-rated at a time when the market had not yet recognized the value. The data
+            was generated before any of these horses ever entered a starting gate.
           </p>
 
           {/* Table */}
@@ -407,37 +480,58 @@ export default function Home() {
       {/* PRODUCT */}
       <section className="section section-dark" id="product">
         <div className="container">
-          <p className="section-tag">THE PRODUCT</p>
-          <h2>What you get.</h2>
-          <div className="features">
+          <p className="section-tag">THE DELIVERABLES</p>
+          <h2>Everything you need, nothing you don&rsquo;t.</h2>
+          <p className="section-intro" style={{ color: '#c5cdd8' }}>Before each sale session, you receive:</p>
+          <div className="features features-3col">
             <div className="feature">
               <div className="feature-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
               </div>
-              <h3>Pre-Sale Rankings</h3>
+              <h3>Interactive Ranked Sale List</h3>
               <p>
-                Complete ranked reports delivered before each sale day. Every horse
-                scored, tiered, and ranked within sex and distance cohorts.
+                Every horse scored 0&ndash;100 and tiered. Sortable and filterable by hip, score, tier,
+                percentile, stride length, deceleration, sire, and state-bred designation. Exportable as PDF.
+              </p>
+            </div>
+            <div className="feature">
+              <div className="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              </div>
+              <h3>Horse Profile Cards</h3>
+              <p>
+                Individual horse cards with breeze time, stride length, gallop-out, deceleration,
+                percentile rank, and a written scouting summary. Downloadable as PNG.
+              </p>
+            </div>
+            <div className="feature">
+              <div className="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </div>
+              <h3>Tier Analysis PDF</h3>
+              <p>
+                Full-sale breakdown: tier distribution, average metrics per tier, and cohort
+                comparisons by sex and distance.
               </p>
             </div>
             <div className="feature">
               <div className="feature-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
               </div>
-              <h3>Sire Analytics</h3>
+              <h3>Sire Performance Summary</h3>
               <p>
-                See which stallions are producing the highest-rated breezes.
-                Aggregate sire performance across the entire sale.
+                Aggregate breeze metrics by stallion across the entire sale. See which sires are
+                producing the highest-rated athletes.
               </p>
             </div>
             <div className="feature">
               <div className="feature-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/><circle cx="12" cy="7" r="3"/></svg>
               </div>
-              <h3>Dam Annotations</h3>
+              <h3>Dam Black-Type Overlay</h3>
               <p>
-                Black-type dam production overlaid on every ranking. BTW, BTP,
-                and BTProd flags so you see the full picture at a glance.
+                BTW, BTP, and BTProd flags on every ranked horse, so pedigree context is visible
+                alongside the athletic data.
               </p>
             </div>
             <div className="feature">
@@ -446,8 +540,8 @@ export default function Home() {
               </div>
               <h3>Value Flags</h3>
               <p>
-                Algorithmic identification of high-rated horses likely to be
-                undervalued by the market &mdash; the steals.
+                Algorithmic markers where ThoroughByte&rsquo;s athletic rating significantly exceeds
+                expected market price based on historical consignor and sire median sale data.
               </p>
             </div>
           </div>
@@ -475,10 +569,11 @@ export default function Home() {
             <p className="footer-tagline">Breeze Intelligence</p>
           </div>
           <div className="footer-links">
-            <a href="#what-we-do">What We Do</a>
+            <a href="#how-to-use">How It Works</a>
+            <a href="#what-we-do">What We Built</a>
             <a href="#performance">Performance</a>
             <a href="#alpha">Alpha</a>
-            <a href="#product">Product</a>
+            <a href="/scoring">Scoring</a>
             <a href="#contact">Contact</a>
           </div>
           <p className="footer-legal">&copy; 2026 ThoroughByte. All rights reserved. All data verified against Equibase records.</p>

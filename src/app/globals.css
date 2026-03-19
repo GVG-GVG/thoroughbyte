@@ -273,6 +273,28 @@ h3 { font-size: 20px; margin-bottom: 6px; }
 .back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
 .back-to-top:hover { background: var(--gold-light); }
 
+/* Steps vertical layout (How to Use section) */
+.steps-vertical { max-width: 720px; margin: 0 auto; position: relative; padding-left: 0; }
+.steps-vertical::before { content: ''; position: absolute; left: 23px; top: 48px; bottom: 48px; width: 2px; background: linear-gradient(to bottom, var(--gold), rgba(200,150,62,0.15)); }
+.step-item { display: flex; gap: 24px; margin-bottom: 36px; position: relative; }
+.step-item:last-child { margin-bottom: 0; }
+.step-num { flex-shrink: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: var(--gold); color: var(--white); font-size: 20px; font-weight: 800; border-radius: 50%; position: relative; z-index: 1; }
+.step-body h3 { font-size: 18px; margin-bottom: 8px; color: var(--navy); }
+.step-body p { font-size: 16px; line-height: 1.65; color: var(--text-muted); margin-bottom: 10px; }
+.step-body p:last-child { margin-bottom: 0; }
+
+/* Bridge sentence */
+.bridge-sentence { font-size: 18px; font-weight: 600; color: var(--navy); line-height: 1.65; max-width: 720px; margin-bottom: 36px; }
+
+/* 3-col features grid */
+.features-3col { grid-template-columns: repeat(3, 1fr); }
+
+/* Tooltip system */
+.tb-tooltip { position: relative; border-bottom: 1px dotted var(--slate); cursor: help; }
+.tb-tooltip .tb-tooltip-text { visibility: hidden; opacity: 0; position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: var(--navy); color: var(--white); font-size: 13px; font-weight: 400; line-height: 1.5; padding: 10px 14px; border-radius: 6px; width: max-content; max-width: 280px; z-index: 50; box-shadow: 0 4px 16px rgba(0,0,0,0.2); transition: opacity 0.15s, visibility 0.15s; pointer-events: none; }
+.tb-tooltip .tb-tooltip-text::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: var(--navy); }
+.tb-tooltip:hover .tb-tooltip-text { visibility: visible; opacity: 1; }
+
 .sample-report-inline { margin-top: 28px; }
 .sample-report-label { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
 .sample-report-wrap { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 4px 24px rgba(0,0,0,0.08); cursor: zoom-in; transition: box-shadow 0.2s; }
@@ -286,6 +308,7 @@ h3 { font-size: 20px; margin-bottom: 6px; }
   .chart-section-duo { grid-template-columns: 1fr; }
   .chart-inner-duo { grid-template-columns: 1fr; }
   .features { grid-template-columns: 1fr; }
+  .features-3col { grid-template-columns: repeat(2, 1fr); }
   .tier-strip { gap: 8px; }
   .tier-item { flex: 1 1 120px; }
 }
@@ -344,6 +367,13 @@ h3 { font-size: 20px; margin-bottom: 6px; }
   .feature { padding: 20px; }
   .feature h3 { font-size: 16px; }
   .feature p { font-size: 14px; }
+  .features-3col { grid-template-columns: 1fr; }
+  .steps-vertical::before { left: 19px; }
+  .step-num { width: 40px; height: 40px; font-size: 17px; }
+  .step-item { gap: 16px; }
+  .step-body h3 { font-size: 16px; }
+  .step-body p { font-size: 15px; }
+  .bridge-sentence { font-size: 16px; }
   .form-row { grid-template-columns: 1fr; }
   .btn { padding: 14px 24px; font-size: 14px; }
   .footer { padding: 32px 16px; }

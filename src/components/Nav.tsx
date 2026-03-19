@@ -56,10 +56,11 @@ export default function Nav() {
           <span className="logo-bold">Byte</span>
         </a>
         <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
-          <a href="/#what-we-do" onClick={closeMobileMenu}>What We Do</a>
+          <a href="/#how-to-use" onClick={closeMobileMenu}>How It Works</a>
+          <a href="/#what-we-do" onClick={closeMobileMenu}>What We Built</a>
           <a href="/#performance" onClick={closeMobileMenu}>Performance</a>
           <a href="/#alpha" onClick={closeMobileMenu}>Alpha</a>
-          <a href="/#product" onClick={closeMobileMenu}>Product</a>
+          <a href="/scoring" onClick={closeMobileMenu}>Scoring</a>
 
           {authLoaded && user ? (
             <>

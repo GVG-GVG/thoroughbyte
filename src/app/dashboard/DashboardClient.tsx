@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
+import RankedList from '@/components/RankedList';
 
 interface Profile {
   id: string;
@@ -189,6 +190,13 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
               {upgrading ? 'Redirecting...' : 'Upgrade to Pro'}
             </button>
           </div>
+        )}
+
+        {/* Interactive Ranked List */}
+        {(credits > 0 || plan === 'pro') && (
+          <RankedList onSelectHip={(hip) => {
+            setHipSearch(hip.toString());
+          }} />
         )}
 
         {/* Hip search */}

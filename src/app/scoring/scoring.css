@@ -1,0 +1,150 @@
+/* Scoring page styles */
+.scoring-page {
+  padding: 100px 28px 60px;
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.scoring-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.scoring-tag {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.scoring-page h1 {
+  font-size: clamp(30px, 4vw, 42px);
+  color: var(--navy);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.scoring-intro {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 48px;
+}
+
+.scoring-term {
+  margin-bottom: 40px;
+}
+
+.scoring-term h2 {
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.scoring-term p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.scoring-term p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tier table */
+.tier-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-top: 16px;
+}
+
+.tier-table {
+  width: 100%;
+  font-size: 15px;
+}
+
+.tier-table th {
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.tier-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.5;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.tier-table tr:last-child td {
+  border-bottom: none;
+}
+
+.tier-table tr:hover {
+  background: var(--light-bg);
+}
+
+.tier-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.tier-badge-elite { background: rgba(45,106,79,0.12); color: #2d6a4f; }
+.tier-badge-strong { background: rgba(106,174,120,0.12); color: #5a9e68; }
+.tier-badge-above { background: rgba(191,179,80,0.12); color: #a89e40; }
+.tier-badge-avg { background: rgba(160,160,160,0.12); color: #808080; }
+.tier-badge-below { background: rgba(200,122,90,0.12); color: #c87a5a; }
+.tier-badge-weak { background: rgba(184,60,60,0.12); color: #b83c3c; }
+
+.scoring-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.btn-outline-dark {
+  border: 1.5px solid var(--border);
+  color: var(--text-muted);
+  background: transparent;
+  padding: 15px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-outline-dark:hover {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+@media (max-width: 640px) {
+  .scoring-page { padding: 80px 16px 40px; }
+  .scoring-term h2 { font-size: 19px; }
+  .scoring-cta { flex-direction: column; }
+  .scoring-cta .btn, .scoring-cta .btn-outline-dark { text-align: center; }
+  .tier-table { font-size: 13px; }
+  .tier-table th { padding: 10px 12px; }
+  .tier-table td { padding: 10px 12px; font-size: 13px; }
+}
