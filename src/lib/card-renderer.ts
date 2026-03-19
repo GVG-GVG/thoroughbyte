@@ -4,7 +4,8 @@
  * Generates a self-contained HTML card and screenshots it.
  */
 
-import type { EnrichedHorse, PeerStats } from './horse-lookup';
+import type { EnrichedHorse } from './horse-lookup';
+import { getPhotoUrl } from './horse-lookup';
 
 // ── Scouting report generator (mirrors client-side prototype) ──
 
@@ -60,7 +61,7 @@ function generateBlurb(h: EnrichedHorse): string {
     parts.push(`The <strong>${h.decel}s deceleration</strong> was slower than the ${peer.decel}s group average, meaning the horse lost more speed through the gallop-out than most of its peers.`);
   }
 
-  const peerNote = ` <span class="peer-note">Compared against ${n} ${sexPlural} who breezed ${h.dist} mile at OBS March 2026.</span>`;
+  const peerNote = ` <span class="peer-note">Compared against ${n} ${sexPlural} who breezed ${h.dist} mile at ${h.saleLabel}.</span>`;
   return parts.join(' ') + peerNote;
 }
 
@@ -91,7 +92,7 @@ function buildCardHtml(h: EnrichedHorse): string {
   const tc = TIER_COLORS[h.tier] || TIER_COLORS['AVERAGE'];
   const circ = 2 * Math.PI * 34;
   const dashOff = circ * (1 - h.rating / 100);
-  const photoUrl = `https://obscatalog.com/2026/149/${h.hip}p.jpg`;
+  const photoUrl = getPhotoUrl(h.hip, h.saleId) || '';
   const sexLabel = h.sex === 'C' ? 'Colt' : 'Filly';
   const topPct = 100 - Math.round((1 - (h.rank - 1) / h.totalRanked) * 100);
   const peer = h.peer;
@@ -168,7 +169,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:transparent;display
     <div class="horse-name">${h.sire} &mdash; ${h.dam}</div>
     <div class="horse-sub">${sexLabel} &bull; ${h.state}-bred &bull; <span>${h.consigner}</span></div>
   </div>
-  <img class="card-photo" src="${photoUrl}" alt="Hip ${h.hip}" onerror="this.style.display='none'" />
+  ${photoUrl ? `<img class="card-photo" src="${photoUrl}" alt="Hip ${h.hip}" onerror="this.style.display='none'" />` : ''}
   <div class="tier-banner">
     <div class="tier-line"></div>
     ${h.tier}
@@ -214,7 +215,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:transparent;display
     <div class="scouting-text">${blurb}</div>
   </div>
   <div class="card-footer">
-    <div class="footer-info">OBS March 2026 &bull; ${h.dist} Mile Breeze</div>
+    <div class="footer-info">${h.saleLabel} &bull; ${h.dist} Mile Breeze</div>
     <div class="footer-logo">Thorough<span>Byte</span></div>
   </div>
 </div>

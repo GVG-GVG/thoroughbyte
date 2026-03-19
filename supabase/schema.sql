@@ -109,6 +109,31 @@ end;
 $$;
 
 -- ===============================================================
+-- 4b. Atomic credit refund function (called when card generation fails)
+-- ===============================================================
+create or replace function public.refund_credit(p_user_id uuid)
+returns void
+language plpgsql
+security definer
+as $$
+declare
+  user_plan text;
+begin
+  select plan into user_plan from public.profiles where id = p_user_id;
+
+  -- Pro users have no credits to refund
+  if user_plan = 'pro' then
+    return;
+  end if;
+
+  update public.profiles
+  set credits_remaining = credits_remaining + 1,
+      updated_at = now()
+  where id = p_user_id;
+end;
+$$;
+
+-- ===============================================================
 -- 5. Indexes
 -- ===============================================================
 create index idx_generated_profiles_user_id on public.generated_profiles(user_id);

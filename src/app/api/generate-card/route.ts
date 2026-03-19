@@ -19,12 +19,16 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid hip number' }, { status: 400 });
   }
 
+  // Parse sale from request
+  const saleId = body.sale || 'obs-march-2026';
+
   // Check if already generated (no double-charge)
   const { data: existing } = await supabase
     .from('generated_profiles')
     .select('id, card_image_url')
     .eq('user_id', user.id)
     .eq('hip', hip)
+    .eq('sale_id', saleId)
     .single();
 
   if (existing) {
@@ -45,12 +49,19 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // Look up horse data
-  const horse = lookupHip(hip);
+  // Look up horse data (sale-aware)
+  const horse = lookupHip(hip, saleId);
   if (!horse) {
-    // Refund credit since we can't generate
-    await supabase.rpc('consume_credit', { p_user_id: user.id }); // TODO: add a refund_credit function
-    return NextResponse.json({ error: `Hip ${hip} not found` }, { status: 404 });
+    // Refund the consumed credit since generation cannot proceed.
+    // Try atomic RPC first, fall back to read+write if RPC doesn't exist.
+    const { error: refundErr } = await supabase.rpc('refund_credit', { p_user_id: user.id });
+    if (refundErr) {
+      const { data: prof } = await supabase.from('profiles').select('credits_remaining, plan').eq('id', user.id).single();
+      if (prof && prof.plan !== 'pro') {
+        await supabase.from('profiles').update({ credits_remaining: prof.credits_remaining + 1 }).eq('id', user.id);
+      }
+    }
+    return NextResponse.json({ error: `Hip ${hip} not found in ${saleId}` }, { status: 404 });
   }
 
   // Generate PNG
@@ -63,7 +74,7 @@ export async function POST(request: NextRequest) {
   }
 
   // Upload to Supabase Storage
-  const filename = `${user.id}/hip_${hip}.png`;
+  const filename = `${user.id}/${saleId}_hip_${hip}.png`;
   const { error: uploadError } = await supabase.storage
     .from('profile-cards')
     .upload(filename, pngBuffer, {
@@ -87,7 +98,7 @@ export async function POST(request: NextRequest) {
   await supabase.from('generated_profiles').insert({
     user_id: user.id,
     hip,
-    sale_id: 'obs-march-2026',
+    sale_id: saleId,
     card_data: horse,
     card_image_url: cardImageUrl,
   });
