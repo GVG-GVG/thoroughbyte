@@ -197,6 +197,7 @@
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
+  overflow: hidden;
   transition: box-shadow 0.2s;
   cursor: pointer;
 }
@@ -619,7 +620,7 @@
 
 .card-overlay-img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0;
   box-shadow: 0 8px 40px rgba(0,0,0,0.3);
 }
 
