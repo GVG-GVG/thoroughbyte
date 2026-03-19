@@ -903,14 +903,13 @@
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 24px;
-  margin-top: 24px;
 }
 
 .ct-header-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4px;
+  align-items: flex-start;
+  margin-bottom: 16px;
 }
 
 .ct-title {
@@ -919,27 +918,66 @@
   color: var(--navy);
 }
 
-.ct-min-filter {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
+.ct-subtitle {
+  font-size: 12px;
   color: var(--text-muted);
-}
-
-.ct-min-filter select {
-  padding: 4px 8px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  font-size: 13px;
-  background: #fff;
+  margin-top: 2px;
 }
 
 .ct-count {
   font-size: 12px;
   color: var(--text-muted);
-  margin-bottom: 12px;
+  white-space: nowrap;
 }
+
+.ct-filter-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.ct-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ct-filter-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+}
+
+.ct-select, .ct-search {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: inherit;
+  background: #fff;
+  color: var(--text);
+}
+
+.ct-search {
+  width: 200px;
+}
+
+.ct-clear-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  background: none;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ct-clear-btn:hover { color: var(--navy); border-color: var(--text-muted); }
 
 .ct-table-scroll {
   overflow-x: auto;
@@ -949,7 +987,7 @@
 .ct-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -962,11 +1000,11 @@
 .ct-table th {
   background: var(--navy);
   color: #fff;
-  padding: 10px 14px;
+  padding: 8px 10px;
   text-align: left;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
@@ -976,7 +1014,7 @@
 .ct-table th:hover { background: #1a2744; }
 
 .ct-table td {
-  padding: 10px 14px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -987,10 +1025,33 @@
   background: var(--light-bg);
 }
 
+.ct-row-elite { background: rgba(45,106,79,0.10); }
+.ct-row-strong { background: rgba(106,174,120,0.08); }
+.ct-row-above { background: rgba(191,179,80,0.06); }
+.ct-row-avg { background: rgba(160,160,160,0.04); }
+.ct-row-below { background: rgba(200,122,90,0.06); }
+.ct-row-weak { background: rgba(184,60,60,0.06); }
+
+.ct-tier-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.ct-tier-elite { background: rgba(45,106,79,0.12); color: #2d6a4f; }
+.ct-tier-strong { background: rgba(106,174,120,0.12); color: #5a9e68; }
+.ct-tier-above { background: rgba(191,179,80,0.12); color: #a89e40; }
+.ct-tier-avg { background: rgba(160,160,160,0.12); color: #808080; }
+.ct-tier-below { background: rgba(200,122,90,0.12); color: #c87a5a; }
+.ct-tier-weak { background: rgba(184,60,60,0.12); color: #b83c3c; }
+
 .ct-name {
   font-weight: 600;
   color: var(--navy);
-  max-width: 200px;
+  max-width: 260px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -998,6 +1059,23 @@
 .ct-num {
   font-variant-numeric: tabular-nums;
   text-align: right;
+}
+
+.ct-score {
+  font-weight: 700;
+}
+
+.ct-empty {
+  text-align: center;
+  padding: 32px;
+  color: var(--text-muted);
+}
+
+.ct-scoring-note {
+  margin-top: 12px;
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1.4;
 }
 
 .ct-loading {
@@ -1009,8 +1087,10 @@
 
 @media (max-width: 640px) {
   .ct-wrap { padding: 16px; }
-  .ct-header-row { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .ct-table { font-size: 12px; }
-  .ct-table th { padding: 8px 10px; font-size: 10px; }
-  .ct-table td { padding: 8px 10px; }
+  .ct-header-row { flex-direction: column; gap: 8px; }
+  .ct-filter-row { flex-direction: column; }
+  .ct-search { width: 100%; }
+  .ct-table { font-size: 11px; }
+  .ct-table th { padding: 6px 8px; font-size: 9px; }
+  .ct-table td { padding: 6px 8px; }
 }
