@@ -860,6 +860,19 @@
 .rl-hip {
   font-weight: 700;
   color: var(--navy);
+  padding-left: 10px;
+  padding-right: 8px;
+}
+
+.rl-rank {
+  padding-left: 8px;
+  padding-right: 8px;
+  white-space: nowrap;
+}
+
+.rl-tier-cell {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .rl-score {
@@ -868,7 +881,13 @@
 }
 
 .rl-sire {
-  max-width: 160px;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rl-dam {
+  max-width: 140px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
