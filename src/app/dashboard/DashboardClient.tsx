@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
 import RankedList from '@/components/RankedList';
@@ -29,7 +29,10 @@ interface Props {
   generatedProfiles: GeneratedProfile[];
 }
 
+type Tab = 'horses' | 'consigners' | 'cards';
+
 export default function DashboardClient({ user, profile, generatedProfiles: initialProfiles }: Props) {
+  const [activeTab, setActiveTab] = useState<Tab>('horses');
   const [hipSearch, setHipSearch] = useState('');
   const [searchError, setSearchError] = useState('');
   const [generating, setGenerating] = useState(false);
@@ -38,14 +41,6 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
   const [credits, setCredits] = useState(profile?.credits_remaining ?? 0);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [upgrading, setUpgrading] = useState(false);
-  const cardViewerRef = useRef<HTMLDivElement>(null);
-
-  // Scroll card viewer into view when a card is shown
-  useEffect(() => {
-    if (selectedCard && cardViewerRef.current) {
-      cardViewerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }, [selectedCard]);
 
   const plan = profile?.plan ?? 'free';
   const name = profile?.full_name || user.email?.split('@')[0] || 'there';
@@ -118,7 +113,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
 
       if (profiles) setGeneratedProfiles(profiles);
 
-      // Show the generated card
+      // Show the generated card and switch to cards tab
       setSelectedCard(genData.card_image_url);
       setHipSearch('');
     } catch {
@@ -154,6 +149,8 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
     }
   }, [hipSearch, generateCard]);
 
+  const hasAccess = credits > 0 || plan === 'pro';
+
   return (
     <div className="dash-page">
       {/* Header */}
@@ -174,7 +171,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       <div className="dash-content">
         <div className="dash-welcome">
           <h1>Welcome back, {name}</h1>
-          <p>Generate horse cards from OBS March 2026 breeze data.</p>
+          <p>OBS March 2026 breeze analytics.</p>
         </div>
 
         {/* Credits */}
@@ -214,113 +211,141 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
           </div>
         )}
 
-        {/* Interactive Ranked List */}
-        {(credits > 0 || plan === 'pro') && (
-          <RankedList onSelectHip={(hip) => {
-            generateCard(hip);
-          }} />
+        {/* Tab navigation */}
+        {hasAccess && (
+          <div className="dash-tabs">
+            <button
+              className={`dash-tab${activeTab === 'horses' ? ' dash-tab-active' : ''}`}
+              onClick={() => setActiveTab('horses')}
+            >
+              Horse Ratings
+            </button>
+            <button
+              className={`dash-tab${activeTab === 'consigners' ? ' dash-tab-active' : ''}`}
+              onClick={() => setActiveTab('consigners')}
+            >
+              Consigner Ratings
+            </button>
+            <button
+              className={`dash-tab${activeTab === 'cards' ? ' dash-tab-active' : ''}`}
+              onClick={() => setActiveTab('cards')}
+            >
+              My Horse Cards
+              {generatedProfiles.length > 0 && (
+                <span className="dash-tab-badge">{generatedProfiles.length}</span>
+              )}
+            </button>
+          </div>
         )}
 
-        {/* Consigner Ratings */}
-        {(credits > 0 || plan === 'pro') && (
+        {/* ═══ Horse Ratings Tab ═══ */}
+        {hasAccess && activeTab === 'horses' && (
+          <>
+            <RankedList onSelectHip={(hip) => {
+              generateCard(hip);
+            }} />
+
+          </>
+        )}
+
+        {/* ═══ Consigner Ratings Tab ═══ */}
+        {hasAccess && activeTab === 'consigners' && (
           <ConsignerTable />
         )}
 
-        {/* Hip search */}
-        {(credits > 0 || plan === 'pro') && (
-          <div className="search-section">
-            <h2>Generate a Horse Card</h2>
-            <form onSubmit={handleLookup}>
-              <div className="search-row">
-                <input
-                  type="number"
-                  className="search-input"
-                  placeholder="Enter hip number (e.g. 315)"
-                  value={hipSearch}
-                  onChange={(e) => setHipSearch(e.target.value)}
-                  min={1}
-                  max={999}
-                  required
-                  disabled={generating}
-                />
-                <button type="submit" className="search-btn" disabled={!hipSearch || generating}>
-                  {generating ? generatingStatus : plan === 'pro' ? 'Generate Card' : 'Generate Card (1 credit)'}
-                </button>
-              </div>
-            </form>
-
-            {searchError && <div className="search-error">{searchError}</div>}
-          </div>
-        )}
-
-        {/* Generating indicator */}
-        {generating && !selectedCard && (
-          <div className="card-viewer">
-            <div className="card-viewer-header">
-              <h2>{generatingStatus || 'Generating...'}</h2>
-            </div>
-            <div className="card-viewer-img-wrap" style={{ padding: '48px', textAlign: 'center', color: '#888' }}>
-              Generating horse card...
-            </div>
-          </div>
-        )}
-
-        {/* Full-size card viewer */}
-        {selectedCard && (
-          <div className="card-viewer" ref={cardViewerRef}>
-            <div className="card-viewer-header">
-              <h2>Horse Card</h2>
-              <div className="card-viewer-actions">
-                <a href={selectedCard} download className="card-download-btn">Download PNG</a>
-                <button className="card-close-btn" onClick={() => setSelectedCard(null)}>Close</button>
-              </div>
-            </div>
-            <div className="card-viewer-img-wrap">
-              <img src={selectedCard} alt="Profile Card" className="card-viewer-img" />
-            </div>
-          </div>
-        )}
-
-        {/* Previously generated profiles */}
-        <div className="profiles-section">
-          <h2>Your Horse Cards</h2>
-          {generatedProfiles.length === 0 ? (
-            <div className="empty-state">
-              <p>No horse cards generated yet.</p>
-              <p className="empty-hint">Enter a hip number above to generate your first card.</p>
-            </div>
-          ) : (
-            <div className="profiles-grid">
-              {generatedProfiles.map((gp) => (
-                <div
-                  key={gp.id}
-                  className="profile-thumb"
-                  onClick={() => gp.card_image_url && setSelectedCard(gp.card_image_url)}
-                  style={{ cursor: gp.card_image_url ? 'pointer' : 'default' }}
-                >
-                  {gp.card_image_url && (
-                    <img
-                      className="profile-thumb-img"
-                      src={gp.card_image_url}
-                      alt={`Hip ${gp.hip} profile card`}
-                    />
-                  )}
-                  <div className="profile-thumb-info">
-                    <div className="profile-thumb-hip">Hip {gp.hip}</div>
-                    <div className="profile-thumb-name">
-                      {(gp.card_data as { sire?: string; dam?: string })?.sire || ''} &mdash;{' '}
-                      {(gp.card_data as { sire?: string; dam?: string })?.dam || ''}
-                    </div>
-                    <div className="profile-thumb-date">
-                      {new Date(gp.created_at).toLocaleDateString()}
-                    </div>
-                  </div>
+        {/* ═══ My Horse Cards Tab ═══ */}
+        {hasAccess && activeTab === 'cards' && (
+          <>
+            {/* Hip search */}
+            <div className="search-section">
+              <h2>Generate a Horse Card</h2>
+              <form onSubmit={handleLookup}>
+                <div className="search-row">
+                  <input
+                    type="number"
+                    className="search-input"
+                    placeholder="Enter hip number (e.g. 315)"
+                    value={hipSearch}
+                    onChange={(e) => setHipSearch(e.target.value)}
+                    min={1}
+                    max={999}
+                    required
+                    disabled={generating}
+                  />
+                  <button type="submit" className="search-btn" disabled={!hipSearch || generating}>
+                    {generating ? generatingStatus : plan === 'pro' ? 'Generate Card' : 'Generate Card (1 credit)'}
+                  </button>
                 </div>
-              ))}
+              </form>
+
+              {searchError && <div className="search-error">{searchError}</div>}
             </div>
-          )}
-        </div>
+
+
+            {/* Previously generated profiles */}
+            <div className="profiles-section">
+              <h2>Your Horse Cards</h2>
+              {generatedProfiles.length === 0 ? (
+                <div className="empty-state">
+                  <p>No horse cards generated yet.</p>
+                  <p className="empty-hint">Enter a hip number above or click a horse in the Horse Ratings tab to generate your first card.</p>
+                </div>
+              ) : (
+                <div className="profiles-grid">
+                  {generatedProfiles.map((gp) => (
+                    <div
+                      key={gp.id}
+                      className="profile-thumb"
+                      onClick={() => gp.card_image_url && setSelectedCard(gp.card_image_url)}
+                      style={{ cursor: gp.card_image_url ? 'pointer' : 'default' }}
+                    >
+                      {gp.card_image_url && (
+                        <img
+                          className="profile-thumb-img"
+                          src={gp.card_image_url}
+                          alt={`Hip ${gp.hip} profile card`}
+                        />
+                      )}
+                      <div className="profile-thumb-info">
+                        <div className="profile-thumb-hip">Hip {gp.hip}</div>
+                        <div className="profile-thumb-name">
+                          {(gp.card_data as { sire?: string; dam?: string })?.sire || ''} &mdash;{' '}
+                          {(gp.card_data as { sire?: string; dam?: string })?.dam || ''}
+                        </div>
+                        <div className="profile-thumb-date">
+                          {new Date(gp.created_at).toLocaleDateString()}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </>
+        )}
       </div>
+
+      {/* ═══ Card Popup Overlay ═══ */}
+      {(selectedCard || generating) && (
+        <div className="card-overlay" onClick={() => { if (!generating) setSelectedCard(null); }}>
+          <div className="card-overlay-inner" onClick={e => e.stopPropagation()}>
+            {generating && !selectedCard ? (
+              <div className="card-overlay-loading">
+                <div className="card-overlay-spinner" />
+                <p>{generatingStatus || 'Generating...'}</p>
+              </div>
+            ) : selectedCard ? (
+              <>
+                <div className="card-overlay-actions">
+                  <a href={selectedCard} download className="card-download-btn">Download PNG</a>
+                  <button className="card-close-btn" onClick={() => setSelectedCard(null)}>&times;</button>
+                </div>
+                <img src={selectedCard} alt="Profile Card" className="card-overlay-img" />
+              </>
+            ) : null}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
