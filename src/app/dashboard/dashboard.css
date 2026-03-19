@@ -926,3 +926,121 @@
   .hc-rating-num { font-size: 26px; }
   .hc-rank-num { font-size: 22px; }
 }
+
+/* ═══ Consigner Table ═══ */
+.ct-wrap {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.ct-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.ct-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.ct-min-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.ct-min-filter select {
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.ct-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.ct-table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ct-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.ct-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.ct-table th {
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+.ct-table th:first-child { border-radius: 6px 0 0 0; }
+.ct-table th:last-child { border-radius: 0 6px 0 0; }
+.ct-table th:hover { background: #1a2744; }
+
+.ct-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ct-row {
+  transition: background 0.1s;
+}
+.ct-row:hover {
+  background: var(--light-bg);
+}
+
+.ct-name {
+  font-weight: 600;
+  color: var(--navy);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ct-num {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.ct-loading {
+  text-align: center;
+  padding: 48px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+@media (max-width: 640px) {
+  .ct-wrap { padding: 16px; }
+  .ct-header-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .ct-table { font-size: 12px; }
+  .ct-table th { padding: 8px 10px; font-size: 10px; }
+  .ct-table td { padding: 8px 10px; }
+}

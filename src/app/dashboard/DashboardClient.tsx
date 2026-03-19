@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
 import RankedList from '@/components/RankedList';
 import HorseCard from '@/components/HorseCard';
+import ConsignerTable from '@/components/ConsignerTable';
 import type { Horse } from '@/components/RankedList';
 
 interface Profile {
@@ -201,6 +202,11 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
             setHipSearch(hip.toString());
             setSelectedHorse(horse);
           }} />
+        )}
+
+        {/* Consigner Ratings */}
+        {(credits > 0 || plan === 'pro') && (
+          <ConsignerTable />
         )}
 
         {/* Horse detail card overlay */}
