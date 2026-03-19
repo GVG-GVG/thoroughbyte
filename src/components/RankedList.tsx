@@ -53,8 +53,10 @@ const TIER_ROW_CLASSES: Record<string, string> = {
   'WEAK': 'rl-row-weak',
 };
 
+export type { Horse };
+
 interface Props {
-  onSelectHip?: (hip: number) => void;
+  onSelectHip?: (hip: number, horse: Horse) => void;
 }
 
 export default function RankedList({ onSelectHip }: Props) {
@@ -265,7 +267,7 @@ export default function RankedList({ onSelectHip }: Props) {
                 <tr
                   key={h.hip}
                   className={`rl-row ${TIER_ROW_CLASSES[h.tier] ?? ''}`}
-                  onClick={() => onSelectHip?.(h.hip)}
+                  onClick={() => onSelectHip?.(h.hip, h)}
                 >
                   <td className="rl-hip">{h.hip}</td>
                   <td>#{h.rank}</td>

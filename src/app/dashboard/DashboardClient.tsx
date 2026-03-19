@@ -4,6 +4,8 @@ import { useState, useCallback } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
 import RankedList from '@/components/RankedList';
+import HorseCard from '@/components/HorseCard';
+import type { Horse } from '@/components/RankedList';
 
 interface Profile {
   id: string;
@@ -36,6 +38,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
   const [generatedProfiles, setGeneratedProfiles] = useState(initialProfiles);
   const [credits, setCredits] = useState(profile?.credits_remaining ?? 0);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
+  const [selectedHorse, setSelectedHorse] = useState<Horse | null>(null);
   const [upgrading, setUpgrading] = useState(false);
 
   const plan = profile?.plan ?? 'free';
@@ -194,9 +197,15 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
 
         {/* Interactive Ranked List */}
         {(credits > 0 || plan === 'pro') && (
-          <RankedList onSelectHip={(hip) => {
+          <RankedList onSelectHip={(hip, horse) => {
             setHipSearch(hip.toString());
+            setSelectedHorse(horse);
           }} />
+        )}
+
+        {/* Horse detail card overlay */}
+        {selectedHorse && (
+          <HorseCard horse={selectedHorse} onClose={() => setSelectedHorse(null)} />
         )}
 
         {/* Hip search */}
