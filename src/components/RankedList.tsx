@@ -251,13 +251,13 @@ export default function RankedList({ onSelectHip }: Props) {
               <th onClick={() => handleSort('rating')} className="rl-sortable">Score{sortIcon('rating')}</th>
               <th onClick={() => handleSort('sex')} className="rl-sortable">Sex{sortIcon('sex')}</th>
               <th onClick={() => handleSort('sire')} className="rl-sortable">Sire{sortIcon('sire')}</th>
-              <th onClick={() => handleSort('consigner')} className="rl-sortable">Consigner{sortIcon('consigner')}</th>
               <th onClick={() => handleSort('time')} className="rl-sortable">Time{sortIcon('time')}</th>
               <th onClick={() => handleSort('eighthOut')} className="rl-sortable">1/8 Out{sortIcon('eighthOut')}</th>
               <th onClick={() => handleSort('quarterOut')} className="rl-sortable">1/4 Out{sortIcon('quarterOut')}</th>
               <th onClick={() => handleSort('stride')} className="rl-sortable">Stride{sortIcon('stride')}</th>
               <th onClick={() => handleSort('decel')} className="rl-sortable">Decel{sortIcon('decel')}</th>
               <th onClick={() => handleSort('state')} className="rl-sortable">State{sortIcon('state')}</th>
+              <th onClick={() => handleSort('consigner')} className="rl-sortable">Consigner{sortIcon('consigner')}</th>
             </tr>
           </thead>
           <tbody>
@@ -276,13 +276,13 @@ export default function RankedList({ onSelectHip }: Props) {
                   <td className="rl-score">{h.rating.toFixed(1)}</td>
                   <td>{h.sex === 'C' ? 'Colt' : 'Filly'}</td>
                   <td className="rl-sire">{h.sire}</td>
-                  <td className="rl-consigner">{h.consigner}</td>
                   <td>{h.time.toFixed(1)}s</td>
                   <td>{h.eighthOut.toFixed(1)}s</td>
                   <td>{h.quarterOut.toFixed(1)}s</td>
                   <td>{h.stride.toFixed(1)}&prime;</td>
                   <td>{h.decel.toFixed(2)}s</td>
                   <td>{h.state}</td>
+                  <td className="rl-consigner">{h.consigner}</td>
                 </tr>
               ))
             )}
