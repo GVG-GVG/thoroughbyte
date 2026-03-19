@@ -573,7 +573,8 @@ export default function Home() {
             <a href="#what-we-do">What We Built</a>
             <a href="#performance">Performance</a>
             <a href="#alpha">Alpha</a>
-            <a href="/scoring">Scoring</a>
+            <a href="/scoring">Horse Scoring</a>
+            <a href="/consigner-scoring">Consigner Scoring</a>
             <a href="#contact">Contact</a>
           </div>
           <p className="footer-legal">&copy; 2026 ThoroughByte. All rights reserved. All data verified against Equibase records.</p>

@@ -23,7 +23,7 @@ interface Horse {
   salePrice: number;
 }
 
-type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'state';
+type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'consigner' | 'state';
 type SortDir = 'asc' | 'desc';
 
 const TIER_ORDER: Record<string, number> = {
@@ -137,7 +137,7 @@ export default function RankedList({ onSelectHip }: Props) {
       if (sortField === 'tier') {
         av = TIER_ORDER[a.tier] ?? 99;
         bv = TIER_ORDER[b.tier] ?? 99;
-      } else if (sortField === 'sire' || sortField === 'state' || sortField === 'sex') {
+      } else if (sortField === 'sire' || sortField === 'state' || sortField === 'sex' || sortField === 'consigner') {
         av = a[sortField].toLowerCase();
         bv = b[sortField].toLowerCase();
       } else {
@@ -251,6 +251,7 @@ export default function RankedList({ onSelectHip }: Props) {
               <th onClick={() => handleSort('rating')} className="rl-sortable">Score{sortIcon('rating')}</th>
               <th onClick={() => handleSort('sex')} className="rl-sortable">Sex{sortIcon('sex')}</th>
               <th onClick={() => handleSort('sire')} className="rl-sortable">Sire{sortIcon('sire')}</th>
+              <th onClick={() => handleSort('consigner')} className="rl-sortable">Consigner{sortIcon('consigner')}</th>
               <th onClick={() => handleSort('time')} className="rl-sortable">Time{sortIcon('time')}</th>
               <th onClick={() => handleSort('eighthOut')} className="rl-sortable">1/8 Out{sortIcon('eighthOut')}</th>
               <th onClick={() => handleSort('quarterOut')} className="rl-sortable">1/4 Out{sortIcon('quarterOut')}</th>
@@ -261,7 +262,7 @@ export default function RankedList({ onSelectHip }: Props) {
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={12} className="rl-empty">No horses match your filters.</td></tr>
+              <tr><td colSpan={13} className="rl-empty">No horses match your filters.</td></tr>
             ) : (
               filtered.map(h => (
                 <tr
@@ -275,6 +276,7 @@ export default function RankedList({ onSelectHip }: Props) {
                   <td className="rl-score">{h.rating.toFixed(1)}</td>
                   <td>{h.sex === 'C' ? 'Colt' : 'Filly'}</td>
                   <td className="rl-sire">{h.sire}</td>
+                  <td className="rl-consigner">{h.consigner}</td>
                   <td>{h.time.toFixed(1)}s</td>
                   <td>{h.eighthOut.toFixed(1)}s</td>
                   <td>{h.quarterOut.toFixed(1)}s</td>
