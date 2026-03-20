@@ -281,7 +281,7 @@ export default function ConsignerTable() {
       </div>
 
       <div className="ct-scoring-note">
-        Scoring: 85% Racing (40% Started + 40% Won + 15% SW + 5% GSW, Bayesian k=15) + 15% Volume (cap 30) | Zero-sold penalty: 0.5x | Pink = top 3% | Tiers by percentile
+        Ratings use Bayesian-adjusted racing outcomes, volume reliability, and market validation. <a href="/consigner-scoring" style={{ color: '#c8963e' }}>Learn more</a> | Pink = top 3% | Tiers by percentile
       </div>
     </div>
   );
