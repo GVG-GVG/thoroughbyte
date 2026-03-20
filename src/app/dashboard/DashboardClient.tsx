@@ -252,7 +252,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
                 )}
               </button>
             </div>
-            <select
+            {activeTab !== 'consigners' && <select
               className="dash-sale-select"
               value={selectedSale}
               onChange={e => setSelectedSale(e.target.value)}
@@ -260,7 +260,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
               {SALES.map(s => (
                 <option key={s.id} value={s.id}>{s.label} ({s.count})</option>
               ))}
-            </select>
+            </select>}
           </div>
         )}
 
