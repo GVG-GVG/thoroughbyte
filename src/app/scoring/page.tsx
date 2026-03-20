@@ -1,4 +1,5 @@
 import Nav from '@/components/Nav';
+import ScoringNav from '@/components/ScoringNav';
 import BackToTop from '@/components/BackToTop';
 import './scoring.css';
 
@@ -11,7 +12,8 @@ export default function ScoringPage() {
   return (
     <>
       <Nav />
-      <div className="scoring-page">
+      <ScoringNav />
+      <div className="scoring-page" style={{ paddingTop: '140px' }}>
         <div className="scoring-container">
           <p className="scoring-tag">HOW SCORING WORKS</p>
           <h1>Understanding Your ThoroughByte Score</h1>

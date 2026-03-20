@@ -1,4 +1,5 @@
 import Nav from '@/components/Nav';
+import ScoringNav from '@/components/ScoringNav';
 import BackToTop from '@/components/BackToTop';
 import '../scoring/scoring.css';
 
@@ -11,7 +12,8 @@ export default function ConsignerScoringPage() {
   return (
     <>
       <Nav />
-      <div className="scoring-page">
+      <ScoringNav />
+      <div className="scoring-page" style={{ paddingTop: '140px' }}>
         <div className="scoring-container">
           <p className="scoring-tag">CONSIGNER RATINGS</p>
           <h1>How We Rate Consigners</h1>

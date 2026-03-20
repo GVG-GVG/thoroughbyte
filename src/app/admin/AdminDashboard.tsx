@@ -131,8 +131,8 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
         <div className="admin-header-inner">
           <div className="admin-header-left">
             <a href="/" className="logo">
-              <span className="logo-light">Thorough</span>
-              <span className="logo-bold">Byte</span>
+              <span className="logo-icon">T<span>B</span></span>
+              <span><span className="logo-light">Thorough</span><span className="logo-bold">Byte</span></span>
             </a>
             <span className="admin-badge">Admin</span>
           </div>

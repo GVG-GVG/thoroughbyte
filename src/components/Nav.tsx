@@ -52,8 +52,8 @@ export default function Nav() {
     <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-inner">
         <a href="/" className="logo">
-          <span className="logo-light">Thorough</span>
-          <span className="logo-bold">Byte</span>
+          <span className="logo-icon">T<span>B</span></span>
+          <span><span className="logo-light">Thorough</span><span className="logo-bold">Byte</span></span>
         </a>
         <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
           <a href="/#how-to-use" onClick={closeMobileMenu}>How It Works</a>

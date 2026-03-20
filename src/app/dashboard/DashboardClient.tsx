@@ -167,8 +167,8 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       <div className="dash-header">
         <div className="dash-header-inner">
           <a href="/" className="logo">
-            <span className="logo-light">Thorough</span>
-            <span className="logo-bold">Byte</span>
+            <span className="logo-icon">T<span>B</span></span>
+            <span><span className="logo-light">Thorough</span><span className="logo-bold">Byte</span></span>
           </a>
           <div className="dash-user">
             <span className="dash-user-email">{user.email}</span>
