@@ -110,8 +110,8 @@ export default function ScoringPage() {
           </div>
 
           <div className="scoring-cta">
-            <a href="/#contact" className="btn btn-primary">Request Access</a>
-            <a href="/" className="btn btn-outline-dark">Back to Home</a>
+            <a href="/consigner-scoring" className="btn btn-primary">Consigner Scoring Method</a>
+            <a href="/#contact" className="btn btn-outline-dark">Request Access</a>
           </div>
         </div>
       </div>

@@ -60,7 +60,8 @@ export default function Nav() {
           <a href="/#what-we-do" onClick={closeMobileMenu}>What We Built</a>
           <a href="/#performance" onClick={closeMobileMenu}>Performance</a>
           <a href="/#alpha" onClick={closeMobileMenu}>Alpha</a>
-          <a href="/scoring" onClick={closeMobileMenu}>Scoring</a>
+          <a href="/scoring" onClick={closeMobileMenu}>Horse Scoring</a>
+          <a href="/consigner-scoring" onClick={closeMobileMenu}>Consigner Scoring</a>
 
           {authLoaded && user ? (
             <>
