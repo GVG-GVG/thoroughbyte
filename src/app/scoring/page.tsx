@@ -121,6 +121,7 @@ export default function ScoringPage() {
       <footer className="footer">
         <div className="footer-inner">
           <div className="footer-brand">
+            <span className="logo-icon">T<span>B</span></span>
             <span className="logo-light">Thorough</span><span className="logo-bold">Byte</span>
             <p className="footer-tagline">Breeze Intelligence</p>
           </div>
