@@ -117,7 +117,8 @@ function buildCardHtml(h: EnrichedHorse): string {
 body{font-family:'Inter',-apple-system,sans-serif;background:transparent;display:flex;justify-content:center;padding:0}
 .card{width:440px;background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(26,35,50,.10),0 1px 4px rgba(26,35,50,.06)}
 .card-header{background:linear-gradient(135deg,var(--navy),var(--navy-light));padding:20px 24px 16px;display:flex;justify-content:space-between;align-items:flex-start}
-.brand{font-size:11px;font-weight:600;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase}
+.brand{font-size:11px;font-weight:600;letter-spacing:1.5px;color:var(--white);text-transform:uppercase}
+.brand span{color:var(--gold)}
 .hip-badge{background:var(--gold);color:var(--navy);font-size:14px;font-weight:800;padding:4px 14px;border-radius:20px;letter-spacing:.5px}
 .horse-name-row{padding:0 24px 18px;background:linear-gradient(135deg,var(--navy),var(--navy-light))}
 .horse-name{color:#fff;font-size:22px;font-weight:700;line-height:1.2;margin-bottom:4px}
@@ -162,7 +163,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:transparent;display
 </style></head><body>
 <div class="card">
   <div class="card-header">
-    <div class="brand">ThoroughByte</div>
+    <div class="brand">Thorough<span>Byte</span></div>
     <div class="hip-badge">HIP ${h.hip}</div>
   </div>
   <div class="horse-name-row">

@@ -63,7 +63,7 @@ h3 { font-size: 20px; margin-bottom: 6px; }
 .logo-icon span { color: var(--gold); }
 .nav.scrolled .logo-icon { background: rgba(26,35,50,0.6); }
 .logo-light { font-weight: 300; }
-.logo-bold { font-weight: 700; }
+.logo-bold { font-weight: 700; color: var(--gold); }
 .nav-links { display: flex; align-items: center; gap: 20px; }
 .nav-links a { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.7); transition: color 0.2s; letter-spacing: 0.1px; }
 .nav-links a:hover { color: var(--white); }
@@ -267,9 +267,8 @@ h3 { font-size: 20px; margin-bottom: 6px; }
 
 .footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06); padding: 40px 28px; }
 .footer-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-.footer-brand .logo-light, .footer-brand .logo-bold { color: var(--white); }
-.footer-brand .logo-light { font-weight: 300; font-size: 18px; }
-.footer-brand .logo-bold { font-weight: 700; font-size: 18px; }
+.footer-brand .logo-light { font-weight: 300; font-size: 18px; color: var(--white); }
+.footer-brand .logo-bold { font-weight: 700; font-size: 18px; color: var(--gold); }
 .footer-tagline { font-size: 10px; letter-spacing: 3px; color: var(--slate); margin-top: 4px; }
 .footer-links { display: flex; gap: 24px; }
 .footer-links a { font-size: 14px; color: var(--slate); transition: color 0.2s; }
