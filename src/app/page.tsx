@@ -291,27 +291,25 @@ export default function Home() {
             <div className="step-item">
               <span className="step-num">1</span>
               <div className="step-body">
-                <h3>Receive your rankings the same day horses breeze.</h3>
+                <h3>Scores go live the same day horses breeze.</h3>
                 <p>
-                  Scores go live the same day each horse breezes &mdash; not the night before,
-                  not the morning of the sale. As the breeze show unfolds, you receive a ranked
-                  list of every horse that worked: scored, tiered, and sorted within sex and
-                  distance cohorts. This gives you more time to evaluate the data, locate your
-                  top prospects on the grounds, and build your shortlist before the sale ring opens.
+                  Not the night before, not the morning of the sale. As the breeze show unfolds,
+                  every horse that worked is scored, tiered, and sorted within sex and distance
+                  cohorts. Generate individual horse cards for the prospects you care about, or
+                  explore the full ranked list with Elite access. Either way, you have data before
+                  the sale ring opens.
                 </p>
               </div>
             </div>
             <div className="step-item">
               <span className="step-num">2</span>
               <div className="step-body">
-                <h3>Filter by tier in the interactive ranked list.</h3>
+                <h3>Zero in on the athletes that matter.</h3>
                 <p>
-                  Open the ranked sale list in your dashboard. Sort by any column &mdash; hip, score,
-                  tier, percentile, stride length, deceleration. Filter by tier to isolate ELITE and
-                  STRONG horses. Filter by cohort to focus on colts or fillies at your preferred breeze
-                  distance. Filter by state-bred designation to zero in on horses eligible for state-bred
-                  programs. Search by hip number to pull up a specific horse instantly. Click any row
-                  to open the full horse card. Need the list offline? Export as a PDF.
+                  Search by hip number to pull up any horse and generate a detailed profile card
+                  with score, tier, and a written scouting summary. On the Elite plan, open the
+                  full interactive ranked list &mdash; sort by any column, filter by tier or cohort,
+                  isolate state-breds, and export the whole thing as a PDF.
                 </p>
               </div>
             </div>
@@ -480,20 +478,10 @@ export default function Home() {
       {/* PRODUCT */}
       <section className="section section-dark" id="product">
         <div className="container">
-          <p className="section-tag">THE DELIVERABLES</p>
+          <p className="section-tag">THE PLATFORM</p>
           <h2>Everything you need, nothing you don&rsquo;t.</h2>
-          <p className="section-intro" style={{ color: '#c5cdd8' }}>Before each sale session, you receive:</p>
+          <p className="section-intro" style={{ color: '#c5cdd8' }}>The ThoroughByte platform powers every tier &mdash; from free horse cards to the full Elite suite.</p>
           <div className="features features-3col">
-            <div className="feature">
-              <div className="feature-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              </div>
-              <h3>Interactive Ranked Sale List</h3>
-              <p>
-                Every horse scored 0&ndash;100 and tiered. Sortable and filterable by hip, score, tier,
-                percentile, stride length, deceleration, sire, and state-bred designation. Exportable as PDF.
-              </p>
-            </div>
             <div className="feature">
               <div className="feature-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
@@ -503,36 +491,7 @@ export default function Home() {
                 Individual horse cards with breeze time, stride length, gallop-out, deceleration,
                 percentile rank, and a written scouting summary. Downloadable as PNG.
               </p>
-            </div>
-            <div className="feature">
-              <div className="feature-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              </div>
-              <h3>Tier Analysis PDF</h3>
-              <p>
-                Full-sale breakdown: tier distribution, average metrics per tier, and cohort
-                comparisons by sex and distance.
-              </p>
-            </div>
-            <div className="feature">
-              <div className="feature-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-              </div>
-              <h3>Sire Performance Summary</h3>
-              <p>
-                Aggregate breeze metrics by stallion across the entire sale. See which sires are
-                producing the highest-rated athletes.
-              </p>
-            </div>
-            <div className="feature">
-              <div className="feature-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/><circle cx="12" cy="7" r="3"/></svg>
-              </div>
-              <h3>Dam Black-Type Overlay</h3>
-              <p>
-                BTW, BTP, and BTProd flags on every ranked horse, so pedigree context is visible
-                alongside the athletic data.
-              </p>
+              <span className="feature-tier feature-tier-all">All Plans</span>
             </div>
             <div className="feature">
               <div className="feature-icon">
@@ -544,6 +503,40 @@ export default function Home() {
                 reliability, and market validation. Know which barns are producing runners &mdash; not just
                 sale-toppers. <a href="/consigner-scoring" style={{ color: '#c8963e', fontWeight: 600 }}>See the methodology &rarr;</a>
               </p>
+              <span className="feature-tier feature-tier-pro">Pro &amp; Elite</span>
+            </div>
+            <div className="feature">
+              <div className="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <h3>Interactive Ranked Sale List</h3>
+              <p>
+                Every horse scored 0&ndash;100 and tiered. Sortable and filterable by hip, score, tier,
+                percentile, stride length, deceleration, sire, and state-bred designation. Exportable as PDF.
+              </p>
+              <span className="feature-tier feature-tier-elite">Elite</span>
+            </div>
+            <div className="feature">
+              <div className="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <h3>Sire Performance Summary</h3>
+              <p>
+                Aggregate breeze metrics by stallion across the entire sale. See which sires are
+                producing the highest-rated athletes.
+              </p>
+              <span className="feature-tier feature-tier-elite">Elite</span>
+            </div>
+            <div className="feature">
+              <div className="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/><circle cx="12" cy="7" r="3"/></svg>
+              </div>
+              <h3>Dam Black-Type Overlay</h3>
+              <p>
+                BTW, BTP, and BTProd flags on every ranked horse, so pedigree context is visible
+                alongside the athletic data.
+              </p>
+              <span className="feature-tier feature-tier-elite">Elite</span>
             </div>
             <div className="feature">
               <div className="feature-icon">
@@ -554,6 +547,18 @@ export default function Home() {
                 Algorithmic markers where ThoroughByte&rsquo;s athletic rating significantly exceeds
                 expected market price based on historical consignor and sire median sale data.
               </p>
+              <span className="feature-tier feature-tier-elite">Elite</span>
+            </div>
+            <div className="feature">
+              <div className="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </div>
+              <h3>Tier Analysis PDF</h3>
+              <p>
+                Full-sale breakdown: tier distribution, average metrics per tier, and cohort
+                comparisons by sex and distance.
+              </p>
+              <span className="feature-tier feature-tier-elite">Elite</span>
             </div>
           </div>
         </div>

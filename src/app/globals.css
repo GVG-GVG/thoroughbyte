@@ -251,6 +251,10 @@ h3 { font-size: 20px; margin-bottom: 6px; }
 .feature-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(200,150,62,0.1); border-radius: 8px; margin-bottom: 14px; color: var(--gold); }
 .feature h3 { color: var(--white); font-size: 18px; }
 .feature p { font-size: 15px; line-height: 1.6; }
+.feature-tier { display: inline-block; margin-top: 14px; padding: 3px 10px; border-radius: 4px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.feature-tier-all { background: rgba(45,106,79,0.15); color: #6aae78; }
+.feature-tier-pro { background: rgba(200,150,62,0.15); color: var(--gold); }
+.feature-tier-elite { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.5); }
 
 .contact-form { margin-top: 24px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
