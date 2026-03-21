@@ -353,8 +353,8 @@ export default function Home() {
           <p className="section-tag">FINDING ALPHA</p>
           <h2>The market underprices talent.<br />We find it.</h2>
           <p className="section-intro">
-            A "Market Miss" is a horse rated ELITE or STRONG that sold for $100K or less
-            but went on to earn more than $50K on the track. In 2024, the algorithm
+            A &ldquo;Market Miss&rdquo; is a horse rated ELITE or STRONG that sold for $100K or less
+            but went on to earn $100K or more on the track. In 2024, the algorithm
             flagged 36 of them.
           </p>
           <p className="bridge-sentence">
