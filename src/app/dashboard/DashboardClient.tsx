@@ -13,6 +13,7 @@ interface Profile {
   full_name: string;
   plan: string;
   credits_remaining: number;
+  credit_sale_id?: string;
 }
 
 interface GeneratedProfile {
@@ -31,6 +32,14 @@ interface Props {
 }
 
 type Tab = 'horses' | 'consigners' | 'sires' | 'cards';
+type Plan = 'free' | 'shortlist' | 'pro' | 'elite';
+
+const PLAN_LABELS: Record<Plan, string> = {
+  free: 'Free',
+  shortlist: 'Short List',
+  pro: 'Pro',
+  elite: 'Elite',
+};
 
 const SALES = [
   { id: 'obs-march-2026', label: 'OBS March 2026', count: 638 },
@@ -40,8 +49,56 @@ const SALES = [
   { id: 'obs-march-2024', label: 'OBS March 2024', count: 667 },
 ] as const;
 
+// Access matrix: which tabs are accessible per plan
+function canAccess(plan: Plan, tab: Tab): boolean {
+  switch (tab) {
+    case 'cards': return true; // All plans can see cards tab (credits permitting)
+    case 'horses': return plan === 'elite';
+    case 'consigners': return plan === 'pro' || plan === 'elite';
+    case 'sires': return plan === 'elite';
+    default: return false;
+  }
+}
+
+function getUpgradePlan(tab: Tab): { plan: string; label: string } {
+  switch (tab) {
+    case 'horses': return { plan: 'elite', label: 'Elite' };
+    case 'consigners': return { plan: 'pro', label: 'Pro' };
+    case 'sires': return { plan: 'elite', label: 'Elite' };
+    default: return { plan: 'elite', label: 'Elite' };
+  }
+}
+
+// Blurred gate overlay
+function GateOverlay({ tab, onUpgrade }: { tab: Tab; onUpgrade: (plan: string) => void }) {
+  const { plan, label } = getUpgradePlan(tab);
+  const descriptions: Record<string, string> = {
+    horses: 'The full ranked list with sorting, filtering, tier badges, and export is available on the Elite plan.',
+    consigners: 'Consigner ratings with Bayesian-adjusted racing outcomes are available on Pro and Elite plans.',
+    sires: 'Sire performance aggregations across the entire sale are available on the Elite plan.',
+  };
+
+  return (
+    <div className="gate-overlay">
+      <div className="gate-content">
+        <div className="gate-lock">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+          </svg>
+        </div>
+        <h3>Upgrade to {label}</h3>
+        <p>{descriptions[tab]}</p>
+        <button className="gate-upgrade-btn" onClick={() => onUpgrade(plan)}>
+          Upgrade to {label}
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function DashboardClient({ user, profile, generatedProfiles: initialProfiles }: Props) {
-  const [activeTab, setActiveTab] = useState<Tab>('horses');
+  const [activeTab, setActiveTab] = useState<Tab>('cards');
   const [selectedSale, setSelectedSale] = useState('obs-march-2026');
   const [hipSearch, setHipSearch] = useState('');
   const [searchError, setSearchError] = useState('');
@@ -52,13 +109,21 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [upgrading, setUpgrading] = useState(false);
 
-  const plan = profile?.plan ?? 'free';
+  const plan = (profile?.plan ?? 'free') as Plan;
   const name = profile?.full_name || user.email?.split('@')[0] || 'there';
+  const hasCredits = credits > 0 || plan === 'pro' || plan === 'elite';
 
-  const handleUpgrade = async () => {
+  const handleUpgrade = async (targetPlan?: string) => {
     setUpgrading(true);
     try {
-      const res = await fetch('/api/stripe/checkout', { method: 'POST' });
+      const res = await fetch('/api/stripe/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          plan: targetPlan || 'pro',
+          saleId: targetPlan === 'shortlist' ? selectedSale : undefined,
+        }),
+      });
       const data = await res.json();
       if (data.url) {
         window.location.href = data.url;
@@ -108,8 +173,8 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
         return;
       }
 
-      // Update credits (consumed one unless it was already generated or pro plan)
-      if (!genData.already_generated && plan === 'free') {
+      // Update credits (consumed one unless it was already generated or unlimited plan)
+      if (!genData.already_generated && (plan === 'free' || plan === 'shortlist')) {
         setCredits(prev => Math.max(0, prev - 1));
       }
 
@@ -123,7 +188,6 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
 
       if (profiles) setGeneratedProfiles(profiles);
 
-      // Show the generated card and switch to cards tab
       setSelectedCard(genData.card_image_url);
       setHipSearch('');
     } catch {
@@ -159,7 +223,20 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
     }
   }, [hipSearch, generateCard]);
 
-  const hasAccess = credits > 0 || plan === 'pro';
+  const creditLabel = () => {
+    if (plan === 'elite' || plan === 'pro') return 'Unlimited horse card generation.';
+    if (plan === 'shortlist') {
+      const saleName = SALES.find(s => s.id === profile?.credit_sale_id)?.label || profile?.credit_sale_id || 'selected sale';
+      return credits > 0
+        ? `${credits} horse card${credits === 1 ? '' : 's'} remaining for ${saleName}.`
+        : `You've used all your Short List cards for ${saleName}.`;
+    }
+    return credits > 0
+      ? `You have ${credits} free horse card${credits === 1 ? '' : 's'} remaining.`
+      : 'You\'ve used all your free horse cards.';
+  };
+
+  const maxCredits = plan === 'shortlist' ? 25 : 3;
 
   return (
     <div className="dash-page">
@@ -183,76 +260,79 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
           <h1>Welcome back, {name}</h1>
         </div>
 
-        {/* Credits */}
+        {/* Credits / Plan Card */}
         <div className="credits-card">
           <div className="credits-info">
-            <h2>{plan === 'free' ? 'Free Plan' : 'Pro Plan'}</h2>
-            <p>
-              {plan === 'pro'
-                ? 'Unlimited horse card generation.'
-                : credits > 0
-                  ? `You have ${credits} horse card${credits === 1 ? '' : 's'} remaining.`
-                  : 'You\'ve used all your free horse cards.'
-              }
-            </p>
-            {plan === 'pro' && (
+            <h2>{PLAN_LABELS[plan]} Plan</h2>
+            <p>{creditLabel()}</p>
+            {(plan === 'pro' || plan === 'elite') && (
               <button className="manage-sub-btn" onClick={handleManageSubscription}>
                 Manage Subscription
               </button>
             )}
           </div>
           <div className="credits-count">
-            <span className="credits-num">{plan === 'pro' ? '\u221E' : credits}</span>
-            <span className="credits-label">{plan === 'free' ? 'of 5' : ''}</span>
+            <span className="credits-num">{(plan === 'pro' || plan === 'elite') ? '\u221E' : credits}</span>
+            <span className="credits-label">{(plan === 'free' || plan === 'shortlist') ? `of ${maxCredits}` : ''}</span>
           </div>
         </div>
 
-        {/* Upgrade banner */}
-        {credits === 0 && plan === 'free' && (
+        {/* Upgrade banner for free/shortlist users with 0 credits */}
+        {!hasCredits && (plan === 'free' || plan === 'shortlist') && (
           <div className="upgrade-banner">
             <div>
-              <h3>Unlock unlimited horse cards</h3>
-              <p>Upgrade to Pro for full access to all 638 horses at OBS March 2026.</p>
+              <h3>Need more horse cards?</h3>
+              <p>Upgrade your plan for more lookups and access to advanced analytics.</p>
             </div>
-            <button className="upgrade-btn" onClick={handleUpgrade} disabled={upgrading}>
-              {upgrading ? 'Redirecting...' : 'Upgrade to Pro'}
-            </button>
+            <div className="upgrade-banner-btns">
+              {plan === 'free' && (
+                <button className="upgrade-btn upgrade-btn-outline" onClick={() => handleUpgrade('shortlist')} disabled={upgrading}>
+                  Short List &mdash; $250
+                </button>
+              )}
+              <button className="upgrade-btn" onClick={() => handleUpgrade('pro')} disabled={upgrading}>
+                {upgrading ? 'Redirecting...' : 'Go Pro \u2014 $1,000/yr'}
+              </button>
+            </div>
           </div>
         )}
 
-        {/* Tab navigation */}
-        {hasAccess && (
-          <div className="dash-tabs">
-            <div className="dash-tabs-left">
-              <button
-                className={`dash-tab${activeTab === 'horses' ? ' dash-tab-active' : ''}`}
-                onClick={() => setActiveTab('horses')}
-              >
-                Horse Ratings
-              </button>
-              <button
-                className={`dash-tab${activeTab === 'consigners' ? ' dash-tab-active' : ''}`}
-                onClick={() => setActiveTab('consigners')}
-              >
-                Consigner Ratings
-              </button>
-              <button
-                className={`dash-tab${activeTab === 'sires' ? ' dash-tab-active' : ''}`}
-                onClick={() => setActiveTab('sires')}
-              >
-                Sire Performance
-              </button>
-              <button
-                className={`dash-tab${activeTab === 'cards' ? ' dash-tab-active' : ''}`}
-                onClick={() => setActiveTab('cards')}
-              >
-                My Horse Cards
-                {generatedProfiles.length > 0 && (
-                  <span className="dash-tab-badge">{generatedProfiles.length}</span>
-                )}
-              </button>
-            </div>
-            {activeTab !== 'consigners' && <select
+        {/* Tab navigation — always visible */}
+        <div className="dash-tabs">
+          <div className="dash-tabs-left">
+            <button
+              className={`dash-tab${activeTab === 'cards' ? ' dash-tab-active' : ''}`}
+              onClick={() => setActiveTab('cards')}
+            >
+              My Horse Cards
+              {generatedProfiles.length > 0 && (
+                <span className="dash-tab-badge">{generatedProfiles.length}</span>
+              )}
+            </button>
+            <button
+              className={`dash-tab${activeTab === 'horses' ? ' dash-tab-active' : ''}`}
+              onClick={() => setActiveTab('horses')}
+            >
+              Horse Ratings
+              {!canAccess(plan, 'horses') && <span className="dash-tab-lock">Elite</span>}
+            </button>
+            <button
+              className={`dash-tab${activeTab === 'consigners' ? ' dash-tab-active' : ''}`}
+              onClick={() => setActiveTab('consigners')}
+            >
+              Consigner Ratings
+              {!canAccess(plan, 'consigners') && <span className="dash-tab-lock">Pro</span>}
+            </button>
+            <button
+              className={`dash-tab${activeTab === 'sires' ? ' dash-tab-active' : ''}`}
+              onClick={() => setActiveTab('sires')}
+            >
+              Sire Performance
+              {!canAccess(plan, 'sires') && <span className="dash-tab-lock">Elite</span>}
+            </button>
+          </div>
+          {activeTab !== 'consigners' && (
+            <select
               className="dash-sale-select"
               value={selectedSale}
               onChange={e => setSelectedSale(e.target.value)}
@@ -260,38 +340,12 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
               {SALES.map(s => (
                 <option key={s.id} value={s.id}>{s.label} ({s.count})</option>
               ))}
-            </select>}
-          </div>
-        )}
-
-        {/* ═══ Horse Ratings Tab ═══ */}
-        {hasAccess && activeTab === 'horses' && (
-          <>
-            <RankedList
-              sale={selectedSale}
-              saleLabel={SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'}
-              onSelectHip={(hip) => {
-                generateCard(hip);
-              }}
-            />
-          </>
-        )}
-
-        {/* ═══ Consigner Ratings Tab ═══ */}
-        {hasAccess && activeTab === 'consigners' && (
-          <ConsignerTable />
-        )}
-
-        {/* ═══ Sire Performance Tab ═══ */}
-        {hasAccess && activeTab === 'sires' && (
-          <SirePerformance
-            sale={selectedSale}
-            saleLabel={SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'}
-          />
-        )}
+            </select>
+          )}
+        </div>
 
         {/* ═══ My Horse Cards Tab ═══ */}
-        {hasAccess && activeTab === 'cards' && (
+        {activeTab === 'cards' && (
           <>
             {/* Hip search */}
             <div className="search-section">
@@ -307,17 +361,20 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
                     min={1}
                     max={999}
                     required
-                    disabled={generating}
+                    disabled={generating || !hasCredits}
                   />
-                  <button type="submit" className="search-btn" disabled={!hipSearch || generating}>
-                    {generating ? generatingStatus : plan === 'pro' ? 'Generate Card' : 'Generate Card (1 credit)'}
+                  <button type="submit" className="search-btn" disabled={!hipSearch || generating || !hasCredits}>
+                    {generating
+                      ? generatingStatus
+                      : (plan === 'pro' || plan === 'elite')
+                        ? 'Generate Card'
+                        : `Generate Card (1 credit)`
+                    }
                   </button>
                 </div>
               </form>
-
               {searchError && <div className="search-error">{searchError}</div>}
             </div>
-
 
             {/* Previously generated profiles */}
             <div className="profiles-section">
@@ -325,7 +382,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
               {generatedProfiles.length === 0 ? (
                 <div className="empty-state">
                   <p>No horse cards generated yet.</p>
-                  <p className="empty-hint">Enter a hip number above or click a horse in the Horse Ratings tab to generate your first card.</p>
+                  <p className="empty-hint">Enter a hip number above to generate your first card.</p>
                 </div>
               ) : (
                 <div className="profiles-grid">
@@ -359,6 +416,68 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
               )}
             </div>
           </>
+        )}
+
+        {/* ═══ Horse Ratings Tab ═══ */}
+        {activeTab === 'horses' && (
+          <div className="gated-section">
+            {canAccess(plan, 'horses') ? (
+              <RankedList
+                sale={selectedSale}
+                saleLabel={SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'}
+                onSelectHip={(hip) => generateCard(hip)}
+              />
+            ) : (
+              <div className="gated-blur-wrap">
+                <div className="gated-blur-content">
+                  <RankedList
+                    sale={selectedSale}
+                    saleLabel={SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'}
+                    onSelectHip={() => {}}
+                  />
+                </div>
+                <GateOverlay tab="horses" onUpgrade={handleUpgrade} />
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* ═══ Consigner Ratings Tab ═══ */}
+        {activeTab === 'consigners' && (
+          <div className="gated-section">
+            {canAccess(plan, 'consigners') ? (
+              <ConsignerTable />
+            ) : (
+              <div className="gated-blur-wrap">
+                <div className="gated-blur-content">
+                  <ConsignerTable />
+                </div>
+                <GateOverlay tab="consigners" onUpgrade={handleUpgrade} />
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* ═══ Sire Performance Tab ═══ */}
+        {activeTab === 'sires' && (
+          <div className="gated-section">
+            {canAccess(plan, 'sires') ? (
+              <SirePerformance
+                sale={selectedSale}
+                saleLabel={SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'}
+              />
+            ) : (
+              <div className="gated-blur-wrap">
+                <div className="gated-blur-content">
+                  <SirePerformance
+                    sale={selectedSale}
+                    saleLabel={SALES.find(s => s.id === selectedSale)?.label ?? 'OBS'}
+                  />
+                </div>
+                <GateOverlay tab="sires" onUpgrade={handleUpgrade} />
+              </div>
+            )}
+          </div>
         )}
       </div>
 

@@ -62,6 +62,7 @@ export default function Nav() {
           <a href="/#alpha" onClick={closeMobileMenu}>Alpha</a>
           <a href="/scoring" onClick={closeMobileMenu}>Horse Scoring</a>
           <a href="/consigner-scoring" onClick={closeMobileMenu}>Consigner Scoring</a>
+          <a href="/#pricing" onClick={closeMobileMenu}>Pricing</a>
 
           {authLoaded && user ? (
             <>

@@ -24,7 +24,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a href="#performance" className="btn btn-primary">See the Proof</a>
-              <a href="#contact" className="btn btn-outline">Request Access</a>
+              <a href="#pricing" className="btn btn-outline">View Pricing</a>
             </div>
           </div>
           <div className="hero-proof">
@@ -559,14 +559,102 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PRICING */}
+      <section className="section" id="pricing">
+        <div className="container">
+          <p className="section-tag">PRICING</p>
+          <h2>Choose your edge.</h2>
+          <p className="section-intro">
+            Start free with 3 horse card lookups. Upgrade when you&rsquo;re ready for more.
+          </p>
+          <div className="pricing-grid">
+            {/* Free */}
+            <div className="pricing-card">
+              <div className="pricing-card-header">
+                <h3>Free</h3>
+                <div className="pricing-price">$0</div>
+                <p className="pricing-period">forever</p>
+              </div>
+              <ul className="pricing-features">
+                <li className="pricing-feat-yes">3 horse card lookups</li>
+                <li className="pricing-feat-yes">Downloadable PNG cards</li>
+                <li className="pricing-feat-no">Horse Ratings table</li>
+                <li className="pricing-feat-no">Consigner Ratings</li>
+                <li className="pricing-feat-no">Sire Performance</li>
+                <li className="pricing-feat-no">Sorting &amp; filtering</li>
+                <li className="pricing-feat-no">PDF / CSV export</li>
+              </ul>
+              <a href="/auth/signup" className="btn btn-outline pricing-cta">Create Free Account</a>
+            </div>
+
+            {/* Short List */}
+            <div className="pricing-card">
+              <div className="pricing-card-header">
+                <h3>Short List</h3>
+                <div className="pricing-price">$250</div>
+                <p className="pricing-period">per sale</p>
+              </div>
+              <ul className="pricing-features">
+                <li className="pricing-feat-yes">25 horse card lookups</li>
+                <li className="pricing-feat-yes">Downloadable PNG cards</li>
+                <li className="pricing-feat-no">Horse Ratings table</li>
+                <li className="pricing-feat-no">Consigner Ratings</li>
+                <li className="pricing-feat-no">Sire Performance</li>
+                <li className="pricing-feat-no">Sorting &amp; filtering</li>
+                <li className="pricing-feat-no">PDF / CSV export</li>
+              </ul>
+              <a href="/auth/signup" className="btn btn-outline pricing-cta">Get Started</a>
+            </div>
+
+            {/* Pro */}
+            <div className="pricing-card pricing-card-featured">
+              <div className="pricing-badge">Most Popular</div>
+              <div className="pricing-card-header">
+                <h3>Pro</h3>
+                <div className="pricing-price">$1,000</div>
+                <p className="pricing-period">per year</p>
+              </div>
+              <ul className="pricing-features">
+                <li className="pricing-feat-yes">Unlimited horse cards</li>
+                <li className="pricing-feat-yes">Downloadable PNG cards</li>
+                <li className="pricing-feat-no">Horse Ratings table</li>
+                <li className="pricing-feat-yes">Consigner Ratings</li>
+                <li className="pricing-feat-no">Sire Performance</li>
+                <li className="pricing-feat-no">Sorting &amp; filtering</li>
+                <li className="pricing-feat-no">PDF / CSV export</li>
+              </ul>
+              <a href="/auth/signup" className="btn btn-primary pricing-cta">Upgrade to Pro</a>
+            </div>
+
+            {/* Elite */}
+            <div className="pricing-card pricing-card-dark">
+              <div className="pricing-card-header">
+                <h3>Elite</h3>
+                <div className="pricing-price">$5,000</div>
+                <p className="pricing-period">per year</p>
+              </div>
+              <ul className="pricing-features">
+                <li className="pricing-feat-yes">Unlimited horse cards</li>
+                <li className="pricing-feat-yes">Downloadable PNG cards</li>
+                <li className="pricing-feat-yes">Horse Ratings table</li>
+                <li className="pricing-feat-yes">Consigner Ratings</li>
+                <li className="pricing-feat-yes">Sire Performance</li>
+                <li className="pricing-feat-yes">Full sorting &amp; filtering</li>
+                <li className="pricing-feat-yes">PDF / CSV export</li>
+              </ul>
+              <a href="/auth/signup" className="btn btn-primary pricing-cta">Go Elite</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA / CONTACT */}
       <section className="section" id="contact">
         <div className="container container-narrow">
-          <p className="section-tag">GET STARTED</p>
-          <h2>Ready for an edge?</h2>
+          <p className="section-tag">QUESTIONS?</p>
+          <h2>Get in touch.</h2>
           <p className="section-intro">
-            ThoroughByte is currently available for the 2026 OBS sale season.
-            Contact us to discuss access and pricing.
+            Have questions about which plan is right for you? We&rsquo;re here to help.
           </p>
           <ContactForm />
         </div>
@@ -586,6 +674,7 @@ export default function Home() {
             <a href="#alpha">Alpha</a>
             <a href="/scoring">Horse Scoring</a>
             <a href="/consigner-scoring">Consigner Scoring</a>
+            <a href="#pricing">Pricing</a>
             <a href="#contact">Contact</a>
           </div>
           <p className="footer-legal">&copy; 2026 ThoroughByte. All rights reserved. All data verified against Equibase records.</p>

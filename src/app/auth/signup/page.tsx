@@ -58,7 +58,7 @@ export default function SignUp() {
           </div>
           <h1 className="auth-title">Check your email</h1>
           <div className="auth-success" style={{ marginTop: '16px' }}>
-            We sent a confirmation link to <strong>{email}</strong>. Click the link to activate your account and get your 5 free horse profile cards.
+            We sent a confirmation link to <strong>{email}</strong>. Click the link to activate your account and get your 3 free horse profile cards.
           </div>
           <div className="auth-footer" style={{ marginTop: '24px' }}>
             <a href="/auth/signin">Back to sign in</a>
@@ -79,7 +79,7 @@ export default function SignUp() {
         </div>
 
         <h1 className="auth-title">Create your account</h1>
-        <p className="auth-subtitle">Get 5 free horse profile cards</p>
+        <p className="auth-subtitle">Get 3 free horse profile cards</p>
 
         {error && <div className="auth-error">{error}</div>}
 

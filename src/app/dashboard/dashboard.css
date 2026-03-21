@@ -1269,3 +1269,117 @@
   .ct-table th { padding: 6px 8px; font-size: 9px; }
   .ct-table td { padding: 6px 8px; }
 }
+
+/* ═══ Gated Content / Blur Overlay ═══ */
+.gated-section {
+  position: relative;
+}
+
+.gated-blur-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  max-height: 600px;
+}
+
+.gated-blur-content {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.7;
+}
+
+.gate-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background: rgba(245, 247, 250, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.gate-content {
+  text-align: center;
+  max-width: 400px;
+  padding: 48px 32px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+
+.gate-lock {
+  color: var(--slate);
+  margin-bottom: 16px;
+}
+
+.gate-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.gate-content p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.gate-upgrade-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.gate-upgrade-btn:hover {
+  background: var(--gold-light);
+}
+
+/* Tab lock badge */
+.dash-tab-lock {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: rgba(200, 150, 62, 0.15);
+  color: var(--gold);
+}
+
+/* Upgrade banner buttons row */
+.upgrade-banner-btns {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.upgrade-btn-outline {
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+}
+
+.upgrade-btn-outline:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
+@media (max-width: 640px) {
+  .gated-blur-wrap { max-height: 400px; }
+  .gate-content { padding: 32px 20px; }
+  .upgrade-banner-btns { flex-direction: column; }
+}
