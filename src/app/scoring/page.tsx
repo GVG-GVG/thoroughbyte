@@ -122,7 +122,7 @@ export default function ScoringPage() {
         <div className="footer-inner">
           <div className="footer-brand">
             <span className="logo-icon">T<span>B</span></span>
-            <span className="logo-light">Thorough</span><span className="logo-bold">Byte</span>
+            <span className="footer-brand-text"><span className="logo-light">Thorough</span><span className="logo-bold">Byte</span></span>
             <p className="footer-tagline">Breeze Intelligence</p>
           </div>
           <p className="footer-legal">&copy; 2026 ThoroughByte. All rights reserved.</p>

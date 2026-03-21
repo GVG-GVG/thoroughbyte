@@ -670,7 +670,7 @@ export default function Home() {
         <div className="footer-inner">
           <div className="footer-brand">
             <span className="logo-icon">T<span>B</span></span>
-            <span className="logo-light">Thorough</span><span className="logo-bold">Byte</span>
+            <span className="footer-brand-text"><span className="logo-light">Thorough</span><span className="logo-bold">Byte</span></span>
             <p className="footer-tagline">Breeze Intelligence</p>
           </div>
           <div className="footer-links">
