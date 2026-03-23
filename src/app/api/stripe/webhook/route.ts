@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import { createClient } from '@supabase/supabase-js';
 import Stripe from 'stripe';
-import { sendUpgradeEmail } from '@/lib/email';
+import { sendUpgradeEmail, sendCancellationEmail } from '@/lib/email';
 
 // Use service role client for webhook — no user session available
 const supabaseAdmin = createClient(
@@ -106,14 +106,18 @@ export async function POST(req: NextRequest) {
       case 'customer.subscription.deleted': {
         const subscription = event.data.object as Stripe.Subscription;
         const customerId = subscription.customer as string;
+        const canceledPriceId = subscription.items.data[0]?.price?.id;
+        const canceledPlan = canceledPriceId ? planFromPrice(canceledPriceId) : null;
 
         const { data: profile } = await supabaseAdmin
           .from('profiles')
-          .select('id')
+          .select('id, email, full_name, plan')
           .eq('stripe_customer_id', customerId)
           .single();
 
         if (profile) {
+          const previousPlan = profile.plan || canceledPlan || 'pro';
+
           await supabaseAdmin
             .from('profiles')
             .update({
@@ -124,6 +128,12 @@ export async function POST(req: NextRequest) {
             .eq('id', profile.id);
 
           console.log(`User ${profile.id} downgraded to free (subscription canceled)`);
+
+          // Send cancellation email
+          if (profile.email) {
+            const result = await sendCancellationEmail(profile.email, profile.full_name || '', previousPlan);
+            if (result.error) console.error('Cancellation email failed:', result.error);
+          }
         }
         break;
       }

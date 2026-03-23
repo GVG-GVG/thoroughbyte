@@ -80,6 +80,51 @@ export function buildUpgradeHtml(name: string, plan: string, saleId?: string): s
     emailFooter();
 }
 
+export function buildCancellationHtml(name: string, plan: string): string {
+  const firstName = name?.split(' ')[0] || 'there';
+  const planName = PLAN_DISPLAY[plan] || plan;
+
+  return emailHeader() +
+    '<tr><td style="padding:36px 32px 28px">' +
+    `<h1 style="font-size:24px;color:#1a2332;margin:0 0 6px;font-weight:700">Your ${planName} plan has ended</h1>` +
+    '<p style="font-size:13px;color:#8a9bae;font-weight:600;letter-spacing:1px;margin:0 0 20px">SUBSCRIPTION CANCELED</p>' +
+    `<p style="font-size:15px;color:#5a6a7e;line-height:1.6;margin:0 0 20px">Hey ${firstName}, your <strong style="color:#1a2332">${planName}</strong> subscription has been canceled and your account has been moved to the Free tier.</p>` +
+    '<p style="font-size:15px;color:#5a6a7e;line-height:1.6;margin:0 0 20px">You still have access to your 3 free horse cards. If you\'d like to reactivate at any time, you can upgrade again from your dashboard.</p>' +
+    '<p style="margin:0 0 24px;text-align:center"><a href="https://thoroughbyte.com/dashboard" style="display:inline-block;background:#c8963e;color:#ffffff;padding:14px 40px;border-radius:6px;font-size:15px;font-weight:600;text-decoration:none">Go to Your Dashboard</a></p>' +
+    '<p style="font-size:13px;color:#8a9bae;line-height:1.5;margin:0">If this was a mistake or you have questions, reply to this email or contact us at <a href="mailto:info@thoroughbyte.com" style="color:#c8963e;text-decoration:none">info@thoroughbyte.com</a>.</p>' +
+    '</td></tr>' +
+    emailFooter();
+}
+
+export async function sendCancellationEmail(
+  email: string,
+  name: string,
+  plan: string,
+): Promise<{ id?: string; error?: string }> {
+  const planName = PLAN_DISPLAY[plan] || plan;
+
+  try {
+    const resend = getResend();
+    const { data, error } = await resend.emails.send({
+      from: 'ThoroughByte <noreply@thoroughbyte.com>',
+      to: email,
+      subject: `Your ${planName} subscription has been canceled — ThoroughByte`,
+      html: buildCancellationHtml(name, plan),
+    });
+
+    if (error) {
+      console.error('Cancellation email send error:', error);
+      return { error: error.message };
+    }
+
+    console.log(`Cancellation email sent to ${email} (resend: ${data?.id})`);
+    return { id: data?.id };
+  } catch (err) {
+    console.error('Cancellation email failed:', err);
+    return { error: 'Send failed' };
+  }
+}
+
 export async function sendUpgradeEmail(
   email: string,
   name: string,
