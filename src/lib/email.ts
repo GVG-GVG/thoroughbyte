@@ -96,6 +96,53 @@ export function buildCancellationHtml(name: string, plan: string): string {
     emailFooter();
 }
 
+export function buildScheduledCancellationHtml(name: string, plan: string, endsAt: string): string {
+  const firstName = name?.split(' ')[0] || 'there';
+  const planName = PLAN_DISPLAY[plan] || plan;
+
+  return emailHeader() +
+    '<tr><td style="padding:36px 32px 28px">' +
+    `<h1 style="font-size:24px;color:#1a2332;margin:0 0 6px;font-weight:700">Your ${planName} cancellation is confirmed</h1>` +
+    '<p style="font-size:13px;color:#8a9bae;font-weight:600;letter-spacing:1px;margin:0 0 20px">CANCELLATION SCHEDULED</p>' +
+    `<p style="font-size:15px;color:#5a6a7e;line-height:1.6;margin:0 0 20px">Hey ${firstName}, we've received your cancellation request. Your <strong style="color:#1a2332">${planName}</strong> plan will remain active until <strong style="color:#1a2332">${endsAt}</strong>.</p>` +
+    '<p style="font-size:15px;color:#5a6a7e;line-height:1.6;margin:0 0 20px">You\'ll keep full access to all your plan features until then. After that date, your account will move to the Free tier with 3 horse cards.</p>' +
+    '<p style="font-size:15px;color:#5a6a7e;line-height:1.6;margin:0 0 20px">Changed your mind? You can reactivate anytime before your plan ends from your Stripe billing portal.</p>' +
+    '<p style="margin:0 0 24px;text-align:center"><a href="https://thoroughbyte.com/dashboard" style="display:inline-block;background:#c8963e;color:#ffffff;padding:14px 40px;border-radius:6px;font-size:15px;font-weight:600;text-decoration:none">Go to Your Dashboard</a></p>' +
+    '<p style="font-size:13px;color:#8a9bae;line-height:1.5;margin:0">If you have questions, reply to this email or contact us at <a href="mailto:info@thoroughbyte.com" style="color:#c8963e;text-decoration:none">info@thoroughbyte.com</a>.</p>' +
+    '</td></tr>' +
+    emailFooter();
+}
+
+export async function sendScheduledCancellationEmail(
+  email: string,
+  name: string,
+  plan: string,
+  endsAt: string,
+): Promise<{ id?: string; error?: string }> {
+  const planName = PLAN_DISPLAY[plan] || plan;
+
+  try {
+    const resend = getResend();
+    const { data, error } = await resend.emails.send({
+      from: 'ThoroughByte <noreply@thoroughbyte.com>',
+      to: email,
+      subject: `Your ${planName} plan will end on ${endsAt} — ThoroughByte`,
+      html: buildScheduledCancellationHtml(name, plan, endsAt),
+    });
+
+    if (error) {
+      console.error('Scheduled cancellation email send error:', error);
+      return { error: error.message };
+    }
+
+    console.log(`Scheduled cancellation email sent to ${email} (resend: ${data?.id})`);
+    return { id: data?.id };
+  } catch (err) {
+    console.error('Scheduled cancellation email failed:', err);
+    return { error: 'Send failed' };
+  }
+}
+
 export async function sendCancellationEmail(
   email: string,
   name: string,

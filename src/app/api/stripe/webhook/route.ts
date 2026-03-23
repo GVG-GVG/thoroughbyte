@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import { createClient } from '@supabase/supabase-js';
 import Stripe from 'stripe';
-import { sendUpgradeEmail, sendCancellationEmail } from '@/lib/email';
+import { sendUpgradeEmail, sendCancellationEmail, sendScheduledCancellationEmail } from '@/lib/email';
 
 // Use service role client for webhook — no user session available
 const supabaseAdmin = createClient(
@@ -143,6 +143,30 @@ export async function POST(req: NextRequest) {
         const customerId = subscription.customer as string;
         const priceId = subscription.items.data[0]?.price?.id;
         const newPlan = priceId ? planFromPrice(priceId) : null;
+
+        // Handle scheduled cancellation (cancel at period end)
+        if (subscription.cancel_at_period_end && subscription.status === 'active' && newPlan) {
+          const cancelDate = subscription.current_period_end
+            ? new Date(subscription.current_period_end * 1000).toLocaleDateString('en-US', {
+                year: 'numeric', month: 'long', day: 'numeric',
+              })
+            : 'the end of your billing period';
+
+          const { data: profile } = await supabaseAdmin
+            .from('profiles')
+            .select('id, email, full_name')
+            .eq('stripe_customer_id', customerId)
+            .single();
+
+          if (profile?.email) {
+            const result = await sendScheduledCancellationEmail(
+              profile.email, profile.full_name || '', newPlan, cancelDate,
+            );
+            if (result.error) console.error('Scheduled cancellation email failed:', result.error);
+          }
+          console.log(`User ${profile?.id} scheduled cancellation for ${cancelDate}`);
+          break;
+        }
 
         if (subscription.status === 'active' && newPlan) {
           const { data: profile } = await supabaseAdmin
