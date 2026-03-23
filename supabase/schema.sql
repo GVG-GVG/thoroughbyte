@@ -13,6 +13,7 @@ create table public.profiles (
   credit_sale_id text,
   credits_remaining integer not null default 3,
   stripe_customer_id text,
+  welcome_email_sent boolean not null default false,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
