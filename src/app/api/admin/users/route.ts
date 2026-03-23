@@ -39,6 +39,33 @@ export async function GET() {
   return NextResponse.json({ users });
 }
 
+export async function POST(request: Request) {
+  const admin = await requireAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const { supabase } = admin;
+  const body = await request.json();
+  const { action, user_id } = body;
+
+  if (action === 'get_cards' && user_id) {
+    const { data: cards, error } = await supabase
+      .from('generated_profiles')
+      .select('id, hip, sale_id, card_data, created_at')
+      .eq('user_id', user_id)
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+
+    return NextResponse.json({ cards: cards || [] });
+  }
+
+  return NextResponse.json({ error: 'Unknown action' }, { status: 400 });
+}
+
 export async function PATCH(request: Request) {
   const admin = await requireAdmin();
   if (!admin) {

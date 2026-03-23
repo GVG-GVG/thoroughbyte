@@ -34,6 +34,14 @@ interface AdminAction {
   created_at: string;
 }
 
+interface HorseCard {
+  id: string;
+  hip: number;
+  sale_id: string;
+  card_data: Record<string, unknown> | null;
+  created_at: string;
+}
+
 interface Props {
   stats: Stats;
   users: UserProfile[];
@@ -53,6 +61,8 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
   const [editCredits, setEditCredits] = useState(0);
   const [editRole, setEditRole] = useState('');
   const [message, setMessage] = useState('');
+  const [userCards, setUserCards] = useState<HorseCard[]>([]);
+  const [loadingCards, setLoadingCards] = useState(false);
 
   const handleSignOut = async () => {
     const { createClient } = await import('@/lib/supabase/client');
@@ -61,13 +71,30 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
     window.location.href = '/';
   };
 
-  const openUserDetail = (user: UserProfile) => {
+  const openUserDetail = async (user: UserProfile) => {
     setSelectedUser(user);
     setEditPlan(user.plan);
     setEditCredits(user.credits_remaining);
     setEditRole(user.role || 'other');
     setMessage('');
+    setUserCards([]);
     setView('user-detail');
+
+    // Fetch user's generated cards
+    setLoadingCards(true);
+    try {
+      const res = await fetch('/api/admin/users', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'get_cards', user_id: user.id }),
+      });
+      const data = await res.json();
+      if (data.cards) setUserCards(data.cards);
+    } catch {
+      console.error('Failed to load cards');
+    } finally {
+      setLoadingCards(false);
+    }
   };
 
   const handleSaveUser = async () => {
@@ -381,6 +408,48 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
                     <span className="detail-stat-label">Last Updated</span>
                     <span className="detail-stat-val">{new Date(selectedUser.updated_at).toLocaleDateString()}</span>
                   </div>
+                </div>
+              </div>
+
+              <div style={{ marginTop: 24 }}>
+                <div className="detail-card">
+                  <h3>Generated Horse Cards ({userCards.length})</h3>
+                  {loadingCards ? (
+                    <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>Loading cards...</p>
+                  ) : userCards.length === 0 ? (
+                    <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>No cards generated yet.</p>
+                  ) : (
+                    <table className="admin-table" style={{ marginTop: 12 }}>
+                      <thead>
+                        <tr>
+                          <th>Hip #</th>
+                          <th>Sale</th>
+                          <th>Horse Name</th>
+                          <th>Score</th>
+                          <th>Tier</th>
+                          <th>Generated</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {userCards.map((card) => {
+                          const cd = card.card_data as Record<string, unknown> | null;
+                          const horseName = (cd?.horse_name as string) || (cd?.name as string) || '\u2014';
+                          const score = cd?.score != null ? String(cd.score) : '\u2014';
+                          const tier = (cd?.tier as string) || '\u2014';
+                          return (
+                            <tr key={card.id}>
+                              <td style={{ fontWeight: 600 }}>{card.hip}</td>
+                              <td>{card.sale_id.replace(/-/g, ' ').toUpperCase()}</td>
+                              <td>{horseName}</td>
+                              <td>{score}</td>
+                              <td>{tier}</td>
+                              <td>{new Date(card.created_at).toLocaleString()}</td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  )}
                 </div>
               </div>
             </div>

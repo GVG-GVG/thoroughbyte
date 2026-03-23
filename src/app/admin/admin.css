@@ -269,8 +269,18 @@
   border: 1px solid var(--border);
 }
 
+.plan-badge.shortlist {
+  background: #3b82f6;
+  color: var(--white);
+}
+
 .plan-badge.pro {
   background: var(--gold);
+  color: var(--white);
+}
+
+.plan-badge.elite {
+  background: #22c55e;
   color: var(--white);
 }
 
