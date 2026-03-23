@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import { createClient } from '@supabase/supabase-js';
 import Stripe from 'stripe';
+import { sendUpgradeEmail } from '@/lib/email';
 
 // Use service role client for webhook — no user session available
 const supabaseAdmin = createClient(
@@ -60,6 +61,16 @@ export async function POST(req: NextRequest) {
             .eq('id', userId);
 
           console.log(`User ${userId} purchased Short List for ${saleId}`);
+
+          // Send upgrade confirmation email (non-blocking)
+          const { data: slProfile } = await supabaseAdmin
+            .from('profiles')
+            .select('email, full_name')
+            .eq('id', userId)
+            .single();
+          if (slProfile) {
+            sendUpgradeEmail(slProfile.email, slProfile.full_name || '', 'shortlist', saleId).catch(console.error);
+          }
         } else if (session.mode === 'subscription') {
           // Pro or Elite subscription
           await supabaseAdmin
@@ -72,6 +83,16 @@ export async function POST(req: NextRequest) {
             .eq('id', userId);
 
           console.log(`User ${userId} upgraded to ${plan}`);
+
+          // Send upgrade confirmation email (non-blocking)
+          const { data: subProfile } = await supabaseAdmin
+            .from('profiles')
+            .select('email, full_name')
+            .eq('id', userId)
+            .single();
+          if (subProfile) {
+            sendUpgradeEmail(subProfile.email, subProfile.full_name || '', plan).catch(console.error);
+          }
         }
         break;
       }
