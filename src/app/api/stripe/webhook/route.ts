@@ -62,14 +62,17 @@ export async function POST(req: NextRequest) {
 
           console.log(`User ${userId} purchased Short List for ${saleId}`);
 
-          // Send upgrade confirmation email (non-blocking)
+          // Send upgrade confirmation email
           const { data: slProfile } = await supabaseAdmin
             .from('profiles')
             .select('email, full_name')
             .eq('id', userId)
             .single();
-          if (slProfile) {
-            sendUpgradeEmail(slProfile.email, slProfile.full_name || '', 'shortlist', saleId).catch(console.error);
+          if (slProfile?.email) {
+            const result = await sendUpgradeEmail(slProfile.email, slProfile.full_name || '', 'shortlist', saleId);
+            if (result.error) console.error('Short List upgrade email failed:', result.error);
+          } else {
+            console.warn('No email found for user', userId);
           }
         } else if (session.mode === 'subscription') {
           // Pro or Elite subscription
@@ -84,14 +87,17 @@ export async function POST(req: NextRequest) {
 
           console.log(`User ${userId} upgraded to ${plan}`);
 
-          // Send upgrade confirmation email (non-blocking)
+          // Send upgrade confirmation email
           const { data: subProfile } = await supabaseAdmin
             .from('profiles')
             .select('email, full_name')
             .eq('id', userId)
             .single();
-          if (subProfile) {
-            sendUpgradeEmail(subProfile.email, subProfile.full_name || '', plan).catch(console.error);
+          if (subProfile?.email) {
+            const result = await sendUpgradeEmail(subProfile.email, subProfile.full_name || '', plan);
+            if (result.error) console.error('Subscription upgrade email failed:', result.error);
+          } else {
+            console.warn('No email found for user', userId);
           }
         }
         break;
