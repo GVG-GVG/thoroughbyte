@@ -146,8 +146,9 @@ export async function POST(req: NextRequest) {
 
         // Handle scheduled cancellation (cancel at period end)
         if (subscription.cancel_at_period_end && subscription.status === 'active' && newPlan) {
-          const cancelDate = subscription.current_period_end
-            ? new Date(subscription.current_period_end * 1000).toLocaleDateString('en-US', {
+          const periodEnd = (subscription as unknown as { current_period_end?: number }).current_period_end;
+          const cancelDate = periodEnd
+            ? new Date(periodEnd * 1000).toLocaleDateString('en-US', {
                 year: 'numeric', month: 'long', day: 'numeric',
               })
             : 'the end of your billing period';
