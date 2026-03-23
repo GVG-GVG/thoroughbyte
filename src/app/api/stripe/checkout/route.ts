@@ -67,6 +67,7 @@ export async function POST(req: NextRequest) {
       customer: customerId,
       mode,
       line_items: [{ price: priceId, quantity: 1 }],
+      allow_promotion_codes: true,
       success_url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/dashboard?upgraded=${requestedPlan}`,
       cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/dashboard`,
       client_reference_id: user.id,
