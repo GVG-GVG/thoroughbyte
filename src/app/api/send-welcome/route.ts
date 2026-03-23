@@ -91,12 +91,23 @@ export async function POST(req: NextRequest) {
   }
 
   try {
+    // Fetch the Welcome Guide PDF from Supabase Storage
+    const pdfUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/assets/ThoroughByte_Welcome_Guide.pdf`;
+    const pdfResponse = await fetch(pdfUrl);
+    const pdfBuffer = Buffer.from(await pdfResponse.arrayBuffer());
+
     const resend = getResend();
     const { data, error } = await resend.emails.send({
       from: 'ThoroughByte <noreply@thoroughbyte.com>',
       to: profile.email,
       subject: 'Welcome to ThoroughByte — Your Account Is Ready',
       html: buildWelcomeHtml(profile.full_name || ''),
+      attachments: [
+        {
+          filename: 'ThoroughByte_Welcome_Guide.pdf',
+          content: pdfBuffer,
+        },
+      ],
     });
 
     if (error) {
