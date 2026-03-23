@@ -52,7 +52,7 @@ export async function POST(request: Request) {
   if (action === 'get_cards' && user_id) {
     const { data: cards, error } = await supabase
       .from('generated_profiles')
-      .select('id, hip, sale_id, card_data, created_at')
+      .select('id, hip, sale_id, card_data, card_image_url, created_at')
       .eq('user_id', user_id)
       .order('created_at', { ascending: false });
 

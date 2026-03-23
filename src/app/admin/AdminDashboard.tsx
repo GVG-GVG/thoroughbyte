@@ -39,6 +39,7 @@ interface HorseCard {
   hip: number;
   sale_id: string;
   card_data: Record<string, unknown> | null;
+  card_image_url: string | null;
   created_at: string;
 }
 
@@ -438,7 +439,21 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
                           const tier = (cd?.tier as string) || '\u2014';
                           return (
                             <tr key={card.id}>
-                              <td style={{ fontWeight: 600 }}>{card.hip}</td>
+                              <td style={{ fontWeight: 600 }}>
+                                {card.card_image_url ? (
+                                  <a
+                                    href={card.card_image_url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ color: '#3b82f6', textDecoration: 'none' }}
+                                    onClick={(e) => e.stopPropagation()}
+                                  >
+                                    {card.hip}
+                                  </a>
+                                ) : (
+                                  card.hip
+                                )}
+                              </td>
                               <td>{card.sale_id.replace(/-/g, ' ').toUpperCase()}</td>
                               <td>{horseName}</td>
                               <td>{score}</td>
