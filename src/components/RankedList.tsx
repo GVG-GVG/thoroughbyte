@@ -26,9 +26,10 @@ interface Horse {
   btw: boolean;
   btp: boolean;
   btprod: boolean;
+  valueFlag: boolean;
 }
 
-type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'dam' | 'consigner' | 'state';
+type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'dam' | 'consigner' | 'state' | 'valueFlag';
 type SortDir = 'asc' | 'desc';
 
 const TIER_ORDER: Record<string, number> = {
@@ -77,6 +78,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
   const [stateFilter, setStateFilter] = useState<string>('');
   const [sireFilter, setSireFilter] = useState<string>('');
   const [hipSearch, setHipSearch] = useState<string>('');
+  const [valueOnly, setValueOnly] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -87,6 +89,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     setStateFilter('');
     setSireFilter('');
     setHipSearch('');
+    setValueOnly(false);
     setSortField('rank');
     setSortDir('asc');
     fetch(`/api/rankings?sale=${encodeURIComponent(sale)}`)
@@ -147,11 +150,17 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     if (hipSearch) {
       result = result.filter(h => h.hip.toString().includes(hipSearch));
     }
+    if (valueOnly) {
+      result = result.filter(h => h.valueFlag);
+    }
 
     // Sort
     result = [...result].sort((a, b) => {
       let av: number | string, bv: number | string;
-      if (sortField === 'tier') {
+      if (sortField === 'valueFlag') {
+        av = a.valueFlag ? 0 : 1;
+        bv = b.valueFlag ? 0 : 1;
+      } else if (sortField === 'tier') {
         av = TIER_ORDER[a.tier] ?? 99;
         bv = TIER_ORDER[b.tier] ?? 99;
       } else if (sortField === 'sire' || sortField === 'dam' || sortField === 'state' || sortField === 'sex' || sortField === 'consigner') {
@@ -167,7 +176,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     });
 
     return result;
-  }, [horses, tierFilter, sexFilter, sectionFilter, stateFilter, sireFilter, hipSearch, sortField, sortDir]);
+  }, [horses, tierFilter, sexFilter, sectionFilter, stateFilter, sireFilter, hipSearch, valueOnly, sortField, sortDir]);
 
   const sortIcon = (field: SortField) => {
     if (sortField !== field) return '';
@@ -203,13 +212,14 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
 
     autoTable(doc, {
       startY: 54,
-      head: [['Hip', 'Rank', 'Tier', 'Score', 'Sex', 'Sire', 'Dam', 'Time', '1/8 Out', '1/4 Out', 'Stride', 'Decel', 'State', 'Consigner']],
+      head: [['Hip', 'Rank', 'Tier', 'Score', 'Sex', 'Sire', 'Dam', 'Time', '1/8 Out', '1/4 Out', 'Stride', 'Decel', 'State', 'Consigner', 'Value']],
       body: rows.map(h => [
         h.hip, `#${h.rank}`, h.tier, h.rating.toFixed(1),
         h.sex === 'C' ? 'Colt' : 'Filly', h.sire,
         h.dam + [h.btw && ' BTW', h.btp && ' BTP', h.btprod && ' BTProd'].filter(Boolean).join(''),
         `${h.time.toFixed(1)}s`, `${h.eighthOut.toFixed(1)}s`, `${h.quarterOut.toFixed(1)}s`,
         `${h.stride.toFixed(1)}'`, `${h.decel.toFixed(2)}s`, h.state, h.consigner,
+        h.valueFlag ? 'VALUE' : '',
       ]),
       styles: { fontSize: 7, cellPadding: 3 },
       headStyles: { fillColor: [18, 30, 50], fontSize: 7, fontStyle: 'bold' },
@@ -246,6 +256,12 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
               </button>
             ))}
           </div>
+          <button
+            className={`rl-chip rl-chip-value ${valueOnly ? 'rl-chip-active' : ''}`}
+            onClick={() => setValueOnly(v => !v)}
+          >
+            VALUE
+          </button>
         </div>
         <div className="rl-filter-row">
           <div className="rl-filter-group">
@@ -305,10 +321,10 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
             )}
           </div>
         </div>
-        {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || sireFilter || hipSearch) && (
+        {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || sireFilter || hipSearch || valueOnly) && (
           <button
             className="rl-clear-btn"
-            onClick={() => { setTierFilter([]); setSexFilter(''); setSectionFilter(''); setStateFilter(''); setSireFilter(''); setHipSearch(''); }}
+            onClick={() => { setTierFilter([]); setSexFilter(''); setSectionFilter(''); setStateFilter(''); setSireFilter(''); setHipSearch(''); setValueOnly(false); }}
           >
             Clear all filters
           </button>
@@ -342,11 +358,12 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
               <th onClick={() => handleSort('decel')} className="rl-sortable">Decel{sortIcon('decel')}</th>
               <th onClick={() => handleSort('state')} className="rl-sortable">State{sortIcon('state')}</th>
               <th onClick={() => handleSort('consigner')} className="rl-sortable">Consigner{sortIcon('consigner')}</th>
+              <th onClick={() => handleSort('valueFlag')} className="rl-sortable">Value{sortIcon('valueFlag')}</th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={14} className="rl-empty">No horses match your filters.</td></tr>
+              <tr><td colSpan={15} className="rl-empty">No horses match your filters.</td></tr>
             ) : (
               filtered.map(h => (
                 <tr
@@ -373,6 +390,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                   <td>{h.decel.toFixed(2)}s</td>
                   <td>{h.state}</td>
                   <td className="rl-consigner">{h.consigner}</td>
+                  <td>{h.valueFlag && <span className="rl-value-tag">VALUE</span>}</td>
                 </tr>
               ))
             )}

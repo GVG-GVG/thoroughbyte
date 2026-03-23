@@ -43,30 +43,43 @@ function parsePrice(s: string): number {
   return parseInt(s.replace(/[$,]/g, ''), 10) || 0;
 }
 
+function isValueFlag(tier: string, saleStatus: string, salePrice: number): boolean {
+  return (tier === 'ELITE' || tier === 'STRONG') &&
+    saleStatus === 'SOLD' &&
+    salePrice > 0 &&
+    salePrice < 100000;
+}
+
 function transform(rawData: RawHorse[]) {
-  return rawData.map(h => ({
-    hip: parseInt(h.hip, 10),
-    rank: parseInt(h.rank, 10),
-    state: h.st || '',
-    sire: h.sire,
-    dam: h.dam,
-    consigner: h.consigner || '',
-    sex: h.sex,
-    section: h.section,
-    tier: h.tier,
-    rating: parseFloat(h.rating),
-    time: parseFloat(h.time),
-    stride: parseFloat(h.stride),
-    decel: parseFloat(h.decel),
-    eighthOut: parseFloat(h.eighth_out),
-    quarterOut: parseFloat(h.quarter_out),
-    day: parseInt(h.day, 10) || 0,
-    saleStatus: h.sale_status,
-    salePrice: parsePrice(h.sale_price),
-    btw: h.btw ?? false,
-    btp: h.btp ?? false,
-    btprod: h.btprod ?? false,
-  }));
+  return rawData.map(h => {
+    const tier = h.tier;
+    const saleStatus = h.sale_status;
+    const salePrice = parsePrice(h.sale_price);
+    return {
+      hip: parseInt(h.hip, 10),
+      rank: parseInt(h.rank, 10),
+      state: h.st || '',
+      sire: h.sire,
+      dam: h.dam,
+      consigner: h.consigner || '',
+      sex: h.sex,
+      section: h.section,
+      tier,
+      rating: parseFloat(h.rating),
+      time: parseFloat(h.time),
+      stride: parseFloat(h.stride),
+      decel: parseFloat(h.decel),
+      eighthOut: parseFloat(h.eighth_out),
+      quarterOut: parseFloat(h.quarter_out),
+      day: parseInt(h.day, 10) || 0,
+      saleStatus,
+      salePrice,
+      btw: h.btw ?? false,
+      btp: h.btp ?? false,
+      btprod: h.btprod ?? false,
+      valueFlag: isValueFlag(tier, saleStatus, salePrice),
+    };
+  });
 }
 
 export async function GET(request: NextRequest) {
