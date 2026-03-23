@@ -9,8 +9,9 @@ create table public.profiles (
   email text not null,
   full_name text,
   role text check (role in ('agent', 'trainer', 'owner', 'farm', 'other', 'admin')),
-  plan text not null default 'free' check (plan in ('free', 'pro')),
-  credits_remaining integer not null default 5,
+  plan text not null default 'free' check (plan in ('free', 'shortlist', 'pro', 'elite')),
+  credit_sale_id text,
+  credits_remaining integer not null default 3,
   stripe_customer_id text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
@@ -92,8 +93,8 @@ declare
 begin
   select plan into user_plan from public.profiles where id = p_user_id;
 
-  -- Pro users get unlimited generation
-  if user_plan = 'pro' then
+  -- Pro and Elite users get unlimited generation
+  if user_plan in ('pro', 'elite') then
     return true;
   end if;
 
@@ -121,8 +122,8 @@ declare
 begin
   select plan into user_plan from public.profiles where id = p_user_id;
 
-  -- Pro users have no credits to refund
-  if user_plan = 'pro' then
+  -- Pro and Elite users have no credits to refund
+  if user_plan in ('pro', 'elite') then
     return;
   end if;
 

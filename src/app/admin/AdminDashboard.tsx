@@ -17,7 +17,9 @@ interface UserProfile {
 interface Stats {
   totalUsers: number;
   freeUsers: number;
+  shortlistUsers: number;
   proUsers: number;
+  eliteUsers: number;
   totalCards: number;
   totalCreditsRemaining: number;
   usersWithCards: number;
@@ -45,7 +47,7 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
   const [selectedUser, setSelectedUser] = useState<UserProfile | null>(null);
   const [search, setSearch] = useState('');
   const [sortBy, setSortBy] = useState<'created_at' | 'cards_generated' | 'credits_remaining'>('created_at');
-  const [filterPlan, setFilterPlan] = useState<'all' | 'free' | 'pro'>('all');
+  const [filterPlan, setFilterPlan] = useState<'all' | 'free' | 'shortlist' | 'pro' | 'elite'>('all');
   const [saving, setSaving] = useState(false);
   const [editPlan, setEditPlan] = useState('');
   const [editCredits, setEditCredits] = useState(0);
@@ -171,11 +173,19 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
                 </div>
                 <div className="stat-card">
                   <div className="stat-num">{stats.freeUsers}</div>
-                  <div className="stat-label">Free Accounts</div>
+                  <div className="stat-label">Free</div>
+                </div>
+                <div className="stat-card">
+                  <div className="stat-num">{stats.shortlistUsers}</div>
+                  <div className="stat-label">Short List</div>
                 </div>
                 <div className="stat-card">
                   <div className="stat-num">{stats.proUsers}</div>
-                  <div className="stat-label">Pro Accounts</div>
+                  <div className="stat-label">Pro</div>
+                </div>
+                <div className="stat-card">
+                  <div className="stat-num">{stats.eliteUsers}</div>
+                  <div className="stat-label">Elite</div>
                 </div>
                 <div className="stat-card">
                   <div className="stat-num">{stats.totalCards}</div>
@@ -232,12 +242,14 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
                 />
                 <select
                   value={filterPlan}
-                  onChange={(e) => setFilterPlan(e.target.value as 'all' | 'free' | 'pro')}
+                  onChange={(e) => setFilterPlan(e.target.value as 'all' | 'free' | 'shortlist' | 'pro' | 'elite')}
                   className="admin-select"
                 >
                   <option value="all">All Plans</option>
                   <option value="free">Free</option>
+                  <option value="shortlist">Short List</option>
                   <option value="pro">Pro</option>
+                  <option value="elite">Elite</option>
                 </select>
                 <select
                   value={sortBy}
@@ -276,7 +288,7 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
                           {u.plan}
                         </span>
                       </td>
-                      <td>{u.plan === 'pro' ? '\u221E' : u.credits_remaining}</td>
+                      <td>{u.plan === 'pro' || u.plan === 'elite' ? '\u221E' : u.credits_remaining}</td>
                       <td>{u.cards_generated}</td>
                       <td>{u.role || '\u2014'}</td>
                       <td>{new Date(u.created_at).toLocaleDateString()}</td>
@@ -307,7 +319,9 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
                       className="admin-select full"
                     >
                       <option value="free">Free</option>
+                      <option value="shortlist">Short List</option>
                       <option value="pro">Pro</option>
+                      <option value="elite">Elite</option>
                     </select>
                   </div>
                   <div className="form-group">

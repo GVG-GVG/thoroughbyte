@@ -47,7 +47,9 @@ export default async function AdminPage() {
   const stats = {
     totalUsers: users.length,
     freeUsers: users.filter(u => u.plan === 'free').length,
+    shortlistUsers: users.filter(u => u.plan === 'shortlist').length,
     proUsers: users.filter(u => u.plan === 'pro').length,
+    eliteUsers: users.filter(u => u.plan === 'elite').length,
     totalCards: cards.length,
     totalCreditsRemaining: users.reduce((sum, u) => sum + (u.credits_remaining || 0), 0),
     usersWithCards: Object.keys(cardCountMap).length,
