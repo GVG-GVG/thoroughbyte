@@ -399,7 +399,7 @@ export default function AdminDashboard({ stats, users: initialUsers, adminEmail,
                   </div>
                   <div className="detail-stat-row">
                     <span className="detail-stat-label">Credits Used</span>
-                    <span className="detail-stat-val">{5 - selectedUser.credits_remaining + selectedUser.cards_generated > 5 ? selectedUser.cards_generated : 5 - selectedUser.credits_remaining}</span>
+                    <span className="detail-stat-val">{selectedUser.cards_generated}</span>
                   </div>
                   <div className="detail-stat-row">
                     <span className="detail-stat-label">Account Created</span>
