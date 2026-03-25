@@ -721,11 +721,21 @@
   display: block;
 }
 
+.rl-tier-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex: unset;
+  min-width: unset;
+  width: 100%;
+}
+
 .rl-tier-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 12px;
 }
 
 .rl-chip {
@@ -858,6 +868,8 @@
 
 .rl-table-wrap {
   overflow-x: auto;
+  overflow-y: auto;
+  max-height: 75vh;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
@@ -878,6 +890,9 @@
   text-transform: uppercase;
   padding: 12px 14px;
   text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   white-space: nowrap;
   user-select: none;
 }
@@ -1045,6 +1060,7 @@
 .rl-chip-value {
   border-color: #16a34a;
   color: #16a34a;
+  margin-left: 8px;
 }
 
 .rl-chip-active.rl-chip-value {
@@ -1090,6 +1106,7 @@
 .rl-chip-fav {
   border-color: var(--gold, #c8963e);
   color: var(--gold, #c8963e);
+  margin-left: 6px;
 }
 .rl-chip-active.rl-chip-fav {
   background: rgba(200,150,62,0.12);

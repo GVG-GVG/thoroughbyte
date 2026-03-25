@@ -279,7 +279,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
 
       {/* Filters */}
       <div className="rl-filters">
-        <div className="rl-filter-group">
+        <div className="rl-filter-group rl-tier-row">
           <label className="rl-filter-label">Tier</label>
           <div className="rl-tier-chips">
             {Object.keys(TIER_ORDER).map(tier => (
