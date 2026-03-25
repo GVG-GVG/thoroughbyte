@@ -164,7 +164,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       const genRes = await fetch('/api/generate-card', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ hip }),
+        body: JSON.stringify({ hip, sale: selectedSale }),
       });
       const genData = await genRes.json();
 
@@ -196,7 +196,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       setGenerating(false);
       setGeneratingStatus('');
     }
-  }, [user.id, plan]);
+  }, [user.id, plan, selectedSale]);
 
   const handleLookup = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
