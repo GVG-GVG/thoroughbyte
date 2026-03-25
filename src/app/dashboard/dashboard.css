@@ -1053,6 +1053,50 @@
   border-color: #16a34a;
 }
 
+/* Favorites */
+.rl-fav-col {
+  width: 32px;
+  text-align: center;
+  color: var(--gold, #c8963e);
+  font-size: 14px;
+  cursor: default;
+}
+.rl-fav-cell {
+  width: 32px;
+  text-align: center;
+  padding: 0 4px;
+}
+.rl-fav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--border, #dfe4ea);
+  transition: color 0.15s, transform 0.15s;
+  padding: 2px;
+  line-height: 1;
+}
+.rl-fav-btn:hover {
+  color: var(--gold, #c8963e);
+  transform: scale(1.2);
+}
+.rl-fav-btn.rl-fav-active {
+  color: var(--gold, #c8963e);
+}
+.rl-fav-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.rl-chip-fav {
+  border-color: var(--gold, #c8963e);
+  color: var(--gold, #c8963e);
+}
+.rl-chip-active.rl-chip-fav {
+  background: rgba(200,150,62,0.12);
+  color: var(--gold, #c8963e);
+  border-color: var(--gold, #c8963e);
+}
+
 .rl-empty {
   text-align: center;
   padding: 32px;

@@ -79,6 +79,9 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
   const [sireFilter, setSireFilter] = useState<string>('');
   const [hipSearch, setHipSearch] = useState<string>('');
   const [valueOnly, setValueOnly] = useState(false);
+  const [favorites, setFavorites] = useState<Set<number>>(new Set());
+  const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const [togglingFav, setTogglingFav] = useState<number | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -90,6 +93,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     setSireFilter('');
     setHipSearch('');
     setValueOnly(false);
+    setFavoritesOnly(false);
     setSortField('rank');
     setSortDir('asc');
     fetch(`/api/rankings?sale=${encodeURIComponent(sale)}`)
@@ -99,6 +103,35 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
         setLoading(false);
       })
       .catch(() => setLoading(false));
+    // Load favorites for this sale
+    fetch(`/api/favorites?sale=${encodeURIComponent(sale)}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.hips) setFavorites(new Set(data.hips));
+      })
+      .catch(() => {});
+  }, [sale]);
+
+  const toggleFavorite = useCallback(async (hip: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setTogglingFav(hip);
+    try {
+      const res = await fetch('/api/favorites', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ hip, sale_id: sale }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setFavorites(prev => {
+          const next = new Set(prev);
+          if (data.favorited) next.add(hip);
+          else next.delete(hip);
+          return next;
+        });
+      }
+    } catch {}
+    setTogglingFav(null);
   }, [sale]);
 
   // Get unique states for filter dropdown
@@ -153,6 +186,9 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     if (valueOnly) {
       result = result.filter(h => h.valueFlag);
     }
+    if (favoritesOnly) {
+      result = result.filter(h => favorites.has(h.hip));
+    }
 
     // Sort
     result = [...result].sort((a, b) => {
@@ -176,7 +212,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     });
 
     return result;
-  }, [horses, tierFilter, sexFilter, sectionFilter, stateFilter, sireFilter, hipSearch, valueOnly, sortField, sortDir]);
+  }, [horses, tierFilter, sexFilter, sectionFilter, stateFilter, sireFilter, hipSearch, valueOnly, favoritesOnly, favorites, sortField, sortDir]);
 
   const sortIcon = (field: SortField) => {
     if (sortField !== field) return '';
@@ -262,6 +298,13 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
           >
             VALUE
           </button>
+          <button
+            className={`rl-chip rl-chip-fav ${favoritesOnly ? 'rl-chip-active' : ''}`}
+            onClick={() => setFavoritesOnly(v => !v)}
+            title="Show only favorited horses"
+          >
+            &#9733; FAVORITES{favorites.size > 0 ? ` (${favorites.size})` : ''}
+          </button>
         </div>
         <div className="rl-filter-row">
           <div className="rl-filter-group">
@@ -321,10 +364,10 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
             )}
           </div>
         </div>
-        {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || sireFilter || hipSearch || valueOnly) && (
+        {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || sireFilter || hipSearch || valueOnly || favoritesOnly) && (
           <button
             className="rl-clear-btn"
-            onClick={() => { setTierFilter([]); setSexFilter(''); setSectionFilter(''); setStateFilter(''); setSireFilter(''); setHipSearch(''); setValueOnly(false); }}
+            onClick={() => { setTierFilter([]); setSexFilter(''); setSectionFilter(''); setStateFilter(''); setSireFilter(''); setHipSearch(''); setValueOnly(false); setFavoritesOnly(false); }}
           >
             Clear all filters
           </button>
@@ -344,6 +387,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
         <table className="rl-table">
           <thead>
             <tr>
+              <th className="rl-fav-col" title="Favorites">&#9733;</th>
               <th onClick={() => handleSort('hip')} className="rl-sortable">Hip{sortIcon('hip')}</th>
               <th onClick={() => handleSort('rank')} className="rl-sortable">Rank{sortIcon('rank')}</th>
               <th onClick={() => handleSort('tier')} className="rl-sortable">Tier{sortIcon('tier')}</th>
@@ -363,7 +407,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={15} className="rl-empty">No horses match your filters.</td></tr>
+              <tr><td colSpan={16} className="rl-empty">No horses match your filters.</td></tr>
             ) : (
               filtered.map(h => (
                 <tr
@@ -371,6 +415,16 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                   className={`rl-row ${TIER_ROW_CLASSES[h.tier] ?? ''}`}
                   onClick={() => onSelectHip?.(h.hip, h)}
                 >
+                  <td className="rl-fav-cell">
+                    <button
+                      className={`rl-fav-btn ${favorites.has(h.hip) ? 'rl-fav-active' : ''}`}
+                      onClick={(e) => toggleFavorite(h.hip, e)}
+                      disabled={togglingFav === h.hip}
+                      title={favorites.has(h.hip) ? 'Remove from favorites' : 'Add to favorites'}
+                    >
+                      {favorites.has(h.hip) ? '\u2605' : '\u2606'}
+                    </button>
+                  </td>
                   <td className="rl-hip">{h.hip}</td>
                   <td className="rl-rank">#{h.rank}</td>
                   <td className="rl-tier-cell"><span className={`rl-tier-tag ${TIER_CLASSES[h.tier]}`}>{h.tier}</span></td>
