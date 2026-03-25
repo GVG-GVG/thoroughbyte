@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { requireAdmin } from '@/lib/supabase/admin';
+import { sendUpgradeEmail } from '@/lib/email';
 
 export async function GET() {
   const admin = await requireAdmin();
@@ -111,6 +112,20 @@ export async function PATCH(request: Request) {
     action: 'update_user',
     details: { before, after: updates },
   });
+
+  // Send upgrade email if plan was upgraded via admin panel
+  const PLAN_RANK: Record<string, number> = { free: 0, shortlist: 1, pro: 2, elite: 3 };
+  if (
+    plan !== undefined &&
+    before &&
+    (PLAN_RANK[plan] ?? 0) > (PLAN_RANK[before.plan] ?? 0)
+  ) {
+    const email = updated.email;
+    const name = updated.full_name || updated.email;
+    sendUpgradeEmail(email, name, plan).catch((err) =>
+      console.error('Admin upgrade email failed:', err)
+    );
+  }
 
   return NextResponse.json({ user: updated });
 }
