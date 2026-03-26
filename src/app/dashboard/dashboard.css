@@ -1241,6 +1241,8 @@
 
 .ct-table-scroll {
   overflow-x: auto;
+  overflow-y: auto;
+  max-height: 75vh;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1268,6 +1270,9 @@
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .ct-table th:first-child { border-radius: 6px 0 0 0; }
 .ct-table th:last-child { border-radius: 0 6px 0 0; }
