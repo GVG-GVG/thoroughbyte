@@ -241,7 +241,10 @@ export async function renderProfileCard(horse: EnrichedHorse): Promise<Buffer> {
 
   try {
     const page = await browser.newPage();
-    await page.setContent(html, { waitUntil: 'networkidle0' });
+    await page.setContent(html, { waitUntil: 'domcontentloaded' });
+    // Wait briefly for fonts to load, but don't block on external images
+    // (OBS catalog servers may be unreachable for older sales)
+    await page.waitForFunction(() => document.fonts.ready).catch(() => {});
 
     // Get the card element dimensions
     const cardEl = await page.$('.card');
