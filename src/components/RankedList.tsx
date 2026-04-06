@@ -268,6 +268,15 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     doc.text(subtitle, 40, 44);
     doc.setTextColor(0);
 
+    const TIER_PDF_COLORS: Record<string, [number, number, number]> = {
+      'ELITE':     [210, 235, 220],
+      'STRONG':    [220, 240, 225],
+      'ABOVE AVG': [240, 238, 215],
+      'AVERAGE':   [238, 238, 238],
+      'BELOW AVG': [245, 228, 220],
+      'WEAK':      [242, 215, 215],
+    };
+
     autoTable(doc, {
       startY: 54,
       head: [['Hip', 'Rank', 'Tier', 'Score', 'Sex', 'Sire', 'Dam', 'Time', '1/8 Out', '1/4 Out', 'Stride', 'Decel', 'State', 'Consigner', 'Value']],
@@ -282,8 +291,16 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
       ]),
       styles: { fontSize: 7, cellPadding: 3 },
       headStyles: { fillColor: [18, 30, 50], fontSize: 7, fontStyle: 'bold' },
-      alternateRowStyles: { fillColor: [245, 245, 245] },
       margin: { left: 40, right: 40 },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      didParseCell: (data: any) => {
+        if (data.section === 'body') {
+          const horse = rows[data.row.index];
+          if (horse?.tier && TIER_PDF_COLORS[horse.tier]) {
+            data.cell.styles.fillColor = TIER_PDF_COLORS[horse.tier];
+          }
+        }
+      },
     });
 
     doc.save(`${(saleLabel || 'horse-ratings').replace(/\s+/g, '-').toLowerCase()}.pdf`);
