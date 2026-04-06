@@ -4,6 +4,7 @@
  */
 
 import march2026Data from './horse-data.json';
+import april2026Data from './horse-data-obs-april-2026.json';
 import march2025Data from './horse-data-obs-march-2025.json';
 import april2025Data from './horse-data-obs-april-2025.json';
 import march2024Data from './horse-data-obs-march-2024.json';
@@ -88,6 +89,7 @@ interface SaleMeta {
 }
 
 const SALE_META: Record<string, SaleMeta> = {
+  'obs-april-2026': { label: 'OBS April 2026', year: '2026', photoUrlPrefix: null },
   'obs-march-2026': { label: 'OBS March 2026', year: '2026', photoUrlPrefix: 'https://obscatalog.com/2026/149/' },
   'obs-april-2025': { label: 'OBS April 2025', year: '2025', photoUrlPrefix: 'https://obscatalog.com/2025/144/' },
   'obs-march-2025': { label: 'OBS March 2025', year: '2025', photoUrlPrefix: 'https://obscatalog.com/2025/142/' },
@@ -96,6 +98,7 @@ const SALE_META: Record<string, SaleMeta> = {
 };
 
 const SALE_DATA: Record<string, RawHorse[]> = {
+  'obs-april-2026': april2026Data as RawHorse[],
   'obs-march-2026': march2026Data as RawHorse[],
   'obs-april-2025': april2025Data as RawHorse[],
   'obs-march-2025': march2025Data as RawHorse[],

@@ -42,6 +42,7 @@ const PLAN_LABELS: Record<Plan, string> = {
 };
 
 const SALES = [
+  { id: 'obs-april-2026', label: 'OBS April 2026', count: 1034 },
   { id: 'obs-march-2026', label: 'OBS March 2026', count: 638 },
   { id: 'obs-april-2025', label: 'OBS April 2025', count: 902 },
   { id: 'obs-march-2025', label: 'OBS March 2025', count: 650 },
@@ -99,7 +100,7 @@ function GateOverlay({ tab, onUpgrade }: { tab: Tab; onUpgrade: (plan: string) =
 
 export default function DashboardClient({ user, profile, generatedProfiles: initialProfiles }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>('cards');
-  const [selectedSale, setSelectedSale] = useState('obs-march-2026');
+  const [selectedSale, setSelectedSale] = useState('obs-april-2026');
   const [hipSearch, setHipSearch] = useState('');
   const [searchError, setSearchError] = useState('');
   const [generating, setGenerating] = useState(false);
