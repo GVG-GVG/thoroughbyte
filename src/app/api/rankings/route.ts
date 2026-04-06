@@ -52,36 +52,48 @@ function isValueFlag(tier: string, saleStatus: string, salePrice: number): boole
     salePrice < 100000;
 }
 
+function safeFloat(v: string): number {
+  const n = parseFloat(v);
+  return isNaN(n) ? 0 : n;
+}
+
+function safeInt(v: string): number {
+  const n = parseInt(v, 10);
+  return isNaN(n) ? 0 : n;
+}
+
 function transform(rawData: RawHorse[]) {
-  return rawData.map(h => {
-    const tier = h.tier;
-    const saleStatus = h.sale_status;
-    const salePrice = parsePrice(h.sale_price);
-    return {
-      hip: parseInt(h.hip, 10),
-      rank: parseInt(h.rank, 10),
-      state: h.st || '',
-      sire: h.sire,
-      dam: h.dam,
-      consigner: h.consigner || '',
-      sex: h.sex,
-      section: h.section,
-      tier,
-      rating: parseFloat(h.rating),
-      time: parseFloat(h.time),
-      stride: parseFloat(h.stride),
-      decel: parseFloat(h.decel),
-      eighthOut: parseFloat(h.eighth_out),
-      quarterOut: parseFloat(h.quarter_out),
-      day: parseInt(h.day, 10) || 0,
-      saleStatus,
-      salePrice,
-      btw: h.btw ?? false,
-      btp: h.btp ?? false,
-      btprod: h.btprod ?? false,
-      valueFlag: isValueFlag(tier, saleStatus, salePrice),
-    };
-  });
+  return rawData
+    .filter(h => h.sale_status !== 'OUT')
+    .map(h => {
+      const tier = h.tier || '';
+      const saleStatus = h.sale_status;
+      const salePrice = parsePrice(h.sale_price);
+      return {
+        hip: safeInt(h.hip),
+        rank: safeInt(h.rank),
+        state: h.st || '',
+        sire: h.sire,
+        dam: h.dam,
+        consigner: h.consigner || '',
+        sex: h.sex,
+        section: h.section || '',
+        tier,
+        rating: safeFloat(h.rating),
+        time: safeFloat(h.time),
+        stride: safeFloat(h.stride),
+        decel: safeFloat(h.decel),
+        eighthOut: safeFloat(h.eighth_out),
+        quarterOut: safeFloat(h.quarter_out),
+        day: safeInt(h.day),
+        saleStatus,
+        salePrice,
+        btw: h.btw ?? false,
+        btp: h.btp ?? false,
+        btprod: h.btprod ?? false,
+        valueFlag: isValueFlag(tier, saleStatus, salePrice),
+      };
+    });
 }
 
 export async function GET(request: NextRequest) {
@@ -95,8 +107,6 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  // Only include horses that have breeze data (non-empty time = has been worked)
-  const allHorses = transform(rawData);
-  const horses = allHorses.filter(h => !isNaN(h.time) && h.time > 0);
-  return NextResponse.json({ horses, sale, totalCatalog: rawData.length });
+  const horses = transform(rawData);
+  return NextResponse.json({ horses, sale });
 }

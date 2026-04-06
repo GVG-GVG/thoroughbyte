@@ -256,12 +256,13 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
       startY: 54,
       head: [['Hip', 'Rank', 'Tier', 'Score', 'Sex', 'Sire', 'Dam', 'Time', '1/8 Out', '1/4 Out', 'Stride', 'Decel', 'State', 'Consigner', 'Value']],
       body: rows.map(h => [
-        h.hip, `#${h.rank}`, h.tier, h.rating.toFixed(1),
+        h.hip, h.rank ? `#${h.rank}` : '\u2014', h.tier || '\u2014', h.rating ? h.rating.toFixed(1) : '\u2014',
         h.sex === 'C' ? 'Colt' : 'Filly', h.sire,
         h.dam + [h.btw && ' BTW', h.btp && ' BTP', h.btprod && ' BTProd'].filter(Boolean).join(''),
-        `${h.time.toFixed(1)}s`, `${h.eighthOut.toFixed(1)}s`, `${h.quarterOut.toFixed(1)}s`,
-        `${h.stride.toFixed(1)}'`, `${h.decel.toFixed(2)}s`, h.state, h.consigner,
-        h.valueFlag ? 'VALUE' : '',
+        h.time ? `${h.time.toFixed(1)}s` : '\u2014', h.eighthOut ? `${h.eighthOut.toFixed(1)}s` : '\u2014',
+        h.quarterOut ? `${h.quarterOut.toFixed(1)}s` : '\u2014',
+        h.stride ? `${h.stride.toFixed(1)}'` : '\u2014', h.decel ? `${h.decel.toFixed(2)}s` : '\u2014',
+        h.state, h.consigner, h.valueFlag ? 'VALUE' : '',
       ]),
       styles: { fontSize: 7, cellPadding: 3 },
       headStyles: { fillColor: [18, 30, 50], fontSize: 7, fontStyle: 'bold' },
@@ -274,20 +275,6 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
 
   if (loading) {
     return <div className="rl-loading">Loading ranked list...</div>;
-  }
-
-  if (horses.length === 0) {
-    return (
-      <div className="rl-wrap">
-        <div className="rl-header">
-          <h2>{saleLabel ? `${saleLabel} Breeze Analytics` : 'Ranked Sale List'}</h2>
-        </div>
-        <div className="rl-empty-sale">
-          <p>No breeze data available yet for this sale.</p>
-          <p className="rl-empty-hint">Rankings will appear here once horses begin breezing and data is processed.</p>
-        </div>
-      </div>
-    );
   }
 
   return (
@@ -456,9 +443,9 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                     </button>
                   </td>
                   <td className="rl-hip">{h.hip}</td>
-                  <td className="rl-rank">#{h.rank}</td>
-                  <td className="rl-tier-cell"><span className={`rl-tier-tag ${TIER_CLASSES[h.tier]}`}>{h.tier}</span></td>
-                  <td className="rl-score">{h.rating.toFixed(1)}</td>
+                  <td className="rl-rank">{h.rank ? `#${h.rank}` : '\u2014'}</td>
+                  <td className="rl-tier-cell">{h.tier ? <span className={`rl-tier-tag ${TIER_CLASSES[h.tier]}`}>{h.tier}</span> : '\u2014'}</td>
+                  <td className="rl-score">{h.rating ? h.rating.toFixed(1) : '\u2014'}</td>
                   <td>{h.sex === 'C' ? 'Colt' : 'Filly'}</td>
                   <td className="rl-sire">{h.sire}</td>
                   <td className={`rl-dam${(h.btw || h.btp || h.btprod) ? ' rl-dam-bt' : ''}`}>
@@ -467,11 +454,11 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                     {h.btp && <span className="rl-bt-tag rl-bt-btp" title="Black-Type Placed">BTP</span>}
                     {h.btprod && <span className="rl-bt-tag rl-bt-btprod" title="Black-Type Producer">BTProd</span>}
                   </td>
-                  <td>{h.time.toFixed(1)}s</td>
-                  <td>{h.eighthOut.toFixed(1)}s</td>
-                  <td>{h.quarterOut.toFixed(1)}s</td>
-                  <td>{h.stride.toFixed(1)}&prime;</td>
-                  <td>{h.decel.toFixed(2)}s</td>
+                  <td>{h.time ? `${h.time.toFixed(1)}s` : '\u2014'}</td>
+                  <td>{h.eighthOut ? `${h.eighthOut.toFixed(1)}s` : '\u2014'}</td>
+                  <td>{h.quarterOut ? `${h.quarterOut.toFixed(1)}s` : '\u2014'}</td>
+                  <td>{h.stride ? `${h.stride.toFixed(1)}\u2032` : '\u2014'}</td>
+                  <td>{h.decel ? `${h.decel.toFixed(2)}s` : '\u2014'}</td>
                   <td>{h.state}</td>
                   <td className="rl-consigner">{h.consigner}</td>
                   <td>{h.valueFlag && <span className="rl-value-tag">VALUE</span>}</td>
