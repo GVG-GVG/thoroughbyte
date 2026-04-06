@@ -88,11 +88,11 @@ const TIER_COLORS: Record<string, { bg: string; ring: string }> = {
   'WEAK':      { bg: '#c04040', ring: '#c04040' },
 };
 
-function buildCardHtml(h: EnrichedHorse): string {
+function buildCardHtml(h: EnrichedHorse, photoUrlOverride?: string | null): string {
   const tc = TIER_COLORS[h.tier] || TIER_COLORS['AVERAGE'];
   const circ = 2 * Math.PI * 34;
   const dashOff = circ * (1 - h.rating / 100);
-  const photoUrl = getPhotoUrl(h.hip, h.saleId) || '';
+  const photoUrl = photoUrlOverride !== undefined ? (photoUrlOverride || '') : (getPhotoUrl(h.hip, h.saleId) || '');
   const sexLabel = h.sex === 'C' ? 'Colt' : 'Filly';
   const topPct = 100 - Math.round((1 - (h.rank - 1) / h.totalRanked) * 100);
   const peer = h.peer;
@@ -225,8 +225,40 @@ body{font-family:'Inter',-apple-system,sans-serif;background:transparent;display
 
 // ── Renderer ──
 
+/**
+ * Check whether a photo URL is reachable within a timeout.
+ * Used to avoid including <img> tags that would cause Puppeteer's
+ * networkidle0 to hang waiting for unreachable OBS catalog servers.
+ */
+async function isPhotoReachable(url: string, timeoutMs = 5000): Promise<boolean> {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    const res = await fetch(url, { method: 'HEAD', signal: controller.signal });
+    clearTimeout(timer);
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
 export async function renderProfileCard(horse: EnrichedHorse): Promise<Buffer> {
-  const html = buildCardHtml(horse);
+  // Pre-check photo URL reachability so we can omit unreachable images
+  // from the HTML entirely. This lets us safely use networkidle0 for
+  // full rendering quality (fonts, CSS, layout) without risking a hang
+  // on dead OBS catalog servers for older sales.
+  const photoUrl = getPhotoUrl(horse.hip, horse.saleId);
+  let verifiedPhotoUrl: string | null = null;
+  if (photoUrl) {
+    const reachable = await isPhotoReachable(photoUrl);
+    if (reachable) {
+      verifiedPhotoUrl = photoUrl;
+    } else {
+      console.log(`Photo unreachable for hip ${horse.hip}, omitting from card: ${photoUrl}`);
+    }
+  }
+
+  const html = buildCardHtml(horse, verifiedPhotoUrl);
 
   // Dynamic import to avoid bundling chromium in client code
   const chromium = await import('@sparticuz/chromium');
@@ -241,10 +273,7 @@ export async function renderProfileCard(horse: EnrichedHorse): Promise<Buffer> {
 
   try {
     const page = await browser.newPage();
-    await page.setContent(html, { waitUntil: 'domcontentloaded' });
-    // Wait briefly for fonts to load, but don't block on external images
-    // (OBS catalog servers may be unreachable for older sales)
-    await page.waitForFunction(() => document.fonts.ready).catch(() => {});
+    await page.setContent(html, { waitUntil: 'networkidle0' });
 
     // Get the card element dimensions
     const cardEl = await page.$('.card');
