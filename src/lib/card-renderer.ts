@@ -243,6 +243,8 @@ async function isPhotoReachable(url: string, timeoutMs = 5000): Promise<boolean>
 }
 
 export async function renderProfileCard(horse: EnrichedHorse): Promise<Buffer> {
+  const t0 = Date.now();
+
   // Pre-check photo URL reachability so we can omit unreachable images
   // from the HTML entirely. This lets us safely use networkidle0 for
   // full rendering quality (fonts, CSS, layout) without risking a hang
@@ -251,14 +253,14 @@ export async function renderProfileCard(horse: EnrichedHorse): Promise<Buffer> {
   let verifiedPhotoUrl: string | null = null;
   if (photoUrl) {
     const reachable = await isPhotoReachable(photoUrl);
+    console.log(`[render] Photo check: ${photoUrl} reachable=${reachable} (${Date.now() - t0}ms)`);
     if (reachable) {
       verifiedPhotoUrl = photoUrl;
-    } else {
-      console.log(`Photo unreachable for hip ${horse.hip}, omitting from card: ${photoUrl}`);
     }
   }
 
   const html = buildCardHtml(horse, verifiedPhotoUrl);
+  console.log(`[render] HTML built, length=${html.length} (${Date.now() - t0}ms)`);
 
   // Dynamic import to avoid bundling chromium in client code
   const chromium = await import('@sparticuz/chromium');
@@ -270,16 +272,22 @@ export async function renderProfileCard(horse: EnrichedHorse): Promise<Buffer> {
     executablePath: await chromium.default.executablePath(),
     headless: true,
   });
+  console.log(`[render] Browser launched (${Date.now() - t0}ms)`);
 
   try {
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: 'networkidle0' });
+    console.log(`[render] setContent networkidle0 done (${Date.now() - t0}ms)`);
 
     // Get the card element dimensions
     const cardEl = await page.$('.card');
     if (!cardEl) throw new Error('Card element not found');
 
+    const box = await cardEl.boundingBox();
+    console.log(`[render] Card bounding box: ${JSON.stringify(box)} (${Date.now() - t0}ms)`);
+
     const png = await cardEl.screenshot({ type: 'png' }) as Buffer;
+    console.log(`[render] Screenshot taken, ${png.length} bytes (${Date.now() - t0}ms)`);
     return Buffer.from(png);
   } finally {
     await browser.close();

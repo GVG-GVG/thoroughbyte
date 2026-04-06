@@ -67,7 +67,9 @@ export async function POST(request: NextRequest) {
   // Generate PNG
   let pngBuffer: Buffer;
   try {
+    const renderStart = Date.now();
     pngBuffer = await renderProfileCard(horse);
+    console.log(`Card render complete: hip=${hip} sale=${saleId} size=${pngBuffer.length} bytes time=${Date.now() - renderStart}ms`);
   } catch (err) {
     console.error('Card render failed:', err);
     return NextResponse.json({ error: 'Card generation failed' }, { status: 500 });
