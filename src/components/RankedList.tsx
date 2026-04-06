@@ -283,7 +283,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
       body: rows.map(h => [
         h.hip, h.rank ? `#${h.rank}` : '\u2014', h.tier || '\u2014', h.rating ? h.rating.toFixed(1) : '\u2014',
         h.sex === 'C' ? 'Colt' : 'Filly', h.sire,
-        h.dam + [h.btw && ' BTW', h.btp && ' BTP', h.btprod && ' BTProd'].filter(Boolean).join(''),
+        h.dam,
         h.time ? `${h.time.toFixed(1)}s` : '\u2014', h.eighthOut ? `${h.eighthOut.toFixed(1)}s` : '\u2014',
         h.quarterOut ? `${h.quarterOut.toFixed(1)}s` : '\u2014',
         h.stride ? `${h.stride.toFixed(1)}'` : '\u2014', h.decel ? `${h.decel.toFixed(2)}s` : '\u2014',
@@ -300,6 +300,37 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
             data.cell.styles.fillColor = TIER_PDF_COLORS[horse.tier];
           }
         }
+      },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      didDrawCell: (data: any) => {
+        if (data.section !== 'body' || data.column.index !== 6) return; // 6 = Dam column
+        const horse = rows[data.row.index];
+        if (!horse) return;
+        const badges: { label: string; color: [number, number, number] }[] = [];
+        if (horse.btw)    badges.push({ label: 'BTW',    color: [220, 38, 38] });
+        if (horse.btp)    badges.push({ label: 'BTP',    color: [37, 99, 235] });
+        if (horse.btprod) badges.push({ label: 'BTProd', color: [22, 163, 74] });
+        if (badges.length === 0) return;
+        const cellX = data.cell.x;
+        const cellY = data.cell.y;
+        const cellH = data.cell.height;
+        // Position badges after dam text
+        const textWidth = doc.getTextWidth(String(data.cell.raw || ''));
+        let bx = cellX + data.cell.padding('left') + textWidth + 2;
+        const by = cellY + cellH / 2 - 3;
+        doc.setFontSize(5);
+        for (const b of badges) {
+          const tw = doc.getTextWidth(b.label) + 3;
+          const bw = tw + 1;
+          doc.setFillColor(b.color[0], b.color[1], b.color[2]);
+          doc.roundedRect(bx, by, bw, 6, 1, 1, 'F');
+          doc.setTextColor(255, 255, 255);
+          doc.text(b.label, bx + bw / 2, by + 4.2, { align: 'center' });
+          bx += bw + 1.5;
+        }
+        // Reset text color for subsequent cells
+        doc.setTextColor(0, 0, 0);
+        doc.setFontSize(7);
       },
     });
 
