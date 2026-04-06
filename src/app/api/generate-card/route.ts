@@ -94,7 +94,7 @@ export async function POST(request: NextRequest) {
     .from('profile-cards')
     .getPublicUrl(filename);
 
-  const cardImageUrl = urlData.publicUrl;
+  const cardImageUrl = `${urlData.publicUrl}?v=${Date.now()}`;
 
   // Record in generated_profiles
   await supabase.from('generated_profiles').insert({
