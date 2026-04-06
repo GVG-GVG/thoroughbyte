@@ -276,6 +276,20 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     return <div className="rl-loading">Loading ranked list...</div>;
   }
 
+  if (horses.length === 0) {
+    return (
+      <div className="rl-wrap">
+        <div className="rl-header">
+          <h2>{saleLabel ? `${saleLabel} Breeze Analytics` : 'Ranked Sale List'}</h2>
+        </div>
+        <div className="rl-empty-sale">
+          <p>No breeze data available yet for this sale.</p>
+          <p className="rl-empty-hint">Rankings will appear here once horses begin breezing and data is processed.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="rl-wrap">
       <div className="rl-header">

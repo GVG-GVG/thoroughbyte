@@ -95,6 +95,8 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const horses = transform(rawData);
-  return NextResponse.json({ horses, sale });
+  // Only include horses that have breeze data (non-empty time = has been worked)
+  const allHorses = transform(rawData);
+  const horses = allHorses.filter(h => !isNaN(h.time) && h.time > 0);
+  return NextResponse.json({ horses, sale, totalCatalog: rawData.length });
 }
