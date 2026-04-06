@@ -114,6 +114,7 @@ function parsePrice(s: string): number {
 }
 
 function avg(arr: number[]): number {
+  if (arr.length === 0) return 0;
   return Math.round((arr.reduce((s, v) => s + v, 0) / arr.length) * 100) / 100;
 }
 
@@ -173,12 +174,17 @@ function getOrBuildIndex(saleId: string): SaleIndex | null {
     }
     const g = peerGroups.get(key)!;
     g.horses.push(h);
-    g.time.push(parseFloat(h.time));
-    g.stride.push(parseFloat(h.stride));
-    g.eighth.push(parseFloat(h.eighth_out));
-    g.quarter.push(parseFloat(h.quarter_out));
-    g.decel.push(parseFloat(h.decel));
-    g.rating.push(parseFloat(h.rating));
+
+    // Only include horses with actual breeze data in peer metric arrays
+    const t = parseFloat(h.time);
+    if (t && !isNaN(t) && t > 0) {
+      g.time.push(t);
+      g.stride.push(parseFloat(h.stride));
+      g.eighth.push(parseFloat(h.eighth_out));
+      g.quarter.push(parseFloat(h.quarter_out));
+      g.decel.push(parseFloat(h.decel));
+      g.rating.push(parseFloat(h.rating));
+    }
   }
 
   for (const g of peerGroups.values()) {
@@ -190,7 +196,10 @@ function getOrBuildIndex(saleId: string): SaleIndex | null {
     g.rating.sort((a, b) => a - b);
   }
 
-  const index: SaleIndex = { hipMap, peerGroups, totalRanked: horses.length };
+  // totalRanked = only horses that have actually breezed
+  let breezedCount = 0;
+  for (const g of peerGroups.values()) { breezedCount += g.time.length; }
+  const index: SaleIndex = { hipMap, peerGroups, totalRanked: breezedCount };
   saleIndexes.set(saleId, index);
   return index;
 }
@@ -228,7 +237,7 @@ export function lookupHip(hip: number, saleId: string = 'obs-march-2026'): Enric
   const meta = SALE_META[saleId] || SALE_META['obs-march-2026'];
 
   const peer: PeerStats = {
-    n: g.horses.length,
+    n: g.time.length,
     time: avg(g.time),
     stride: avg(g.stride),
     eighth: avg(g.eighth),
