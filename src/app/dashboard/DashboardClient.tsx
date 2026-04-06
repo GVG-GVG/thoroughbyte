@@ -108,6 +108,7 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
   const [credits, setCredits] = useState(profile?.credits_remaining ?? 0);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [upgrading, setUpgrading] = useState(false);
+  const [deletingCard, setDeletingCard] = useState<string | null>(null);
 
   const plan = (profile?.plan ?? 'free') as Plan;
   const name = profile?.full_name || user.email?.split('@')[0] || 'there';
@@ -222,6 +223,30 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
       setGeneratingStatus('');
     }
   }, [hipSearch, generateCard]);
+
+  const handleDeleteCard = useCallback(async (cardId: string) => {
+    if (!confirm('Delete this horse card?')) return;
+    setDeletingCard(cardId);
+    try {
+      const res = await fetch('/api/delete-card', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: cardId }),
+      });
+      if (res.ok) {
+        setGeneratedProfiles(prev => prev.filter(gp => gp.id !== cardId));
+        // If the deleted card was being viewed, close the modal
+        setSelectedCard(prev => {
+          const deleted = generatedProfiles.find(gp => gp.id === cardId);
+          return deleted?.card_image_url === prev ? null : prev;
+        });
+      }
+    } catch {
+      // Silent fail — card stays in list
+    } finally {
+      setDeletingCard(null);
+    }
+  }, [generatedProfiles]);
 
   const creditLabel = () => {
     if (plan === 'elite' || plan === 'pro') return 'Unlimited horse card generation.';
@@ -393,6 +418,17 @@ export default function DashboardClient({ user, profile, generatedProfiles: init
                       onClick={() => gp.card_image_url && setSelectedCard(gp.card_image_url)}
                       style={{ cursor: gp.card_image_url ? 'pointer' : 'default' }}
                     >
+                      <button
+                        className="profile-thumb-delete"
+                        title="Delete card"
+                        disabled={deletingCard === gp.id}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleDeleteCard(gp.id);
+                        }}
+                      >
+                        {deletingCard === gp.id ? '...' : '\u00D7'}
+                      </button>
                       {gp.card_image_url && (
                         <img
                           className="profile-thumb-img"

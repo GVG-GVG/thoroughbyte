@@ -193,13 +193,40 @@
 }
 
 .profile-thumb {
+  position: relative;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
-  overflow: hidden;
   transition: box-shadow 0.2s;
   cursor: pointer;
+}
+.profile-thumb-delete {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s, background 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-thumb:hover .profile-thumb-delete {
+  opacity: 1;
+}
+.profile-thumb-delete:hover {
+  background: rgba(200,40,40,0.85);
 }
 
 .profile-thumb:hover {
