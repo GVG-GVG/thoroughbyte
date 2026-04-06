@@ -196,7 +196,8 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
       result = result.filter(h => favorites.has(h.hip));
     }
 
-    // Sort
+    // Sort — always push horses without breeze data (0 values) to the bottom
+    const NUMERIC_FIELDS = new Set<SortField>(['rank', 'rating', 'time', 'stride', 'decel', 'eighthOut', 'quarterOut']);
     result = [...result].sort((a, b) => {
       let av: number | string, bv: number | string;
       if (sortField === 'valueFlag') {
@@ -211,6 +212,21 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
       } else {
         av = a[sortField];
         bv = b[sortField];
+      }
+      // Push empty/zero numeric values to bottom regardless of sort direction
+      if (NUMERIC_FIELDS.has(sortField)) {
+        const aEmpty = !av || av === 0;
+        const bEmpty = !bv || bv === 0;
+        if (aEmpty && !bEmpty) return 1;
+        if (!aEmpty && bEmpty) return -1;
+        if (aEmpty && bEmpty) return 0;
+      }
+      if (sortField === 'tier') {
+        const aEmpty = !a.tier;
+        const bEmpty = !b.tier;
+        if (aEmpty && !bEmpty) return 1;
+        if (!aEmpty && bEmpty) return -1;
+        if (aEmpty && bEmpty) return 0;
       }
       if (av < bv) return sortDir === 'asc' ? -1 : 1;
       if (av > bv) return sortDir === 'asc' ? 1 : -1;
