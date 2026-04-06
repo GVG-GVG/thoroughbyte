@@ -77,6 +77,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
   const [sectionFilter, setSectionFilter] = useState<string>('');
   const [stateFilter, setStateFilter] = useState<string>('');
   const [sireFilter, setSireFilter] = useState<string>('');
+  const [damSearch, setDamSearch] = useState<string>('');
   const [hipSearch, setHipSearch] = useState<string>('');
   const [valueOnly, setValueOnly] = useState(false);
   const [favorites, setFavorites] = useState<Set<number>>(new Set());
@@ -91,6 +92,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     setSectionFilter('');
     setStateFilter('');
     setSireFilter('');
+    setDamSearch('');
     setHipSearch('');
     setValueOnly(false);
     setFavoritesOnly(false);
@@ -180,6 +182,10 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     if (sireFilter) {
       result = result.filter(h => h.sire === sireFilter);
     }
+    if (damSearch) {
+      const q = damSearch.toLowerCase();
+      result = result.filter(h => h.dam.toLowerCase().includes(q));
+    }
     if (hipSearch) {
       result = result.filter(h => h.hip.toString().includes(hipSearch));
     }
@@ -212,7 +218,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     });
 
     return result;
-  }, [horses, tierFilter, sexFilter, sectionFilter, stateFilter, sireFilter, hipSearch, valueOnly, favoritesOnly, favorites, sortField, sortDir]);
+  }, [horses, tierFilter, sexFilter, sectionFilter, stateFilter, sireFilter, damSearch, hipSearch, valueOnly, favoritesOnly, favorites, sortField, sortDir]);
 
   const sortIcon = (field: SortField) => {
     if (sortField !== field) return '';
@@ -342,6 +348,16 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
             </select>
           </div>
           <div className="rl-filter-group">
+            <label className="rl-filter-label">Dam</label>
+            <input
+              type="text"
+              className="rl-input"
+              placeholder="Search dam..."
+              value={damSearch}
+              onChange={e => setDamSearch(e.target.value)}
+            />
+          </div>
+          <div className="rl-filter-group">
             <label className="rl-filter-label">Hip #</label>
             <input
               type="text"
@@ -364,10 +380,10 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
             )}
           </div>
         </div>
-        {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || sireFilter || hipSearch || valueOnly || favoritesOnly) && (
+        {(tierFilter.length > 0 || sexFilter || sectionFilter || stateFilter || sireFilter || damSearch || hipSearch || valueOnly || favoritesOnly) && (
           <button
             className="rl-clear-btn"
-            onClick={() => { setTierFilter([]); setSexFilter(''); setSectionFilter(''); setStateFilter(''); setSireFilter(''); setHipSearch(''); setValueOnly(false); setFavoritesOnly(false); }}
+            onClick={() => { setTierFilter([]); setSexFilter(''); setSectionFilter(''); setStateFilter(''); setSireFilter(''); setDamSearch(''); setHipSearch(''); setValueOnly(false); setFavoritesOnly(false); }}
           >
             Clear all filters
           </button>
