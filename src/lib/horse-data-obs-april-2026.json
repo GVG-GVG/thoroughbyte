@@ -50,7 +50,7 @@
     "btprod": false
   },
   {
-    "rank": "32",
+    "rank": "90",
     "hip": "3",
     "st": "KY",
     "sire": "Charlatan",
@@ -63,7 +63,7 @@
     "eighth_out": "11.05",
     "quarter_out": "24.24",
     "decel": "13.2",
-    "rating": "43.8",
+    "rating": "44.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -100,7 +100,7 @@
     "btprod": false
   },
   {
-    "rank": "44",
+    "rank": "67",
     "hip": "5",
     "st": "KY",
     "sire": "Good Magic",
@@ -113,7 +113,7 @@
     "eighth_out": "10.85",
     "quarter_out": "23.99",
     "decel": "13.14",
-    "rating": "50.0",
+    "rating": "50.7",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -175,7 +175,7 @@
     "btprod": false
   },
   {
-    "rank": "33",
+    "rank": "",
     "hip": "8",
     "st": "KY",
     "sire": "Yaupon",
@@ -188,8 +188,8 @@
     "eighth_out": "",
     "quarter_out": "",
     "decel": "",
-    "rating": "55.5",
-    "tier": "ABOVE AVG",
+    "rating": "",
+    "tier": "",
     "sex": "F",
     "section": "1/8",
     "sale_status": "",
@@ -226,7 +226,7 @@
     "btprod": false
   },
   {
-    "rank": "59",
+    "rank": "136",
     "hip": "10",
     "st": "KY",
     "sire": "Quality Road",
@@ -239,7 +239,7 @@
     "eighth_out": "11.14",
     "quarter_out": "23.72",
     "decel": "12.57",
-    "rating": "16.8",
+    "rating": "15.8",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -251,7 +251,7 @@
     "btprod": false
   },
   {
-    "rank": "7",
+    "rank": "17",
     "hip": "11",
     "st": "KY",
     "sire": "Curlin",
@@ -264,7 +264,7 @@
     "eighth_out": "10.95",
     "quarter_out": "22.96",
     "decel": "12.01",
-    "rating": "74.7",
+    "rating": "74.2",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -276,7 +276,7 @@
     "btprod": false
   },
   {
-    "rank": "41",
+    "rank": "104",
     "hip": "12",
     "st": "NY",
     "sire": "Essential Quality",
@@ -289,7 +289,7 @@
     "eighth_out": "10.92",
     "quarter_out": "24.1",
     "decel": "13.17",
-    "rating": "38.9",
+    "rating": "38.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -301,7 +301,7 @@
     "btprod": false
   },
   {
-    "rank": "13",
+    "rank": "29",
     "hip": "13",
     "st": "KY",
     "sire": "Hard Spun",
@@ -314,7 +314,7 @@
     "eighth_out": "10.79",
     "quarter_out": "23.38",
     "decel": "12.59",
-    "rating": "68.7",
+    "rating": "68.5",
     "tier": "STRONG",
     "sex": "F",
     "section": "1/8",
@@ -326,7 +326,7 @@
     "btprod": false
   },
   {
-    "rank": "18",
+    "rank": "",
     "hip": "14",
     "st": "KY",
     "sire": "Practical Joke",
@@ -339,8 +339,8 @@
     "eighth_out": "",
     "quarter_out": "",
     "decel": "",
-    "rating": "61.1",
-    "tier": "ABOVE AVG",
+    "rating": "",
+    "tier": "",
     "sex": "C",
     "section": "1/8",
     "sale_status": "",
@@ -352,7 +352,7 @@
     "stride_imputed": "true"
   },
   {
-    "rank": "11",
+    "rank": "27",
     "hip": "15",
     "st": "KY",
     "sire": "Life Is Good",
@@ -365,7 +365,7 @@
     "eighth_out": "10.88",
     "quarter_out": "23.63",
     "decel": "12.75",
-    "rating": "68.7",
+    "rating": "69.0",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -377,7 +377,7 @@
     "btprod": false
   },
   {
-    "rank": "6",
+    "rank": "16",
     "hip": "16",
     "st": "FL",
     "sire": "Nashville",
@@ -402,7 +402,7 @@
     "btprod": false
   },
   {
-    "rank": "4",
+    "rank": "11",
     "hip": "17",
     "st": "FL",
     "sire": "Roadster",
@@ -452,7 +452,7 @@
     "btprod": false
   },
   {
-    "rank": "63",
+    "rank": "107",
     "hip": "19",
     "st": "FL",
     "sire": "Nashville",
@@ -465,7 +465,7 @@
     "eighth_out": "11.01",
     "quarter_out": "24.45",
     "decel": "13.44",
-    "rating": "35.7",
+    "rating": "36.3",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -502,7 +502,7 @@
     "btprod": false
   },
   {
-    "rank": "32",
+    "rank": "55",
     "hip": "21",
     "st": "KY",
     "sire": "Street Sense",
@@ -515,7 +515,7 @@
     "eighth_out": "10.95",
     "quarter_out": "23.34",
     "decel": "12.39",
-    "rating": "56.4",
+    "rating": "56.6",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -527,7 +527,7 @@
     "btprod": false
   },
   {
-    "rank": "8",
+    "rank": "142",
     "hip": "22",
     "st": "KY",
     "sire": "Nashville",
@@ -552,7 +552,7 @@
     "btprod": false
   },
   {
-    "rank": "40",
+    "rank": "62",
     "hip": "23",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -565,7 +565,7 @@
     "eighth_out": "11.08",
     "quarter_out": "24.26",
     "decel": "13.18",
-    "rating": "51.1",
+    "rating": "51.2",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -577,7 +577,7 @@
     "btprod": false
   },
   {
-    "rank": "3",
+    "rank": "121",
     "hip": "24",
     "st": "KY",
     "sire": "Audible",
@@ -627,7 +627,7 @@
     "btprod": false
   },
   {
-    "rank": "55",
+    "rank": "85",
     "hip": "26",
     "st": "KY",
     "sire": "Vekoma",
@@ -640,7 +640,7 @@
     "eighth_out": "11.08",
     "quarter_out": "25.17",
     "decel": "14.09",
-    "rating": "44.9",
+    "rating": "45.1",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -652,7 +652,7 @@
     "btprod": false
   },
   {
-    "rank": "26",
+    "rank": "47",
     "hip": "27",
     "st": "FL",
     "sire": "Uncle Chuck",
@@ -665,7 +665,7 @@
     "eighth_out": "11.22",
     "quarter_out": "23.49",
     "decel": "12.27",
-    "rating": "61.0",
+    "rating": "61.5",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -677,7 +677,7 @@
     "btprod": false
   },
   {
-    "rank": "30",
+    "rank": "53",
     "hip": "28",
     "st": "KY",
     "sire": "Practical Joke",
@@ -690,7 +690,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.71",
     "decel": "12.75",
-    "rating": "58.1",
+    "rating": "58.2",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -702,7 +702,7 @@
     "btprod": false
   },
   {
-    "rank": "57",
+    "rank": "133",
     "hip": "29",
     "st": "KY",
     "sire": "Volatile",
@@ -715,7 +715,7 @@
     "eighth_out": "11.24",
     "quarter_out": "24.04",
     "decel": "12.79",
-    "rating": "20.8",
+    "rating": "20.5",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -727,7 +727,7 @@
     "btprod": false
   },
   {
-    "rank": "55",
+    "rank": "128",
     "hip": "30",
     "st": "KY",
     "sire": "Medaglia d'Oro",
@@ -740,7 +740,7 @@
     "eighth_out": "11.16",
     "quarter_out": "23.86",
     "decel": "12.7",
-    "rating": "23.2",
+    "rating": "23.3",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -752,7 +752,7 @@
     "btprod": false
   },
   {
-    "rank": "14",
+    "rank": "33",
     "hip": "31",
     "st": "KY",
     "sire": "Idol",
@@ -765,7 +765,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.19",
     "decel": "12.24",
-    "rating": "66.5",
+    "rating": "67.0",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -777,7 +777,7 @@
     "btprod": false
   },
   {
-    "rank": "19",
+    "rank": "49",
     "hip": "32",
     "st": "KY",
     "sire": "Tale of Silence",
@@ -790,7 +790,7 @@
     "eighth_out": "11.01",
     "quarter_out": "23.95",
     "decel": "12.94",
-    "rating": "60.8",
+    "rating": "60.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -802,7 +802,7 @@
     "btprod": false
   },
   {
-    "rank": "46",
+    "rank": "112",
     "hip": "33",
     "st": "KY",
     "sire": "Nyquist",
@@ -815,8 +815,8 @@
     "eighth_out": "11.11",
     "quarter_out": "24.29",
     "decel": "13.18",
-    "rating": "35.0",
-    "tier": "AVERAGE",
+    "rating": "34.8",
+    "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
     "sale_status": "",
@@ -827,7 +827,7 @@
     "btprod": false
   },
   {
-    "rank": "1",
+    "rank": "2",
     "hip": "34",
     "st": "KY",
     "sire": "Dialed In",
@@ -852,7 +852,7 @@
     "btprod": false
   },
   {
-    "rank": "72",
+    "rank": "143",
     "hip": "35",
     "st": "KY",
     "sire": "Knicks Go",
@@ -877,7 +877,7 @@
     "btprod": false
   },
   {
-    "rank": "27",
+    "rank": "81",
     "hip": "36",
     "st": "KY",
     "sire": "Mitole",
@@ -890,7 +890,7 @@
     "eighth_out": "11.15",
     "quarter_out": "24.04",
     "decel": "12.9",
-    "rating": "46.1",
+    "rating": "46.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -902,7 +902,7 @@
     "btprod": false
   },
   {
-    "rank": "8",
+    "rank": "18",
     "hip": "37",
     "st": "KY",
     "sire": "Frosted",
@@ -927,7 +927,7 @@
     "btprod": false
   },
   {
-    "rank": "8",
+    "rank": "19",
     "hip": "38",
     "st": "KY",
     "sire": "Good Magic",
@@ -940,7 +940,7 @@
     "eighth_out": "10.45",
     "quarter_out": "23.96",
     "decel": "13.51",
-    "rating": "73.1",
+    "rating": "73.8",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -952,7 +952,7 @@
     "btprod": false
   },
   {
-    "rank": "29",
+    "rank": "",
     "hip": "39",
     "st": "KY",
     "sire": "Instagrand",
@@ -965,8 +965,8 @@
     "eighth_out": "",
     "quarter_out": "",
     "decel": "",
-    "rating": "45.6",
-    "tier": "AVERAGE",
+    "rating": "",
+    "tier": "",
     "sex": "C",
     "section": "1/8",
     "sale_status": "",
@@ -978,7 +978,7 @@
     "stride_imputed": "true"
   },
   {
-    "rank": "9",
+    "rank": "21",
     "hip": "40",
     "st": "KY",
     "sire": "Golden Pal",
@@ -991,7 +991,7 @@
     "eighth_out": "10.75",
     "quarter_out": "23.33",
     "decel": "12.58",
-    "rating": "71.2",
+    "rating": "71.5",
     "tier": "STRONG",
     "sex": "F",
     "section": "1/8",
@@ -1003,7 +1003,7 @@
     "btprod": false
   },
   {
-    "rank": "49",
+    "rank": "118",
     "hip": "41",
     "st": "KY",
     "sire": "Instagrand",
@@ -1016,7 +1016,7 @@
     "eighth_out": "11.37",
     "quarter_out": "24.29",
     "decel": "12.92",
-    "rating": "30.0",
+    "rating": "29.9",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -1053,7 +1053,7 @@
     "btprod": false
   },
   {
-    "rank": "3",
+    "rank": "8",
     "hip": "43",
     "st": "KY",
     "sire": "Liam's Map",
@@ -1066,7 +1066,7 @@
     "eighth_out": "10.68",
     "quarter_out": "23.57",
     "decel": "12.88",
-    "rating": "88.6",
+    "rating": "87.8",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -1103,7 +1103,7 @@
     "btprod": false
   },
   {
-    "rank": "20",
+    "rank": "38",
     "hip": "45",
     "st": "KY",
     "sire": "Maxfield",
@@ -1116,7 +1116,7 @@
     "eighth_out": "10.93",
     "quarter_out": "23.45",
     "decel": "12.52",
-    "rating": "64.2",
+    "rating": "64.7",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -1128,7 +1128,7 @@
     "btprod": false
   },
   {
-    "rank": "51",
+    "rank": "80",
     "hip": "46",
     "st": "KY",
     "sire": "Jackie's Warrior",
@@ -1141,7 +1141,7 @@
     "eighth_out": "11.04",
     "quarter_out": "25.13",
     "decel": "14.09",
-    "rating": "46.8",
+    "rating": "46.6",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -1153,7 +1153,7 @@
     "btprod": false
   },
   {
-    "rank": "14",
+    "rank": "28",
     "hip": "47",
     "st": "KY",
     "sire": "Core Beliefs",
@@ -1166,7 +1166,7 @@
     "eighth_out": "10.81",
     "quarter_out": "22.84",
     "decel": "12.03",
-    "rating": "68.6",
+    "rating": "68.9",
     "tier": "STRONG",
     "sex": "F",
     "section": "1/8",
@@ -1178,7 +1178,7 @@
     "btprod": false
   },
   {
-    "rank": "50",
+    "rank": "77",
     "hip": "48",
     "st": "KY",
     "sire": "Complexity",
@@ -1191,7 +1191,7 @@
     "eighth_out": "11.38",
     "quarter_out": "23.66",
     "decel": "12.28",
-    "rating": "47.1",
+    "rating": "47.3",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -1203,7 +1203,7 @@
     "btprod": true
   },
   {
-    "rank": "52",
+    "rank": "120",
     "hip": "49",
     "st": "KY",
     "sire": "Mo Donegal",
@@ -1216,7 +1216,7 @@
     "eighth_out": "11.1",
     "quarter_out": "24.04",
     "decel": "12.94",
-    "rating": "29.0",
+    "rating": "28.9",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -1228,7 +1228,7 @@
     "btprod": false
   },
   {
-    "rank": "65",
+    "rank": "111",
     "hip": "50",
     "st": "KY",
     "sire": "Golden Pal",
@@ -1241,7 +1241,7 @@
     "eighth_out": "11.26",
     "quarter_out": "24.65",
     "decel": "13.39",
-    "rating": "35.1",
+    "rating": "35.4",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -1253,7 +1253,7 @@
     "btprod": false
   },
   {
-    "rank": "2",
+    "rank": "97",
     "hip": "51",
     "st": "KY",
     "sire": "Oscar Performance",
@@ -1278,7 +1278,7 @@
     "btprod": false
   },
   {
-    "rank": "60",
+    "rank": "137",
     "hip": "52",
     "st": "KY",
     "sire": "City of Light",
@@ -1291,7 +1291,7 @@
     "eighth_out": "11.32",
     "quarter_out": "24.53",
     "decel": "13.22",
-    "rating": "14.5",
+    "rating": "15.1",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -1303,7 +1303,7 @@
     "btprod": false
   },
   {
-    "rank": "36",
+    "rank": "93",
     "hip": "53",
     "st": "KY",
     "sire": "Upstart",
@@ -1353,7 +1353,7 @@
     "btprod": false
   },
   {
-    "rank": "38",
+    "rank": "61",
     "hip": "55",
     "st": "NY",
     "sire": "Mind Control",
@@ -1366,7 +1366,7 @@
     "eighth_out": "11.2",
     "quarter_out": "23.71",
     "decel": "12.51",
-    "rating": "52.0",
+    "rating": "52.2",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -1378,7 +1378,7 @@
     "btprod": false
   },
   {
-    "rank": "44",
+    "rank": "109",
     "hip": "56",
     "st": "KY",
     "sire": "Speaker's Corner",
@@ -1391,7 +1391,7 @@
     "eighth_out": "10.93",
     "quarter_out": "23.63",
     "decel": "12.69",
-    "rating": "36.3",
+    "rating": "35.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1403,7 +1403,7 @@
     "btprod": false
   },
   {
-    "rank": "28",
+    "rank": "51",
     "hip": "57",
     "st": "KY",
     "sire": "Practical Joke",
@@ -1428,7 +1428,7 @@
     "btprod": false
   },
   {
-    "rank": "21",
+    "rank": "57",
     "hip": "58",
     "st": "KY",
     "sire": "Olympiad",
@@ -1441,7 +1441,7 @@
     "eighth_out": "10.78",
     "quarter_out": "23.15",
     "decel": "12.38",
-    "rating": "54.5",
+    "rating": "55.5",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -1478,7 +1478,7 @@
     "btprod": false
   },
   {
-    "rank": "37",
+    "rank": "94",
     "hip": "60",
     "st": "FL",
     "sire": "Jack Christopher",
@@ -1491,7 +1491,7 @@
     "eighth_out": "10.84",
     "quarter_out": "23.58",
     "decel": "12.75",
-    "rating": "41.4",
+    "rating": "42.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1503,7 +1503,7 @@
     "btprod": false
   },
   {
-    "rank": "43",
+    "rank": "105",
     "hip": "61",
     "st": "KY",
     "sire": "Dialed In",
@@ -1516,7 +1516,7 @@
     "eighth_out": "11.1",
     "quarter_out": "24.06",
     "decel": "12.97",
-    "rating": "37.2",
+    "rating": "37.4",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1528,7 +1528,7 @@
     "btprod": false
   },
   {
-    "rank": "38",
+    "rank": "96",
     "hip": "62",
     "st": "KY",
     "sire": "Sharp Azteca",
@@ -1541,7 +1541,7 @@
     "eighth_out": "11.02",
     "quarter_out": "24.0",
     "decel": "12.99",
-    "rating": "40.4",
+    "rating": "40.8",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1578,7 +1578,7 @@
     "btprod": false
   },
   {
-    "rank": "52",
+    "rank": "78",
     "hip": "64",
     "st": "KY",
     "sire": "Into Mischief",
@@ -1591,7 +1591,7 @@
     "eighth_out": "10.91",
     "quarter_out": "23.87",
     "decel": "12.96",
-    "rating": "46.6",
+    "rating": "47.3",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -1603,7 +1603,7 @@
     "btprod": true
   },
   {
-    "rank": "39",
+    "rank": "60",
     "hip": "65",
     "st": "KY",
     "sire": "Bolt d'Oro",
@@ -1616,7 +1616,7 @@
     "eighth_out": "10.98",
     "quarter_out": "23.54",
     "decel": "12.56",
-    "rating": "51.7",
+    "rating": "52.3",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -1628,7 +1628,7 @@
     "btprod": false
   },
   {
-    "rank": "60",
+    "rank": "99",
     "hip": "66",
     "st": "KY",
     "sire": "Mandaloun",
@@ -1641,7 +1641,7 @@
     "eighth_out": "11.22",
     "quarter_out": "24.61",
     "decel": "13.39",
-    "rating": "39.1",
+    "rating": "39.5",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -1653,7 +1653,7 @@
     "btprod": false
   },
   {
-    "rank": "7",
+    "rank": "141",
     "hip": "67",
     "st": "KY",
     "sire": "Knicks Go",
@@ -1666,7 +1666,7 @@
     "eighth_out": "11.98",
     "quarter_out": "25.94",
     "decel": "13.96",
-    "rating": "2.1",
+    "rating": "3.1",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/4",
@@ -1678,7 +1678,7 @@
     "btprod": false
   },
   {
-    "rank": "11",
+    "rank": "24",
     "hip": "68",
     "st": "KY",
     "sire": "Tiz the Law",
@@ -1691,7 +1691,7 @@
     "eighth_out": "10.82",
     "quarter_out": "23.16",
     "decel": "12.34",
-    "rating": "70.4",
+    "rating": "70.6",
     "tier": "STRONG",
     "sex": "F",
     "section": "1/8",
@@ -1703,7 +1703,7 @@
     "btprod": false
   },
   {
-    "rank": "34",
+    "rank": "",
     "hip": "69",
     "st": "KY",
     "sire": "Jackie's Warrior",
@@ -1716,8 +1716,8 @@
     "eighth_out": "",
     "quarter_out": "",
     "decel": "",
-    "rating": "55.5",
-    "tier": "ABOVE AVG",
+    "rating": "",
+    "tier": "",
     "sex": "F",
     "section": "1/8",
     "sale_status": "",
@@ -1804,7 +1804,7 @@
     "btprod": false
   },
   {
-    "rank": "25",
+    "rank": "75",
     "hip": "73",
     "st": "KY",
     "sire": "Practical Joke",
@@ -1829,7 +1829,7 @@
     "btprod": false
   },
   {
-    "rank": "1",
+    "rank": "3",
     "hip": "74",
     "st": "KY",
     "sire": "Omaha Beach",
@@ -1854,7 +1854,7 @@
     "btprod": false
   },
   {
-    "rank": "2",
+    "rank": "6",
     "hip": "75",
     "st": "KY",
     "sire": "Yaupon",
@@ -1867,7 +1867,7 @@
     "eighth_out": "10.58",
     "quarter_out": "22.91",
     "decel": "12.33",
-    "rating": "90.6",
+    "rating": "90.3",
     "tier": "ELITE",
     "sex": "F",
     "section": "1/8",
@@ -1879,7 +1879,7 @@
     "btprod": true
   },
   {
-    "rank": "15",
+    "rank": "30",
     "hip": "76",
     "st": "KY",
     "sire": "Yaupon",
@@ -1954,7 +1954,7 @@
     "btprod": false
   },
   {
-    "rank": "58",
+    "rank": "135",
     "hip": "79",
     "st": "KY",
     "sire": "Oscar Performance",
@@ -1967,7 +1967,7 @@
     "eighth_out": "11.47",
     "quarter_out": "23.86",
     "decel": "12.39",
-    "rating": "17.9",
+    "rating": "17.7",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -1979,7 +1979,7 @@
     "btprod": false
   },
   {
-    "rank": "62",
+    "rank": "106",
     "hip": "80",
     "st": "FL",
     "sire": "Uncle Chuck",
@@ -1992,7 +1992,7 @@
     "eighth_out": "11.89",
     "quarter_out": "24.17",
     "decel": "12.28",
-    "rating": "37.2",
+    "rating": "37.4",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -2004,7 +2004,7 @@
     "btprod": false
   },
   {
-    "rank": "13",
+    "rank": "32",
     "hip": "81",
     "st": "FL",
     "sire": "Roadster",
@@ -2017,7 +2017,7 @@
     "eighth_out": "10.76",
     "quarter_out": "23.49",
     "decel": "12.74",
-    "rating": "67.2",
+    "rating": "67.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -2054,7 +2054,7 @@
     "btprod": false
   },
   {
-    "rank": "47",
+    "rank": "113",
     "hip": "83",
     "st": "KY",
     "sire": "Mo Donegal",
@@ -2067,7 +2067,7 @@
     "eighth_out": "11.47",
     "quarter_out": "24.25",
     "decel": "12.79",
-    "rating": "32.9",
+    "rating": "33.0",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -2079,7 +2079,7 @@
     "btprod": false
   },
   {
-    "rank": "24",
+    "rank": "71",
     "hip": "84",
     "st": "KY",
     "sire": "Nashville",
@@ -2092,7 +2092,7 @@
     "eighth_out": "11.12",
     "quarter_out": "23.68",
     "decel": "12.57",
-    "rating": "48.7",
+    "rating": "49.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -2104,7 +2104,7 @@
     "btprod": false
   },
   {
-    "rank": "56",
+    "rank": "86",
     "hip": "85",
     "st": "KY",
     "sire": "Epicenter",
@@ -2117,7 +2117,7 @@
     "eighth_out": "11.08",
     "quarter_out": "23.46",
     "decel": "12.38",
-    "rating": "44.8",
+    "rating": "45.1",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -2154,7 +2154,7 @@
     "btprod": false
   },
   {
-    "rank": "31",
+    "rank": "87",
     "hip": "87",
     "st": "KY",
     "sire": "Mandaloun",
@@ -2167,7 +2167,7 @@
     "eighth_out": "10.7",
     "quarter_out": "23.87",
     "decel": "13.18",
-    "rating": "44.3",
+    "rating": "45.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -2204,7 +2204,7 @@
     "btprod": false
   },
   {
-    "rank": "34",
+    "rank": "",
     "hip": "89",
     "st": "KY",
     "sire": "Dialed In",
@@ -2217,8 +2217,8 @@
     "eighth_out": "",
     "quarter_out": "",
     "decel": "",
-    "rating": "43.0",
-    "tier": "AVERAGE",
+    "rating": "",
+    "tier": "",
     "sex": "C",
     "section": "1/8",
     "sale_status": "",
@@ -2230,7 +2230,7 @@
     "stride_imputed": "true"
   },
   {
-    "rank": "28",
+    "rank": "83",
     "hip": "90",
     "st": "NY",
     "sire": "Jackie's Warrior",
@@ -2243,7 +2243,7 @@
     "eighth_out": "11.07",
     "quarter_out": "24.03",
     "decel": "12.96",
-    "rating": "46.0",
+    "rating": "45.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -2305,7 +2305,7 @@
     "btprod": false
   },
   {
-    "rank": "40",
+    "rank": "100",
     "hip": "93",
     "st": "KY",
     "sire": "Olympiad",
@@ -2318,7 +2318,7 @@
     "eighth_out": "11.18",
     "quarter_out": "24.15",
     "decel": "12.97",
-    "rating": "39.7",
+    "rating": "39.4",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -2355,7 +2355,7 @@
     "btprod": false
   },
   {
-    "rank": "58",
+    "rank": "89",
     "hip": "95",
     "st": "NY",
     "sire": "Mo Donegal",
@@ -2368,7 +2368,7 @@
     "eighth_out": "11.07",
     "quarter_out": "23.81",
     "decel": "12.74",
-    "rating": "43.9",
+    "rating": "44.4",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -2405,7 +2405,7 @@
     "btprod": false
   },
   {
-    "rank": "48",
+    "rank": "116",
     "hip": "97",
     "st": "KY",
     "sire": "Mystic Guide",
@@ -2418,7 +2418,7 @@
     "eighth_out": "11.2",
     "quarter_out": "24.4",
     "decel": "13.2",
-    "rating": "30.9",
+    "rating": "30.4",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -2430,7 +2430,7 @@
     "btprod": false
   },
   {
-    "rank": "49",
+    "rank": "76",
     "hip": "98",
     "st": "FL",
     "sire": "Magic On Tap",
@@ -2443,7 +2443,7 @@
     "eighth_out": "11.05",
     "quarter_out": "24.04",
     "decel": "12.99",
-    "rating": "47.3",
+    "rating": "48.0",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -2480,7 +2480,7 @@
     "btprod": false
   },
   {
-    "rank": "12",
+    "rank": "25",
     "hip": "100",
     "st": "KY",
     "sire": "Bolt d'Oro",
@@ -2493,7 +2493,7 @@
     "eighth_out": "10.86",
     "quarter_out": "23.45",
     "decel": "12.59",
-    "rating": "69.3",
+    "rating": "69.2",
     "tier": "STRONG",
     "sex": "F",
     "section": "1/8",
@@ -2505,7 +2505,7 @@
     "btprod": false
   },
   {
-    "rank": "29",
+    "rank": "50",
     "hip": "101",
     "st": "FL",
     "sire": "Roadster",
@@ -2518,7 +2518,7 @@
     "eighth_out": "10.69",
     "quarter_out": "23.27",
     "decel": "12.58",
-    "rating": "59.9",
+    "rating": "60.2",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -2530,7 +2530,7 @@
     "btprod": false
   },
   {
-    "rank": "5",
+    "rank": "102",
     "hip": "102",
     "st": "KY",
     "sire": "Higher Power",
@@ -2543,7 +2543,7 @@
     "eighth_out": "11.76",
     "quarter_out": "25.66",
     "decel": "13.9",
-    "rating": "39.4",
+    "rating": "38.9",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/4",
@@ -2555,7 +2555,7 @@
     "btprod": false
   },
   {
-    "rank": "53",
+    "rank": "124",
     "hip": "103",
     "st": "KY",
     "sire": "Justify",
@@ -2568,7 +2568,7 @@
     "eighth_out": "11.27",
     "quarter_out": "24.25",
     "decel": "12.97",
-    "rating": "24.9",
+    "rating": "24.5",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -2580,7 +2580,7 @@
     "btprod": false
   },
   {
-    "rank": "63",
+    "rank": "144",
     "hip": "104",
     "st": "KY",
     "sire": "Good Magic",
@@ -2605,7 +2605,7 @@
     "btprod": false
   },
   {
-    "rank": "35",
+    "rank": "56",
     "hip": "105",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -2618,7 +2618,7 @@
     "eighth_out": "11.16",
     "quarter_out": "23.6",
     "decel": "12.44",
-    "rating": "55.2",
+    "rating": "55.6",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -2630,7 +2630,7 @@
     "btprod": false
   },
   {
-    "rank": "21",
+    "rank": "41",
     "hip": "106",
     "st": "KY",
     "sire": "Epicenter",
@@ -2643,7 +2643,7 @@
     "eighth_out": "10.78",
     "quarter_out": "23.26",
     "decel": "12.48",
-    "rating": "63.9",
+    "rating": "63.8",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -2680,7 +2680,7 @@
     "btprod": false
   },
   {
-    "rank": "61",
+    "rank": "101",
     "hip": "108",
     "st": "KY",
     "sire": "Practical Joke",
@@ -2693,7 +2693,7 @@
     "eighth_out": "11.2",
     "quarter_out": "23.96",
     "decel": "12.76",
-    "rating": "39.0",
+    "rating": "39.4",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -2705,7 +2705,7 @@
     "btprod": false
   },
   {
-    "rank": "56",
+    "rank": "130",
     "hip": "109",
     "st": "NY",
     "sire": "King for a Day",
@@ -2718,7 +2718,7 @@
     "eighth_out": "11.22",
     "quarter_out": "24.59",
     "decel": "13.37",
-    "rating": "22.0",
+    "rating": "21.5",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -2730,7 +2730,7 @@
     "btprod": false
   },
   {
-    "rank": "2",
+    "rank": "5",
     "hip": "110",
     "st": "KY",
     "sire": "Army Mule",
@@ -2743,7 +2743,7 @@
     "eighth_out": "10.83",
     "quarter_out": "23.23",
     "decel": "12.4",
-    "rating": "92.0",
+    "rating": "91.8",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -2755,7 +2755,7 @@
     "btprod": false
   },
   {
-    "rank": "25",
+    "rank": "45",
     "hip": "111",
     "st": "KY",
     "sire": "Hard Spun",
@@ -2768,7 +2768,7 @@
     "eighth_out": "10.95",
     "quarter_out": "23.25",
     "decel": "12.3",
-    "rating": "61.9",
+    "rating": "62.2",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -2780,7 +2780,7 @@
     "btprod": false
   },
   {
-    "rank": "1",
+    "rank": "4",
     "hip": "112",
     "st": "KY",
     "sire": "Early Voting",
@@ -2805,7 +2805,7 @@
     "btprod": false
   },
   {
-    "rank": "4",
+    "rank": "72",
     "hip": "113",
     "st": "KY",
     "sire": "Karakontie (JPN)",
@@ -2818,7 +2818,7 @@
     "eighth_out": "11.63",
     "quarter_out": "25.7",
     "decel": "14.07",
-    "rating": "47.0",
+    "rating": "48.9",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/4",
@@ -2855,7 +2855,7 @@
     "btprod": false
   },
   {
-    "rank": "42",
+    "rank": "103",
     "hip": "115",
     "st": "KY",
     "sire": "Twirling Candy",
@@ -2868,7 +2868,7 @@
     "eighth_out": "11.21",
     "quarter_out": "24.22",
     "decel": "13.02",
-    "rating": "38.7",
+    "rating": "38.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -2880,7 +2880,7 @@
     "btprod": false
   },
   {
-    "rank": "27",
+    "rank": "48",
     "hip": "116",
     "st": "NY",
     "sire": "Epicenter",
@@ -2893,7 +2893,7 @@
     "eighth_out": "10.87",
     "quarter_out": "23.41",
     "decel": "12.54",
-    "rating": "60.3",
+    "rating": "60.9",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -2905,7 +2905,7 @@
     "btprod": false
   },
   {
-    "rank": "6",
+    "rank": "14",
     "hip": "117",
     "st": "KY",
     "sire": "Maclean's Music",
@@ -2918,7 +2918,7 @@
     "eighth_out": "10.76",
     "quarter_out": "23.21",
     "decel": "12.45",
-    "rating": "82.3",
+    "rating": "82.1",
     "tier": "ELITE",
     "sex": "F",
     "section": "1/8",
@@ -2930,7 +2930,7 @@
     "btprod": false
   },
   {
-    "rank": "51",
+    "rank": "119",
     "hip": "118",
     "st": "NY",
     "sire": "Bolt d'Oro",
@@ -2943,7 +2943,7 @@
     "eighth_out": "10.83",
     "quarter_out": "23.5",
     "decel": "12.67",
-    "rating": "29.5",
+    "rating": "29.7",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -2980,7 +2980,7 @@
     "btprod": false
   },
   {
-    "rank": "53",
+    "rank": "82",
     "hip": "120",
     "st": "KY",
     "sire": "Golden Pal",
@@ -2993,7 +2993,7 @@
     "eighth_out": "11.2",
     "quarter_out": "24.51",
     "decel": "13.31",
-    "rating": "45.7",
+    "rating": "46.1",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -3005,7 +3005,7 @@
     "btprod": false
   },
   {
-    "rank": "3",
+    "rank": "35",
     "hip": "121",
     "st": "KY",
     "sire": "Audible",
@@ -3018,7 +3018,7 @@
     "eighth_out": "11.77",
     "quarter_out": "25.98",
     "decel": "14.21",
-    "rating": "65.8",
+    "rating": "66.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/4",
@@ -3030,7 +3030,7 @@
     "btprod": false
   },
   {
-    "rank": "4",
+    "rank": "9",
     "hip": "122",
     "st": "ON",
     "sire": "War Front",
@@ -3043,7 +3043,7 @@
     "eighth_out": "10.48",
     "quarter_out": "23.12",
     "decel": "12.64",
-    "rating": "86.7",
+    "rating": "87.4",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -3055,7 +3055,7 @@
     "btprod": false
   },
   {
-    "rank": "5",
+    "rank": "15",
     "hip": "123",
     "st": "NY",
     "sire": "Yaupon",
@@ -3068,7 +3068,7 @@
     "eighth_out": "10.76",
     "quarter_out": "23.64",
     "decel": "12.88",
-    "rating": "82.4",
+    "rating": "82.1",
     "tier": "ELITE",
     "sex": "F",
     "section": "1/8",
@@ -3080,7 +3080,7 @@
     "btprod": false
   },
   {
-    "rank": "10",
+    "rank": "23",
     "hip": "124",
     "st": "KY",
     "sire": "Constitution",
@@ -3105,7 +3105,7 @@
     "btprod": false
   },
   {
-    "rank": "41",
+    "rank": "65",
     "hip": "125",
     "st": "KY",
     "sire": "Girvin",
@@ -3118,7 +3118,7 @@
     "eighth_out": "11.19",
     "quarter_out": "23.6",
     "decel": "12.41",
-    "rating": "50.8",
+    "rating": "50.9",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -3130,7 +3130,7 @@
     "btprod": false
   },
   {
-    "rank": "31",
+    "rank": "54",
     "hip": "126",
     "st": "KY",
     "sire": "Cyberknife",
@@ -3143,7 +3143,7 @@
     "eighth_out": "10.88",
     "quarter_out": "23.75",
     "decel": "12.87",
-    "rating": "57.4",
+    "rating": "57.8",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -3155,7 +3155,7 @@
     "btprod": false
   },
   {
-    "rank": "17",
+    "rank": "44",
     "hip": "127",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -3168,7 +3168,7 @@
     "eighth_out": "11.04",
     "quarter_out": "23.29",
     "decel": "12.26",
-    "rating": "62.7",
+    "rating": "62.9",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -3180,7 +3180,7 @@
     "btprod": false
   },
   {
-    "rank": "59",
+    "rank": "95",
     "hip": "128",
     "st": "KY",
     "sire": "Nashville",
@@ -3193,7 +3193,7 @@
     "eighth_out": "11.59",
     "quarter_out": "23.52",
     "decel": "11.93",
-    "rating": "41.7",
+    "rating": "41.9",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -3230,7 +3230,7 @@
     "btprod": false
   },
   {
-    "rank": "71",
+    "rank": "134",
     "hip": "130",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -3243,7 +3243,7 @@
     "eighth_out": "11.47",
     "quarter_out": "24.91",
     "decel": "13.44",
-    "rating": "17.5",
+    "rating": "18.1",
     "tier": "WEAK",
     "sex": "F",
     "section": "1/8",
@@ -3255,7 +3255,7 @@
     "btprod": false
   },
   {
-    "rank": "8",
+    "rank": "145",
     "hip": "131",
     "st": "NY",
     "sire": "Drain the Clock",
@@ -3280,7 +3280,7 @@
     "btprod": false
   },
   {
-    "rank": "26",
+    "rank": "79",
     "hip": "132",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -3293,7 +3293,7 @@
     "eighth_out": "10.9",
     "quarter_out": "23.59",
     "decel": "12.68",
-    "rating": "47.6",
+    "rating": "47.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -3305,7 +3305,7 @@
     "btprod": false
   },
   {
-    "rank": "5",
+    "rank": "10",
     "hip": "133",
     "st": "KY",
     "sire": "Honor A. P.",
@@ -3318,7 +3318,7 @@
     "eighth_out": "10.81",
     "quarter_out": "23.26",
     "decel": "12.46",
-    "rating": "85.7",
+    "rating": "87.2",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -3430,7 +3430,7 @@
     "btprod": false
   },
   {
-    "rank": "36",
+    "rank": "58",
     "hip": "138",
     "st": "KY",
     "sire": "Not This Time",
@@ -3443,7 +3443,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.75",
     "decel": "12.79",
-    "rating": "54.3",
+    "rating": "54.7",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -3455,7 +3455,7 @@
     "btprod": false
   },
   {
-    "rank": "20",
+    "rank": "52",
     "hip": "139",
     "st": "KY",
     "sire": "Into Mischief",
@@ -3468,7 +3468,7 @@
     "eighth_out": "10.92",
     "quarter_out": "23.48",
     "decel": "12.56",
-    "rating": "58.5",
+    "rating": "58.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -3505,7 +3505,7 @@
     "btprod": false
   },
   {
-    "rank": "45",
+    "rank": "110",
     "hip": "141",
     "st": "KY",
     "sire": "Speaker's Corner",
@@ -3518,7 +3518,7 @@
     "eighth_out": "11.1",
     "quarter_out": "24.21",
     "decel": "13.1",
-    "rating": "36.0",
+    "rating": "35.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -3530,7 +3530,7 @@
     "btprod": false
   },
   {
-    "rank": "19",
+    "rank": "37",
     "hip": "142",
     "st": "KY",
     "sire": "Nashville",
@@ -3543,7 +3543,7 @@
     "eighth_out": "10.68",
     "quarter_out": "23.23",
     "decel": "12.55",
-    "rating": "64.5",
+    "rating": "64.8",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -3580,7 +3580,7 @@
     "btprod": false
   },
   {
-    "rank": "10",
+    "rank": "20",
     "hip": "144",
     "st": "KY",
     "sire": "Drain the Clock",
@@ -3593,7 +3593,7 @@
     "eighth_out": "10.86",
     "quarter_out": "23.53",
     "decel": "12.68",
-    "rating": "71.4",
+    "rating": "71.9",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -3605,7 +3605,7 @@
     "btprod": false
   },
   {
-    "rank": "45",
+    "rank": "68",
     "hip": "145",
     "st": "KY",
     "sire": "Rock Your World",
@@ -3618,7 +3618,7 @@
     "eighth_out": "11.12",
     "quarter_out": "23.55",
     "decel": "12.43",
-    "rating": "49.5",
+    "rating": "49.8",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -3630,7 +3630,7 @@
     "btprod": false
   },
   {
-    "rank": "47",
+    "rank": "74",
     "hip": "146",
     "st": "KY",
     "sire": "Drain the Clock",
@@ -3643,7 +3643,7 @@
     "eighth_out": "11.34",
     "quarter_out": "24.15",
     "decel": "12.81",
-    "rating": "48.2",
+    "rating": "48.3",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -3655,7 +3655,7 @@
     "btprod": true
   },
   {
-    "rank": "23",
+    "rank": "43",
     "hip": "147",
     "st": "KY",
     "sire": "Golden Pal",
@@ -3668,7 +3668,7 @@
     "eighth_out": "11.04",
     "quarter_out": "23.39",
     "decel": "12.35",
-    "rating": "62.9",
+    "rating": "63.1",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -3680,7 +3680,7 @@
     "btprod": true
   },
   {
-    "rank": "61",
+    "rank": "138",
     "hip": "148",
     "st": "KY",
     "sire": "Epicenter",
@@ -3693,7 +3693,7 @@
     "eighth_out": "11.2",
     "quarter_out": "24.28",
     "decel": "13.08",
-    "rating": "13.4",
+    "rating": "13.1",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -3730,7 +3730,7 @@
     "btprod": false
   },
   {
-    "rank": "43",
+    "rank": "66",
     "hip": "150",
     "st": "MD",
     "sire": "Roadster",
@@ -3743,7 +3743,7 @@
     "eighth_out": "11.14",
     "quarter_out": "23.91",
     "decel": "12.77",
-    "rating": "50.6",
+    "rating": "50.8",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -3755,7 +3755,7 @@
     "btprod": false
   },
   {
-    "rank": "7",
+    "rank": "13",
     "hip": "151",
     "st": "KY",
     "sire": "Authentic",
@@ -3780,7 +3780,7 @@
     "btprod": false
   },
   {
-    "rank": "64",
+    "rank": "108",
     "hip": "152",
     "st": "NY",
     "sire": "Mind Control",
@@ -3793,7 +3793,7 @@
     "eighth_out": "11.28",
     "quarter_out": "24.62",
     "decel": "13.34",
-    "rating": "35.7",
+    "rating": "35.9",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -3805,7 +3805,7 @@
     "btprod": false
   },
   {
-    "rank": "54",
+    "rank": "127",
     "hip": "153",
     "st": "KY",
     "sire": "Maclean's Music",
@@ -3818,7 +3818,7 @@
     "eighth_out": "10.84",
     "quarter_out": "24.42",
     "decel": "13.58",
-    "rating": "23.6",
+    "rating": "23.5",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -3830,7 +3830,7 @@
     "btprod": false
   },
   {
-    "rank": "30",
+    "rank": "91",
     "hip": "154",
     "st": "KY",
     "sire": "Idol",
@@ -3843,7 +3843,7 @@
     "eighth_out": "11.19",
     "quarter_out": "23.81",
     "decel": "12.61",
-    "rating": "44.7",
+    "rating": "43.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -3855,7 +3855,7 @@
     "btprod": false
   },
   {
-    "rank": "62",
+    "rank": "140",
     "hip": "155",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -3868,7 +3868,7 @@
     "eighth_out": "11.41",
     "quarter_out": "24.4",
     "decel": "12.99",
-    "rating": "4.8",
+    "rating": "4.7",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -3905,7 +3905,7 @@
     "btprod": false
   },
   {
-    "rank": "42",
+    "rank": "64",
     "hip": "157",
     "st": "KY",
     "sire": "Temple City",
@@ -3918,7 +3918,7 @@
     "eighth_out": "11.32",
     "quarter_out": "23.89",
     "decel": "12.57",
-    "rating": "50.8",
+    "rating": "51.0",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -3930,7 +3930,7 @@
     "btprod": false
   },
   {
-    "rank": "16",
+    "rank": "31",
     "hip": "158",
     "st": "ON",
     "sire": "Good Magic",
@@ -3943,7 +3943,7 @@
     "eighth_out": "10.68",
     "quarter_out": "23.08",
     "decel": "12.4",
-    "rating": "67.5",
+    "rating": "67.7",
     "tier": "STRONG",
     "sex": "F",
     "section": "1/8",
@@ -3980,7 +3980,7 @@
     "btprod": false
   },
   {
-    "rank": "66",
+    "rank": "114",
     "hip": "160",
     "st": "FL",
     "sire": "Independence Hall",
@@ -3993,7 +3993,7 @@
     "eighth_out": "11.38",
     "quarter_out": "24.3",
     "decel": "12.92",
-    "rating": "31.8",
+    "rating": "32.4",
     "tier": "BELOW AVG",
     "sex": "F",
     "section": "1/8",
@@ -4030,7 +4030,7 @@
     "btprod": false
   },
   {
-    "rank": "57",
+    "rank": "88",
     "hip": "162",
     "st": "KY",
     "sire": "Girvin",
@@ -4043,7 +4043,7 @@
     "eighth_out": "11.46",
     "quarter_out": "23.85",
     "decel": "12.39",
-    "rating": "44.3",
+    "rating": "44.7",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -4105,7 +4105,7 @@
     "btprod": false
   },
   {
-    "rank": "23",
+    "rank": "70",
     "hip": "165",
     "st": "KY",
     "sire": "Girvin",
@@ -4118,7 +4118,7 @@
     "eighth_out": "11.04",
     "quarter_out": "23.81",
     "decel": "12.76",
-    "rating": "49.7",
+    "rating": "49.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -4155,7 +4155,7 @@
     "btprod": false
   },
   {
-    "rank": "33",
+    "rank": "92",
     "hip": "167",
     "st": "KY",
     "sire": "Drain the Clock",
@@ -4168,7 +4168,7 @@
     "eighth_out": "10.94",
     "quarter_out": "24.02",
     "decel": "13.09",
-    "rating": "43.2",
+    "rating": "43.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -4180,7 +4180,7 @@
     "btprod": false
   },
   {
-    "rank": "46",
+    "rank": "69",
     "hip": "168",
     "st": "KY",
     "sire": "Olympiad",
@@ -4193,7 +4193,7 @@
     "eighth_out": "11.14",
     "quarter_out": "24.03",
     "decel": "12.89",
-    "rating": "49.1",
+    "rating": "49.4",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -4205,7 +4205,7 @@
     "btprod": true
   },
   {
-    "rank": "4",
+    "rank": "122",
     "hip": "169",
     "st": "KY",
     "sire": "Street Sense",
@@ -4218,7 +4218,7 @@
     "eighth_out": "12.36",
     "quarter_out": "26.33",
     "decel": "13.97",
-    "rating": "27.0",
+    "rating": "26.5",
     "tier": "BELOW AVG",
     "sex": "F",
     "section": "1/4",
@@ -4230,7 +4230,7 @@
     "btprod": false
   },
   {
-    "rank": "15",
+    "rank": "40",
     "hip": "170",
     "st": "KY",
     "sire": "Girvin",
@@ -4243,7 +4243,7 @@
     "eighth_out": "10.79",
     "quarter_out": "23.46",
     "decel": "12.66",
-    "rating": "64.9",
+    "rating": "64.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -4255,7 +4255,7 @@
     "btprod": false
   },
   {
-    "rank": "67",
+    "rank": "117",
     "hip": "171",
     "st": "KY",
     "sire": "Army Mule",
@@ -4268,7 +4268,7 @@
     "eighth_out": "11.19",
     "quarter_out": "25.42",
     "decel": "14.23",
-    "rating": "29.9",
+    "rating": "30.1",
     "tier": "BELOW AVG",
     "sex": "F",
     "section": "1/8",
@@ -4280,7 +4280,7 @@
     "btprod": false
   },
   {
-    "rank": "17",
+    "rank": "34",
     "hip": "172",
     "st": "FL",
     "sire": "Grazen",
@@ -4305,7 +4305,7 @@
     "btprod": false
   },
   {
-    "rank": "48",
+    "rank": "73",
     "hip": "173",
     "st": "KY",
     "sire": "Uncle Mo",
@@ -4318,7 +4318,7 @@
     "eighth_out": "11.31",
     "quarter_out": "23.89",
     "decel": "12.58",
-    "rating": "48.2",
+    "rating": "48.5",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -4330,7 +4330,7 @@
     "btprod": false
   },
   {
-    "rank": "69",
+    "rank": "126",
     "hip": "174",
     "st": "FL",
     "sire": "Epicenter",
@@ -4343,7 +4343,7 @@
     "eighth_out": "11.09",
     "quarter_out": "24.3",
     "decel": "13.21",
-    "rating": "22.4",
+    "rating": "23.6",
     "tier": "BELOW AVG",
     "sex": "F",
     "section": "1/8",
@@ -4355,7 +4355,7 @@
     "btprod": false
   },
   {
-    "rank": "3",
+    "rank": "7",
     "hip": "175",
     "st": "MD",
     "sire": "Charlatan",
@@ -4368,7 +4368,7 @@
     "eighth_out": "10.78",
     "quarter_out": "23.17",
     "decel": "12.39",
-    "rating": "88.5",
+    "rating": "88.6",
     "tier": "ELITE",
     "sex": "F",
     "section": "1/8",
@@ -4380,7 +4380,7 @@
     "btprod": true
   },
   {
-    "rank": "16",
+    "rank": "36",
     "hip": "176",
     "st": "KY",
     "sire": "Charlatan",
@@ -4393,7 +4393,7 @@
     "eighth_out": "10.74",
     "quarter_out": "22.95",
     "decel": "12.22",
-    "rating": "64.0",
+    "rating": "64.9",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -4430,7 +4430,7 @@
     "btprod": false
   },
   {
-    "rank": "50",
+    "rank": "115",
     "hip": "178",
     "st": "KY",
     "sire": "Union Rags",
@@ -4443,7 +4443,7 @@
     "eighth_out": "11.42",
     "quarter_out": "24.01",
     "decel": "12.6",
-    "rating": "30.0",
+    "rating": "30.5",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -4480,7 +4480,7 @@
     "btprod": false
   },
   {
-    "rank": "6",
+    "rank": "131",
     "hip": "180",
     "st": "FL",
     "sire": "Roadster",
@@ -4493,7 +4493,7 @@
     "eighth_out": "11.57",
     "quarter_out": "25.67",
     "decel": "14.1",
-    "rating": "20.4",
+    "rating": "21.3",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/4",
@@ -4605,7 +4605,7 @@
     "btprod": false
   },
   {
-    "rank": "6",
+    "rank": "132",
     "hip": "185",
     "st": "FL",
     "sire": "Roadster",
@@ -4618,7 +4618,7 @@
     "eighth_out": "12.09",
     "quarter_out": "26.61",
     "decel": "14.52",
-    "rating": "21.5",
+    "rating": "21.1",
     "tier": "BELOW AVG",
     "sex": "F",
     "section": "1/4",
@@ -4630,7 +4630,7 @@
     "btprod": false
   },
   {
-    "rank": "12",
+    "rank": "26",
     "hip": "186",
     "st": "KY",
     "sire": "Uncle Mo",
@@ -4643,7 +4643,7 @@
     "eighth_out": "10.66",
     "quarter_out": "23.83",
     "decel": "13.18",
-    "rating": "68.3",
+    "rating": "69.1",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -4655,7 +4655,7 @@
     "btprod": false
   },
   {
-    "rank": "54",
+    "rank": "84",
     "hip": "187",
     "st": "KY",
     "sire": "Game Winner",
@@ -4668,7 +4668,7 @@
     "eighth_out": "11.26",
     "quarter_out": "23.95",
     "decel": "12.69",
-    "rating": "45.1",
+    "rating": "45.4",
     "tier": "AVERAGE",
     "sex": "F",
     "section": "1/8",
@@ -4680,7 +4680,7 @@
     "btprod": false
   },
   {
-    "rank": "5",
+    "rank": "123",
     "hip": "188",
     "st": "KY",
     "sire": "Cyberknife",
@@ -4693,7 +4693,7 @@
     "eighth_out": "12.07",
     "quarter_out": "26.05",
     "decel": "13.98",
-    "rating": "26.3",
+    "rating": "26.5",
     "tier": "BELOW AVG",
     "sex": "F",
     "section": "1/4",
@@ -4705,7 +4705,7 @@
     "btprod": false
   },
   {
-    "rank": "7",
+    "rank": "139",
     "hip": "189",
     "st": "KY",
     "sire": "Jackie's Warrior",
@@ -4718,7 +4718,7 @@
     "eighth_out": "12.6",
     "quarter_out": "27.14",
     "decel": "14.54",
-    "rating": "8.4",
+    "rating": "8.2",
     "tier": "WEAK",
     "sex": "F",
     "section": "1/4",
@@ -4730,7 +4730,7 @@
     "btprod": true
   },
   {
-    "rank": "24",
+    "rank": "46",
     "hip": "190",
     "st": "KY",
     "sire": "Olympiad",
@@ -4743,7 +4743,7 @@
     "eighth_out": "10.85",
     "quarter_out": "23.48",
     "decel": "12.63",
-    "rating": "62.0",
+    "rating": "62.2",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -4830,7 +4830,7 @@
     "btprod": true
   },
   {
-    "rank": "22",
+    "rank": "42",
     "hip": "194",
     "st": "KY",
     "sire": "Practical Joke",
@@ -4843,7 +4843,7 @@
     "eighth_out": "11.0",
     "quarter_out": "22.98",
     "decel": "11.98",
-    "rating": "63.3",
+    "rating": "63.7",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -4855,7 +4855,7 @@
     "btprod": false
   },
   {
-    "rank": "39",
+    "rank": "98",
     "hip": "195",
     "st": "KY",
     "sire": "American Pharoah",
@@ -4880,7 +4880,7 @@
     "btprod": false
   },
   {
-    "rank": "37",
+    "rank": "59",
     "hip": "196",
     "st": "LA",
     "sire": "Clearly Now",
@@ -4893,7 +4893,7 @@
     "eighth_out": "11.15",
     "quarter_out": "23.71",
     "decel": "12.56",
-    "rating": "52.9",
+    "rating": "53.1",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -4905,7 +4905,7 @@
     "btprod": false
   },
   {
-    "rank": "70",
+    "rank": "129",
     "hip": "197",
     "st": "KY",
     "sire": "Vekoma",
@@ -4918,7 +4918,7 @@
     "eighth_out": "11.5",
     "quarter_out": "24.63",
     "decel": "13.13",
-    "rating": "22.2",
+    "rating": "22.6",
     "tier": "BELOW AVG",
     "sex": "F",
     "section": "1/8",
@@ -4930,7 +4930,7 @@
     "btprod": false
   },
   {
-    "rank": "18",
+    "rank": "39",
     "hip": "198",
     "st": "FL",
     "sire": "Girvin",
@@ -4943,7 +4943,7 @@
     "eighth_out": "10.95",
     "quarter_out": "23.3",
     "decel": "12.35",
-    "rating": "64.6",
+    "rating": "64.7",
     "tier": "ABOVE AVG",
     "sex": "F",
     "section": "1/8",
@@ -4955,7 +4955,7 @@
     "btprod": false
   },
   {
-    "rank": "22",
+    "rank": "63",
     "hip": "199",
     "st": "KY",
     "sire": "Life Is Good",
@@ -4968,7 +4968,7 @@
     "eighth_out": "10.8",
     "quarter_out": "24.0",
     "decel": "13.2",
-    "rating": "50.7",
+    "rating": "51.1",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -4980,7 +4980,7 @@
     "btprod": true
   },
   {
-    "rank": "2",
+    "rank": "12",
     "hip": "200",
     "st": "FL",
     "sire": "Girvin",
@@ -4993,7 +4993,7 @@
     "eighth_out": "11.28",
     "quarter_out": "25.46",
     "decel": "14.18",
-    "rating": "83.8",
+    "rating": "84.8",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/4",
@@ -5005,7 +5005,7 @@
     "btprod": false
   },
   {
-    "rank": "68",
+    "rank": "125",
     "hip": "201",
     "st": "KY",
     "sire": "Maxfield",
@@ -5018,7 +5018,7 @@
     "eighth_out": "11.6",
     "quarter_out": "24.63",
     "decel": "13.03",
-    "rating": "23.0",
+    "rating": "23.9",
     "tier": "BELOW AVG",
     "sex": "F",
     "section": "1/8",
@@ -5030,7 +5030,7 @@
     "btprod": false
   },
   {
-    "rank": "35",
+    "rank": "",
     "hip": "202",
     "st": "KY",
     "sire": "Maxfield",
@@ -5043,8 +5043,8 @@
     "eighth_out": "",
     "quarter_out": "",
     "decel": "",
-    "rating": "43.0",
-    "tier": "AVERAGE",
+    "rating": "",
+    "tier": "",
     "sex": "C",
     "section": "1/8",
     "sale_status": "",
@@ -5056,7 +5056,7 @@
     "stride_imputed": "true"
   },
   {
-    "rank": "9",
+    "rank": "22",
     "hip": "203",
     "st": "KY",
     "sire": "Early Voting",
@@ -5069,7 +5069,7 @@
     "eighth_out": "11.26",
     "quarter_out": "22.98",
     "decel": "11.72",
-    "rating": "71.7",
+    "rating": "71.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",

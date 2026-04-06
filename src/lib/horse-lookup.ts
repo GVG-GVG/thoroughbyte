@@ -142,7 +142,6 @@ interface SaleIndex {
     rating: number[];
   }>;
   totalRanked: number;
-  overallRanks: Map<number, number>; // hip -> overall rank by rating
 }
 
 const saleIndexes = new Map<string, SaleIndex>();
@@ -201,17 +200,7 @@ function getOrBuildIndex(saleId: string): SaleIndex | null {
   let breezedCount = 0;
   for (const g of peerGroups.values()) { breezedCount += g.time.length; }
 
-  // Compute overall rank across all cohorts by rating descending
-  const overallRanks = new Map<number, number>();
-  const allBreezed = horses
-    .filter(h => { const t = parseFloat(h.time); return t && !isNaN(t) && t > 0; })
-    .map(h => ({ hip: parseInt(h.hip, 10), rating: parseFloat(h.rating) || 0 }))
-    .sort((a, b) => b.rating - a.rating);
-  for (let i = 0; i < allBreezed.length; i++) {
-    overallRanks.set(allBreezed[i].hip, i + 1);
-  }
-
-  const index: SaleIndex = { hipMap, peerGroups, totalRanked: breezedCount, overallRanks };
+  const index: SaleIndex = { hipMap, peerGroups, totalRanked: breezedCount };
   saleIndexes.set(saleId, index);
   return index;
 }
@@ -275,7 +264,7 @@ export function lookupHip(hip: number, saleId: string = 'obs-march-2026'): Enric
     decel,
     rating,
     tier: raw.tier,
-    rank: idx.overallRanks.get(parseInt(raw.hip, 10)) || parseInt(raw.rank, 10),
+    rank: parseInt(raw.rank, 10),
     totalRanked: idx.totalRanked,
     saleStatus: raw.sale_status,
     salePrice: parsePrice(raw.sale_price),
