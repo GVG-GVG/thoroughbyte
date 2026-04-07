@@ -66,8 +66,10 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
   }, [sale]);
 
   const sireRows = useMemo(() => {
+    // Only include horses that have actually breezed (non-zero rating and time)
+    const breezed = horses.filter(h => h.rating > 0 && h.time > 0);
     const grouped: Record<string, Horse[]> = {};
-    for (const h of horses) {
+    for (const h of breezed) {
       if (!h.sire) continue;
       if (!grouped[h.sire]) grouped[h.sire] = [];
       grouped[h.sire].push(h);
@@ -80,6 +82,11 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
       const avgRating = ratings.reduce((a, b) => a + b, 0) / ratings.length;
       const bestIdx = ratings.indexOf(Math.max(...ratings));
       const best = group[bestIdx];
+      // Only include horses with actual stride data in stride average
+      const withStride = group.filter(h => h.stride > 0);
+      const avgStride = withStride.length > 0
+        ? withStride.reduce((a, h) => a + h.stride, 0) / withStride.length
+        : 0;
       rows.push({
         rank: 0,
         sire,
@@ -89,7 +96,7 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
         bestHip: best.hip,
         eliteCount: group.filter(h => h.tier === 'ELITE').length,
         strongCount: group.filter(h => h.tier === 'ELITE' || h.tier === 'STRONG').length,
-        avgStride: Math.round((group.reduce((a, h) => a + h.stride, 0) / group.length) * 10) / 10,
+        avgStride: Math.round(avgStride * 10) / 10,
       });
     }
 
