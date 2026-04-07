@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
+import ComparePanel from './ComparePanel';
 
 interface Horse {
   hip: number;
@@ -83,6 +84,25 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
   const [favorites, setFavorites] = useState<Set<number>>(new Set());
   const [favoritesOnly, setFavoritesOnly] = useState(false);
   const [togglingFav, setTogglingFav] = useState<number | null>(null);
+  const [compareHips, setCompareHips] = useState<number[]>([]);
+  const [showCompare, setShowCompare] = useState(false);
+
+  const toggleCompare = useCallback((hip: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCompareHips(prev => {
+      if (prev.includes(hip)) return prev.filter(h => h !== hip);
+      if (prev.length >= 2) return [prev[1], hip]; // rotate: drop oldest
+      return [...prev, hip];
+    });
+  }, []);
+
+  const compareHorses = useMemo(() => {
+    if (compareHips.length !== 2) return null;
+    const a = horses.find(h => h.hip === compareHips[0]);
+    const b = horses.find(h => h.hip === compareHips[1]);
+    if (!a || !b) return null;
+    return [a, b] as [Horse, Horse];
+  }, [compareHips, horses]);
 
   useEffect(() => {
     setLoading(true);
@@ -468,6 +488,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
         <table className="rl-table">
           <thead>
             <tr>
+              <th className="rl-cmp-col" title="Compare">CMP</th>
               <th className="rl-fav-col" title="Favorites">&#9733;</th>
               <th onClick={() => handleSort('hip')} className="rl-sortable">Hip{sortIcon('hip')}</th>
               <th onClick={() => handleSort('rank')} className="rl-sortable">Rank{sortIcon('rank')}</th>
@@ -488,7 +509,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={16} className="rl-empty">No horses match your filters.</td></tr>
+              <tr><td colSpan={17} className="rl-empty">No horses match your filters.</td></tr>
             ) : (
               filtered.map(h => (
                 <tr
@@ -496,6 +517,16 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                   className={`rl-row ${TIER_ROW_CLASSES[h.tier] ?? ''}`}
                   onClick={() => onSelectHip?.(h.hip, h)}
                 >
+                  <td className="rl-cmp-cell">
+                    <input
+                      type="checkbox"
+                      className="rl-cmp-check"
+                      checked={compareHips.includes(h.hip)}
+                      onChange={() => {}}
+                      onClick={(e) => toggleCompare(h.hip, e)}
+                      title="Select to compare"
+                    />
+                  </td>
                   <td className="rl-fav-cell">
                     <button
                       className={`rl-fav-btn ${favorites.has(h.hip) ? 'rl-fav-active' : ''}`}
@@ -532,6 +563,37 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
           </tbody>
         </table>
       </div>
+
+      {/* Sticky compare bar */}
+      {compareHips.length > 0 && (
+        <div className="cmp-bar">
+          <div className="cmp-bar-inner">
+            <div className="cmp-bar-selected">
+              {compareHips.map(hip => {
+                const h = horses.find(x => x.hip === hip);
+                return (
+                  <span key={hip} className="cmp-bar-chip">
+                    Hip {hip}{h ? ` \u2014 ${h.sire}` : ''}
+                    <button className="cmp-bar-chip-x" onClick={() => setCompareHips(prev => prev.filter(x => x !== hip))}>&times;</button>
+                  </span>
+                );
+              })}
+              {compareHips.length === 1 && <span className="cmp-bar-hint">Select 1 more horse to compare</span>}
+            </div>
+            <div className="cmp-bar-actions">
+              {compareHips.length === 2 && (
+                <button className="cmp-bar-btn cmp-bar-go" onClick={() => setShowCompare(true)}>Compare</button>
+              )}
+              <button className="cmp-bar-btn cmp-bar-clear" onClick={() => { setCompareHips([]); setShowCompare(false); }}>Clear</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Compare panel overlay */}
+      {showCompare && compareHorses && (
+        <ComparePanel horses={compareHorses} onClose={() => setShowCompare(false)} />
+      )}
     </div>
   );
 }
