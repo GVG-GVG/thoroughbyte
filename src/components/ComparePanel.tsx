@@ -111,14 +111,14 @@ export default function ComparePanel({ horses, onClose }: Props) {
               {a.btw && <span className="rl-bt-tag rl-bt-btw">BTW</span>}
               {a.btp && <span className="rl-bt-tag rl-bt-btp">BTP</span>}
               {a.btprod && <span className="rl-bt-tag rl-bt-btprod">BTProd</span>}
-              {!a.btw && !a.btp && !a.btprod && <span className="cmp-no-data">\u2014</span>}
+              {!a.btw && !a.btp && !a.btprod && <span className="cmp-no-data">No BT</span>}
             </div>
             <div className="cmp-label-center">Dam Black-Type</div>
             <div className="cmp-col cmp-badges">
               {b.btw && <span className="rl-bt-tag rl-bt-btw">BTW</span>}
               {b.btp && <span className="rl-bt-tag rl-bt-btp">BTP</span>}
               {b.btprod && <span className="rl-bt-tag rl-bt-btprod">BTProd</span>}
-              {!b.btw && !b.btp && !b.btprod && <span className="cmp-no-data">\u2014</span>}
+              {!b.btw && !b.btp && !b.btprod && <span className="cmp-no-data">No BT</span>}
             </div>
           </div>
         </div>
