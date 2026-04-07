@@ -326,15 +326,15 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
         if (data.section !== 'body' || data.column.index !== 6) return; // 6 = Dam column
         const horse = rows[data.row.index];
         if (!horse) return;
-        const badges: { label: string; color: [number, number, number] }[] = [];
-        if (horse.btw)    badges.push({ label: 'BTW',    color: [220, 38, 38] });
-        if (horse.btp)    badges.push({ label: 'BTP',    color: [37, 99, 235] });
-        if (horse.btprod) badges.push({ label: 'BTProd', color: [22, 163, 74] });
+        const badges: { label: string; bg: [number, number, number]; text: [number, number, number] }[] = [];
+        // Match dashboard CSS colors exactly: BTW=gold, BTP=silver, BTProd=purple
+        if (horse.btw)    badges.push({ label: 'BTW',    bg: [255, 215, 0],   text: [74, 56, 0] });
+        if (horse.btp)    badges.push({ label: 'BTP',    bg: [192, 192, 192], text: [51, 51, 51] });
+        if (horse.btprod) badges.push({ label: 'BTProd', bg: [212, 168, 255], text: [58, 26, 94] });
         if (badges.length === 0) return;
         const cellX = data.cell.x;
         const cellY = data.cell.y;
         const cellH = data.cell.height;
-        // Position badges after dam text
         const textWidth = doc.getTextWidth(String(data.cell.raw || ''));
         let bx = cellX + data.cell.padding('left') + textWidth + 2;
         const by = cellY + cellH / 2 - 3;
@@ -342,9 +342,9 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
         for (const b of badges) {
           const tw = doc.getTextWidth(b.label) + 3;
           const bw = tw + 1;
-          doc.setFillColor(b.color[0], b.color[1], b.color[2]);
+          doc.setFillColor(b.bg[0], b.bg[1], b.bg[2]);
           doc.roundedRect(bx, by, bw, 6, 1, 1, 'F');
-          doc.setTextColor(255, 255, 255);
+          doc.setTextColor(b.text[0], b.text[1], b.text[2]);
           doc.text(b.label, bx + bw / 2, by + 4.2, { align: 'center' });
           bx += bw + 1.5;
         }
