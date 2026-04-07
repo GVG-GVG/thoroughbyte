@@ -7,6 +7,20 @@
 import type { EnrichedHorse } from './horse-lookup';
 import { getPhotoUrl } from './horse-lookup';
 
+// ── Fifths-of-a-second conversion ──
+// OBS times are in "fifths" notation: 9.3 = 9 and 3/5ths = 9.6 real seconds
+// Each digit after the decimal = 1/5th of a second (0.2s)
+
+function fifthsToSec(v: number): number {
+  const whole = Math.floor(v);
+  const frac = Math.round((v - whole) * 10); // single digit: 0-4
+  return whole + frac * 0.2;
+}
+
+function fmtDelta(realSec: number): string {
+  return Math.abs(realSec).toFixed(2);
+}
+
 // ── Scouting report generator (mirrors client-side prototype) ──
 
 function generateBlurb(h: EnrichedHorse): string {
@@ -30,15 +44,19 @@ function generateBlurb(h: EnrichedHorse): string {
     parts.push(`This ${h.sire} ${sexWord} breezed in the <span class="caution">bottom ${100 - h.pctl.rating}%</span> among ${n} ${sexPlural} working ${h.dist} mile at this sale.`);
   }
 
-  const timeDelta = (h.time - peer.time).toFixed(1);
+  // Convert fifths notation to real seconds for accurate delta math
+  const timeSec = fifthsToSec(h.time);
+  const peerTimeSec = fifthsToSec(peer.time);
+  const timeDeltaSec = timeSec - peerTimeSec;
+
   if (h.pctl.time >= 85) {
-    parts.push(`The raw time of <strong>${h.time}s</strong> was ${Math.abs(parseFloat(timeDelta))}s faster than the peer average of ${peer.time}s — elite speed for this group.`);
+    parts.push(`The raw time of <strong>${h.time}</strong> was ${fmtDelta(timeDeltaSec)}s faster than the peer average of ${peer.time} — elite speed for this group.`);
   } else if (h.pctl.time >= 60) {
-    parts.push(`At <strong>${h.time}s</strong>, the breeze time came in ${Math.abs(parseFloat(timeDelta))}s quicker than the ${peer.time}s average for ${sexPlural} at this distance.`);
+    parts.push(`At <strong>${h.time}</strong>, the breeze time came in ${fmtDelta(timeDeltaSec)}s quicker than the ${peer.time} average for ${sexPlural} at this distance.`);
   } else if (h.pctl.time >= 40) {
-    parts.push(`The <strong>${h.time}s</strong> breeze time was right around the ${peer.time}s average for the group.`);
+    parts.push(`The <strong>${h.time}</strong> breeze time was right around the ${peer.time} average for the group.`);
   } else {
-    parts.push(`The <strong>${h.time}s</strong> time was ${Math.abs(parseFloat(timeDelta))}s slower than the ${peer.time}s group average — below the pace you'd want to see.`);
+    parts.push(`The <strong>${h.time}</strong> time was ${fmtDelta(timeDeltaSec)}s slower than the ${peer.time} group average — below the pace you'd want to see.`);
   }
 
   if (h.pctl.stride >= 85) {
@@ -51,6 +69,7 @@ function generateBlurb(h: EnrichedHorse): string {
     parts.push(`Stride length was <strong>${h.stride}'</strong>, shorter than the ${peer.stride}' average, which may indicate a choppier action.`);
   }
 
+  // Decel is already in real seconds (quarter_out - eighth_out), no fifths conversion needed
   if (h.pctl.decel >= 90) {
     parts.push(`What separates this horse is the <strong>${h.decel}s deceleration</strong> through the gallop-out — far better than the ${peer.decel}s average. Deceleration measures how well a horse sustains speed after crossing the wire. Lower numbers mean the horse was still carrying its speed rather than stopping quickly, which often translates to the ability to finish races strongly.`);
   } else if (h.pctl.decel >= 70) {

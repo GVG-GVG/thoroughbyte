@@ -118,6 +118,27 @@ function avg(arr: number[]): number {
   return Math.round((arr.reduce((s, v) => s + v, 0) / arr.length) * 100) / 100;
 }
 
+// OBS times are in "fifths" notation: 9.3 = 9 and 3/5ths = 9.6 real seconds
+function fifthsToSec(v: number): number {
+  const whole = Math.floor(v);
+  const frac = Math.round((v - whole) * 10);
+  return whole + frac * 0.2;
+}
+
+function secToFifths(sec: number): number {
+  const whole = Math.floor(sec);
+  const frac = sec - whole;
+  const fifths = Math.round(frac / 0.2);
+  return Math.round((whole + fifths / 10) * 10) / 10;
+}
+
+// Average times in fifths notation: convert to real seconds, average, convert back
+function avgFifths(arr: number[]): number {
+  if (arr.length === 0) return 0;
+  const realAvg = arr.reduce((s, v) => s + fifthsToSec(v), 0) / arr.length;
+  return secToFifths(realAvg);
+}
+
 function percentileDesc(arr: number[], val: number): number {
   const beaten = arr.filter(v => v > val).length;
   return Math.round((beaten / arr.length) * 100);
@@ -239,7 +260,7 @@ export function lookupHip(hip: number, saleId: string = 'obs-march-2026'): Enric
 
   const peer: PeerStats = {
     n: g.time.length,
-    time: avg(g.time),
+    time: avgFifths(g.time),
     stride: avg(g.stride),
     eighth: avg(g.eighth),
     quarter: avg(g.quarter),
