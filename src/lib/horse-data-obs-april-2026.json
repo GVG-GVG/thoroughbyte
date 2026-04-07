@@ -58,11 +58,11 @@
     "consigner": "L. G., Agent",
     "day": "1",
     "set": "2",
-    "time": "9.9",
+    "time": "10.0",
     "stride": "25.3",
-    "eighth_out": "11.05",
-    "quarter_out": "24.24",
-    "decel": "13.2",
+    "eighth_out": "11.04",
+    "quarter_out": "24.14",
+    "decel": "13.1",
     "rating": "44.0",
     "tier": "AVERAGE",
     "sex": "C",
@@ -72,7 +72,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "11.05",
+    "adj_quarter_out": "24.24",
+    "adj_decel": "13.2"
   },
   {
     "rank": "",
@@ -108,11 +112,11 @@
     "consigner": "Global Thoroughbreds LLC",
     "day": "1",
     "set": "3",
-    "time": "10.2",
+    "time": "10.3",
     "stride": "24.0",
-    "eighth_out": "10.85",
-    "quarter_out": "23.99",
-    "decel": "13.14",
+    "eighth_out": "11.14",
+    "quarter_out": "24.37",
+    "decel": "13.23",
     "rating": "50.7",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -122,7 +126,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "10.85",
+    "adj_quarter_out": "23.99",
+    "adj_decel": "13.14"
   },
   {
     "rank": "",
@@ -187,7 +195,7 @@
     "stride": "24.42",
     "eighth_out": "",
     "quarter_out": "",
-    "decel": "",
+    "decel": "13.57",
     "rating": "55.4",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -198,7 +206,9 @@
     "btw": false,
     "btp": false,
     "btprod": false,
-    "stride_imputed": "true"
+    "stride_imputed": "true",
+    "adj_time": "10.0",
+    "adj_decel": ""
   },
   {
     "rank": "",
@@ -234,11 +244,11 @@
     "consigner": "Davies Julie",
     "day": "1",
     "set": "3",
-    "time": "10.2",
+    "time": "10.4",
     "stride": "23.1",
-    "eighth_out": "11.14",
-    "quarter_out": "23.72",
-    "decel": "12.57",
+    "eighth_out": "11.4",
+    "quarter_out": "23.95",
+    "decel": "12.55",
     "rating": "15.8",
     "tier": "WEAK",
     "sex": "C",
@@ -248,7 +258,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.14",
+    "adj_quarter_out": "23.72",
+    "adj_decel": "12.57"
   },
   {
     "rank": "17",
@@ -273,7 +287,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.95",
+    "adj_quarter_out": "22.96",
+    "adj_decel": "12.01"
   },
   {
     "rank": "104",
@@ -284,11 +302,11 @@
     "consigner": "Hoppel LLC, Agent",
     "day": "1",
     "set": "3",
-    "time": "9.9",
+    "time": "10.1",
     "stride": "24.4",
-    "eighth_out": "10.92",
-    "quarter_out": "24.1",
-    "decel": "13.17",
+    "eighth_out": "11.18",
+    "quarter_out": "24.33",
+    "decel": "13.15",
     "rating": "38.0",
     "tier": "AVERAGE",
     "sex": "C",
@@ -298,7 +316,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "10.92",
+    "adj_quarter_out": "24.1",
+    "adj_decel": "13.17"
   },
   {
     "rank": "29",
@@ -323,7 +345,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.79",
+    "adj_quarter_out": "23.38",
+    "adj_decel": "12.59"
   },
   {
     "rank": "25",
@@ -338,7 +364,7 @@
     "stride": "24.98",
     "eighth_out": "",
     "quarter_out": "",
-    "decel": "",
+    "decel": "12.54",
     "rating": "46.7",
     "tier": "AVERAGE",
     "sex": "C",
@@ -349,7 +375,9 @@
     "btw": false,
     "btp": false,
     "btprod": false,
-    "stride_imputed": "true"
+    "stride_imputed": "true",
+    "adj_time": "9.4",
+    "adj_decel": ""
   },
   {
     "rank": "27",
@@ -374,7 +402,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.4",
+    "adj_eighth_out": "10.88",
+    "adj_quarter_out": "23.63",
+    "adj_decel": "12.75"
   },
   {
     "rank": "16",
@@ -399,7 +431,11 @@
     "buyer": "",
     "btw": true,
     "btp": true,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.4",
+    "adj_eighth_out": "10.91",
+    "adj_quarter_out": "23.44",
+    "adj_decel": "12.53"
   },
   {
     "rank": "11",
@@ -410,11 +446,11 @@
     "consigner": "Top Line Sales",
     "day": "1",
     "set": "2",
-    "time": "9.5",
+    "time": "9.4",
     "stride": "25.2",
-    "eighth_out": "10.53",
-    "quarter_out": "23.28",
-    "decel": "12.75",
+    "eighth_out": "10.47",
+    "quarter_out": "23.21",
+    "decel": "12.74",
     "rating": "86.8",
     "tier": "ELITE",
     "sex": "F",
@@ -424,7 +460,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.5",
+    "adj_eighth_out": "10.53",
+    "adj_quarter_out": "23.28",
+    "adj_decel": "12.75"
   },
   {
     "rank": "",
@@ -474,7 +514,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "11.01",
+    "adj_quarter_out": "24.45",
+    "adj_decel": "13.44"
   },
   {
     "rank": "1",
@@ -485,11 +529,11 @@
     "consigner": "Ramirez Omar",
     "day": "1",
     "set": "3",
-    "time": "9.3",
+    "time": "9.4",
     "stride": "25.9",
-    "eighth_out": "10.7",
-    "quarter_out": "22.64",
-    "decel": "11.94",
+    "eighth_out": "10.99",
+    "quarter_out": "23.02",
+    "decel": "12.03",
     "rating": "100.0",
     "tier": "ELITE",
     "sex": "F",
@@ -499,7 +543,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.3",
+    "adj_eighth_out": "10.7",
+    "adj_quarter_out": "22.64",
+    "adj_decel": "11.94"
   },
   {
     "rank": "55",
@@ -510,11 +558,11 @@
     "consigner": "Hidden Brook Farm",
     "day": "1",
     "set": "3",
-    "time": "10.1",
+    "time": "10.2",
     "stride": "23.6",
-    "eighth_out": "10.95",
-    "quarter_out": "23.34",
-    "decel": "12.39",
+    "eighth_out": "11.24",
+    "quarter_out": "23.72",
+    "decel": "12.48",
     "rating": "56.6",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -524,7 +572,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.95",
+    "adj_quarter_out": "23.34",
+    "adj_decel": "12.39"
   },
   {
     "rank": "142",
@@ -549,7 +601,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.3",
+    "adj_eighth_out": "12.36",
+    "adj_quarter_out": "27.6",
+    "adj_decel": "15.24"
   },
   {
     "rank": "62",
@@ -560,11 +616,11 @@
     "consigner": "Lucan Bloodstock",
     "day": "1",
     "set": "3",
-    "time": "10.1",
+    "time": "10.2",
     "stride": "25.2",
-    "eighth_out": "11.08",
-    "quarter_out": "24.26",
-    "decel": "13.18",
+    "eighth_out": "11.37",
+    "quarter_out": "24.64",
+    "decel": "13.27",
     "rating": "51.2",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -574,7 +630,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.08",
+    "adj_quarter_out": "24.26",
+    "adj_decel": "13.18"
   },
   {
     "rank": "121",
@@ -587,9 +647,9 @@
     "set": "2",
     "time": "21.1",
     "stride": "24.6",
-    "eighth_out": "12.25",
-    "quarter_out": "26.79",
-    "decel": "14.54",
+    "eighth_out": "12.16",
+    "quarter_out": "26.4",
+    "decel": "14.24",
     "rating": "27.1",
     "tier": "BELOW AVG",
     "sex": "F",
@@ -599,7 +659,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.1",
+    "adj_eighth_out": "12.25",
+    "adj_quarter_out": "26.79",
+    "adj_decel": "14.54"
   },
   {
     "rank": "",
@@ -635,11 +699,11 @@
     "consigner": "Miles Randy",
     "day": "1",
     "set": "2",
-    "time": "9.5",
+    "time": "9.4",
     "stride": "23.8",
-    "eighth_out": "11.08",
-    "quarter_out": "25.17",
-    "decel": "14.09",
+    "eighth_out": "11.02",
+    "quarter_out": "25.1",
+    "decel": "14.08",
     "rating": "45.1",
     "tier": "AVERAGE",
     "sex": "F",
@@ -649,7 +713,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.5",
+    "adj_eighth_out": "11.08",
+    "adj_quarter_out": "25.17",
+    "adj_decel": "14.09"
   },
   {
     "rank": "47",
@@ -660,11 +728,11 @@
     "consigner": "Blue Sapphire Stables",
     "day": "1",
     "set": "2",
-    "time": "10.2",
+    "time": "10.1",
     "stride": "26.1",
-    "eighth_out": "11.22",
-    "quarter_out": "23.49",
-    "decel": "12.27",
+    "eighth_out": "11.16",
+    "quarter_out": "23.42",
+    "decel": "12.26",
     "rating": "61.5",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -674,7 +742,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.22",
+    "adj_quarter_out": "23.49",
+    "adj_decel": "12.27"
   },
   {
     "rank": "53",
@@ -699,7 +771,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.96",
+    "adj_quarter_out": "23.71",
+    "adj_decel": "12.75"
   },
   {
     "rank": "133",
@@ -710,11 +786,11 @@
     "consigner": "Grassroots Training & Sales LLC",
     "day": "1",
     "set": "3",
-    "time": "10.1",
+    "time": "10.3",
     "stride": "23.9",
-    "eighth_out": "11.24",
-    "quarter_out": "24.04",
-    "decel": "12.79",
+    "eighth_out": "11.5",
+    "quarter_out": "24.27",
+    "decel": "12.77",
     "rating": "20.5",
     "tier": "BELOW AVG",
     "sex": "C",
@@ -724,7 +800,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.24",
+    "adj_quarter_out": "24.04",
+    "adj_decel": "12.79"
   },
   {
     "rank": "128",
@@ -749,7 +829,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "11.16",
+    "adj_quarter_out": "23.86",
+    "adj_decel": "12.7"
   },
   {
     "rank": "33",
@@ -760,11 +844,11 @@
     "consigner": "Envision Equine",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "25.6",
-    "eighth_out": "10.96",
-    "quarter_out": "23.19",
-    "decel": "12.24",
+    "eighth_out": "10.95",
+    "quarter_out": "23.09",
+    "decel": "12.14",
     "rating": "67.0",
     "tier": "STRONG",
     "sex": "C",
@@ -774,7 +858,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.96",
+    "adj_quarter_out": "23.19",
+    "adj_decel": "12.24"
   },
   {
     "rank": "49",
@@ -799,7 +887,11 @@
     "buyer": "",
     "btw": false,
     "btp": true,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.4",
+    "adj_eighth_out": "11.01",
+    "adj_quarter_out": "23.95",
+    "adj_decel": "12.94"
   },
   {
     "rank": "112",
@@ -824,7 +916,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.11",
+    "adj_quarter_out": "24.29",
+    "adj_decel": "13.18"
   },
   {
     "rank": "2",
@@ -835,11 +931,11 @@
     "consigner": "Champions of the Future",
     "day": "1",
     "set": "2",
-    "time": "20.9",
+    "time": "21.1",
     "stride": "25.0",
-    "eighth_out": "11.2",
-    "quarter_out": "24.62",
-    "decel": "13.42",
+    "eighth_out": "11.38",
+    "quarter_out": "24.76",
+    "decel": "13.38",
     "rating": "100.0",
     "tier": "ELITE",
     "sex": "C",
@@ -849,7 +945,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "20.9",
+    "adj_eighth_out": "11.2",
+    "adj_quarter_out": "24.62",
+    "adj_decel": "13.42"
   },
   {
     "rank": "143",
@@ -860,11 +960,11 @@
     "consigner": "Grassroots Training & Sales LLC",
     "day": "1",
     "set": "3",
-    "time": "10.3",
+    "time": "10.4",
     "stride": "24.2",
-    "eighth_out": "12.16",
-    "quarter_out": "26.42",
-    "decel": "14.26",
+    "eighth_out": "12.45",
+    "quarter_out": "26.8",
+    "decel": "14.35",
     "rating": "0.0",
     "tier": "WEAK",
     "sex": "F",
@@ -874,7 +974,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "12.16",
+    "adj_quarter_out": "26.42",
+    "adj_decel": "14.26"
   },
   {
     "rank": "81",
@@ -885,11 +989,11 @@
     "consigner": "S G V Thoroughbreds",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "25.6",
-    "eighth_out": "11.15",
-    "quarter_out": "24.04",
-    "decel": "12.9",
+    "eighth_out": "11.14",
+    "quarter_out": "23.94",
+    "decel": "12.8",
     "rating": "46.3",
     "tier": "AVERAGE",
     "sex": "C",
@@ -899,7 +1003,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.15",
+    "adj_quarter_out": "24.04",
+    "adj_decel": "12.9"
   },
   {
     "rank": "18",
@@ -910,11 +1018,11 @@
     "consigner": "Global Thoroughbreds LLC",
     "day": "1",
     "set": "3",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.3",
-    "eighth_out": "10.73",
-    "quarter_out": "22.75",
-    "decel": "12.02",
+    "eighth_out": "11.02",
+    "quarter_out": "23.13",
+    "decel": "12.11",
     "rating": "74.0",
     "tier": "STRONG",
     "sex": "F",
@@ -924,7 +1032,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.73",
+    "adj_quarter_out": "22.75",
+    "adj_decel": "12.02"
   },
   {
     "rank": "19",
@@ -949,7 +1061,11 @@
     "buyer": "",
     "btw": true,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.4",
+    "adj_eighth_out": "10.45",
+    "adj_quarter_out": "23.96",
+    "adj_decel": "13.51"
   },
   {
     "rank": "33",
@@ -964,7 +1080,7 @@
     "stride": "24.98",
     "eighth_out": "",
     "quarter_out": "",
-    "decel": "",
+    "decel": "12.37",
     "rating": "42.6",
     "tier": "AVERAGE",
     "sex": "C",
@@ -975,7 +1091,9 @@
     "btw": false,
     "btp": false,
     "btprod": false,
-    "stride_imputed": "true"
+    "stride_imputed": "true",
+    "adj_time": "10.0",
+    "adj_decel": ""
   },
   {
     "rank": "21",
@@ -1000,7 +1118,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.75",
+    "adj_quarter_out": "23.33",
+    "adj_decel": "12.58"
   },
   {
     "rank": "118",
@@ -1025,7 +1147,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.37",
+    "adj_quarter_out": "24.29",
+    "adj_decel": "12.92"
   },
   {
     "rank": "",
@@ -1061,11 +1187,11 @@
     "consigner": "Scanlon Training Center",
     "day": "1",
     "set": "3",
-    "time": "9.2",
+    "time": "9.4",
     "stride": "25.7",
-    "eighth_out": "10.68",
-    "quarter_out": "23.57",
-    "decel": "12.88",
+    "eighth_out": "10.94",
+    "quarter_out": "23.8",
+    "decel": "12.86",
     "rating": "87.8",
     "tier": "ELITE",
     "sex": "C",
@@ -1075,7 +1201,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.2",
+    "adj_eighth_out": "10.68",
+    "adj_quarter_out": "23.57",
+    "adj_decel": "12.88"
   },
   {
     "rank": "",
@@ -1111,11 +1241,11 @@
     "consigner": "Harris Training Center LLC",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "25.2",
-    "eighth_out": "10.93",
-    "quarter_out": "23.45",
-    "decel": "12.52",
+    "eighth_out": "10.87",
+    "quarter_out": "23.38",
+    "decel": "12.51",
     "rating": "64.7",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -1125,7 +1255,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.93",
+    "adj_quarter_out": "23.45",
+    "adj_decel": "12.52"
   },
   {
     "rank": "80",
@@ -1150,7 +1284,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.04",
+    "adj_quarter_out": "25.13",
+    "adj_decel": "14.09"
   },
   {
     "rank": "28",
@@ -1161,11 +1299,11 @@
     "consigner": "Woodside Ranch",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "24.2",
-    "eighth_out": "10.81",
-    "quarter_out": "22.84",
-    "decel": "12.03",
+    "eighth_out": "10.75",
+    "quarter_out": "22.77",
+    "decel": "12.02",
     "rating": "68.9",
     "tier": "STRONG",
     "sex": "F",
@@ -1175,7 +1313,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.81",
+    "adj_quarter_out": "22.84",
+    "adj_decel": "12.03"
   },
   {
     "rank": "77",
@@ -1200,7 +1342,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.38",
+    "adj_quarter_out": "23.66",
+    "adj_decel": "12.28"
   },
   {
     "rank": "120",
@@ -1225,7 +1371,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.1",
+    "adj_quarter_out": "24.04",
+    "adj_decel": "12.94"
   },
   {
     "rank": "111",
@@ -1236,11 +1386,11 @@
     "consigner": "Grade One Investments LLC",
     "day": "1",
     "set": "2",
-    "time": "10.3",
+    "time": "10.2",
     "stride": "24.6",
-    "eighth_out": "11.26",
-    "quarter_out": "24.65",
-    "decel": "13.39",
+    "eighth_out": "11.2",
+    "quarter_out": "24.58",
+    "decel": "13.38",
     "rating": "35.4",
     "tier": "AVERAGE",
     "sex": "F",
@@ -1250,7 +1400,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "11.26",
+    "adj_quarter_out": "24.65",
+    "adj_decel": "13.39"
   },
   {
     "rank": "97",
@@ -1263,9 +1417,9 @@
     "set": "2",
     "time": "21.3",
     "stride": "24.2",
-    "eighth_out": "11.8",
-    "quarter_out": "26.04",
-    "decel": "14.24",
+    "eighth_out": "11.71",
+    "quarter_out": "25.65",
+    "decel": "13.94",
     "rating": "40.1",
     "tier": "AVERAGE",
     "sex": "F",
@@ -1275,7 +1429,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.3",
+    "adj_eighth_out": "11.8",
+    "adj_quarter_out": "26.04",
+    "adj_decel": "14.24"
   },
   {
     "rank": "137",
@@ -1286,11 +1444,11 @@
     "consigner": "First Call, Agent",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.1",
-    "eighth_out": "11.32",
-    "quarter_out": "24.53",
-    "decel": "13.22",
+    "eighth_out": "11.31",
+    "quarter_out": "24.43",
+    "decel": "13.12",
     "rating": "15.1",
     "tier": "WEAK",
     "sex": "C",
@@ -1300,7 +1458,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.32",
+    "adj_quarter_out": "24.53",
+    "adj_decel": "13.22"
   },
   {
     "rank": "93",
@@ -1325,7 +1487,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.03",
+    "adj_quarter_out": "23.99",
+    "adj_decel": "12.96"
   },
   {
     "rank": "",
@@ -1375,7 +1541,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.2",
+    "adj_quarter_out": "23.71",
+    "adj_decel": "12.51"
   },
   {
     "rank": "109",
@@ -1386,11 +1556,11 @@
     "consigner": "S B M Training and Sales",
     "day": "1",
     "set": "3",
-    "time": "9.9",
+    "time": "10.1",
     "stride": "23.5",
-    "eighth_out": "10.93",
-    "quarter_out": "23.63",
-    "decel": "12.69",
+    "eighth_out": "11.19",
+    "quarter_out": "23.86",
+    "decel": "12.67",
     "rating": "35.6",
     "tier": "AVERAGE",
     "sex": "C",
@@ -1400,7 +1570,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "10.93",
+    "adj_quarter_out": "23.63",
+    "adj_decel": "12.69"
   },
   {
     "rank": "51",
@@ -1425,7 +1599,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.87",
+    "adj_quarter_out": "23.31",
+    "adj_decel": "12.44"
   },
   {
     "rank": "57",
@@ -1436,11 +1614,11 @@
     "consigner": "de Meric Sales",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.2",
-    "eighth_out": "10.78",
-    "quarter_out": "23.15",
-    "decel": "12.38",
+    "eighth_out": "10.77",
+    "quarter_out": "23.05",
+    "decel": "12.28",
     "rating": "55.5",
     "tier": "ABOVE AVG",
     "sex": "C",
@@ -1450,7 +1628,11 @@
     "buyer": "",
     "btw": true,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.78",
+    "adj_quarter_out": "23.15",
+    "adj_decel": "12.38"
   },
   {
     "rank": "",
@@ -1486,11 +1668,11 @@
     "consigner": "S B M Training and Sales",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "23.9",
-    "eighth_out": "10.84",
-    "quarter_out": "23.58",
-    "decel": "12.75",
+    "eighth_out": "10.83",
+    "quarter_out": "23.48",
+    "decel": "12.65",
     "rating": "42.2",
     "tier": "AVERAGE",
     "sex": "C",
@@ -1500,7 +1682,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.84",
+    "adj_quarter_out": "23.58",
+    "adj_decel": "12.75"
   },
   {
     "rank": "105",
@@ -1511,11 +1697,11 @@
     "consigner": "Endurance Equine",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.8",
-    "eighth_out": "11.1",
-    "quarter_out": "24.06",
-    "decel": "12.97",
+    "eighth_out": "11.09",
+    "quarter_out": "23.96",
+    "decel": "12.87",
     "rating": "37.4",
     "tier": "AVERAGE",
     "sex": "C",
@@ -1525,7 +1711,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.1",
+    "adj_quarter_out": "24.06",
+    "adj_decel": "12.97"
   },
   {
     "rank": "96",
@@ -1536,11 +1726,11 @@
     "consigner": "Lucan Bloodstock",
     "day": "1",
     "set": "2",
-    "time": "9.9",
+    "time": "10.0",
     "stride": "24.6",
-    "eighth_out": "11.02",
-    "quarter_out": "24.0",
-    "decel": "12.99",
+    "eighth_out": "11.01",
+    "quarter_out": "23.9",
+    "decel": "12.89",
     "rating": "40.8",
     "tier": "AVERAGE",
     "sex": "C",
@@ -1550,7 +1740,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "11.02",
+    "adj_quarter_out": "24.0",
+    "adj_decel": "12.99"
   },
   {
     "rank": "",
@@ -1586,11 +1780,11 @@
     "consigner": "Kings Equine",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "22.9",
-    "eighth_out": "10.91",
-    "quarter_out": "23.87",
-    "decel": "12.96",
+    "eighth_out": "10.85",
+    "quarter_out": "23.8",
+    "decel": "12.95",
     "rating": "47.3",
     "tier": "AVERAGE",
     "sex": "F",
@@ -1600,7 +1794,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.91",
+    "adj_quarter_out": "23.87",
+    "adj_decel": "12.96"
   },
   {
     "rank": "60",
@@ -1611,11 +1809,11 @@
     "consigner": "Richardson Bloodstock",
     "day": "1",
     "set": "2",
-    "time": "10.2",
+    "time": "10.1",
     "stride": "23.7",
-    "eighth_out": "10.98",
-    "quarter_out": "23.54",
-    "decel": "12.56",
+    "eighth_out": "10.92",
+    "quarter_out": "23.47",
+    "decel": "12.55",
     "rating": "52.3",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -1625,7 +1823,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "10.98",
+    "adj_quarter_out": "23.54",
+    "adj_decel": "12.56"
   },
   {
     "rank": "99",
@@ -1636,11 +1838,11 @@
     "consigner": "Nice and Easy Thoroughbreds",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "24.3",
-    "eighth_out": "11.22",
-    "quarter_out": "24.61",
-    "decel": "13.39",
+    "eighth_out": "11.16",
+    "quarter_out": "24.54",
+    "decel": "13.38",
     "rating": "39.5",
     "tier": "AVERAGE",
     "sex": "F",
@@ -1650,7 +1852,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.22",
+    "adj_quarter_out": "24.61",
+    "adj_decel": "13.39"
   },
   {
     "rank": "141",
@@ -1661,11 +1867,11 @@
     "consigner": "RiceHorse",
     "day": "1",
     "set": "3",
-    "time": "21.4",
+    "time": "22.1",
     "stride": "23.8",
-    "eighth_out": "11.98",
-    "quarter_out": "25.94",
-    "decel": "13.96",
+    "eighth_out": "12.39",
+    "quarter_out": "25.78",
+    "decel": "13.39",
     "rating": "3.1",
     "tier": "WEAK",
     "sex": "C",
@@ -1675,7 +1881,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.4",
+    "adj_eighth_out": "11.98",
+    "adj_quarter_out": "25.94",
+    "adj_decel": "13.96"
   },
   {
     "rank": "24",
@@ -1686,11 +1896,11 @@
     "consigner": "de Meric Sales",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "25.3",
-    "eighth_out": "10.82",
-    "quarter_out": "23.16",
-    "decel": "12.34",
+    "eighth_out": "10.76",
+    "quarter_out": "23.09",
+    "decel": "12.33",
     "rating": "70.6",
     "tier": "STRONG",
     "sex": "F",
@@ -1700,7 +1910,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.82",
+    "adj_quarter_out": "23.16",
+    "adj_decel": "12.34"
   },
   {
     "rank": "35",
@@ -1715,7 +1929,7 @@
     "stride": "24.42",
     "eighth_out": "",
     "quarter_out": "",
-    "decel": "",
+    "decel": "12.37",
     "rating": "54.3",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -1726,7 +1940,9 @@
     "btw": true,
     "btp": true,
     "btprod": false,
-    "stride_imputed": "true"
+    "stride_imputed": "true",
+    "adj_time": "10.0",
+    "adj_decel": ""
   },
   {
     "rank": "",
@@ -1826,7 +2042,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.07",
+    "adj_quarter_out": "23.77",
+    "adj_decel": "12.7"
   },
   {
     "rank": "3",
@@ -1851,7 +2071,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "20.4",
+    "adj_eighth_out": "11.56",
+    "adj_quarter_out": "24.54",
+    "adj_decel": "12.98"
   },
   {
     "rank": "6",
@@ -1876,7 +2100,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "9.4",
+    "adj_eighth_out": "10.58",
+    "adj_quarter_out": "22.91",
+    "adj_decel": "12.33"
   },
   {
     "rank": "30",
@@ -1901,7 +2129,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.92",
+    "adj_quarter_out": "23.48",
+    "adj_decel": "12.56"
   },
   {
     "rank": "",
@@ -1976,7 +2208,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.4",
+    "adj_eighth_out": "11.47",
+    "adj_quarter_out": "23.86",
+    "adj_decel": "12.39"
   },
   {
     "rank": "106",
@@ -1987,11 +2223,11 @@
     "consigner": "Galan Marcial",
     "day": "1",
     "set": "2",
-    "time": "10.4",
+    "time": "10.3",
     "stride": "26.4",
-    "eighth_out": "11.89",
-    "quarter_out": "24.17",
-    "decel": "12.28",
+    "eighth_out": "11.83",
+    "quarter_out": "24.1",
+    "decel": "12.27",
     "rating": "37.4",
     "tier": "AVERAGE",
     "sex": "F",
@@ -2001,7 +2237,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.4",
+    "adj_eighth_out": "11.89",
+    "adj_quarter_out": "24.17",
+    "adj_decel": "12.28"
   },
   {
     "rank": "32",
@@ -2012,11 +2252,11 @@
     "consigner": "Ceballos Chuy",
     "day": "1",
     "set": "2",
-    "time": "9.9",
+    "time": "10.0",
     "stride": "25.5",
-    "eighth_out": "10.76",
-    "quarter_out": "23.49",
-    "decel": "12.74",
+    "eighth_out": "10.75",
+    "quarter_out": "23.39",
+    "decel": "12.64",
     "rating": "67.4",
     "tier": "STRONG",
     "sex": "C",
@@ -2026,7 +2266,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "10.76",
+    "adj_quarter_out": "23.49",
+    "adj_decel": "12.74"
   },
   {
     "rank": "",
@@ -2062,11 +2306,11 @@
     "consigner": "Cortez Racing & Sales",
     "day": "1",
     "set": "2",
-    "time": "10.2",
+    "time": "10.3",
     "stride": "25.9",
-    "eighth_out": "11.47",
-    "quarter_out": "24.25",
-    "decel": "12.79",
+    "eighth_out": "11.46",
+    "quarter_out": "24.15",
+    "decel": "12.69",
     "rating": "33.0",
     "tier": "BELOW AVG",
     "sex": "C",
@@ -2076,7 +2320,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.47",
+    "adj_quarter_out": "24.25",
+    "adj_decel": "12.79"
   },
   {
     "rank": "71",
@@ -2087,11 +2335,11 @@
     "consigner": "Longoria Training & Sales",
     "day": "1",
     "set": "2",
-    "time": "9.9",
+    "time": "10.0",
     "stride": "25.0",
-    "eighth_out": "11.12",
-    "quarter_out": "23.68",
-    "decel": "12.57",
+    "eighth_out": "11.11",
+    "quarter_out": "23.58",
+    "decel": "12.47",
     "rating": "49.1",
     "tier": "AVERAGE",
     "sex": "C",
@@ -2101,7 +2349,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "11.12",
+    "adj_quarter_out": "23.68",
+    "adj_decel": "12.57"
   },
   {
     "rank": "86",
@@ -2126,7 +2378,11 @@
     "buyer": "",
     "btw": true,
     "btp": true,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.08",
+    "adj_quarter_out": "23.46",
+    "adj_decel": "12.38"
   },
   {
     "rank": "",
@@ -2162,11 +2418,11 @@
     "consigner": "Grade One Investments LLC",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.3",
-    "eighth_out": "10.7",
-    "quarter_out": "23.87",
-    "decel": "13.18",
+    "eighth_out": "10.69",
+    "quarter_out": "23.77",
+    "decel": "13.08",
     "rating": "45.1",
     "tier": "AVERAGE",
     "sex": "C",
@@ -2176,7 +2432,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.7",
+    "adj_quarter_out": "23.87",
+    "adj_decel": "13.18"
   },
   {
     "rank": "",
@@ -2216,7 +2476,7 @@
     "stride": "24.98",
     "eighth_out": "",
     "quarter_out": "",
-    "decel": "",
+    "decel": "13.43",
     "rating": "42.6",
     "tier": "AVERAGE",
     "sex": "C",
@@ -2227,7 +2487,9 @@
     "btw": false,
     "btp": false,
     "btprod": false,
-    "stride_imputed": "true"
+    "stride_imputed": "true",
+    "adj_time": "10.1",
+    "adj_decel": ""
   },
   {
     "rank": "83",
@@ -2252,7 +2514,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.07",
+    "adj_quarter_out": "24.03",
+    "adj_decel": "12.96"
   },
   {
     "rank": "",
@@ -2327,7 +2593,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.18",
+    "adj_quarter_out": "24.15",
+    "adj_decel": "12.97"
   },
   {
     "rank": "",
@@ -2363,11 +2633,11 @@
     "consigner": "Little Farm Equine LLC",
     "day": "1",
     "set": "2",
-    "time": "10.4",
+    "time": "10.3",
     "stride": "24.0",
-    "eighth_out": "11.07",
-    "quarter_out": "23.81",
-    "decel": "12.74",
+    "eighth_out": "11.01",
+    "quarter_out": "23.74",
+    "decel": "12.73",
     "rating": "44.4",
     "tier": "AVERAGE",
     "sex": "F",
@@ -2377,7 +2647,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "10.4",
+    "adj_eighth_out": "11.07",
+    "adj_quarter_out": "23.81",
+    "adj_decel": "12.74"
   },
   {
     "rank": "",
@@ -2427,7 +2701,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.2",
+    "adj_quarter_out": "24.4",
+    "adj_decel": "13.2"
   },
   {
     "rank": "76",
@@ -2438,11 +2716,11 @@
     "consigner": "Six K's Training & Sales LLC",
     "day": "1",
     "set": "3",
-    "time": "10.3",
+    "time": "10.4",
     "stride": "24.7",
-    "eighth_out": "11.05",
-    "quarter_out": "24.04",
-    "decel": "12.99",
+    "eighth_out": "11.34",
+    "quarter_out": "24.42",
+    "decel": "13.08",
     "rating": "48.0",
     "tier": "AVERAGE",
     "sex": "F",
@@ -2452,7 +2730,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "11.05",
+    "adj_quarter_out": "24.04",
+    "adj_decel": "12.99"
   },
   {
     "rank": "",
@@ -2488,11 +2770,11 @@
     "consigner": "Golden Rock Thoroughbreds",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "25.9",
-    "eighth_out": "10.86",
-    "quarter_out": "23.45",
-    "decel": "12.59",
+    "eighth_out": "10.8",
+    "quarter_out": "23.38",
+    "decel": "12.58",
     "rating": "69.2",
     "tier": "STRONG",
     "sex": "F",
@@ -2502,7 +2784,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.86",
+    "adj_quarter_out": "23.45",
+    "adj_decel": "12.59"
   },
   {
     "rank": "50",
@@ -2527,7 +2813,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.69",
+    "adj_quarter_out": "23.27",
+    "adj_decel": "12.58"
   },
   {
     "rank": "102",
@@ -2538,11 +2828,11 @@
     "consigner": "RiceHorse",
     "day": "1",
     "set": "2",
-    "time": "21.1",
+    "time": "21.3",
     "stride": "24.5",
-    "eighth_out": "11.76",
-    "quarter_out": "25.66",
-    "decel": "13.9",
+    "eighth_out": "11.94",
+    "quarter_out": "25.8",
+    "decel": "13.86",
     "rating": "38.9",
     "tier": "AVERAGE",
     "sex": "C",
@@ -2552,7 +2842,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.1",
+    "adj_eighth_out": "11.76",
+    "adj_quarter_out": "25.66",
+    "adj_decel": "13.9"
   },
   {
     "rank": "124",
@@ -2563,11 +2857,11 @@
     "consigner": "Brennan Niall",
     "day": "1",
     "set": "3",
-    "time": "10.0",
+    "time": "10.2",
     "stride": "24.4",
-    "eighth_out": "11.27",
-    "quarter_out": "24.25",
-    "decel": "12.97",
+    "eighth_out": "11.53",
+    "quarter_out": "24.48",
+    "decel": "12.95",
     "rating": "24.5",
     "tier": "BELOW AVG",
     "sex": "C",
@@ -2577,7 +2871,11 @@
     "buyer": "",
     "btw": true,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.27",
+    "adj_quarter_out": "24.25",
+    "adj_decel": "12.97"
   },
   {
     "rank": "144",
@@ -2588,11 +2886,11 @@
     "consigner": "Top Line Sales",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.0",
-    "eighth_out": "11.53",
-    "quarter_out": "24.97",
-    "decel": "13.45",
+    "eighth_out": "11.52",
+    "quarter_out": "24.87",
+    "decel": "13.35",
     "rating": "0.0",
     "tier": "WEAK",
     "sex": "C",
@@ -2602,7 +2900,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.53",
+    "adj_quarter_out": "24.97",
+    "adj_decel": "13.45"
   },
   {
     "rank": "56",
@@ -2613,11 +2915,11 @@
     "consigner": "Lucan Bloodstock",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "24.7",
-    "eighth_out": "11.16",
-    "quarter_out": "23.6",
-    "decel": "12.44",
+    "eighth_out": "11.1",
+    "quarter_out": "23.53",
+    "decel": "12.43",
     "rating": "55.6",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -2627,7 +2929,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.16",
+    "adj_quarter_out": "23.6",
+    "adj_decel": "12.44"
   },
   {
     "rank": "41",
@@ -2652,7 +2958,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.78",
+    "adj_quarter_out": "23.26",
+    "adj_decel": "12.48"
   },
   {
     "rank": "",
@@ -2702,7 +3012,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "11.2",
+    "adj_quarter_out": "23.96",
+    "adj_decel": "12.76"
   },
   {
     "rank": "130",
@@ -2727,7 +3041,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.22",
+    "adj_quarter_out": "24.59",
+    "adj_decel": "13.37"
   },
   {
     "rank": "5",
@@ -2752,7 +3070,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.4",
+    "adj_eighth_out": "10.83",
+    "adj_quarter_out": "23.23",
+    "adj_decel": "12.4"
   },
   {
     "rank": "45",
@@ -2763,11 +3085,11 @@
     "consigner": "Six K's Training & Sales LLC",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "24.4",
-    "eighth_out": "10.95",
-    "quarter_out": "23.25",
-    "decel": "12.3",
+    "eighth_out": "10.89",
+    "quarter_out": "23.18",
+    "decel": "12.29",
     "rating": "62.2",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -2777,7 +3099,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.95",
+    "adj_quarter_out": "23.25",
+    "adj_decel": "12.3"
   },
   {
     "rank": "4",
@@ -2802,7 +3128,11 @@
     "buyer": "",
     "btw": true,
     "btp": true,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.84",
+    "adj_quarter_out": "23.07",
+    "adj_decel": "12.23"
   },
   {
     "rank": "72",
@@ -2827,7 +3157,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.0",
+    "adj_eighth_out": "11.63",
+    "adj_quarter_out": "25.7",
+    "adj_decel": "14.07"
   },
   {
     "rank": "",
@@ -2863,11 +3197,11 @@
     "consigner": "Limitless Thoroughbred LLC",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.2",
     "stride": "25.6",
-    "eighth_out": "11.21",
-    "quarter_out": "24.22",
-    "decel": "13.02",
+    "eighth_out": "11.2",
+    "quarter_out": "24.12",
+    "decel": "12.92",
     "rating": "38.5",
     "tier": "AVERAGE",
     "sex": "C",
@@ -2877,7 +3211,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.21",
+    "adj_quarter_out": "24.22",
+    "adj_decel": "13.02"
   },
   {
     "rank": "48",
@@ -2888,11 +3226,11 @@
     "consigner": "Sequel Bloodstock",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "24.2",
-    "eighth_out": "10.87",
-    "quarter_out": "23.41",
-    "decel": "12.54",
+    "eighth_out": "10.81",
+    "quarter_out": "23.34",
+    "decel": "12.53",
     "rating": "60.9",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -2902,7 +3240,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.87",
+    "adj_quarter_out": "23.41",
+    "adj_decel": "12.54"
   },
   {
     "rank": "14",
@@ -2927,7 +3269,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.4",
+    "adj_eighth_out": "10.76",
+    "adj_quarter_out": "23.21",
+    "adj_decel": "12.45"
   },
   {
     "rank": "119",
@@ -2952,7 +3298,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "10.83",
+    "adj_quarter_out": "23.5",
+    "adj_decel": "12.67"
   },
   {
     "rank": "",
@@ -3002,7 +3352,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.2",
+    "adj_quarter_out": "24.51",
+    "adj_decel": "13.31"
   },
   {
     "rank": "35",
@@ -3013,11 +3367,11 @@
     "consigner": "Top Line Sales",
     "day": "1",
     "set": "2",
-    "time": "20.8",
+    "time": "21.0",
     "stride": "25.8",
-    "eighth_out": "11.77",
-    "quarter_out": "25.98",
-    "decel": "14.21",
+    "eighth_out": "11.95",
+    "quarter_out": "26.12",
+    "decel": "14.17",
     "rating": "66.4",
     "tier": "STRONG",
     "sex": "C",
@@ -3027,7 +3381,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "20.8",
+    "adj_eighth_out": "11.77",
+    "adj_quarter_out": "25.98",
+    "adj_decel": "14.21"
   },
   {
     "rank": "9",
@@ -3052,7 +3410,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.4",
+    "adj_eighth_out": "10.48",
+    "adj_quarter_out": "23.12",
+    "adj_decel": "12.64"
   },
   {
     "rank": "15",
@@ -3063,11 +3425,11 @@
     "consigner": "Brennan Niall",
     "day": "1",
     "set": "2",
-    "time": "9.5",
+    "time": "9.4",
     "stride": "26.0",
-    "eighth_out": "10.76",
-    "quarter_out": "23.64",
-    "decel": "12.88",
+    "eighth_out": "10.7",
+    "quarter_out": "23.57",
+    "decel": "12.87",
     "rating": "82.1",
     "tier": "ELITE",
     "sex": "F",
@@ -3077,7 +3439,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.5",
+    "adj_eighth_out": "10.76",
+    "adj_quarter_out": "23.64",
+    "adj_decel": "12.88"
   },
   {
     "rank": "23",
@@ -3102,7 +3468,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.9",
+    "adj_quarter_out": "23.12",
+    "adj_decel": "12.22"
   },
   {
     "rank": "65",
@@ -3127,7 +3497,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.19",
+    "adj_quarter_out": "23.6",
+    "adj_decel": "12.41"
   },
   {
     "rank": "54",
@@ -3152,7 +3526,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.88",
+    "adj_quarter_out": "23.75",
+    "adj_decel": "12.87"
   },
   {
     "rank": "44",
@@ -3163,11 +3541,11 @@
     "consigner": "Adios Amigos",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "25.6",
-    "eighth_out": "11.04",
-    "quarter_out": "23.29",
-    "decel": "12.26",
+    "eighth_out": "11.03",
+    "quarter_out": "23.19",
+    "decel": "12.16",
     "rating": "62.9",
     "tier": "ABOVE AVG",
     "sex": "C",
@@ -3177,7 +3555,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.04",
+    "adj_quarter_out": "23.29",
+    "adj_decel": "12.26"
   },
   {
     "rank": "95",
@@ -3202,7 +3584,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.59",
+    "adj_quarter_out": "23.52",
+    "adj_decel": "11.93"
   },
   {
     "rank": "",
@@ -3238,11 +3624,11 @@
     "consigner": "Grassroots Training & Sales LLC",
     "day": "1",
     "set": "2",
-    "time": "10.3",
+    "time": "10.2",
     "stride": "22.7",
-    "eighth_out": "11.47",
-    "quarter_out": "24.91",
-    "decel": "13.44",
+    "eighth_out": "11.41",
+    "quarter_out": "24.84",
+    "decel": "13.43",
     "rating": "18.1",
     "tier": "WEAK",
     "sex": "F",
@@ -3252,7 +3638,11 @@
     "buyer": "",
     "btw": true,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "11.47",
+    "adj_quarter_out": "24.91",
+    "adj_decel": "13.44"
   },
   {
     "rank": "145",
@@ -3263,11 +3653,11 @@
     "consigner": "Ocala Stud",
     "day": "1",
     "set": "2",
-    "time": "21.1",
+    "time": "21.3",
     "stride": "23.9",
-    "eighth_out": "11.85",
-    "quarter_out": "26.55",
-    "decel": "14.7",
+    "eighth_out": "12.03",
+    "quarter_out": "26.69",
+    "decel": "14.66",
     "rating": "0.0",
     "tier": "WEAK",
     "sex": "C",
@@ -3277,7 +3667,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.1",
+    "adj_eighth_out": "11.85",
+    "adj_quarter_out": "26.55",
+    "adj_decel": "14.7"
   },
   {
     "rank": "79",
@@ -3288,11 +3682,11 @@
     "consigner": "Little Farm Equine LLC",
     "day": "1",
     "set": "3",
-    "time": "9.9",
+    "time": "10.1",
     "stride": "24.3",
-    "eighth_out": "10.9",
-    "quarter_out": "23.59",
-    "decel": "12.68",
+    "eighth_out": "11.16",
+    "quarter_out": "23.82",
+    "decel": "12.66",
     "rating": "47.1",
     "tier": "AVERAGE",
     "sex": "C",
@@ -3302,7 +3696,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "10.9",
+    "adj_quarter_out": "23.59",
+    "adj_decel": "12.68"
   },
   {
     "rank": "10",
@@ -3313,11 +3711,11 @@
     "consigner": "Ford Bryan",
     "day": "1",
     "set": "2",
-    "time": "9.3",
+    "time": "9.4",
     "stride": "25.5",
-    "eighth_out": "10.81",
-    "quarter_out": "23.26",
-    "decel": "12.46",
+    "eighth_out": "10.8",
+    "quarter_out": "23.16",
+    "decel": "12.36",
     "rating": "87.2",
     "tier": "ELITE",
     "sex": "C",
@@ -3327,7 +3725,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.3",
+    "adj_eighth_out": "10.81",
+    "adj_quarter_out": "23.26",
+    "adj_decel": "12.46"
   },
   {
     "rank": "",
@@ -3438,11 +3840,11 @@
     "consigner": "Top Line Sales",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "24.2",
-    "eighth_out": "10.96",
-    "quarter_out": "23.75",
-    "decel": "12.79",
+    "eighth_out": "10.9",
+    "quarter_out": "23.68",
+    "decel": "12.78",
     "rating": "54.7",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -3452,7 +3854,11 @@
     "buyer": "",
     "btw": true,
     "btp": true,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.96",
+    "adj_quarter_out": "23.75",
+    "adj_decel": "12.79"
   },
   {
     "rank": "52",
@@ -3477,7 +3883,11 @@
     "buyer": "",
     "btw": true,
     "btp": true,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.92",
+    "adj_quarter_out": "23.48",
+    "adj_decel": "12.56"
   },
   {
     "rank": "",
@@ -3513,11 +3923,11 @@
     "consigner": "Sequel Bloodstock",
     "day": "1",
     "set": "3",
-    "time": "10.0",
+    "time": "10.2",
     "stride": "24.9",
-    "eighth_out": "11.1",
-    "quarter_out": "24.21",
-    "decel": "13.1",
+    "eighth_out": "11.36",
+    "quarter_out": "24.44",
+    "decel": "13.08",
     "rating": "35.5",
     "tier": "AVERAGE",
     "sex": "C",
@@ -3527,7 +3937,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.1",
+    "adj_quarter_out": "24.21",
+    "adj_decel": "13.1"
   },
   {
     "rank": "37",
@@ -3538,11 +3952,11 @@
     "consigner": "Scanlon Training Center",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "23.9",
-    "eighth_out": "10.68",
-    "quarter_out": "23.23",
-    "decel": "12.55",
+    "eighth_out": "10.62",
+    "quarter_out": "23.16",
+    "decel": "12.54",
     "rating": "64.8",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -3552,7 +3966,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.68",
+    "adj_quarter_out": "23.23",
+    "adj_decel": "12.55"
   },
   {
     "rank": "",
@@ -3588,11 +4006,11 @@
     "consigner": "Hoppel LLC, Agent",
     "day": "1",
     "set": "2",
-    "time": "9.9",
+    "time": "10.0",
     "stride": "26.1",
-    "eighth_out": "10.86",
-    "quarter_out": "23.53",
-    "decel": "12.68",
+    "eighth_out": "10.85",
+    "quarter_out": "23.43",
+    "decel": "12.58",
     "rating": "71.9",
     "tier": "STRONG",
     "sex": "C",
@@ -3602,7 +4020,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "10.86",
+    "adj_quarter_out": "23.53",
+    "adj_decel": "12.68"
   },
   {
     "rank": "68",
@@ -3627,7 +4049,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.12",
+    "adj_quarter_out": "23.55",
+    "adj_decel": "12.43"
   },
   {
     "rank": "74",
@@ -3638,11 +4064,11 @@
     "consigner": "Camelot Acres",
     "day": "1",
     "set": "3",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.9",
-    "eighth_out": "11.34",
-    "quarter_out": "24.15",
-    "decel": "12.81",
+    "eighth_out": "11.63",
+    "quarter_out": "24.53",
+    "decel": "12.9",
     "rating": "48.3",
     "tier": "AVERAGE",
     "sex": "F",
@@ -3652,7 +4078,11 @@
     "buyer": "",
     "btw": false,
     "btp": true,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.34",
+    "adj_quarter_out": "24.15",
+    "adj_decel": "12.81"
   },
   {
     "rank": "43",
@@ -3663,11 +4093,11 @@
     "consigner": "Top Line Sales",
     "day": "1",
     "set": "3",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.8",
-    "eighth_out": "11.04",
-    "quarter_out": "23.39",
-    "decel": "12.35",
+    "eighth_out": "11.33",
+    "quarter_out": "23.77",
+    "decel": "12.44",
     "rating": "63.1",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -3677,7 +4107,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.04",
+    "adj_quarter_out": "23.39",
+    "adj_decel": "12.35"
   },
   {
     "rank": "138",
@@ -3702,7 +4136,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.2",
+    "adj_quarter_out": "24.28",
+    "adj_decel": "13.08"
   },
   {
     "rank": "",
@@ -3752,7 +4190,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.14",
+    "adj_quarter_out": "23.91",
+    "adj_decel": "12.77"
   },
   {
     "rank": "13",
@@ -3763,11 +4205,11 @@
     "consigner": "Kings Equine",
     "day": "1",
     "set": "2",
-    "time": "9.5",
+    "time": "9.4",
     "stride": "25.7",
-    "eighth_out": "10.87",
-    "quarter_out": "23.36",
-    "decel": "12.49",
+    "eighth_out": "10.81",
+    "quarter_out": "23.29",
+    "decel": "12.48",
     "rating": "82.2",
     "tier": "ELITE",
     "sex": "F",
@@ -3777,7 +4219,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.5",
+    "adj_eighth_out": "10.87",
+    "adj_quarter_out": "23.36",
+    "adj_decel": "12.49"
   },
   {
     "rank": "108",
@@ -3802,7 +4248,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.28",
+    "adj_quarter_out": "24.62",
+    "adj_decel": "13.34"
   },
   {
     "rank": "127",
@@ -3827,7 +4277,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.84",
+    "adj_quarter_out": "24.42",
+    "adj_decel": "13.58"
   },
   {
     "rank": "91",
@@ -3838,11 +4292,11 @@
     "consigner": "Grassroots Training & Sales LLC",
     "day": "1",
     "set": "3",
-    "time": "10.1",
+    "time": "10.3",
     "stride": "25.4",
-    "eighth_out": "11.19",
-    "quarter_out": "23.81",
-    "decel": "12.61",
+    "eighth_out": "11.45",
+    "quarter_out": "24.04",
+    "decel": "12.59",
     "rating": "43.2",
     "tier": "AVERAGE",
     "sex": "C",
@@ -3852,7 +4306,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.19",
+    "adj_quarter_out": "23.81",
+    "adj_decel": "12.61"
   },
   {
     "rank": "140",
@@ -3877,7 +4335,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.41",
+    "adj_quarter_out": "24.4",
+    "adj_decel": "12.99"
   },
   {
     "rank": "",
@@ -3888,11 +4350,11 @@
     "consigner": "My Little Stable Racing, Inc.",
     "day": "3",
     "set": "9",
-    "time": "",
+    "time": "10.3",
     "stride": "",
     "eighth_out": "",
     "quarter_out": "",
-    "decel": "",
+    "decel": "12.34",
     "rating": "",
     "tier": "",
     "sex": "F",
@@ -3902,7 +4364,8 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_decel": ""
   },
   {
     "rank": "64",
@@ -3913,11 +4376,11 @@
     "consigner": "Grassroots Training & Sales LLC",
     "day": "1",
     "set": "3",
-    "time": "10.1",
+    "time": "10.2",
     "stride": "25.1",
-    "eighth_out": "11.32",
-    "quarter_out": "23.89",
-    "decel": "12.57",
+    "eighth_out": "11.61",
+    "quarter_out": "24.27",
+    "decel": "12.66",
     "rating": "51.0",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -3927,7 +4390,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.32",
+    "adj_quarter_out": "23.89",
+    "adj_decel": "12.57"
   },
   {
     "rank": "31",
@@ -3938,11 +4405,11 @@
     "consigner": "Best A Luck Farm LLC",
     "day": "1",
     "set": "3",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "23.7",
-    "eighth_out": "10.68",
-    "quarter_out": "23.08",
-    "decel": "12.4",
+    "eighth_out": "10.97",
+    "quarter_out": "23.46",
+    "decel": "12.49",
     "rating": "67.7",
     "tier": "STRONG",
     "sex": "F",
@@ -3952,7 +4419,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.68",
+    "adj_quarter_out": "23.08",
+    "adj_decel": "12.4"
   },
   {
     "rank": "",
@@ -3988,11 +4459,11 @@
     "consigner": "Grassroots Training & Sales LLC",
     "day": "1",
     "set": "2",
-    "time": "10.2",
+    "time": "10.1",
     "stride": "23.2",
-    "eighth_out": "11.38",
-    "quarter_out": "24.3",
-    "decel": "12.92",
+    "eighth_out": "11.32",
+    "quarter_out": "24.23",
+    "decel": "12.91",
     "rating": "32.4",
     "tier": "BELOW AVG",
     "sex": "F",
@@ -4002,7 +4473,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.38",
+    "adj_quarter_out": "24.3",
+    "adj_decel": "12.92"
   },
   {
     "rank": "",
@@ -4052,7 +4527,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.46",
+    "adj_quarter_out": "23.85",
+    "adj_decel": "12.39"
   },
   {
     "rank": "",
@@ -4113,11 +4592,11 @@
     "consigner": "McKathan Bros.",
     "day": "1",
     "set": "3",
-    "time": "10.0",
+    "time": "10.2",
     "stride": "25.3",
-    "eighth_out": "11.04",
-    "quarter_out": "23.81",
-    "decel": "12.76",
+    "eighth_out": "11.3",
+    "quarter_out": "24.04",
+    "decel": "12.74",
     "rating": "49.2",
     "tier": "AVERAGE",
     "sex": "C",
@@ -4127,7 +4606,11 @@
     "buyer": "",
     "btw": true,
     "btp": true,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.04",
+    "adj_quarter_out": "23.81",
+    "adj_decel": "12.76"
   },
   {
     "rank": "",
@@ -4163,11 +4646,11 @@
     "consigner": "Miles Randy",
     "day": "1",
     "set": "2",
-    "time": "9.9",
+    "time": "10.0",
     "stride": "24.7",
-    "eighth_out": "10.94",
-    "quarter_out": "24.02",
-    "decel": "13.09",
+    "eighth_out": "10.93",
+    "quarter_out": "23.92",
+    "decel": "12.99",
     "rating": "43.1",
     "tier": "AVERAGE",
     "sex": "C",
@@ -4177,7 +4660,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "10.94",
+    "adj_quarter_out": "24.02",
+    "adj_decel": "13.09"
   },
   {
     "rank": "69",
@@ -4188,11 +4675,11 @@
     "consigner": "Hidden Brook Farm",
     "day": "1",
     "set": "2",
-    "time": "10.2",
+    "time": "10.1",
     "stride": "24.9",
-    "eighth_out": "11.14",
-    "quarter_out": "24.03",
-    "decel": "12.89",
+    "eighth_out": "11.08",
+    "quarter_out": "23.96",
+    "decel": "12.88",
     "rating": "49.4",
     "tier": "AVERAGE",
     "sex": "F",
@@ -4202,7 +4689,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.14",
+    "adj_quarter_out": "24.03",
+    "adj_decel": "12.89"
   },
   {
     "rank": "122",
@@ -4215,9 +4706,9 @@
     "set": "2",
     "time": "21.0",
     "stride": "24.1",
-    "eighth_out": "12.36",
-    "quarter_out": "26.33",
-    "decel": "13.97",
+    "eighth_out": "12.27",
+    "quarter_out": "25.94",
+    "decel": "13.67",
     "rating": "26.5",
     "tier": "BELOW AVG",
     "sex": "F",
@@ -4227,7 +4718,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.0",
+    "adj_eighth_out": "12.36",
+    "adj_quarter_out": "26.33",
+    "adj_decel": "13.97"
   },
   {
     "rank": "40",
@@ -4238,11 +4733,11 @@
     "consigner": "Miles Randy",
     "day": "1",
     "set": "3",
-    "time": "9.9",
+    "time": "10.1",
     "stride": "25.3",
-    "eighth_out": "10.79",
-    "quarter_out": "23.46",
-    "decel": "12.66",
+    "eighth_out": "11.05",
+    "quarter_out": "23.69",
+    "decel": "12.64",
     "rating": "64.6",
     "tier": "ABOVE AVG",
     "sex": "C",
@@ -4252,7 +4747,11 @@
     "buyer": "",
     "btw": false,
     "btp": true,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "10.79",
+    "adj_quarter_out": "23.46",
+    "adj_decel": "12.66"
   },
   {
     "rank": "117",
@@ -4277,7 +4776,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.19",
+    "adj_quarter_out": "25.42",
+    "adj_decel": "14.23"
   },
   {
     "rank": "34",
@@ -4288,11 +4791,11 @@
     "consigner": "Wavertree Stables, Inc.",
     "day": "1",
     "set": "3",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.7",
-    "eighth_out": "11.02",
-    "quarter_out": "23.05",
-    "decel": "12.03",
+    "eighth_out": "11.31",
+    "quarter_out": "23.43",
+    "decel": "12.12",
     "rating": "67.0",
     "tier": "STRONG",
     "sex": "F",
@@ -4302,7 +4805,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.02",
+    "adj_quarter_out": "23.05",
+    "adj_decel": "12.03"
   },
   {
     "rank": "73",
@@ -4327,7 +4834,11 @@
     "buyer": "",
     "btw": true,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.31",
+    "adj_quarter_out": "23.89",
+    "adj_decel": "12.58"
   },
   {
     "rank": "126",
@@ -4338,11 +4849,11 @@
     "consigner": "de Meric Sales",
     "day": "1",
     "set": "3",
-    "time": "10.3",
+    "time": "10.4",
     "stride": "20.9",
-    "eighth_out": "11.09",
-    "quarter_out": "24.3",
-    "decel": "13.21",
+    "eighth_out": "11.38",
+    "quarter_out": "24.68",
+    "decel": "13.3",
     "rating": "23.6",
     "tier": "BELOW AVG",
     "sex": "F",
@@ -4352,7 +4863,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "11.09",
+    "adj_quarter_out": "24.3",
+    "adj_decel": "13.21"
   },
   {
     "rank": "7",
@@ -4363,11 +4878,11 @@
     "consigner": "Wavertree Stables, Inc.",
     "day": "1",
     "set": "2",
-    "time": "9.5",
+    "time": "9.4",
     "stride": "26.1",
-    "eighth_out": "10.78",
-    "quarter_out": "23.17",
-    "decel": "12.39",
+    "eighth_out": "10.72",
+    "quarter_out": "23.1",
+    "decel": "12.38",
     "rating": "88.6",
     "tier": "ELITE",
     "sex": "F",
@@ -4377,7 +4892,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "9.5",
+    "adj_eighth_out": "10.78",
+    "adj_quarter_out": "23.17",
+    "adj_decel": "12.39"
   },
   {
     "rank": "36",
@@ -4388,11 +4907,11 @@
     "consigner": "Wildheart Thoroughbreds LLC",
     "day": "1",
     "set": "2",
-    "time": "10.0",
+    "time": "10.1",
     "stride": "24.6",
-    "eighth_out": "10.74",
-    "quarter_out": "22.95",
-    "decel": "12.22",
+    "eighth_out": "10.73",
+    "quarter_out": "22.85",
+    "decel": "12.12",
     "rating": "64.9",
     "tier": "ABOVE AVG",
     "sex": "C",
@@ -4402,7 +4921,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.74",
+    "adj_quarter_out": "22.95",
+    "adj_decel": "12.22"
   },
   {
     "rank": "",
@@ -4438,11 +4961,11 @@
     "consigner": "J V C Training and Sales",
     "day": "1",
     "set": "2",
-    "time": "10.2",
+    "time": "10.3",
     "stride": "25.2",
-    "eighth_out": "11.42",
-    "quarter_out": "24.01",
-    "decel": "12.6",
+    "eighth_out": "11.41",
+    "quarter_out": "23.91",
+    "decel": "12.5",
     "rating": "30.5",
     "tier": "BELOW AVG",
     "sex": "C",
@@ -4452,7 +4975,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.2",
+    "adj_eighth_out": "11.42",
+    "adj_quarter_out": "24.01",
+    "adj_decel": "12.6"
   },
   {
     "rank": "",
@@ -4488,11 +5015,11 @@
     "consigner": "Ortega Manuel",
     "day": "1",
     "set": "2",
-    "time": "20.9",
+    "time": "21.1",
     "stride": "23.0",
-    "eighth_out": "11.57",
-    "quarter_out": "25.67",
-    "decel": "14.1",
+    "eighth_out": "11.75",
+    "quarter_out": "25.81",
+    "decel": "14.06",
     "rating": "21.3",
     "tier": "BELOW AVG",
     "sex": "C",
@@ -4502,7 +5029,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "20.9",
+    "adj_eighth_out": "11.57",
+    "adj_quarter_out": "25.67",
+    "adj_decel": "14.1"
   },
   {
     "rank": "",
@@ -4627,7 +5158,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.3",
+    "adj_eighth_out": "12.09",
+    "adj_quarter_out": "26.61",
+    "adj_decel": "14.52"
   },
   {
     "rank": "26",
@@ -4638,11 +5173,11 @@
     "consigner": "Ramirez Omar",
     "day": "1",
     "set": "2",
-    "time": "9.9",
+    "time": "10.0",
     "stride": "25.9",
-    "eighth_out": "10.66",
-    "quarter_out": "23.83",
-    "decel": "13.18",
+    "eighth_out": "10.65",
+    "quarter_out": "23.73",
+    "decel": "13.08",
     "rating": "69.1",
     "tier": "STRONG",
     "sex": "C",
@@ -4652,7 +5187,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "9.9",
+    "adj_eighth_out": "10.66",
+    "adj_quarter_out": "23.83",
+    "adj_decel": "13.18"
   },
   {
     "rank": "84",
@@ -4677,7 +5216,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.26",
+    "adj_quarter_out": "23.95",
+    "adj_decel": "12.69"
   },
   {
     "rank": "123",
@@ -4702,7 +5245,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "21.3",
+    "adj_eighth_out": "12.07",
+    "adj_quarter_out": "26.05",
+    "adj_decel": "13.98"
   },
   {
     "rank": "139",
@@ -4727,7 +5274,11 @@
     "buyer": "",
     "btw": true,
     "btp": true,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "21.4",
+    "adj_eighth_out": "12.6",
+    "adj_quarter_out": "27.14",
+    "adj_decel": "14.54"
   },
   {
     "rank": "46",
@@ -4738,11 +5289,11 @@
     "consigner": "Sharp Paul M.",
     "day": "1",
     "set": "3",
-    "time": "10.1",
+    "time": "10.2",
     "stride": "24.6",
-    "eighth_out": "10.85",
-    "quarter_out": "23.48",
-    "decel": "12.63",
+    "eighth_out": "11.14",
+    "quarter_out": "23.86",
+    "decel": "12.72",
     "rating": "62.2",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -4752,7 +5303,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.85",
+    "adj_quarter_out": "23.48",
+    "adj_decel": "12.63"
   },
   {
     "rank": "",
@@ -4838,11 +5393,11 @@
     "consigner": "Envision Equine",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "24.2",
-    "eighth_out": "11.0",
-    "quarter_out": "22.98",
-    "decel": "11.98",
+    "eighth_out": "10.94",
+    "quarter_out": "22.91",
+    "decel": "11.97",
     "rating": "63.7",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -4852,7 +5407,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.0",
+    "adj_quarter_out": "22.98",
+    "adj_decel": "11.98"
   },
   {
     "rank": "98",
@@ -4863,11 +5422,11 @@
     "consigner": "Global Thoroughbreds LLC",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.2",
     "stride": "25.3",
-    "eighth_out": "11.1",
-    "quarter_out": "24.11",
-    "decel": "13.02",
+    "eighth_out": "11.09",
+    "quarter_out": "24.01",
+    "decel": "12.92",
     "rating": "39.8",
     "tier": "AVERAGE",
     "sex": "C",
@@ -4877,7 +5436,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "11.1",
+    "adj_quarter_out": "24.11",
+    "adj_decel": "13.02"
   },
   {
     "rank": "59",
@@ -4902,7 +5465,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.15",
+    "adj_quarter_out": "23.71",
+    "adj_decel": "12.56"
   },
   {
     "rank": "129",
@@ -4913,11 +5480,11 @@
     "consigner": "Winner Circle Racing Stable Corp.",
     "day": "1",
     "set": "2",
-    "time": "10.4",
+    "time": "10.3",
     "stride": "23.4",
-    "eighth_out": "11.5",
-    "quarter_out": "24.63",
-    "decel": "13.13",
+    "eighth_out": "11.44",
+    "quarter_out": "24.56",
+    "decel": "13.12",
     "rating": "22.6",
     "tier": "BELOW AVG",
     "sex": "F",
@@ -4927,7 +5494,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.4",
+    "adj_eighth_out": "11.5",
+    "adj_quarter_out": "24.63",
+    "adj_decel": "13.13"
   },
   {
     "rank": "39",
@@ -4938,11 +5509,11 @@
     "consigner": "Hoppel LLC, Agent",
     "day": "1",
     "set": "2",
-    "time": "10.1",
+    "time": "10.0",
     "stride": "25.0",
-    "eighth_out": "10.95",
-    "quarter_out": "23.3",
-    "decel": "12.35",
+    "eighth_out": "10.89",
+    "quarter_out": "23.23",
+    "decel": "12.34",
     "rating": "64.7",
     "tier": "ABOVE AVG",
     "sex": "F",
@@ -4952,7 +5523,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.1",
+    "adj_eighth_out": "10.95",
+    "adj_quarter_out": "23.3",
+    "adj_decel": "12.35"
   },
   {
     "rank": "63",
@@ -4977,7 +5552,11 @@
     "buyer": "",
     "btw": true,
     "btp": false,
-    "btprod": true
+    "btprod": true,
+    "adj_time": "10.0",
+    "adj_eighth_out": "10.8",
+    "adj_quarter_out": "24.0",
+    "adj_decel": "13.2"
   },
   {
     "rank": "12",
@@ -4988,11 +5567,11 @@
     "consigner": "Ocala Stud",
     "day": "1",
     "set": "3",
-    "time": "20.6",
+    "time": "21.3",
     "stride": "25.0",
-    "eighth_out": "11.28",
-    "quarter_out": "25.46",
-    "decel": "14.18",
+    "eighth_out": "11.69",
+    "quarter_out": "25.3",
+    "decel": "13.61",
     "rating": "84.8",
     "tier": "ELITE",
     "sex": "C",
@@ -5002,7 +5581,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "20.6",
+    "adj_eighth_out": "11.28",
+    "adj_quarter_out": "25.46",
+    "adj_decel": "14.18"
   },
   {
     "rank": "125",
@@ -5013,11 +5596,11 @@
     "consigner": "Grassroots Training & Sales LLC",
     "day": "1",
     "set": "2",
-    "time": "10.3",
+    "time": "10.2",
     "stride": "23.5",
-    "eighth_out": "11.6",
-    "quarter_out": "24.63",
-    "decel": "13.03",
+    "eighth_out": "11.54",
+    "quarter_out": "24.56",
+    "decel": "13.02",
     "rating": "23.9",
     "tier": "BELOW AVG",
     "sex": "F",
@@ -5027,7 +5610,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.3",
+    "adj_eighth_out": "11.6",
+    "adj_quarter_out": "24.63",
+    "adj_decel": "13.03"
   },
   {
     "rank": "35",
@@ -5042,7 +5629,7 @@
     "stride": "24.98",
     "eighth_out": "",
     "quarter_out": "",
-    "decel": "",
+    "decel": "12.35",
     "rating": "42.6",
     "tier": "AVERAGE",
     "sex": "C",
@@ -5053,7 +5640,9 @@
     "btw": false,
     "btp": false,
     "btprod": false,
-    "stride_imputed": "true"
+    "stride_imputed": "true",
+    "adj_time": "10.1",
+    "adj_decel": ""
   },
   {
     "rank": "22",
@@ -5078,7 +5667,11 @@
     "buyer": "",
     "btw": false,
     "btp": false,
-    "btprod": false
+    "btprod": false,
+    "adj_time": "10.0",
+    "adj_eighth_out": "11.26",
+    "adj_quarter_out": "22.98",
+    "adj_decel": "11.72"
   },
   {
     "rank": "",
