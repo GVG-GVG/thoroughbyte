@@ -27,6 +27,7 @@ interface SireRow {
   sire: string;
   runners: number;
   avgRating: number;
+  avgTier: string;
   bestRating: number;
   bestHip: number;
   eliteCount: number;
@@ -34,7 +35,34 @@ interface SireRow {
   avgStride: number;
 }
 
-type SortField = 'rank' | 'sire' | 'runners' | 'avgRating' | 'bestRating' | 'eliteCount' | 'avgStride';
+function getTier(rating: number): string {
+  if (rating >= 80) return 'ELITE';
+  if (rating >= 65) return 'STRONG';
+  if (rating >= 50) return 'ABOVE AVG';
+  if (rating >= 35) return 'AVERAGE';
+  if (rating >= 20) return 'BELOW AVG';
+  return 'WEAK';
+}
+
+const TIER_ROW_CLASSES: Record<string, string> = {
+  'ELITE': 'rl-row-elite',
+  'STRONG': 'rl-row-strong',
+  'ABOVE AVG': 'rl-row-above',
+  'AVERAGE': 'rl-row-avg',
+  'BELOW AVG': 'rl-row-below',
+  'WEAK': 'rl-row-weak',
+};
+
+const TIER_CLASSES: Record<string, string> = {
+  'ELITE': 'rl-tier-elite',
+  'STRONG': 'rl-tier-strong',
+  'ABOVE AVG': 'rl-tier-above',
+  'AVERAGE': 'rl-tier-avg',
+  'BELOW AVG': 'rl-tier-below',
+  'WEAK': 'rl-tier-weak',
+};
+
+type SortField = 'rank' | 'sire' | 'runners' | 'avgRating' | 'bestRating' | 'eliteCount' | 'avgStride' | 'avgTier';
 type SortDir = 'asc' | 'desc';
 
 interface Props {
@@ -87,11 +115,13 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
       const avgStride = withStride.length > 0
         ? withStride.reduce((a, h) => a + h.stride, 0) / withStride.length
         : 0;
+      const roundedAvg = Math.round(avgRating * 10) / 10;
       rows.push({
         rank: 0,
         sire,
         runners: group.length,
-        avgRating: Math.round(avgRating * 10) / 10,
+        avgRating: roundedAvg,
+        avgTier: getTier(roundedAvg),
         bestRating: best.rating,
         bestHip: best.hip,
         eliteCount: group.filter(h => h.tier === 'ELITE').length,
@@ -112,10 +142,15 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
       result = result.filter(r => r.sire.toLowerCase().includes(q));
     }
 
+    const TIER_ORDER: Record<string, number> = { 'ELITE': 1, 'STRONG': 2, 'ABOVE AVG': 3, 'AVERAGE': 4, 'BELOW AVG': 5, 'WEAK': 6 };
     if (sortField !== 'rank' || sortDir !== 'asc') {
       result.sort((a, b) => {
         if (sortField === 'sire') {
           return sortDir === 'asc' ? a.sire.localeCompare(b.sire) : b.sire.localeCompare(a.sire);
+        }
+        if (sortField === 'avgTier') {
+          const diff = (TIER_ORDER[a.avgTier] ?? 99) - (TIER_ORDER[b.avgTier] ?? 99);
+          return sortDir === 'asc' ? diff : -diff;
         }
         const diff = (a[sortField] as number) - (b[sortField] as number);
         return sortDir === 'asc' ? diff : -diff;
@@ -163,18 +198,35 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
     doc.text(subtitle, 40, 44);
     doc.setTextColor(0);
 
+    const TIER_PDF_COLORS: Record<string, [number, number, number]> = {
+      'ELITE':     [210, 235, 220],
+      'STRONG':    [220, 240, 225],
+      'ABOVE AVG': [240, 238, 215],
+      'AVERAGE':   [238, 238, 238],
+      'BELOW AVG': [245, 228, 220],
+      'WEAK':      [242, 215, 215],
+    };
+
     autoTable(doc, {
       startY: 54,
-      head: [['Rank', 'Sire', 'Runners', 'Avg Rating', 'Best Rating', 'Best Hip', 'Elite', 'Elite+Strong', 'Avg Stride']],
+      head: [['Rank', 'Sire', 'Runners', 'Avg Rating', 'Avg Tier', 'Best Rating', 'Best Hip', 'Elite', 'Elite+Strong', 'Avg Stride']],
       body: rows.map(r => [
-        r.rank, r.sire, r.runners, r.avgRating.toFixed(1), r.bestRating.toFixed(1),
+        r.rank, r.sire, r.runners, r.avgRating.toFixed(1), r.avgTier, r.bestRating.toFixed(1),
         r.bestHip, r.eliteCount, r.strongCount,
         `${r.avgStride.toFixed(1)}'`,
       ]),
       styles: { fontSize: 7, cellPadding: 3 },
       headStyles: { fillColor: [18, 30, 50], fontSize: 7, fontStyle: 'bold' },
-      alternateRowStyles: { fillColor: [245, 245, 245] },
       margin: { left: 40, right: 40 },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      didParseCell: (data: any) => {
+        if (data.section === 'body') {
+          const sire = rows[data.row.index];
+          if (sire?.avgTier && TIER_PDF_COLORS[sire.avgTier]) {
+            data.cell.styles.fillColor = TIER_PDF_COLORS[sire.avgTier];
+          }
+        }
+      },
     });
 
     doc.save(`${(saleLabel || 'sire-performance').replace(/\s+/g, '-').toLowerCase()}-sires.pdf`);
@@ -233,6 +285,7 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
               <th onClick={() => handleSort('sire')} className="rl-sortable">Sire{sortIcon('sire')}</th>
               <th onClick={() => handleSort('runners')} className="rl-sortable">Runners{sortIcon('runners')}</th>
               <th onClick={() => handleSort('avgRating')} className="rl-sortable">Avg Rating{sortIcon('avgRating')}</th>
+              <th onClick={() => handleSort('avgTier')} className="rl-sortable">Avg Tier{sortIcon('avgTier')}</th>
               <th onClick={() => handleSort('bestRating')} className="rl-sortable">Best Rating{sortIcon('bestRating')}</th>
               <th className="rl-sortable">Best Hip</th>
               <th onClick={() => handleSort('eliteCount')} className="rl-sortable">Elite{sortIcon('eliteCount')}</th>
@@ -241,14 +294,15 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={8} className="rl-empty">No sires match your filters.</td></tr>
+              <tr><td colSpan={9} className="rl-empty">No sires match your filters.</td></tr>
             ) : (
               filtered.map(r => (
-                <tr key={r.sire} className="rl-row">
+                <tr key={r.sire} className={`rl-row ${TIER_ROW_CLASSES[r.avgTier] ?? ''}`}>
                   <td className="rl-rank">#{r.rank}</td>
                   <td className="rl-sire" style={{ fontWeight: 600 }}>{r.sire}</td>
                   <td className="rl-score">{r.runners}</td>
                   <td className="rl-score">{r.avgRating.toFixed(1)}</td>
+                  <td className="rl-tier-cell"><span className={`rl-tier-tag ${TIER_CLASSES[r.avgTier]}`}>{r.avgTier}</span></td>
                   <td className="rl-score">{r.bestRating.toFixed(1)}</td>
                   <td className="rl-hip">{r.bestHip}</td>
                   <td>{r.eliteCount > 0 ? r.eliteCount : '—'}</td>
