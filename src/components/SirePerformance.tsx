@@ -165,7 +165,7 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
       setSortDir(d => d === 'asc' ? 'desc' : 'asc');
     } else {
       setSortField(field);
-      setSortDir(field === 'sire' ? 'asc' : field === 'rank' ? 'asc' : 'desc');
+      setSortDir(field === 'sire' || field === 'rank' || field === 'avgTier' ? 'asc' : 'desc');
     }
   };
 
