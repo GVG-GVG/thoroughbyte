@@ -50,7 +50,7 @@
     "btprod": false
   },
   {
-    "rank": "220",
+    "rank": "222",
     "hip": "3",
     "st": "KY",
     "sire": "Charlatan",
@@ -63,7 +63,7 @@
     "eighth_out": "11.04",
     "quarter_out": "24.14",
     "decel": "13.1",
-    "rating": "53.1",
+    "rating": "52.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -74,9 +74,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.98",
-    "adj_quarter_out": "24.04",
-    "adj_decel": "13.06"
+    "adj_eighth_out": "10.99",
+    "adj_quarter_out": "24.06",
+    "adj_decel": "13.07"
   },
   {
     "rank": "",
@@ -255,7 +255,7 @@
     "eighth_out": "11.4",
     "quarter_out": "23.95",
     "decel": "12.55",
-    "rating": "24.6",
+    "rating": "24.7",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -371,7 +371,7 @@
     "eighth_out": "10.61",
     "quarter_out": "23.15",
     "decel": "12.54",
-    "rating": "73.2",
+    "rating": "73.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -388,7 +388,7 @@
     "adj_quarter_out": "23.0"
   },
   {
-    "rank": "108",
+    "rank": "106",
     "hip": "15",
     "st": "KY",
     "sire": "Life Is Good",
@@ -401,7 +401,7 @@
     "eighth_out": "10.88",
     "quarter_out": "23.63",
     "decel": "12.75",
-    "rating": "64.1",
+    "rating": "64.2",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -828,7 +828,7 @@
     "eighth_out": "11.16",
     "quarter_out": "23.86",
     "decel": "12.7",
-    "rating": "30.7",
+    "rating": "30.8",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -857,7 +857,7 @@
     "eighth_out": "10.95",
     "quarter_out": "23.09",
     "decel": "12.14",
-    "rating": "65.4",
+    "rating": "65.0",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -868,12 +868,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.89",
-    "adj_quarter_out": "22.99",
-    "adj_decel": "12.1"
+    "adj_eighth_out": "10.9",
+    "adj_quarter_out": "23.01",
+    "adj_decel": "12.11"
   },
   {
-    "rank": "147",
+    "rank": "145",
     "hip": "32",
     "st": "KY",
     "sire": "Tale of Silence",
@@ -902,7 +902,7 @@
     "adj_decel": "12.83"
   },
   {
-    "rank": "303",
+    "rank": "302",
     "hip": "33",
     "st": "KY",
     "sire": "Nyquist",
@@ -915,7 +915,7 @@
     "eighth_out": "11.11",
     "quarter_out": "24.29",
     "decel": "13.18",
-    "rating": "42.1",
+    "rating": "42.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -989,7 +989,7 @@
     "adj_decel": "14.34"
   },
   {
-    "rank": "226",
+    "rank": "227",
     "hip": "36",
     "st": "KY",
     "sire": "Mitole",
@@ -1002,7 +1002,7 @@
     "eighth_out": "11.14",
     "quarter_out": "23.94",
     "decel": "12.8",
-    "rating": "52.0",
+    "rating": "51.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -1013,9 +1013,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.08",
-    "adj_quarter_out": "23.84",
-    "adj_decel": "12.76"
+    "adj_eighth_out": "11.09",
+    "adj_quarter_out": "23.86",
+    "adj_decel": "12.77"
   },
   {
     "rank": "45",
@@ -1047,7 +1047,7 @@
     "adj_decel": "12.1"
   },
   {
-    "rank": "90",
+    "rank": "88",
     "hip": "38",
     "st": "KY",
     "sire": "Good Magic",
@@ -1060,7 +1060,7 @@
     "eighth_out": "10.45",
     "quarter_out": "23.96",
     "decel": "13.51",
-    "rating": "66.5",
+    "rating": "66.6",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -1076,7 +1076,7 @@
     "adj_decel": "13.4"
   },
   {
-    "rank": "126",
+    "rank": "128",
     "hip": "39",
     "st": "KY",
     "sire": "Instagrand",
@@ -1089,7 +1089,7 @@
     "eighth_out": "10.91",
     "quarter_out": "23.28",
     "decel": "12.37",
-    "rating": "62.2",
+    "rating": "61.8",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -1101,9 +1101,9 @@
     "btprod": false,
     "stride_imputed": "true",
     "adj_time": "10.0",
-    "adj_decel": "12.33",
-    "adj_eighth_out": "10.85",
-    "adj_quarter_out": "23.18"
+    "adj_decel": "12.34",
+    "adj_eighth_out": "10.86",
+    "adj_quarter_out": "23.2"
   },
   {
     "rank": "59",
@@ -1135,7 +1135,7 @@
     "adj_decel": "12.64"
   },
   {
-    "rank": "306",
+    "rank": "305",
     "hip": "41",
     "st": "KY",
     "sire": "Instagrand",
@@ -1148,7 +1148,7 @@
     "eighth_out": "11.37",
     "quarter_out": "24.29",
     "decel": "12.92",
-    "rating": "41.9",
+    "rating": "42.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1189,7 +1189,7 @@
     "btprod": false
   },
   {
-    "rank": "24",
+    "rank": "22",
     "hip": "43",
     "st": "KY",
     "sire": "Liam's Map",
@@ -1372,7 +1372,7 @@
     "eighth_out": "11.1",
     "quarter_out": "24.04",
     "decel": "12.94",
-    "rating": "40.4",
+    "rating": "40.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1446,7 +1446,7 @@
     "adj_decel": "13.94"
   },
   {
-    "rank": "362",
+    "rank": "363",
     "hip": "52",
     "st": "KY",
     "sire": "City of Light",
@@ -1459,7 +1459,7 @@
     "eighth_out": "11.31",
     "quarter_out": "24.43",
     "decel": "13.12",
-    "rating": "30.4",
+    "rating": "30.0",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -1470,12 +1470,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.25",
-    "adj_quarter_out": "24.33",
-    "adj_decel": "13.08"
+    "adj_eighth_out": "11.26",
+    "adj_quarter_out": "24.35",
+    "adj_decel": "13.09"
   },
   {
-    "rank": "222",
+    "rank": "221",
     "hip": "53",
     "st": "KY",
     "sire": "Upstart",
@@ -1571,7 +1571,7 @@
     "eighth_out": "11.19",
     "quarter_out": "23.86",
     "decel": "12.67",
-    "rating": "46.2",
+    "rating": "46.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1616,7 +1616,7 @@
     "adj_decel": "12.5"
   },
   {
-    "rank": "170",
+    "rank": "178",
     "hip": "58",
     "st": "KY",
     "sire": "Olympiad",
@@ -1629,7 +1629,7 @@
     "eighth_out": "10.77",
     "quarter_out": "23.05",
     "decel": "12.28",
-    "rating": "56.4",
+    "rating": "56.1",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -1640,9 +1640,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.71",
-    "adj_quarter_out": "22.95",
-    "adj_decel": "12.24"
+    "adj_eighth_out": "10.72",
+    "adj_quarter_out": "22.97",
+    "adj_decel": "12.25"
   },
   {
     "rank": "",
@@ -1670,7 +1670,7 @@
     "btprod": false
   },
   {
-    "rank": "263",
+    "rank": "265",
     "hip": "60",
     "st": "FL",
     "sire": "Jack Christopher",
@@ -1683,7 +1683,7 @@
     "eighth_out": "10.83",
     "quarter_out": "23.48",
     "decel": "12.65",
-    "rating": "47.6",
+    "rating": "47.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1694,12 +1694,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.77",
-    "adj_quarter_out": "23.38",
-    "adj_decel": "12.61"
+    "adj_eighth_out": "10.78",
+    "adj_quarter_out": "23.4",
+    "adj_decel": "12.62"
   },
   {
-    "rank": "274",
+    "rank": "276",
     "hip": "61",
     "st": "KY",
     "sire": "Dialed In",
@@ -1712,7 +1712,7 @@
     "eighth_out": "11.09",
     "quarter_out": "23.96",
     "decel": "12.87",
-    "rating": "45.6",
+    "rating": "45.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -1723,12 +1723,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.03",
-    "adj_quarter_out": "23.86",
-    "adj_decel": "12.83"
+    "adj_eighth_out": "11.04",
+    "adj_quarter_out": "23.88",
+    "adj_decel": "12.84"
   },
   {
-    "rank": "232",
+    "rank": "236",
     "hip": "62",
     "st": "KY",
     "sire": "Sharp Azteca",
@@ -1741,7 +1741,7 @@
     "eighth_out": "11.01",
     "quarter_out": "23.9",
     "decel": "12.89",
-    "rating": "50.4",
+    "rating": "50.1",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -1752,9 +1752,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.95",
-    "adj_quarter_out": "23.8",
-    "adj_decel": "12.85"
+    "adj_eighth_out": "10.96",
+    "adj_quarter_out": "23.82",
+    "adj_decel": "12.86"
   },
   {
     "rank": "51",
@@ -2040,7 +2040,7 @@
     "btprod": false
   },
   {
-    "rank": "213",
+    "rank": "212",
     "hip": "73",
     "st": "KY",
     "sire": "Practical Joke",
@@ -2219,7 +2219,7 @@
     "eighth_out": "11.47",
     "quarter_out": "23.86",
     "decel": "12.39",
-    "rating": "24.9",
+    "rating": "25.0",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -2264,7 +2264,7 @@
     "adj_decel": "12.3"
   },
   {
-    "rank": "78",
+    "rank": "80",
     "hip": "81",
     "st": "FL",
     "sire": "Roadster",
@@ -2277,7 +2277,7 @@
     "eighth_out": "10.75",
     "quarter_out": "23.39",
     "decel": "12.64",
-    "rating": "68.4",
+    "rating": "68.1",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -2288,9 +2288,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.69",
-    "adj_quarter_out": "23.29",
-    "adj_decel": "12.6"
+    "adj_eighth_out": "10.7",
+    "adj_quarter_out": "23.31",
+    "adj_decel": "12.61"
   },
   {
     "rank": "",
@@ -2331,7 +2331,7 @@
     "eighth_out": "11.46",
     "quarter_out": "24.15",
     "decel": "12.69",
-    "rating": "38.0",
+    "rating": "37.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -2342,12 +2342,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.6",
-    "adj_eighth_out": "11.4",
-    "adj_quarter_out": "24.05",
-    "adj_decel": "12.65"
+    "adj_eighth_out": "11.41",
+    "adj_quarter_out": "24.07",
+    "adj_decel": "12.66"
   },
   {
-    "rank": "174",
+    "rank": "180",
     "hip": "84",
     "st": "KY",
     "sire": "Nashville",
@@ -2360,7 +2360,7 @@
     "eighth_out": "11.11",
     "quarter_out": "23.58",
     "decel": "12.47",
-    "rating": "56.3",
+    "rating": "56.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -2371,9 +2371,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.05",
-    "adj_quarter_out": "23.48",
-    "adj_decel": "12.43"
+    "adj_eighth_out": "11.06",
+    "adj_quarter_out": "23.5",
+    "adj_decel": "12.44"
   },
   {
     "rank": "315",
@@ -2430,7 +2430,7 @@
     "btprod": false
   },
   {
-    "rank": "237",
+    "rank": "239",
     "hip": "87",
     "st": "KY",
     "sire": "Mandaloun",
@@ -2443,7 +2443,7 @@
     "eighth_out": "10.69",
     "quarter_out": "23.77",
     "decel": "13.08",
-    "rating": "49.6",
+    "rating": "49.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -2454,9 +2454,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.63",
-    "adj_quarter_out": "23.67",
-    "adj_decel": "13.04"
+    "adj_eighth_out": "10.64",
+    "adj_quarter_out": "23.69",
+    "adj_decel": "13.05"
   },
   {
     "rank": "",
@@ -2497,7 +2497,7 @@
     "eighth_out": "11.32",
     "quarter_out": "24.75",
     "decel": "13.43",
-    "rating": "33.2",
+    "rating": "32.9",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -2509,9 +2509,9 @@
     "btprod": false,
     "stride_imputed": "true",
     "adj_time": "10.2",
-    "adj_decel": "13.39",
-    "adj_eighth_out": "11.26",
-    "adj_quarter_out": "24.65"
+    "adj_decel": "13.4",
+    "adj_eighth_out": "11.27",
+    "adj_quarter_out": "24.67"
   },
   {
     "rank": "188",
@@ -2593,7 +2593,7 @@
     "btprod": false
   },
   {
-    "rank": "256",
+    "rank": "255",
     "hip": "93",
     "st": "KY",
     "sire": "Olympiad",
@@ -2701,7 +2701,7 @@
     "btprod": false
   },
   {
-    "rank": "301",
+    "rank": "300",
     "hip": "97",
     "st": "KY",
     "sire": "Mystic Guide",
@@ -2884,7 +2884,7 @@
     "eighth_out": "11.53",
     "quarter_out": "24.48",
     "decel": "12.95",
-    "rating": "36.6",
+    "rating": "36.7",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -2900,7 +2900,7 @@
     "adj_decel": "12.85"
   },
   {
-    "rank": "379",
+    "rank": "380",
     "hip": "104",
     "st": "KY",
     "sire": "Good Magic",
@@ -2913,7 +2913,7 @@
     "eighth_out": "11.52",
     "quarter_out": "24.87",
     "decel": "13.35",
-    "rating": "20.9",
+    "rating": "20.6",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -2924,9 +2924,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.46",
-    "adj_quarter_out": "24.77",
-    "adj_decel": "13.31"
+    "adj_eighth_out": "11.47",
+    "adj_quarter_out": "24.79",
+    "adj_decel": "13.32"
   },
   {
     "rank": "165",
@@ -3041,7 +3041,7 @@
     "adj_decel": "12.82"
   },
   {
-    "rank": "338",
+    "rank": "336",
     "hip": "109",
     "st": "NY",
     "sire": "King for a Day",
@@ -3054,7 +3054,7 @@
     "eighth_out": "11.22",
     "quarter_out": "24.59",
     "decel": "13.37",
-    "rating": "36.1",
+    "rating": "36.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -3083,7 +3083,7 @@
     "eighth_out": "10.83",
     "quarter_out": "23.23",
     "decel": "12.4",
-    "rating": "80.2",
+    "rating": "80.3",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -3141,7 +3141,7 @@
     "eighth_out": "10.84",
     "quarter_out": "23.07",
     "decel": "12.23",
-    "rating": "92.2",
+    "rating": "92.3",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -3199,7 +3199,7 @@
     "eighth_out": "10.9",
     "quarter_out": "24.53",
     "decel": "13.63",
-    "rating": "28.0",
+    "rating": "28.1",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -3215,7 +3215,7 @@
     "adj_decel": "13.62"
   },
   {
-    "rank": "287",
+    "rank": "289",
     "hip": "115",
     "st": "KY",
     "sire": "Twirling Candy",
@@ -3228,7 +3228,7 @@
     "eighth_out": "11.2",
     "quarter_out": "24.12",
     "decel": "12.92",
-    "rating": "44.3",
+    "rating": "43.9",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -3239,9 +3239,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.14",
-    "adj_quarter_out": "24.02",
-    "adj_decel": "12.88"
+    "adj_eighth_out": "11.15",
+    "adj_quarter_out": "24.04",
+    "adj_decel": "12.89"
   },
   {
     "rank": "124",
@@ -3315,7 +3315,7 @@
     "eighth_out": "10.83",
     "quarter_out": "23.5",
     "decel": "12.67",
-    "rating": "36.9",
+    "rating": "37.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -3559,7 +3559,7 @@
     "adj_decel": "12.93"
   },
   {
-    "rank": "118",
+    "rank": "122",
     "hip": "127",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -3572,7 +3572,7 @@
     "eighth_out": "11.03",
     "quarter_out": "23.19",
     "decel": "12.16",
-    "rating": "62.9",
+    "rating": "62.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -3583,9 +3583,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.97",
-    "adj_quarter_out": "23.09",
-    "adj_decel": "12.12"
+    "adj_eighth_out": "10.98",
+    "adj_quarter_out": "23.11",
+    "adj_decel": "12.13"
   },
   {
     "rank": "330",
@@ -3700,7 +3700,7 @@
     "adj_decel": "14.66"
   },
   {
-    "rank": "207",
+    "rank": "203",
     "hip": "132",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -3713,7 +3713,7 @@
     "eighth_out": "11.16",
     "quarter_out": "23.82",
     "decel": "12.66",
-    "rating": "54.1",
+    "rating": "54.2",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -3729,7 +3729,7 @@
     "adj_decel": "12.56"
   },
   {
-    "rank": "35",
+    "rank": "36",
     "hip": "133",
     "st": "KY",
     "sire": "Honor A. P.",
@@ -3742,7 +3742,7 @@
     "eighth_out": "10.8",
     "quarter_out": "23.16",
     "decel": "12.36",
-    "rating": "75.2",
+    "rating": "74.8",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -3753,9 +3753,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.74",
-    "adj_quarter_out": "23.06",
-    "adj_decel": "12.32"
+    "adj_eighth_out": "10.75",
+    "adj_quarter_out": "23.08",
+    "adj_decel": "12.33"
   },
   {
     "rank": "",
@@ -3887,7 +3887,7 @@
     "adj_decel": "12.81"
   },
   {
-    "rank": "134",
+    "rank": "135",
     "hip": "139",
     "st": "KY",
     "sire": "Into Mischief",
@@ -3942,10 +3942,10 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.37",
     "adj_quarter_out": "24.74",
-    "adj_decel": "13.37"
+    "adj_decel": "13.38"
   },
   {
-    "rank": "278",
+    "rank": "277",
     "hip": "141",
     "st": "KY",
     "sire": "Speaker's Corner",
@@ -3958,7 +3958,7 @@
     "eighth_out": "11.36",
     "quarter_out": "24.44",
     "decel": "13.08",
-    "rating": "44.9",
+    "rating": "45.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -4028,7 +4028,7 @@
     "btprod": false
   },
   {
-    "rank": "51",
+    "rank": "55",
     "hip": "144",
     "st": "KY",
     "sire": "Drain the Clock",
@@ -4041,7 +4041,7 @@
     "eighth_out": "10.85",
     "quarter_out": "23.43",
     "decel": "12.58",
-    "rating": "71.7",
+    "rating": "71.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -4052,9 +4052,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.79",
-    "adj_quarter_out": "23.33",
-    "adj_decel": "12.54"
+    "adj_eighth_out": "10.8",
+    "adj_quarter_out": "23.35",
+    "adj_decel": "12.55"
   },
   {
     "rank": "284",
@@ -4157,7 +4157,7 @@
     "eighth_out": "11.2",
     "quarter_out": "24.28",
     "decel": "13.08",
-    "rating": "26.9",
+    "rating": "27.0",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -4285,7 +4285,7 @@
     "adj_decel": "13.4"
   },
   {
-    "rank": "322",
+    "rank": "321",
     "hip": "153",
     "st": "KY",
     "sire": "Maclean's Music",
@@ -4298,7 +4298,7 @@
     "eighth_out": "10.84",
     "quarter_out": "24.42",
     "decel": "13.58",
-    "rating": "39.0",
+    "rating": "39.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -4314,7 +4314,7 @@
     "adj_decel": "13.47"
   },
   {
-    "rank": "265",
+    "rank": "262",
     "hip": "154",
     "st": "KY",
     "sire": "Idol",
@@ -4327,7 +4327,7 @@
     "eighth_out": "11.45",
     "quarter_out": "24.04",
     "decel": "12.59",
-    "rating": "47.3",
+    "rating": "47.4",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -4356,7 +4356,7 @@
     "eighth_out": "11.41",
     "quarter_out": "24.4",
     "decel": "12.99",
-    "rating": "21.4",
+    "rating": "21.5",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -4685,7 +4685,7 @@
     "eighth_out": "10.93",
     "quarter_out": "23.92",
     "decel": "12.99",
-    "rating": "52.2",
+    "rating": "51.9",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -4696,9 +4696,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.87",
-    "adj_quarter_out": "23.82",
-    "adj_decel": "12.95"
+    "adj_eighth_out": "10.88",
+    "adj_quarter_out": "23.84",
+    "adj_decel": "12.96"
   },
   {
     "rank": "246",
@@ -4759,7 +4759,7 @@
     "adj_decel": "13.67"
   },
   {
-    "rank": "96",
+    "rank": "94",
     "hip": "170",
     "st": "KY",
     "sire": "Girvin",
@@ -4933,7 +4933,7 @@
     "adj_decel": "12.41"
   },
   {
-    "rank": "115",
+    "rank": "123",
     "hip": "176",
     "st": "KY",
     "sire": "Charlatan",
@@ -4946,7 +4946,7 @@
     "eighth_out": "10.73",
     "quarter_out": "22.85",
     "decel": "12.12",
-    "rating": "63.0",
+    "rating": "62.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -4957,9 +4957,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.67",
-    "adj_quarter_out": "22.75",
-    "adj_decel": "12.08"
+    "adj_eighth_out": "10.68",
+    "adj_quarter_out": "22.77",
+    "adj_decel": "12.09"
   },
   {
     "rank": "",
@@ -4987,7 +4987,7 @@
     "btprod": false
   },
   {
-    "rank": "335",
+    "rank": "338",
     "hip": "178",
     "st": "KY",
     "sire": "Union Rags",
@@ -5000,7 +5000,7 @@
     "eighth_out": "11.41",
     "quarter_out": "23.91",
     "decel": "12.5",
-    "rating": "36.5",
+    "rating": "36.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -5011,9 +5011,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.6",
-    "adj_eighth_out": "11.35",
-    "adj_quarter_out": "23.81",
-    "adj_decel": "12.46"
+    "adj_eighth_out": "11.36",
+    "adj_quarter_out": "23.83",
+    "adj_decel": "12.47"
   },
   {
     "rank": "",
@@ -5212,7 +5212,7 @@
     "eighth_out": "10.65",
     "quarter_out": "23.73",
     "decel": "13.08",
-    "rating": "69.2",
+    "rating": "68.9",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -5223,9 +5223,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.59",
-    "adj_quarter_out": "23.63",
-    "adj_decel": "13.04"
+    "adj_eighth_out": "10.6",
+    "adj_quarter_out": "23.65",
+    "adj_decel": "13.05"
   },
   {
     "rank": "304",
@@ -5448,7 +5448,7 @@
     "adj_decel": "12.0"
   },
   {
-    "rank": "281",
+    "rank": "284",
     "hip": "195",
     "st": "KY",
     "sire": "American Pharoah",
@@ -5461,7 +5461,7 @@
     "eighth_out": "11.09",
     "quarter_out": "24.01",
     "decel": "12.92",
-    "rating": "44.7",
+    "rating": "44.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -5472,9 +5472,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.03",
-    "adj_quarter_out": "23.91",
-    "adj_decel": "12.88"
+    "adj_eighth_out": "11.04",
+    "adj_quarter_out": "23.93",
+    "adj_decel": "12.89"
   },
   {
     "rank": "208",
@@ -5577,7 +5577,7 @@
     "eighth_out": "10.8",
     "quarter_out": "24.0",
     "decel": "13.2",
-    "rating": "58.7",
+    "rating": "58.8",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -5651,20 +5651,20 @@
     "adj_decel": "13.05"
   },
   {
-    "rank": "205",
+    "rank": "160",
     "hip": "202",
     "st": "KY",
     "sire": "Maxfield",
     "dam": "Spoken Not Broken",
     "consigner": "Kinsman Farm",
-    "day": "2",
-    "set": "118",
+    "day": "1",
+    "set": "2",
     "time": "10.1",
     "stride": "25.0",
-    "eighth_out": "",
-    "quarter_out": "",
+    "eighth_out": "10.92",
+    "quarter_out": "23.27",
     "decel": "12.35",
-    "rating": "54.2",
+    "rating": "58.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -5676,9 +5676,9 @@
     "btprod": false,
     "stride_imputed": "true",
     "adj_time": "10.2",
-    "adj_decel": "12.41",
-    "adj_eighth_out": "",
-    "adj_quarter_out": ""
+    "adj_decel": "12.32",
+    "adj_eighth_out": "10.87",
+    "adj_quarter_out": "23.19"
   },
   {
     "rank": "45",
@@ -5735,7 +5735,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.18",
-    "adj_quarter_out": "23.33",
+    "adj_quarter_out": "23.34",
     "adj_decel": "12.16"
   },
   {
@@ -5764,7 +5764,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.06",
-    "adj_quarter_out": "23.19",
+    "adj_quarter_out": "23.2",
     "adj_decel": "12.14"
   },
   {
@@ -5781,7 +5781,7 @@
     "eighth_out": "10.84",
     "quarter_out": "23.35",
     "decel": "12.51",
-    "rating": "67.3",
+    "rating": "67.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -5793,11 +5793,11 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.69",
-    "adj_quarter_out": "23.16",
+    "adj_quarter_out": "23.17",
     "adj_decel": "12.48"
   },
   {
-    "rank": "359",
+    "rank": "358",
     "hip": "207",
     "st": "NY",
     "sire": "Maclean's Music",
@@ -5810,7 +5810,7 @@
     "eighth_out": "11.08",
     "quarter_out": "23.62",
     "decel": "12.54",
-    "rating": "31.4",
+    "rating": "31.5",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -5822,7 +5822,7 @@
     "btprod": false,
     "adj_time": "10.8",
     "adj_eighth_out": "10.99",
-    "adj_quarter_out": "23.71",
+    "adj_quarter_out": "23.72",
     "adj_decel": "12.73"
   },
   {
@@ -5852,11 +5852,11 @@
     "stride_imputed": "true",
     "adj_time": "10.2",
     "adj_eighth_out": "10.85",
-    "adj_quarter_out": "23.16",
+    "adj_quarter_out": "23.17",
     "adj_decel": "12.32"
   },
   {
-    "rank": "185",
+    "rank": "186",
     "hip": "209",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -5881,7 +5881,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.89",
-    "adj_quarter_out": "23.38",
+    "adj_quarter_out": "23.39",
     "adj_decel": "12.5"
   },
   {
@@ -5914,7 +5914,7 @@
     "adj_decel": "14.85"
   },
   {
-    "rank": "54",
+    "rank": "51",
     "hip": "211",
     "st": "FL",
     "sire": "Khozan",
@@ -5927,7 +5927,7 @@
     "eighth_out": "10.94",
     "quarter_out": "23.38",
     "decel": "12.44",
-    "rating": "71.5",
+    "rating": "71.6",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -5939,7 +5939,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.85",
-    "adj_quarter_out": "23.47",
+    "adj_quarter_out": "23.48",
     "adj_decel": "12.63"
   },
   {
@@ -6001,7 +6001,7 @@
     "adj_decel": "12.68"
   },
   {
-    "rank": "348",
+    "rank": "347",
     "hip": "214",
     "st": "KY",
     "sire": "Olympiad",
@@ -6014,7 +6014,7 @@
     "eighth_out": "11.23",
     "quarter_out": "24.15",
     "decel": "12.92",
-    "rating": "33.3",
+    "rating": "33.4",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -6026,11 +6026,11 @@
     "btprod": false,
     "adj_time": "10.6",
     "adj_eighth_out": "11.14",
-    "adj_quarter_out": "24.24",
+    "adj_quarter_out": "24.25",
     "adj_decel": "13.11"
   },
   {
-    "rank": "70",
+    "rank": "71",
     "hip": "215",
     "st": "KY",
     "sire": "Game Winner",
@@ -6043,7 +6043,7 @@
     "eighth_out": "11.06",
     "quarter_out": "24.04",
     "decel": "12.98",
-    "rating": "69.4",
+    "rating": "69.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -6056,7 +6056,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "10.79",
     "adj_quarter_out": "23.49",
-    "adj_decel": "12.7"
+    "adj_decel": "12.71"
   },
   {
     "rank": "",
@@ -6225,7 +6225,7 @@
     "btprod": false
   },
   {
-    "rank": "235",
+    "rank": "233",
     "hip": "222",
     "st": "KY",
     "sire": "Mo Donegal",
@@ -6238,7 +6238,7 @@
     "eighth_out": "10.97",
     "quarter_out": "24.2",
     "decel": "13.23",
-    "rating": "50.2",
+    "rating": "50.3",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -6250,7 +6250,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.78",
-    "adj_quarter_out": "24.06",
+    "adj_quarter_out": "24.07",
     "adj_decel": "13.29"
   },
   {
@@ -6312,7 +6312,7 @@
     "adj_decel": "12.46"
   },
   {
-    "rank": "363",
+    "rank": "362",
     "hip": "225",
     "st": "NY",
     "sire": "Practical Joke",
@@ -6325,7 +6325,7 @@
     "eighth_out": "11.25",
     "quarter_out": "24.55",
     "decel": "13.3",
-    "rating": "30.1",
+    "rating": "30.2",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -6337,11 +6337,11 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "11.06",
-    "adj_quarter_out": "24.41",
+    "adj_quarter_out": "24.42",
     "adj_decel": "13.36"
   },
   {
-    "rank": "79",
+    "rank": "76",
     "hip": "226",
     "st": "NY",
     "sire": "Liam's Map",
@@ -6354,7 +6354,7 @@
     "eighth_out": "11.0",
     "quarter_out": "22.76",
     "decel": "11.76",
-    "rating": "68.4",
+    "rating": "68.5",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -6366,11 +6366,11 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.91",
-    "adj_quarter_out": "22.85",
+    "adj_quarter_out": "22.86",
     "adj_decel": "11.95"
   },
   {
-    "rank": "288",
+    "rank": "285",
     "hip": "227",
     "st": "KY",
     "sire": "Aloha West",
@@ -6383,7 +6383,7 @@
     "eighth_out": "10.99",
     "quarter_out": "23.37",
     "decel": "12.38",
-    "rating": "44.2",
+    "rating": "44.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -6395,11 +6395,11 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "10.9",
-    "adj_quarter_out": "23.46",
+    "adj_quarter_out": "23.47",
     "adj_decel": "12.57"
   },
   {
-    "rank": "304",
+    "rank": "303",
     "hip": "228",
     "st": "KY",
     "sire": "McKinzie",
@@ -6412,7 +6412,7 @@
     "eighth_out": "11.01",
     "quarter_out": "23.92",
     "decel": "12.91",
-    "rating": "42.0",
+    "rating": "42.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -6424,7 +6424,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.92",
-    "adj_quarter_out": "24.01",
+    "adj_quarter_out": "24.02",
     "adj_decel": "13.1"
   },
   {
@@ -6561,7 +6561,7 @@
     "btprod": false
   },
   {
-    "rank": "197",
+    "rank": "195",
     "hip": "234",
     "st": "NY",
     "sire": "Mo Donegal",
@@ -6586,11 +6586,11 @@
     "btprod": true,
     "adj_time": "10.4",
     "adj_eighth_out": "11.21",
-    "adj_quarter_out": "22.95",
+    "adj_quarter_out": "22.96",
     "adj_decel": "11.75"
   },
   {
-    "rank": "310",
+    "rank": "308",
     "hip": "235",
     "st": "KY",
     "sire": "Curlin",
@@ -6603,7 +6603,7 @@
     "eighth_out": "11.17",
     "quarter_out": "23.75",
     "decel": "12.58",
-    "rating": "41.4",
+    "rating": "41.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -6615,11 +6615,11 @@
     "btprod": true,
     "adj_time": "10.2",
     "adj_eighth_out": "10.98",
-    "adj_quarter_out": "23.61",
+    "adj_quarter_out": "23.62",
     "adj_decel": "12.64"
   },
   {
-    "rank": "94",
+    "rank": "92",
     "hip": "236",
     "st": "KY",
     "sire": "Maclean's Music",
@@ -6632,7 +6632,7 @@
     "eighth_out": "10.92",
     "quarter_out": "23.2",
     "decel": "12.28",
-    "rating": "66.2",
+    "rating": "66.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -6644,7 +6644,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.77",
-    "adj_quarter_out": "23.01",
+    "adj_quarter_out": "23.02",
     "adj_decel": "12.25"
   },
   {
@@ -6818,7 +6818,7 @@
     "adj_decel": "12.51"
   },
   {
-    "rank": "160",
+    "rank": "156",
     "hip": "243",
     "st": "VA",
     "sire": "Tacitus",
@@ -6831,7 +6831,7 @@
     "eighth_out": "11.35",
     "quarter_out": "24.02",
     "decel": "12.67",
-    "rating": "58.0",
+    "rating": "58.1",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -6843,7 +6843,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.16",
-    "adj_quarter_out": "23.88",
+    "adj_quarter_out": "23.89",
     "adj_decel": "12.73"
   },
   {
@@ -6872,7 +6872,7 @@
     "btprod": false
   },
   {
-    "rank": "343",
+    "rank": "342",
     "hip": "245",
     "st": "FL",
     "sire": "Mutasaabeq",
@@ -6885,7 +6885,7 @@
     "eighth_out": "11.17",
     "quarter_out": "24.1",
     "decel": "12.93",
-    "rating": "35.4",
+    "rating": "35.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -6897,7 +6897,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.02",
-    "adj_quarter_out": "23.91",
+    "adj_quarter_out": "23.92",
     "adj_decel": "12.9"
   },
   {
@@ -7096,7 +7096,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "11.04",
-    "adj_quarter_out": "24.22",
+    "adj_quarter_out": "24.23",
     "adj_decel": "13.19"
   },
   {
@@ -7129,7 +7129,7 @@
     "adj_decel": "12.56"
   },
   {
-    "rank": "247",
+    "rank": "243",
     "hip": "254",
     "st": "FL",
     "sire": "Sharp Azteca",
@@ -7142,7 +7142,7 @@
     "eighth_out": "11.17",
     "quarter_out": "23.84",
     "decel": "12.67",
-    "rating": "49.0",
+    "rating": "49.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -7154,7 +7154,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.98",
-    "adj_quarter_out": "23.7",
+    "adj_quarter_out": "23.71",
     "adj_decel": "12.73"
   },
   {
@@ -7183,7 +7183,7 @@
     "btprod": false
   },
   {
-    "rank": "119",
+    "rank": "115",
     "hip": "256",
     "st": "PA",
     "sire": "Speaker's Corner",
@@ -7196,7 +7196,7 @@
     "eighth_out": "10.95",
     "quarter_out": "23.64",
     "decel": "12.69",
-    "rating": "62.9",
+    "rating": "63.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -7208,7 +7208,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.8",
-    "adj_quarter_out": "23.45",
+    "adj_quarter_out": "23.46",
     "adj_decel": "12.66"
   },
   {
@@ -7241,7 +7241,7 @@
     "adj_decel": "13.35"
   },
   {
-    "rank": "138",
+    "rank": "137",
     "hip": "258",
     "st": "NY",
     "sire": "Honest Mischief",
@@ -7337,7 +7337,7 @@
     "eighth_out": "10.99",
     "quarter_out": "23.37",
     "decel": "12.38",
-    "rating": "81.3",
+    "rating": "81.4",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -7349,7 +7349,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.9",
-    "adj_quarter_out": "23.46",
+    "adj_quarter_out": "23.47",
     "adj_decel": "12.57"
   },
   {
@@ -7408,11 +7408,11 @@
     "stride_imputed": "true",
     "adj_time": "9.8",
     "adj_eighth_out": "10.56",
-    "adj_quarter_out": "23.28",
+    "adj_quarter_out": "23.29",
     "adj_decel": "12.73"
   },
   {
-    "rank": "177",
+    "rank": "176",
     "hip": "264",
     "st": "KY",
     "sire": "Olympiad",
@@ -7425,7 +7425,7 @@
     "eighth_out": "10.99",
     "quarter_out": "23.79",
     "decel": "12.8",
-    "rating": "56.1",
+    "rating": "56.2",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -7437,7 +7437,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.84",
-    "adj_quarter_out": "23.6",
+    "adj_quarter_out": "23.61",
     "adj_decel": "12.77"
   },
   {
@@ -7524,7 +7524,7 @@
     "adj_decel": "12.76"
   },
   {
-    "rank": "325",
+    "rank": "323",
     "hip": "268",
     "st": "NY",
     "sire": "Epicenter",
@@ -7537,7 +7537,7 @@
     "eighth_out": "11.21",
     "quarter_out": "24.19",
     "decel": "12.98",
-    "rating": "38.6",
+    "rating": "38.7",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -7549,7 +7549,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "11.12",
-    "adj_quarter_out": "24.28",
+    "adj_quarter_out": "24.29",
     "adj_decel": "13.17"
   },
   {
@@ -7611,7 +7611,7 @@
     "adj_decel": "14.12"
   },
   {
-    "rank": "186",
+    "rank": "187",
     "hip": "271",
     "st": "KY",
     "sire": "Yaupon",
@@ -7636,11 +7636,11 @@
     "btprod": true,
     "adj_time": "10.0",
     "adj_eighth_out": "10.99",
-    "adj_quarter_out": "23.68",
+    "adj_quarter_out": "23.69",
     "adj_decel": "12.7"
   },
   {
-    "rank": "180",
+    "rank": "181",
     "hip": "272",
     "st": "KY",
     "sire": "Cairo Prince",
@@ -7665,7 +7665,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "10.78",
-    "adj_quarter_out": "23.5",
+    "adj_quarter_out": "23.51",
     "adj_decel": "12.73"
   },
   {
@@ -7682,7 +7682,7 @@
     "eighth_out": "11.17",
     "quarter_out": "24.12",
     "decel": "12.95",
-    "rating": "36.0",
+    "rating": "36.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -7694,7 +7694,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.02",
-    "adj_quarter_out": "23.93",
+    "adj_quarter_out": "23.94",
     "adj_decel": "12.92"
   },
   {
@@ -7765,7 +7765,7 @@
     "eighth_out": "10.42",
     "quarter_out": "23.45",
     "decel": "13.03",
-    "rating": "77.3",
+    "rating": "77.2",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -7778,7 +7778,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.15",
     "adj_quarter_out": "22.9",
-    "adj_decel": "12.75"
+    "adj_decel": "12.76"
   },
   {
     "rank": "392",
@@ -7806,7 +7806,7 @@
     "btprod": false,
     "adj_time": "10.6",
     "adj_eighth_out": "11.23",
-    "adj_quarter_out": "24.82",
+    "adj_quarter_out": "24.83",
     "adj_decel": "13.6"
   },
   {
@@ -7823,7 +7823,7 @@
     "eighth_out": "10.53",
     "quarter_out": "23.35",
     "decel": "12.82",
-    "rating": "75.7",
+    "rating": "75.8",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -7835,7 +7835,7 @@
     "btprod": false,
     "adj_time": "9.8",
     "adj_eighth_out": "10.34",
-    "adj_quarter_out": "23.21",
+    "adj_quarter_out": "23.22",
     "adj_decel": "12.88"
   },
   {
@@ -8005,7 +8005,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.95",
-    "adj_quarter_out": "23.47",
+    "adj_quarter_out": "23.48",
     "adj_decel": "12.53"
   },
   {
@@ -8125,7 +8125,7 @@
     "adj_decel": "12.66"
   },
   {
-    "rank": "10",
+    "rank": "9",
     "hip": "289",
     "st": "KY",
     "sire": "Epicenter",
@@ -8150,7 +8150,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.55",
-    "adj_quarter_out": "22.81",
+    "adj_quarter_out": "22.82",
     "adj_decel": "12.27"
   },
   {
@@ -8192,7 +8192,7 @@
     "eighth_out": "11.68",
     "quarter_out": "24.34",
     "decel": "12.66",
-    "rating": "35.2",
+    "rating": "35.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -8204,7 +8204,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.53",
-    "adj_quarter_out": "24.15",
+    "adj_quarter_out": "24.16",
     "adj_decel": "12.63"
   },
   {
@@ -8262,7 +8262,7 @@
     "btprod": false,
     "adj_time": "10.8",
     "adj_eighth_out": "11.64",
-    "adj_quarter_out": "24.3",
+    "adj_quarter_out": "24.31",
     "adj_decel": "12.67"
   },
   {
@@ -8291,11 +8291,11 @@
     "btprod": true,
     "adj_time": "10.2",
     "adj_eighth_out": "10.69",
-    "adj_quarter_out": "23.04",
+    "adj_quarter_out": "23.05",
     "adj_decel": "12.36"
   },
   {
-    "rank": "135",
+    "rank": "133",
     "hip": "295",
     "st": "KY",
     "sire": "Early Voting",
@@ -8308,7 +8308,7 @@
     "eighth_out": "11.09",
     "quarter_out": "23.41",
     "decel": "12.32",
-    "rating": "60.5",
+    "rating": "60.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -8320,7 +8320,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "11.0",
-    "adj_quarter_out": "23.5",
+    "adj_quarter_out": "23.51",
     "adj_decel": "12.51"
   },
   {
@@ -8382,7 +8382,7 @@
     "adj_decel": "12.2"
   },
   {
-    "rank": "178",
+    "rank": "177",
     "hip": "298",
     "st": "KY",
     "sire": "Golden Pal",
@@ -8395,7 +8395,7 @@
     "eighth_out": "11.11",
     "quarter_out": "23.62",
     "decel": "12.51",
-    "rating": "56.1",
+    "rating": "56.2",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -8407,7 +8407,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.92",
-    "adj_quarter_out": "23.48",
+    "adj_quarter_out": "23.49",
     "adj_decel": "12.57"
   },
   {
@@ -8656,7 +8656,7 @@
     "adj_decel": "13.66"
   },
   {
-    "rank": "320",
+    "rank": "319",
     "hip": "308",
     "st": "KY",
     "sire": "Authentic",
@@ -8669,7 +8669,7 @@
     "eighth_out": "10.95",
     "quarter_out": "24.58",
     "decel": "13.63",
-    "rating": "39.4",
+    "rating": "39.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -8797,7 +8797,7 @@
     "btprod": false,
     "adj_time": "9.8",
     "adj_eighth_out": "10.95",
-    "adj_quarter_out": "23.61",
+    "adj_quarter_out": "23.62",
     "adj_decel": "12.67"
   },
   {
@@ -9155,7 +9155,7 @@
     "eighth_out": "11.6",
     "quarter_out": "25.0",
     "decel": "13.4",
-    "rating": "17.5",
+    "rating": "17.6",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -9167,7 +9167,7 @@
     "btprod": true,
     "adj_time": "10.4",
     "adj_eighth_out": "11.41",
-    "adj_quarter_out": "24.86",
+    "adj_quarter_out": "24.87",
     "adj_decel": "13.46"
   },
   {
@@ -9225,7 +9225,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "10.74",
-    "adj_quarter_out": "23.47",
+    "adj_quarter_out": "23.48",
     "adj_decel": "12.74"
   },
   {
@@ -9337,7 +9337,7 @@
     "btprod": false
   },
   {
-    "rank": "196",
+    "rank": "192",
     "hip": "332",
     "st": "KY",
     "sire": "Mandaloun",
@@ -9350,7 +9350,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.87",
     "decel": "12.91",
-    "rating": "54.7",
+    "rating": "54.8",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -9362,7 +9362,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.81",
-    "adj_quarter_out": "23.68",
+    "adj_quarter_out": "23.69",
     "adj_decel": "12.88"
   },
   {
@@ -9395,7 +9395,7 @@
     "adj_decel": "12.54"
   },
   {
-    "rank": "165",
+    "rank": "166",
     "hip": "334",
     "st": "KY",
     "sire": "Munnings",
@@ -9408,7 +9408,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.62",
     "decel": "12.66",
-    "rating": "57.5",
+    "rating": "57.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -9420,11 +9420,11 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.77",
-    "adj_quarter_out": "23.48",
+    "adj_quarter_out": "23.49",
     "adj_decel": "12.72"
   },
   {
-    "rank": "352",
+    "rank": "351",
     "hip": "335",
     "st": "KY",
     "sire": "Drain the Clock",
@@ -9449,7 +9449,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.4",
-    "adj_quarter_out": "24.1",
+    "adj_quarter_out": "24.11",
     "adj_decel": "12.71"
   },
   {
@@ -9482,7 +9482,7 @@
     "adj_decel": "12.81"
   },
   {
-    "rank": "87",
+    "rank": "85",
     "hip": "337",
     "st": "KY",
     "sire": "Cyberknife",
@@ -9495,7 +9495,7 @@
     "eighth_out": "10.75",
     "quarter_out": "23.25",
     "decel": "12.5",
-    "rating": "67.0",
+    "rating": "67.1",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -9507,11 +9507,11 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.56",
-    "adj_quarter_out": "23.11",
+    "adj_quarter_out": "23.12",
     "adj_decel": "12.56"
   },
   {
-    "rank": "209",
+    "rank": "208",
     "hip": "338",
     "st": "AR",
     "sire": "Jimmy Creed",
@@ -9536,7 +9536,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.02",
-    "adj_quarter_out": "23.25",
+    "adj_quarter_out": "23.26",
     "adj_decel": "12.24"
   },
   {
@@ -9570,7 +9570,7 @@
     "adj_decel": "12.67"
   },
   {
-    "rank": "355",
+    "rank": "354",
     "hip": "340",
     "st": "KY",
     "sire": "Munnings",
@@ -9583,7 +9583,7 @@
     "eighth_out": "11.37",
     "quarter_out": "24.46",
     "decel": "13.09",
-    "rating": "32.0",
+    "rating": "32.1",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -9595,11 +9595,11 @@
     "btprod": true,
     "adj_time": "10.4",
     "adj_eighth_out": "11.28",
-    "adj_quarter_out": "24.55",
+    "adj_quarter_out": "24.56",
     "adj_decel": "13.28"
   },
   {
-    "rank": "200",
+    "rank": "196",
     "hip": "341",
     "st": "KY",
     "sire": "Improbable",
@@ -9624,7 +9624,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.89",
-    "adj_quarter_out": "23.09",
+    "adj_quarter_out": "23.1",
     "adj_decel": "12.21"
   },
   {
@@ -9699,7 +9699,7 @@
     "eighth_out": "11.53",
     "quarter_out": "24.49",
     "decel": "12.96",
-    "rating": "18.2",
+    "rating": "18.3",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -9711,7 +9711,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.38",
-    "adj_quarter_out": "24.3",
+    "adj_quarter_out": "24.31",
     "adj_decel": "12.93"
   },
   {
@@ -9740,7 +9740,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.86",
-    "adj_quarter_out": "23.8",
+    "adj_quarter_out": "23.81",
     "adj_decel": "12.95"
   },
   {
@@ -9757,7 +9757,7 @@
     "eighth_out": "11.34",
     "quarter_out": "24.38",
     "decel": "13.04",
-    "rating": "39.8",
+    "rating": "39.9",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -9769,7 +9769,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.19",
-    "adj_quarter_out": "24.19",
+    "adj_quarter_out": "24.2",
     "adj_decel": "13.01"
   },
   {
@@ -9798,7 +9798,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.94",
-    "adj_quarter_out": "23.5",
+    "adj_quarter_out": "23.51",
     "adj_decel": "12.57"
   },
   {
@@ -9856,7 +9856,7 @@
     "adj_decel": "12.75"
   },
   {
-    "rank": "298",
+    "rank": "296",
     "hip": "350",
     "st": "KY",
     "sire": "Jackie's Warrior",
@@ -9869,7 +9869,7 @@
     "eighth_out": "11.31",
     "quarter_out": "24.47",
     "decel": "13.16",
-    "rating": "43.5",
+    "rating": "43.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -9881,7 +9881,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.12",
-    "adj_quarter_out": "24.33",
+    "adj_quarter_out": "24.34",
     "adj_decel": "13.22"
   },
   {
@@ -9910,7 +9910,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "11.25",
-    "adj_quarter_out": "23.77",
+    "adj_quarter_out": "23.78",
     "adj_decel": "12.53"
   },
   {
@@ -9927,7 +9927,7 @@
     "eighth_out": "11.76",
     "quarter_out": "24.33",
     "decel": "12.57",
-    "rating": "13.8",
+    "rating": "13.9",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -9939,7 +9939,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "11.57",
-    "adj_quarter_out": "24.19",
+    "adj_quarter_out": "24.2",
     "adj_decel": "12.63"
   },
   {
@@ -9968,7 +9968,7 @@
     "btprod": true
   },
   {
-    "rank": "380",
+    "rank": "379",
     "hip": "354",
     "st": "KY",
     "sire": "Constitution",
@@ -9981,7 +9981,7 @@
     "eighth_out": "11.25",
     "quarter_out": "24.71",
     "decel": "13.46",
-    "rating": "20.6",
+    "rating": "20.7",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -9993,11 +9993,11 @@
     "btprod": false,
     "adj_time": "10.8",
     "adj_eighth_out": "11.16",
-    "adj_quarter_out": "24.8",
+    "adj_quarter_out": "24.81",
     "adj_decel": "13.65"
   },
   {
-    "rank": "245",
+    "rank": "244",
     "hip": "355",
     "st": "KY",
     "sire": "Blame",
@@ -10022,7 +10022,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "11.11",
-    "adj_quarter_out": "23.68",
+    "adj_quarter_out": "23.69",
     "adj_decel": "12.58"
   },
   {
@@ -10051,7 +10051,7 @@
     "btprod": false
   },
   {
-    "rank": "192",
+    "rank": "193",
     "hip": "357",
     "st": "KY",
     "sire": "Girvin",
@@ -10076,7 +10076,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.94",
-    "adj_quarter_out": "23.85",
+    "adj_quarter_out": "23.86",
     "adj_decel": "12.92"
   },
   {
@@ -10209,11 +10209,11 @@
     "btprod": true,
     "adj_time": "10.6",
     "adj_eighth_out": "11.21",
-    "adj_quarter_out": "25.2",
+    "adj_quarter_out": "25.21",
     "adj_decel": "14.0"
   },
   {
-    "rank": "305",
+    "rank": "306",
     "hip": "363",
     "st": "KY",
     "sire": "Dialed In",
@@ -10238,7 +10238,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "10.96",
-    "adj_quarter_out": "23.43",
+    "adj_quarter_out": "23.44",
     "adj_decel": "12.48"
   },
   {
@@ -10267,7 +10267,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.81",
-    "adj_quarter_out": "23.27",
+    "adj_quarter_out": "23.28",
     "adj_decel": "12.47"
   },
   {
@@ -10296,7 +10296,7 @@
     "btprod": false
   },
   {
-    "rank": "356",
+    "rank": "355",
     "hip": "366",
     "st": "KY",
     "sire": "Game Winner",
@@ -10309,7 +10309,7 @@
     "eighth_out": "11.15",
     "quarter_out": "24.1",
     "decel": "12.95",
-    "rating": "31.9",
+    "rating": "32.0",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -10321,7 +10321,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "11.0",
-    "adj_quarter_out": "23.91",
+    "adj_quarter_out": "23.92",
     "adj_decel": "12.92"
   },
   {
@@ -10408,7 +10408,7 @@
     "adj_decel": "13.49"
   },
   {
-    "rank": "166",
+    "rank": "167",
     "hip": "370",
     "st": "KY",
     "sire": "Epicenter",
@@ -10421,7 +10421,7 @@
     "eighth_out": "10.48",
     "quarter_out": "23.26",
     "decel": "12.78",
-    "rating": "57.3",
+    "rating": "57.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -10433,7 +10433,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.33",
-    "adj_quarter_out": "23.07",
+    "adj_quarter_out": "23.08",
     "adj_decel": "12.75"
   },
   {
@@ -10520,7 +10520,7 @@
     "btprod": false
   },
   {
-    "rank": "171",
+    "rank": "170",
     "hip": "374",
     "st": "KY",
     "sire": "Omaha Beach",
@@ -10533,7 +10533,7 @@
     "eighth_out": "11.14",
     "quarter_out": "23.35",
     "decel": "12.21",
-    "rating": "56.4",
+    "rating": "56.5",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -10545,7 +10545,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.95",
-    "adj_quarter_out": "23.21",
+    "adj_quarter_out": "23.22",
     "adj_decel": "12.27"
   },
   {
@@ -10603,7 +10603,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.76",
-    "adj_quarter_out": "22.69",
+    "adj_quarter_out": "22.7",
     "adj_decel": "11.94"
   },
   {
@@ -10936,7 +10936,7 @@
     "btprod": false
   },
   {
-    "rank": "202",
+    "rank": "198",
     "hip": "389",
     "st": "KY",
     "sire": "Not This Time",
@@ -10961,7 +10961,7 @@
     "btprod": false,
     "adj_time": "10.4",
     "adj_eighth_out": "11.0",
-    "adj_quarter_out": "22.87",
+    "adj_quarter_out": "22.88",
     "adj_decel": "11.88"
   },
   {
@@ -11106,7 +11106,7 @@
     "btprod": false
   },
   {
-    "rank": "259",
+    "rank": "256",
     "hip": "395",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -11119,7 +11119,7 @@
     "eighth_out": "11.1",
     "quarter_out": "23.71",
     "decel": "12.61",
-    "rating": "48.2",
+    "rating": "48.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -11131,11 +11131,11 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.95",
-    "adj_quarter_out": "23.52",
+    "adj_quarter_out": "23.53",
     "adj_decel": "12.58"
   },
   {
-    "rank": "172",
+    "rank": "171",
     "hip": "396",
     "st": "KY",
     "sire": "McKinzie",
@@ -11160,7 +11160,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.69",
-    "adj_quarter_out": "23.32",
+    "adj_quarter_out": "23.33",
     "adj_decel": "12.64"
   },
   {
@@ -11214,7 +11214,7 @@
     "btprod": false
   },
   {
-    "rank": "175",
+    "rank": "173",
     "hip": "399",
     "st": "PA",
     "sire": "Volatile",
@@ -11239,7 +11239,7 @@
     "btprod": false,
     "adj_time": "10.2",
     "adj_eighth_out": "10.94",
-    "adj_quarter_out": "22.95",
+    "adj_quarter_out": "22.96",
     "adj_decel": "12.02"
   },
   {
@@ -11355,7 +11355,7 @@
     "adj_decel": "13.33"
   },
   {
-    "rank": "14",
+    "rank": "13",
     "hip": "404",
     "st": "KY",
     "sire": "Early Voting",
@@ -11368,7 +11368,7 @@
     "eighth_out": "10.67",
     "quarter_out": "23.17",
     "decel": "12.5",
-    "rating": "82.5",
+    "rating": "82.6",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -11380,7 +11380,7 @@
     "btprod": false,
     "adj_time": "10.0",
     "adj_eighth_out": "10.58",
-    "adj_quarter_out": "23.26",
+    "adj_quarter_out": "23.27",
     "adj_decel": "12.69"
   },
   {
@@ -11413,7 +11413,7 @@
     "adj_decel": "16.67"
   },
   {
-    "rank": "122",
+    "rank": "119",
     "hip": "406",
     "st": "KY",
     "sire": "Twirling Candy",
@@ -11426,7 +11426,7 @@
     "eighth_out": "11.12",
     "quarter_out": "23.47",
     "decel": "12.35",
-    "rating": "62.7",
+    "rating": "62.8",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -11438,7 +11438,7 @@
     "btprod": true,
     "adj_time": "9.8",
     "adj_eighth_out": "10.93",
-    "adj_quarter_out": "23.33",
+    "adj_quarter_out": "23.34",
     "adj_decel": "12.41"
   },
   {
@@ -11455,7 +11455,7 @@
     "eighth_out": "10.4",
     "quarter_out": "22.68",
     "decel": "12.28",
-    "rating": "77.9",
+    "rating": "77.5",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -11466,9 +11466,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.45",
+    "adj_eighth_out": "10.46",
     "adj_quarter_out": "22.78",
-    "adj_decel": "12.32"
+    "adj_decel": "12.33"
   },
   {
     "rank": "50",
@@ -11500,7 +11500,7 @@
     "adj_decel": "14.63"
   },
   {
-    "rank": "354",
+    "rank": "356",
     "hip": "409",
     "st": "FL",
     "sire": "Colonel Liam",
@@ -11513,7 +11513,7 @@
     "eighth_out": "11.62",
     "quarter_out": "24.77",
     "decel": "13.15",
-    "rating": "32.3",
+    "rating": "31.9",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -11524,9 +11524,9 @@
     "btp": false,
     "btprod": true,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.67",
+    "adj_eighth_out": "11.68",
     "adj_quarter_out": "24.87",
-    "adj_decel": "13.19"
+    "adj_decel": "13.2"
   },
   {
     "rank": "232",
@@ -11582,12 +11582,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.6",
-    "adj_eighth_out": "11.96",
+    "adj_eighth_out": "11.97",
     "adj_quarter_out": "26.21",
-    "adj_decel": "14.24"
+    "adj_decel": "14.25"
   },
   {
-    "rank": "345",
+    "rank": "346",
     "hip": "412",
     "st": "KY",
     "sire": "Girvin",
@@ -11600,7 +11600,7 @@
     "eighth_out": "11.08",
     "quarter_out": "23.84",
     "decel": "12.76",
-    "rating": "33.9",
+    "rating": "33.6",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -11611,9 +11611,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.09",
+    "adj_eighth_out": "11.1",
     "adj_quarter_out": "23.94",
-    "adj_decel": "12.84"
+    "adj_decel": "12.85"
   },
   {
     "rank": "",
@@ -11724,7 +11724,7 @@
     "btprod": false
   },
   {
-    "rank": "300",
+    "rank": "304",
     "hip": "417",
     "st": "KY",
     "sire": "Independence Hall",
@@ -11737,7 +11737,7 @@
     "eighth_out": "11.09",
     "quarter_out": "24.4",
     "decel": "13.31",
-    "rating": "42.4",
+    "rating": "42.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -11748,9 +11748,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.0",
+    "adj_eighth_out": "11.01",
     "adj_quarter_out": "24.14",
-    "adj_decel": "13.13"
+    "adj_decel": "13.14"
   },
   {
     "rank": "5",
@@ -11832,7 +11832,7 @@
     "btprod": false
   },
   {
-    "rank": "22",
+    "rank": "25",
     "hip": "421",
     "st": "KY",
     "sire": "Quality Road",
@@ -11845,7 +11845,7 @@
     "eighth_out": "10.62",
     "quarter_out": "23.03",
     "decel": "12.41",
-    "rating": "79.3",
+    "rating": "78.9",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -11856,9 +11856,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.63",
+    "adj_eighth_out": "10.64",
     "adj_quarter_out": "23.13",
-    "adj_decel": "12.49"
+    "adj_decel": "12.5"
   },
   {
     "rank": "36",
@@ -11973,7 +11973,7 @@
     "adj_decel": "14.6"
   },
   {
-    "rank": "295",
+    "rank": "298",
     "hip": "426",
     "st": "NY",
     "sire": "Honest Mischief",
@@ -11986,7 +11986,7 @@
     "eighth_out": "11.11",
     "quarter_out": "23.48",
     "decel": "12.37",
-    "rating": "43.7",
+    "rating": "43.4",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -11997,12 +11997,12 @@
     "btp": false,
     "btprod": true,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.16",
+    "adj_eighth_out": "11.17",
     "adj_quarter_out": "23.58",
-    "adj_decel": "12.41"
+    "adj_decel": "12.42"
   },
   {
-    "rank": "53",
+    "rank": "56",
     "hip": "427",
     "st": "FL",
     "sire": "Cyberknife",
@@ -12015,7 +12015,7 @@
     "eighth_out": "11.09",
     "quarter_out": "23.42",
     "decel": "12.33",
-    "rating": "71.6",
+    "rating": "71.2",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -12026,9 +12026,9 @@
     "btp": true,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.0",
+    "adj_eighth_out": "11.01",
     "adj_quarter_out": "23.16",
-    "adj_decel": "12.15"
+    "adj_decel": "12.16"
   },
   {
     "rank": "198",
@@ -12060,7 +12060,7 @@
     "adj_decel": "13.2"
   },
   {
-    "rank": "336",
+    "rank": "337",
     "hip": "429",
     "st": "OH",
     "sire": "Nashville",
@@ -12073,7 +12073,7 @@
     "eighth_out": "11.69",
     "quarter_out": "24.46",
     "decel": "12.77",
-    "rating": "36.5",
+    "rating": "36.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -12084,12 +12084,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.7",
+    "adj_eighth_out": "11.71",
     "adj_quarter_out": "24.56",
-    "adj_decel": "12.85"
+    "adj_decel": "12.86"
   },
   {
-    "rank": "373",
+    "rank": "374",
     "hip": "430",
     "st": "FL",
     "sire": "Colonel Liam",
@@ -12102,7 +12102,7 @@
     "eighth_out": "10.98",
     "quarter_out": "24.41",
     "decel": "13.43",
-    "rating": "26.1",
+    "rating": "25.8",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -12113,9 +12113,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.03",
+    "adj_eighth_out": "11.04",
     "adj_quarter_out": "24.51",
-    "adj_decel": "13.47"
+    "adj_decel": "13.48"
   },
   {
     "rank": "229",
@@ -12176,7 +12176,7 @@
     "adj_decel": "12.01"
   },
   {
-    "rank": "75",
+    "rank": "78",
     "hip": "433",
     "st": "KY",
     "sire": "McKinzie",
@@ -12189,7 +12189,7 @@
     "eighth_out": "10.37",
     "quarter_out": "22.81",
     "decel": "12.44",
-    "rating": "68.6",
+    "rating": "68.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -12200,9 +12200,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.42",
+    "adj_eighth_out": "10.43",
     "adj_quarter_out": "22.91",
-    "adj_decel": "12.48"
+    "adj_decel": "12.49"
   },
   {
     "rank": "151",
@@ -12272,8 +12272,8 @@
     "eighth_out": "10.89",
     "quarter_out": "23.16",
     "decel": "12.27",
-    "rating": "80.0",
-    "tier": "ELITE",
+    "rating": "79.6",
+    "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
     "sale_status": "",
@@ -12283,9 +12283,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.94",
+    "adj_eighth_out": "10.95",
     "adj_quarter_out": "23.26",
-    "adj_decel": "12.31"
+    "adj_decel": "12.32"
   },
   {
     "rank": "30",
@@ -12454,7 +12454,7 @@
     "btprod": false
   },
   {
-    "rank": "137",
+    "rank": "138",
     "hip": "443",
     "st": "NY",
     "sire": "Omaha Beach",
@@ -12467,7 +12467,7 @@
     "eighth_out": "11.0",
     "quarter_out": "23.19",
     "decel": "12.19",
-    "rating": "60.3",
+    "rating": "59.9",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -12478,9 +12478,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.05",
+    "adj_eighth_out": "11.06",
     "adj_quarter_out": "23.29",
-    "adj_decel": "12.23"
+    "adj_decel": "12.24"
   },
   {
     "rank": "125",
@@ -12541,7 +12541,7 @@
     "adj_decel": "13.04"
   },
   {
-    "rank": "91",
+    "rank": "95",
     "hip": "446",
     "st": "KY",
     "sire": "Golden Pal",
@@ -12554,7 +12554,7 @@
     "eighth_out": "10.6",
     "quarter_out": "23.46",
     "decel": "12.86",
-    "rating": "66.4",
+    "rating": "66.1",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -12565,9 +12565,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.61",
+    "adj_eighth_out": "10.62",
     "adj_quarter_out": "23.56",
-    "adj_decel": "12.94"
+    "adj_decel": "12.95"
   },
   {
     "rank": "60",
@@ -12624,7 +12624,7 @@
     "btprod": false
   },
   {
-    "rank": "88",
+    "rank": "90",
     "hip": "449",
     "st": "KY",
     "sire": "Pinehurst",
@@ -12637,7 +12637,7 @@
     "eighth_out": "10.91",
     "quarter_out": "22.72",
     "decel": "11.81",
-    "rating": "66.8",
+    "rating": "66.5",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -12648,12 +12648,12 @@
     "btp": true,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.96",
+    "adj_eighth_out": "10.97",
     "adj_quarter_out": "22.82",
-    "adj_decel": "11.85"
+    "adj_decel": "11.86"
   },
   {
-    "rank": "13",
+    "rank": "14",
     "hip": "450",
     "st": "KY",
     "sire": "Drain the Clock",
@@ -12666,7 +12666,7 @@
     "eighth_out": "10.55",
     "quarter_out": "22.86",
     "decel": "12.31",
-    "rating": "82.7",
+    "rating": "82.3",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -12677,9 +12677,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.56",
+    "adj_eighth_out": "10.57",
     "adj_quarter_out": "22.96",
-    "adj_decel": "12.39"
+    "adj_decel": "12.4"
   },
   {
     "rank": "",
@@ -12707,7 +12707,7 @@
     "btprod": false
   },
   {
-    "rank": "358",
+    "rank": "359",
     "hip": "452",
     "st": "KY",
     "sire": "Yaupon",
@@ -12720,7 +12720,7 @@
     "eighth_out": "11.51",
     "quarter_out": "24.12",
     "decel": "12.61",
-    "rating": "31.5",
+    "rating": "31.2",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -12731,12 +12731,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.56",
+    "adj_eighth_out": "11.57",
     "adj_quarter_out": "24.22",
-    "adj_decel": "12.65"
+    "adj_decel": "12.66"
   },
   {
-    "rank": "277",
+    "rank": "279",
     "hip": "453",
     "st": "KY",
     "sire": "Olympiad",
@@ -12749,7 +12749,7 @@
     "eighth_out": "10.62",
     "quarter_out": "23.53",
     "decel": "12.91",
-    "rating": "45.0",
+    "rating": "44.7",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -12760,9 +12760,9 @@
     "btp": false,
     "btprod": true,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.63",
+    "adj_eighth_out": "10.64",
     "adj_quarter_out": "23.63",
-    "adj_decel": "12.99"
+    "adj_decel": "13.0"
   },
   {
     "rank": "",
@@ -12906,7 +12906,7 @@
     "adj_decel": "12.11"
   },
   {
-    "rank": "321",
+    "rank": "322",
     "hip": "459",
     "st": "KY",
     "sire": "Epicenter",
@@ -12919,7 +12919,7 @@
     "eighth_out": "10.92",
     "quarter_out": "23.32",
     "decel": "12.4",
-    "rating": "39.3",
+    "rating": "39.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -12930,9 +12930,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "10.93",
+    "adj_eighth_out": "10.94",
     "adj_quarter_out": "23.42",
-    "adj_decel": "12.48"
+    "adj_decel": "12.49"
   },
   {
     "rank": "310",
@@ -13006,7 +13006,7 @@
     "eighth_out": "10.57",
     "quarter_out": "23.18",
     "decel": "12.61",
-    "rating": "79.6",
+    "rating": "79.2",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -13017,9 +13017,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.62",
+    "adj_eighth_out": "10.63",
     "adj_quarter_out": "23.28",
-    "adj_decel": "12.65"
+    "adj_decel": "12.66"
   },
   {
     "rank": "",
@@ -13267,7 +13267,7 @@
     "adj_decel": "13.08"
   },
   {
-    "rank": "142",
+    "rank": "148",
     "hip": "472",
     "st": "KY",
     "sire": "Life Is Good",
@@ -13280,7 +13280,7 @@
     "eighth_out": "10.83",
     "quarter_out": "23.54",
     "decel": "12.71",
-    "rating": "59.4",
+    "rating": "59.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -13291,12 +13291,12 @@
     "btp": true,
     "btprod": true,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.84",
+    "adj_eighth_out": "10.85",
     "adj_quarter_out": "23.64",
-    "adj_decel": "12.79"
+    "adj_decel": "12.8"
   },
   {
-    "rank": "351",
+    "rank": "353",
     "hip": "473",
     "st": "NY",
     "sire": "Munnings",
@@ -13309,7 +13309,7 @@
     "eighth_out": "10.84",
     "quarter_out": "24.31",
     "decel": "13.47",
-    "rating": "32.8",
+    "rating": "32.4",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -13320,9 +13320,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.75",
+    "adj_eighth_out": "10.76",
     "adj_quarter_out": "24.05",
-    "adj_decel": "13.29"
+    "adj_decel": "13.3"
   },
   {
     "rank": "",
@@ -13479,7 +13479,7 @@
     "btprod": false
   },
   {
-    "rank": "190",
+    "rank": "194",
     "hip": "480",
     "st": "KY",
     "sire": "Army Mule",
@@ -13492,7 +13492,7 @@
     "eighth_out": "10.67",
     "quarter_out": "23.43",
     "decel": "12.76",
-    "rating": "55.0",
+    "rating": "54.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -13503,9 +13503,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.68",
+    "adj_eighth_out": "10.69",
     "adj_quarter_out": "23.53",
-    "adj_decel": "12.84"
+    "adj_decel": "12.85"
   },
   {
     "rank": "",
@@ -13562,7 +13562,7 @@
     "adj_decel": "12.09"
   },
   {
-    "rank": "208",
+    "rank": "215",
     "hip": "483",
     "st": "KY",
     "sire": "Charlatan",
@@ -13575,7 +13575,7 @@
     "eighth_out": "10.85",
     "quarter_out": "24.2",
     "decel": "13.35",
-    "rating": "54.1",
+    "rating": "53.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -13586,9 +13586,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.9",
+    "adj_eighth_out": "10.91",
     "adj_quarter_out": "24.3",
-    "adj_decel": "13.39"
+    "adj_decel": "13.4"
   },
   {
     "rank": "320",
@@ -13774,7 +13774,7 @@
     "eighth_out": "11.12",
     "quarter_out": "23.6",
     "decel": "12.48",
-    "rating": "17.0",
+    "rating": "16.7",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -13785,9 +13785,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.03",
+    "adj_eighth_out": "11.04",
     "adj_quarter_out": "23.34",
-    "adj_decel": "12.3"
+    "adj_decel": "12.31"
   },
   {
     "rank": "",
@@ -14014,7 +14014,7 @@
     "adj_decel": "12.88"
   },
   {
-    "rank": "11",
+    "rank": "12",
     "hip": "499",
     "st": "KY",
     "sire": "Essential Quality",
@@ -14027,7 +14027,7 @@
     "eighth_out": "10.4",
     "quarter_out": "22.76",
     "decel": "12.36",
-    "rating": "83.6",
+    "rating": "83.2",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -14038,12 +14038,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.41",
+    "adj_eighth_out": "10.42",
     "adj_quarter_out": "22.86",
-    "adj_decel": "12.44"
+    "adj_decel": "12.45"
   },
   {
-    "rank": "67",
+    "rank": "69",
     "hip": "500",
     "st": "KY",
     "sire": "Core Beliefs",
@@ -14056,7 +14056,7 @@
     "eighth_out": "10.66",
     "quarter_out": "23.09",
     "decel": "12.43",
-    "rating": "69.8",
+    "rating": "69.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -14067,9 +14067,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.71",
+    "adj_eighth_out": "10.72",
     "adj_quarter_out": "23.19",
-    "adj_decel": "12.47"
+    "adj_decel": "12.48"
   },
   {
     "rank": "",
@@ -14097,7 +14097,7 @@
     "btprod": false
   },
   {
-    "rank": "125",
+    "rank": "126",
     "hip": "502",
     "st": "KY",
     "sire": "Golden Pal",
@@ -14110,7 +14110,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.54",
     "decel": "12.58",
-    "rating": "62.5",
+    "rating": "62.1",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -14121,9 +14121,9 @@
     "btp": true,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.87",
+    "adj_eighth_out": "10.88",
     "adj_quarter_out": "23.28",
-    "adj_decel": "12.4"
+    "adj_decel": "12.41"
   },
   {
     "rank": "361",
@@ -14184,7 +14184,7 @@
     "adj_decel": "13.0"
   },
   {
-    "rank": "161",
+    "rank": "164",
     "hip": "505",
     "st": "KY",
     "sire": "Olympiad",
@@ -14197,7 +14197,7 @@
     "eighth_out": "10.76",
     "quarter_out": "23.64",
     "decel": "12.88",
-    "rating": "58.0",
+    "rating": "57.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -14208,9 +14208,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.77",
+    "adj_eighth_out": "10.78",
     "adj_quarter_out": "23.74",
-    "adj_decel": "12.96"
+    "adj_decel": "12.97"
   },
   {
     "rank": "139",
@@ -14226,7 +14226,7 @@
     "eighth_out": "11.06",
     "quarter_out": "23.71",
     "decel": "12.65",
-    "rating": "59.9",
+    "rating": "59.5",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -14237,9 +14237,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.11",
+    "adj_eighth_out": "11.12",
     "adj_quarter_out": "23.81",
-    "adj_decel": "12.69"
+    "adj_decel": "12.7"
   },
   {
     "rank": "8",
@@ -14271,7 +14271,7 @@
     "adj_decel": "13.56"
   },
   {
-    "rank": "81",
+    "rank": "83",
     "hip": "508",
     "st": "NY",
     "sire": "Central Banker",
@@ -14284,7 +14284,7 @@
     "eighth_out": "10.56",
     "quarter_out": "23.38",
     "decel": "12.82",
-    "rating": "68.0",
+    "rating": "67.7",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -14295,9 +14295,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.57",
+    "adj_eighth_out": "10.58",
     "adj_quarter_out": "23.48",
-    "adj_decel": "12.9"
+    "adj_decel": "12.91"
   },
   {
     "rank": "199",
@@ -14358,7 +14358,7 @@
     "adj_decel": "12.52"
   },
   {
-    "rank": "293",
+    "rank": "297",
     "hip": "511",
     "st": "KY",
     "sire": "Omaha Beach",
@@ -14371,7 +14371,7 @@
     "eighth_out": "11.14",
     "quarter_out": "23.65",
     "decel": "12.51",
-    "rating": "43.8",
+    "rating": "43.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -14382,9 +14382,9 @@
     "btp": true,
     "btprod": true,
     "adj_time": "10.6",
-    "adj_eighth_out": "11.15",
+    "adj_eighth_out": "11.16",
     "adj_quarter_out": "23.75",
-    "adj_decel": "12.59"
+    "adj_decel": "12.6"
   },
   {
     "rank": "",
@@ -14479,7 +14479,7 @@
     "eighth_out": "10.79",
     "quarter_out": "22.94",
     "decel": "12.15",
-    "rating": "74.6",
+    "rating": "74.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -14490,12 +14490,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.8",
+    "adj_eighth_out": "10.81",
     "adj_quarter_out": "23.04",
-    "adj_decel": "12.23"
+    "adj_decel": "12.24"
   },
   {
-    "rank": "68",
+    "rank": "70",
     "hip": "516",
     "st": "FL",
     "sire": "Colonel Liam",
@@ -14508,7 +14508,7 @@
     "eighth_out": "10.52",
     "quarter_out": "23.22",
     "decel": "12.7",
-    "rating": "69.7",
+    "rating": "69.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -14519,12 +14519,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.53",
+    "adj_eighth_out": "10.54",
     "adj_quarter_out": "23.32",
-    "adj_decel": "12.78"
+    "adj_decel": "12.79"
   },
   {
-    "rank": "255",
+    "rank": "258",
     "hip": "517",
     "st": "KY",
     "sire": "Tapit",
@@ -14537,7 +14537,7 @@
     "eighth_out": "11.04",
     "quarter_out": "23.68",
     "decel": "12.64",
-    "rating": "48.4",
+    "rating": "48.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -14548,9 +14548,9 @@
     "btp": true,
     "btprod": true,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.09",
+    "adj_eighth_out": "11.1",
     "adj_quarter_out": "23.78",
-    "adj_decel": "12.68"
+    "adj_decel": "12.69"
   },
   {
     "rank": "",
@@ -14578,7 +14578,7 @@
     "btprod": false
   },
   {
-    "rank": "246",
+    "rank": "250",
     "hip": "519",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -14591,7 +14591,7 @@
     "eighth_out": "11.03",
     "quarter_out": "23.81",
     "decel": "12.78",
-    "rating": "49.1",
+    "rating": "48.8",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -14602,9 +14602,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.94",
+    "adj_eighth_out": "10.95",
     "adj_quarter_out": "23.55",
-    "adj_decel": "12.6"
+    "adj_decel": "12.61"
   },
   {
     "rank": "",
@@ -14657,7 +14657,7 @@
     "btprod": false
   },
   {
-    "rank": "317",
+    "rank": "320",
     "hip": "522",
     "st": "KY",
     "sire": "Good Magic",
@@ -14670,7 +14670,7 @@
     "eighth_out": "11.16",
     "quarter_out": "23.97",
     "decel": "12.81",
-    "rating": "39.8",
+    "rating": "39.4",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -14681,9 +14681,9 @@
     "btp": false,
     "btprod": true,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.21",
+    "adj_eighth_out": "11.22",
     "adj_quarter_out": "24.07",
-    "adj_decel": "12.85"
+    "adj_decel": "12.86"
   },
   {
     "rank": "",
@@ -14715,7 +14715,7 @@
     "adj_decel": "14.73"
   },
   {
-    "rank": "60",
+    "rank": "62",
     "hip": "524",
     "st": "NY",
     "sire": "Independence Hall",
@@ -14728,7 +14728,7 @@
     "eighth_out": "10.84",
     "quarter_out": "23.44",
     "decel": "12.6",
-    "rating": "70.8",
+    "rating": "70.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -14739,9 +14739,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.75",
+    "adj_eighth_out": "10.76",
     "adj_quarter_out": "23.18",
-    "adj_decel": "12.42"
+    "adj_decel": "12.43"
   },
   {
     "rank": "1",
@@ -14773,7 +14773,7 @@
     "adj_decel": "14.03"
   },
   {
-    "rank": "187",
+    "rank": "189",
     "hip": "526",
     "st": "KY",
     "sire": "Yaupon",
@@ -14786,7 +14786,7 @@
     "eighth_out": "10.89",
     "quarter_out": "23.51",
     "decel": "12.62",
-    "rating": "55.4",
+    "rating": "55.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -14797,9 +14797,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.94",
+    "adj_eighth_out": "10.95",
     "adj_quarter_out": "23.61",
-    "adj_decel": "12.66"
+    "adj_decel": "12.67"
   },
   {
     "rank": "365",
@@ -14831,7 +14831,7 @@
     "adj_decel": "13.42"
   },
   {
-    "rank": "289",
+    "rank": "293",
     "hip": "528",
     "st": "FL",
     "sire": "Colonel Liam",
@@ -14844,7 +14844,7 @@
     "eighth_out": "11.01",
     "quarter_out": "24.33",
     "decel": "13.32",
-    "rating": "44.0",
+    "rating": "43.7",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -14855,9 +14855,9 @@
     "btp": false,
     "btprod": true,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.06",
+    "adj_eighth_out": "11.07",
     "adj_quarter_out": "24.43",
-    "adj_decel": "13.36"
+    "adj_decel": "13.37"
   },
   {
     "rank": "34",
@@ -14889,7 +14889,7 @@
     "adj_decel": "14.16"
   },
   {
-    "rank": "61",
+    "rank": "63",
     "hip": "530",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -14902,7 +14902,7 @@
     "eighth_out": "10.76",
     "quarter_out": "23.8",
     "decel": "13.04",
-    "rating": "70.8",
+    "rating": "70.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -14913,9 +14913,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.81",
+    "adj_eighth_out": "10.82",
     "adj_quarter_out": "23.9",
-    "adj_decel": "13.08"
+    "adj_decel": "13.09"
   },
   {
     "rank": "",
@@ -14997,7 +14997,7 @@
     "adj_decel": "12.16"
   },
   {
-    "rank": "104",
+    "rank": "107",
     "hip": "534",
     "st": "NY",
     "sire": "Mo Donegal",
@@ -15010,7 +15010,7 @@
     "eighth_out": "11.26",
     "quarter_out": "23.3",
     "decel": "12.04",
-    "rating": "64.6",
+    "rating": "64.2",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15021,12 +15021,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.27",
+    "adj_eighth_out": "11.28",
     "adj_quarter_out": "23.4",
-    "adj_decel": "12.12"
+    "adj_decel": "12.13"
   },
   {
-    "rank": "198",
+    "rank": "202",
     "hip": "535",
     "st": "KY",
     "sire": "Street Sense",
@@ -15039,7 +15039,7 @@
     "eighth_out": "10.83",
     "quarter_out": "23.36",
     "decel": "12.53",
-    "rating": "54.6",
+    "rating": "54.3",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15050,9 +15050,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.84",
+    "adj_eighth_out": "10.85",
     "adj_quarter_out": "23.46",
-    "adj_decel": "12.61"
+    "adj_decel": "12.62"
   },
   {
     "rank": "",
@@ -15080,7 +15080,7 @@
     "btprod": false
   },
   {
-    "rank": "193",
+    "rank": "199",
     "hip": "537",
     "st": "KY",
     "sire": "Mandaloun",
@@ -15093,7 +15093,7 @@
     "eighth_out": "11.15",
     "quarter_out": "23.29",
     "decel": "12.14",
-    "rating": "54.8",
+    "rating": "54.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15104,9 +15104,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.16",
+    "adj_eighth_out": "11.17",
     "adj_quarter_out": "23.39",
-    "adj_decel": "12.22"
+    "adj_decel": "12.23"
   },
   {
     "rank": "129",
@@ -15122,7 +15122,7 @@
     "eighth_out": "10.87",
     "quarter_out": "23.37",
     "decel": "12.5",
-    "rating": "62.0",
+    "rating": "61.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15133,12 +15133,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.92",
+    "adj_eighth_out": "10.93",
     "adj_quarter_out": "23.47",
-    "adj_decel": "12.54"
+    "adj_decel": "12.55"
   },
   {
-    "rank": "85",
+    "rank": "87",
     "hip": "539",
     "st": "NY",
     "sire": "Mind Control",
@@ -15151,7 +15151,7 @@
     "eighth_out": "10.71",
     "quarter_out": "23.36",
     "decel": "12.65",
-    "rating": "67.2",
+    "rating": "66.8",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -15162,9 +15162,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.72",
+    "adj_eighth_out": "10.73",
     "adj_quarter_out": "23.46",
-    "adj_decel": "12.73"
+    "adj_decel": "12.74"
   },
   {
     "rank": "",
@@ -15192,7 +15192,7 @@
     "btprod": false
   },
   {
-    "rank": "194",
+    "rank": "200",
     "hip": "541",
     "st": "KY",
     "sire": "Early Voting",
@@ -15205,7 +15205,7 @@
     "eighth_out": "11.11",
     "quarter_out": "23.5",
     "decel": "12.39",
-    "rating": "54.8",
+    "rating": "54.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15216,9 +15216,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.12",
+    "adj_eighth_out": "11.13",
     "adj_quarter_out": "23.6",
-    "adj_decel": "12.47"
+    "adj_decel": "12.48"
   },
   {
     "rank": "174",
@@ -15279,7 +15279,7 @@
     "adj_decel": "12.86"
   },
   {
-    "rank": "123",
+    "rank": "124",
     "hip": "544",
     "st": "KY",
     "sire": "Jackie's Warrior",
@@ -15292,7 +15292,7 @@
     "eighth_out": "11.0",
     "quarter_out": "23.93",
     "decel": "12.93",
-    "rating": "62.7",
+    "rating": "62.3",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15303,9 +15303,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.05",
+    "adj_eighth_out": "11.06",
     "adj_quarter_out": "24.03",
-    "adj_decel": "12.97"
+    "adj_decel": "12.98"
   },
   {
     "rank": "",
@@ -15362,7 +15362,7 @@
     "adj_decel": "12.56"
   },
   {
-    "rank": "279",
+    "rank": "281",
     "hip": "547",
     "st": "KY",
     "sire": "Knicks Go",
@@ -15375,7 +15375,7 @@
     "eighth_out": "11.21",
     "quarter_out": "23.8",
     "decel": "12.59",
-    "rating": "44.9",
+    "rating": "44.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -15386,9 +15386,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.26",
+    "adj_eighth_out": "11.27",
     "adj_quarter_out": "23.9",
-    "adj_decel": "12.63"
+    "adj_decel": "12.64"
   },
   {
     "rank": "364",
@@ -15420,7 +15420,7 @@
     "adj_decel": "12.99"
   },
   {
-    "rank": "283",
+    "rank": "286",
     "hip": "549",
     "st": "KY",
     "sire": "Tiz the Law",
@@ -15433,7 +15433,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.48",
     "decel": "12.52",
-    "rating": "44.6",
+    "rating": "44.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -15444,9 +15444,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "10.97",
+    "adj_eighth_out": "10.98",
     "adj_quarter_out": "23.58",
-    "adj_decel": "12.6"
+    "adj_decel": "12.61"
   },
   {
     "rank": "46",
@@ -15478,7 +15478,7 @@
     "adj_decel": "14.06"
   },
   {
-    "rank": "227",
+    "rank": "228",
     "hip": "551",
     "st": "KY",
     "sire": "Highly Motivated",
@@ -15491,7 +15491,7 @@
     "eighth_out": "10.88",
     "quarter_out": "24.03",
     "decel": "13.15",
-    "rating": "52.0",
+    "rating": "51.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15502,9 +15502,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.93",
+    "adj_eighth_out": "10.94",
     "adj_quarter_out": "24.13",
-    "adj_decel": "13.19"
+    "adj_decel": "13.2"
   },
   {
     "rank": "329",
@@ -15619,7 +15619,7 @@
     "btprod": false
   },
   {
-    "rank": "225",
+    "rank": "226",
     "hip": "556",
     "st": "KY",
     "sire": "Corniche",
@@ -15632,7 +15632,7 @@
     "eighth_out": "11.25",
     "quarter_out": "24.0",
     "decel": "12.75",
-    "rating": "52.2",
+    "rating": "51.8",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15643,9 +15643,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.16",
+    "adj_eighth_out": "11.17",
     "adj_quarter_out": "23.74",
-    "adj_decel": "12.57"
+    "adj_decel": "12.58"
   },
   {
     "rank": "62",
@@ -15702,7 +15702,7 @@
     "btprod": false
   },
   {
-    "rank": "110",
+    "rank": "111",
     "hip": "559",
     "st": "KY",
     "sire": "Liam's Map",
@@ -15715,7 +15715,7 @@
     "eighth_out": "11.05",
     "quarter_out": "22.9",
     "decel": "11.85",
-    "rating": "64.0",
+    "rating": "63.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -15726,9 +15726,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.06",
+    "adj_eighth_out": "11.07",
     "adj_quarter_out": "23.0",
-    "adj_decel": "11.93"
+    "adj_decel": "11.94"
   },
   {
     "rank": "",
@@ -15872,7 +15872,7 @@
     "adj_decel": "12.76"
   },
   {
-    "rank": "241",
+    "rank": "245",
     "hip": "565",
     "st": "NY",
     "sire": "Drain the Clock",
@@ -15885,7 +15885,7 @@
     "eighth_out": "11.3",
     "quarter_out": "24.17",
     "decel": "12.87",
-    "rating": "49.3",
+    "rating": "49.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -15896,9 +15896,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.21",
+    "adj_eighth_out": "11.22",
     "adj_quarter_out": "23.91",
-    "adj_decel": "12.69"
+    "adj_decel": "12.7"
   },
   {
     "rank": "185",
@@ -15968,7 +15968,7 @@
     "eighth_out": "11.39",
     "quarter_out": "24.7",
     "decel": "13.31",
-    "rating": "33.0",
+    "rating": "32.7",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -15979,9 +15979,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.3",
+    "adj_eighth_out": "11.31",
     "adj_quarter_out": "24.44",
-    "adj_decel": "13.13"
+    "adj_decel": "13.14"
   },
   {
     "rank": "271",
@@ -16092,7 +16092,7 @@
     "btprod": true
   },
   {
-    "rank": "262",
+    "rank": "263",
     "hip": "573",
     "st": "FL",
     "sire": "Take Charge Indy",
@@ -16105,7 +16105,7 @@
     "eighth_out": "10.98",
     "quarter_out": "24.31",
     "decel": "13.33",
-    "rating": "47.7",
+    "rating": "47.4",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -16116,9 +16116,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.89",
+    "adj_eighth_out": "10.9",
     "adj_quarter_out": "24.05",
-    "adj_decel": "13.15"
+    "adj_decel": "13.16"
   },
   {
     "rank": "",
@@ -16146,7 +16146,7 @@
     "btprod": false
   },
   {
-    "rank": "21",
+    "rank": "23",
     "hip": "575",
     "st": "KY",
     "sire": "Early Voting",
@@ -16159,7 +16159,7 @@
     "eighth_out": "10.65",
     "quarter_out": "23.14",
     "decel": "12.49",
-    "rating": "79.5",
+    "rating": "79.1",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -16170,12 +16170,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.7",
+    "adj_eighth_out": "10.71",
     "adj_quarter_out": "23.24",
-    "adj_decel": "12.53"
+    "adj_decel": "12.54"
   },
   {
-    "rank": "9",
+    "rank": "10",
     "hip": "576",
     "st": "KY",
     "sire": "Cyberknife",
@@ -16188,7 +16188,7 @@
     "eighth_out": "10.51",
     "quarter_out": "22.94",
     "decel": "12.43",
-    "rating": "84.3",
+    "rating": "84.0",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -16199,9 +16199,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.56",
+    "adj_eighth_out": "10.57",
     "adj_quarter_out": "23.04",
-    "adj_decel": "12.47"
+    "adj_decel": "12.48"
   },
   {
     "rank": "102",
@@ -16233,7 +16233,7 @@
     "adj_decel": "11.95"
   },
   {
-    "rank": "214",
+    "rank": "216",
     "hip": "578",
     "st": "PA",
     "sire": "Cyberknife",
@@ -16246,7 +16246,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.71",
     "decel": "12.75",
-    "rating": "53.8",
+    "rating": "53.5",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -16257,9 +16257,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.01",
+    "adj_eighth_out": "11.02",
     "adj_quarter_out": "23.81",
-    "adj_decel": "12.79"
+    "adj_decel": "12.8"
   },
   {
     "rank": "",
@@ -16312,7 +16312,7 @@
     "btprod": false
   },
   {
-    "rank": "112",
+    "rank": "114",
     "hip": "581",
     "st": "KY",
     "sire": "Munnings",
@@ -16325,7 +16325,7 @@
     "eighth_out": "10.88",
     "quarter_out": "23.34",
     "decel": "12.46",
-    "rating": "63.7",
+    "rating": "63.3",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -16336,9 +16336,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.89",
+    "adj_eighth_out": "10.9",
     "adj_quarter_out": "23.44",
-    "adj_decel": "12.54"
+    "adj_decel": "12.55"
   },
   {
     "rank": "35",
@@ -16370,7 +16370,7 @@
     "adj_decel": "13.63"
   },
   {
-    "rank": "95",
+    "rank": "100",
     "hip": "583",
     "st": "KY",
     "sire": "Curlin",
@@ -16383,7 +16383,7 @@
     "eighth_out": "10.69",
     "quarter_out": "23.04",
     "decel": "12.35",
-    "rating": "66.2",
+    "rating": "65.8",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -16394,9 +16394,9 @@
     "btp": false,
     "btprod": true,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.74",
+    "adj_eighth_out": "10.75",
     "adj_quarter_out": "23.14",
-    "adj_decel": "12.39"
+    "adj_decel": "12.4"
   },
   {
     "rank": "73",
@@ -16412,7 +16412,7 @@
     "eighth_out": "10.82",
     "quarter_out": "23.42",
     "decel": "12.6",
-    "rating": "69.1",
+    "rating": "68.7",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -16423,9 +16423,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.87",
+    "adj_eighth_out": "10.88",
     "adj_quarter_out": "23.52",
-    "adj_decel": "12.64"
+    "adj_decel": "12.65"
   },
   {
     "rank": "252",
@@ -16486,7 +16486,7 @@
     "adj_decel": "13.34"
   },
   {
-    "rank": "308",
+    "rank": "310",
     "hip": "587",
     "st": "KY",
     "sire": "Mandaloun",
@@ -16499,7 +16499,7 @@
     "eighth_out": "11.07",
     "quarter_out": "23.84",
     "decel": "12.77",
-    "rating": "41.6",
+    "rating": "41.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -16510,9 +16510,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.12",
+    "adj_eighth_out": "11.13",
     "adj_quarter_out": "23.94",
-    "adj_decel": "12.81"
+    "adj_decel": "12.82"
   },
   {
     "rank": "",
@@ -16569,7 +16569,7 @@
     "adj_decel": "13.0"
   },
   {
-    "rank": "203",
+    "rank": "209",
     "hip": "590",
     "st": "KY",
     "sire": "Hard Spun",
@@ -16582,7 +16582,7 @@
     "eighth_out": "11.1",
     "quarter_out": "24.32",
     "decel": "13.22",
-    "rating": "54.4",
+    "rating": "54.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -16593,12 +16593,12 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "11.11",
+    "adj_eighth_out": "11.12",
     "adj_quarter_out": "24.42",
-    "adj_decel": "13.3"
+    "adj_decel": "13.31"
   },
   {
-    "rank": "240",
+    "rank": "246",
     "hip": "591",
     "st": "KY",
     "sire": "Blame",
@@ -16611,7 +16611,7 @@
     "eighth_out": "11.25",
     "quarter_out": "23.32",
     "decel": "12.07",
-    "rating": "49.4",
+    "rating": "49.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -16622,9 +16622,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.26",
+    "adj_eighth_out": "11.27",
     "adj_quarter_out": "23.42",
-    "adj_decel": "12.15"
+    "adj_decel": "12.16"
   },
   {
     "rank": "",
@@ -16710,7 +16710,7 @@
     "adj_decel": "12.97"
   },
   {
-    "rank": "257",
+    "rank": "259",
     "hip": "595",
     "st": "KY",
     "sire": "Mandaloun",
@@ -16723,7 +16723,7 @@
     "eighth_out": "10.97",
     "quarter_out": "23.56",
     "decel": "12.59",
-    "rating": "48.3",
+    "rating": "48.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -16734,9 +16734,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "11.02",
+    "adj_eighth_out": "11.03",
     "adj_quarter_out": "23.66",
-    "adj_decel": "12.63"
+    "adj_decel": "12.64"
   },
   {
     "rank": "18",
@@ -16768,7 +16768,7 @@
     "adj_decel": "13.55"
   },
   {
-    "rank": "285",
+    "rank": "288",
     "hip": "597",
     "st": "KY",
     "sire": "Rock Your World",
@@ -16781,7 +16781,7 @@
     "eighth_out": "10.73",
     "quarter_out": "23.88",
     "decel": "13.15",
-    "rating": "44.4",
+    "rating": "44.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -16792,9 +16792,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.64",
+    "adj_eighth_out": "10.65",
     "adj_quarter_out": "23.62",
-    "adj_decel": "12.97"
+    "adj_decel": "12.98"
   },
   {
     "rank": "19",
@@ -16810,7 +16810,7 @@
     "eighth_out": "10.89",
     "quarter_out": "23.06",
     "decel": "12.17",
-    "rating": "79.7",
+    "rating": "79.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -16821,9 +16821,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "9.8",
-    "adj_eighth_out": "10.94",
+    "adj_eighth_out": "10.95",
     "adj_quarter_out": "23.16",
-    "adj_decel": "12.21"
+    "adj_decel": "12.22"
   },
   {
     "rank": "40",
@@ -16884,7 +16884,7 @@
     "adj_decel": "13.22"
   },
   {
-    "rank": "195",
+    "rank": "197",
     "hip": "601",
     "st": "KY",
     "sire": "Cyberknife",
@@ -16897,7 +16897,7 @@
     "eighth_out": "10.84",
     "quarter_out": "23.39",
     "decel": "12.55",
-    "rating": "54.8",
+    "rating": "54.5",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -16908,9 +16908,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.0",
-    "adj_eighth_out": "10.75",
+    "adj_eighth_out": "10.76",
     "adj_quarter_out": "23.13",
-    "adj_decel": "12.37"
+    "adj_decel": "12.38"
   },
   {
     "rank": "16",
@@ -16942,7 +16942,7 @@
     "adj_decel": "13.98"
   },
   {
-    "rank": "169",
+    "rank": "172",
     "hip": "603",
     "st": "KY",
     "sire": "Yaupon",
@@ -16955,7 +16955,7 @@
     "eighth_out": "10.94",
     "quarter_out": "23.41",
     "decel": "12.47",
-    "rating": "56.7",
+    "rating": "56.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -16966,9 +16966,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.2",
-    "adj_eighth_out": "10.99",
+    "adj_eighth_out": "11.0",
     "adj_quarter_out": "23.51",
-    "adj_decel": "12.51"
+    "adj_decel": "12.52"
   },
   {
     "rank": "391",
@@ -16984,7 +16984,7 @@
     "eighth_out": "11.64",
     "quarter_out": "24.57",
     "decel": "12.93",
-    "rating": "15.6",
+    "rating": "15.3",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -16995,9 +16995,9 @@
     "btp": false,
     "btprod": false,
     "adj_time": "10.4",
-    "adj_eighth_out": "11.65",
+    "adj_eighth_out": "11.66",
     "adj_quarter_out": "24.67",
-    "adj_decel": "13.01"
+    "adj_decel": "13.02"
   },
   {
     "rank": "36",
@@ -17141,7 +17141,7 @@
     "btprod": false
   },
   {
-    "rank": "199",
+    "rank": "204",
     "hip": "610",
     "st": "KY",
     "sire": "Girvin",
@@ -17154,7 +17154,7 @@
     "eighth_out": "11.2",
     "quarter_out": "23.82",
     "decel": "12.62",
-    "rating": "54.6",
+    "rating": "54.2",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -17166,9 +17166,9 @@
     "btprod": false,
     "stride_imputed": "true",
     "adj_time": "10.0",
-    "adj_eighth_out": "11.11",
+    "adj_eighth_out": "11.12",
     "adj_quarter_out": "23.56",
-    "adj_decel": "12.44"
+    "adj_decel": "12.45"
   },
   {
     "rank": "11",
@@ -17478,7 +17478,7 @@
     "adj_decel": "14.95"
   },
   {
-    "rank": "250",
+    "rank": "247",
     "hip": "622",
     "st": "KY",
     "sire": "Drain the Clock",
@@ -17491,7 +17491,7 @@
     "eighth_out": "11.19",
     "quarter_out": "23.49",
     "decel": "12.3",
-    "rating": "48.9",
+    "rating": "49.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -17607,7 +17607,7 @@
     "eighth_out": "10.97",
     "quarter_out": "23.9",
     "decel": "12.93",
-    "rating": "45.7",
+    "rating": "45.8",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -17652,7 +17652,7 @@
     "adj_decel": "12.3"
   },
   {
-    "rank": "242",
+    "rank": "241",
     "hip": "628",
     "st": "OH",
     "sire": "Oscar Performance",
@@ -17781,7 +17781,7 @@
     "eighth_out": "11.5",
     "quarter_out": "24.33",
     "decel": "12.83",
-    "rating": "29.5",
+    "rating": "29.6",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -17826,7 +17826,7 @@
     "adj_decel": "12.93"
   },
   {
-    "rank": "258",
+    "rank": "257",
     "hip": "634",
     "st": "KY",
     "sire": "Game Winner",
@@ -17955,7 +17955,7 @@
     "eighth_out": "11.44",
     "quarter_out": "23.98",
     "decel": "12.54",
-    "rating": "41.7",
+    "rating": "41.8",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -18179,7 +18179,7 @@
     "eighth_out": "11.55",
     "quarter_out": "24.33",
     "decel": "12.78",
-    "rating": "40.4",
+    "rating": "40.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -18307,7 +18307,7 @@
     "adj_decel": "12.71"
   },
   {
-    "rank": "286",
+    "rank": "283",
     "hip": "651",
     "st": "KY",
     "sire": "Munnings",
@@ -18365,7 +18365,7 @@
     "adj_decel": "13.73"
   },
   {
-    "rank": "280",
+    "rank": "278",
     "hip": "653",
     "st": "KY",
     "sire": "Nashville",
@@ -18378,7 +18378,7 @@
     "eighth_out": "11.39",
     "quarter_out": "23.98",
     "decel": "12.59",
-    "rating": "44.8",
+    "rating": "44.9",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -18465,7 +18465,7 @@
     "eighth_out": "10.95",
     "quarter_out": "23.68",
     "decel": "12.73",
-    "rating": "58.3",
+    "rating": "58.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -18481,7 +18481,7 @@
     "adj_decel": "12.62"
   },
   {
-    "rank": "374",
+    "rank": "373",
     "hip": "657",
     "st": "FL",
     "sire": "Knicks Go",
@@ -18797,7 +18797,7 @@
     "eighth_out": "11.1",
     "quarter_out": "23.29",
     "decel": "12.19",
-    "rating": "71.0",
+    "rating": "71.1",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -18851,7 +18851,7 @@
     "eighth_out": "11.09",
     "quarter_out": "24.31",
     "decel": "13.22",
-    "rating": "37.4",
+    "rating": "37.5",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -18867,7 +18867,7 @@
     "adj_decel": "13.28"
   },
   {
-    "rank": "168",
+    "rank": "169",
     "hip": "671",
     "st": "KY",
     "sire": "Jackie's Warrior",
@@ -19083,7 +19083,7 @@
     "adj_decel": "13.98"
   },
   {
-    "rank": "23",
+    "rank": "21",
     "hip": "679",
     "st": "KY",
     "sire": "Not This Time",
@@ -19374,7 +19374,7 @@
     "eighth_out": "10.65",
     "quarter_out": "23.41",
     "decel": "12.76",
-    "rating": "57.8",
+    "rating": "57.9",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -19390,7 +19390,7 @@
     "adj_decel": "12.75"
   },
   {
-    "rank": "238",
+    "rank": "237",
     "hip": "690",
     "st": "KY",
     "sire": "Olympiad",
@@ -19403,7 +19403,7 @@
     "eighth_out": "11.28",
     "quarter_out": "23.96",
     "decel": "12.68",
-    "rating": "49.6",
+    "rating": "49.7",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -19648,7 +19648,7 @@
     "eighth_out": "11.07",
     "quarter_out": "23.43",
     "decel": "12.36",
-    "rating": "75.5",
+    "rating": "75.6",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -19838,7 +19838,7 @@
     "adj_decel": "13.4"
   },
   {
-    "rank": "124",
+    "rank": "121",
     "hip": "706",
     "st": "NY",
     "sire": "Nyquist",
@@ -19851,7 +19851,7 @@
     "eighth_out": "11.16",
     "quarter_out": "23.85",
     "decel": "12.69",
-    "rating": "62.6",
+    "rating": "62.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -20000,7 +20000,7 @@
     "adj_decel": "12.56"
   },
   {
-    "rank": "337",
+    "rank": "335",
     "hip": "712",
     "st": "FL",
     "sire": "Bucchero",
@@ -20013,7 +20013,7 @@
     "eighth_out": "10.83",
     "quarter_out": "24.16",
     "decel": "13.33",
-    "rating": "36.5",
+    "rating": "36.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -20054,7 +20054,7 @@
     "btprod": false
   },
   {
-    "rank": "41",
+    "rank": "40",
     "hip": "714",
     "st": "FL",
     "sire": "Tiz the Law",
@@ -20067,7 +20067,7 @@
     "eighth_out": "10.76",
     "quarter_out": "22.89",
     "decel": "12.13",
-    "rating": "73.8",
+    "rating": "73.9",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -20224,7 +20224,7 @@
     "btprod": false
   },
   {
-    "rank": "105",
+    "rank": "102",
     "hip": "720",
     "st": "FL",
     "sire": "Beau Liam",
@@ -20237,7 +20237,7 @@
     "eighth_out": "10.89",
     "quarter_out": "23.01",
     "decel": "12.12",
-    "rating": "64.6",
+    "rating": "64.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -20291,7 +20291,7 @@
     "eighth_out": "11.61",
     "quarter_out": "24.73",
     "decel": "13.12",
-    "rating": "29.6",
+    "rating": "29.7",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -20394,7 +20394,7 @@
     "adj_decel": "14.3"
   },
   {
-    "rank": "164",
+    "rank": "165",
     "hip": "726",
     "st": "KY",
     "sire": "Flightline",
@@ -20407,7 +20407,7 @@
     "eighth_out": "11.11",
     "quarter_out": "23.66",
     "decel": "12.55",
-    "rating": "57.6",
+    "rating": "57.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -20560,7 +20560,7 @@
     "adj_decel": "13.05"
   },
   {
-    "rank": "113",
+    "rank": "112",
     "hip": "732",
     "st": "NY",
     "sire": "Highly Motivated",
@@ -20573,7 +20573,7 @@
     "eighth_out": "10.76",
     "quarter_out": "23.23",
     "decel": "12.47",
-    "rating": "63.5",
+    "rating": "63.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -20631,7 +20631,7 @@
     "eighth_out": "10.63",
     "quarter_out": "22.56",
     "decel": "11.93",
-    "rating": "94.6",
+    "rating": "94.7",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -20660,7 +20660,7 @@
     "eighth_out": "11.5",
     "quarter_out": "24.2",
     "decel": "12.7",
-    "rating": "50.6",
+    "rating": "50.7",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -20676,7 +20676,7 @@
     "adj_decel": "12.76"
   },
   {
-    "rank": "80",
+    "rank": "79",
     "hip": "736",
     "st": "NY",
     "sire": "Solomini",
@@ -20689,7 +20689,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.76",
     "decel": "12.8",
-    "rating": "68.2",
+    "rating": "68.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -20705,7 +20705,7 @@
     "adj_decel": "12.86"
   },
   {
-    "rank": "294",
+    "rank": "291",
     "hip": "737",
     "st": "KY",
     "sire": "Constitution",
@@ -20817,7 +20817,7 @@
     "adj_decel": "12.78"
   },
   {
-    "rank": "319",
+    "rank": "318",
     "hip": "741",
     "st": "MD",
     "sire": "Charlatan",
@@ -20830,7 +20830,7 @@
     "eighth_out": "11.24",
     "quarter_out": "24.1",
     "decel": "12.86",
-    "rating": "39.5",
+    "rating": "39.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -21029,7 +21029,7 @@
     "eighth_out": "11.08",
     "quarter_out": "24.11",
     "decel": "13.03",
-    "rating": "27.9",
+    "rating": "28.0",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -21045,7 +21045,7 @@
     "adj_decel": "12.92"
   },
   {
-    "rank": "216",
+    "rank": "213",
     "hip": "749",
     "st": "KY",
     "sire": "Yaupon",
@@ -21058,7 +21058,7 @@
     "eighth_out": "11.01",
     "quarter_out": "23.37",
     "decel": "12.36",
-    "rating": "53.7",
+    "rating": "53.8",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -21137,7 +21137,7 @@
     "eighth_out": "11.44",
     "quarter_out": "24.22",
     "decel": "12.78",
-    "rating": "38.2",
+    "rating": "38.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -21224,7 +21224,7 @@
     "eighth_out": "10.75",
     "quarter_out": "23.54",
     "decel": "12.79",
-    "rating": "58.4",
+    "rating": "58.5",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -21489,7 +21489,7 @@
     "btprod": false
   },
   {
-    "rank": "83",
+    "rank": "81",
     "hip": "765",
     "st": "KY",
     "sire": "Mendelssohn",
@@ -21502,7 +21502,7 @@
     "eighth_out": "11.14",
     "quarter_out": "23.72",
     "decel": "12.58",
-    "rating": "67.7",
+    "rating": "67.8",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -21572,7 +21572,7 @@
     "btprod": false
   },
   {
-    "rank": "176",
+    "rank": "174",
     "hip": "768",
     "st": "NY",
     "sire": "Solomini",
@@ -21630,7 +21630,7 @@
     "adj_decel": "12.79"
   },
   {
-    "rank": "97",
+    "rank": "96",
     "hip": "770",
     "st": "KY",
     "sire": "Speaker's Corner",
@@ -21643,7 +21643,7 @@
     "eighth_out": "10.64",
     "quarter_out": "23.13",
     "decel": "12.49",
-    "rating": "66.0",
+    "rating": "66.1",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -21659,7 +21659,7 @@
     "adj_decel": "12.48"
   },
   {
-    "rank": "282",
+    "rank": "280",
     "hip": "771",
     "st": "IN",
     "sire": "Greatest Honour",
@@ -21730,7 +21730,7 @@
     "eighth_out": "10.77",
     "quarter_out": "23.57",
     "decel": "12.8",
-    "rating": "58.9",
+    "rating": "59.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -21796,7 +21796,7 @@
     "btprod": false
   },
   {
-    "rank": "239",
+    "rank": "238",
     "hip": "776",
     "st": "KY",
     "sire": "Army Mule",
@@ -21809,7 +21809,7 @@
     "eighth_out": "10.87",
     "quarter_out": "23.74",
     "decel": "12.87",
-    "rating": "49.5",
+    "rating": "49.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -21962,7 +21962,7 @@
     "btprod": false
   },
   {
-    "rank": "182",
+    "rank": "184",
     "hip": "782",
     "st": "KY",
     "sire": "Authentic",
@@ -21991,7 +21991,7 @@
     "adj_decel": "12.21"
   },
   {
-    "rank": "243",
+    "rank": "240",
     "hip": "783",
     "st": "KY",
     "sire": "Upstart",
@@ -22004,7 +22004,7 @@
     "eighth_out": "11.14",
     "quarter_out": "23.88",
     "decel": "12.74",
-    "rating": "49.2",
+    "rating": "49.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -22103,7 +22103,7 @@
     "adj_decel": "13.1"
   },
   {
-    "rank": "156",
+    "rank": "157",
     "hip": "787",
     "st": "KY",
     "sire": "Drain the Clock",
@@ -22211,7 +22211,7 @@
     "btprod": false
   },
   {
-    "rank": "62",
+    "rank": "59",
     "hip": "791",
     "st": "KY",
     "sire": "Golden Pal",
@@ -22224,7 +22224,7 @@
     "eighth_out": "10.75",
     "quarter_out": "22.89",
     "decel": "12.14",
-    "rating": "70.8",
+    "rating": "70.9",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -22269,7 +22269,7 @@
     "adj_decel": "12.14"
   },
   {
-    "rank": "144",
+    "rank": "140",
     "hip": "793",
     "st": "KY",
     "sire": "Girvin",
@@ -22282,7 +22282,7 @@
     "eighth_out": "11.22",
     "quarter_out": "23.67",
     "decel": "12.45",
-    "rating": "59.3",
+    "rating": "59.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -22373,7 +22373,7 @@
     "btprod": false
   },
   {
-    "rank": "211",
+    "rank": "210",
     "hip": "797",
     "st": "KY",
     "sire": "Practical Joke",
@@ -22386,7 +22386,7 @@
     "eighth_out": "10.84",
     "quarter_out": "23.77",
     "decel": "12.93",
-    "rating": "53.9",
+    "rating": "54.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -22610,7 +22610,7 @@
     "eighth_out": "10.41",
     "quarter_out": "23.27",
     "decel": "12.86",
-    "rating": "82.2",
+    "rating": "82.3",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -22626,7 +22626,7 @@
     "adj_decel": "12.85"
   },
   {
-    "rank": "346",
+    "rank": "345",
     "hip": "806",
     "st": "KY",
     "sire": "Independence Hall",
@@ -22639,7 +22639,7 @@
     "eighth_out": "10.95",
     "quarter_out": "24.1",
     "decel": "13.15",
-    "rating": "33.7",
+    "rating": "33.8",
     "tier": "BELOW AVG",
     "sex": "C",
     "section": "1/8",
@@ -22680,7 +22680,7 @@
     "btprod": true
   },
   {
-    "rank": "290",
+    "rank": "287",
     "hip": "808",
     "st": "KY",
     "sire": "Epicenter",
@@ -22693,7 +22693,7 @@
     "eighth_out": "11.24",
     "quarter_out": "24.06",
     "decel": "12.82",
-    "rating": "44.0",
+    "rating": "44.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -22925,7 +22925,7 @@
     "btprod": false
   },
   {
-    "rank": "55",
+    "rank": "54",
     "hip": "817",
     "st": "KY",
     "sire": "Yaupon",
@@ -22938,7 +22938,7 @@
     "eighth_out": "10.74",
     "quarter_out": "23.12",
     "decel": "12.38",
-    "rating": "71.5",
+    "rating": "71.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -22951,7 +22951,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.73",
     "adj_quarter_out": "23.09",
-    "adj_decel": "12.36"
+    "adj_decel": "12.37"
   },
   {
     "rank": "",
@@ -23008,7 +23008,7 @@
     "adj_decel": "12.64"
   },
   {
-    "rank": "74",
+    "rank": "75",
     "hip": "820",
     "st": "KY",
     "sire": "Corniche",
@@ -23021,7 +23021,7 @@
     "eighth_out": "10.93",
     "quarter_out": "23.7",
     "decel": "12.77",
-    "rating": "68.7",
+    "rating": "68.6",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -23034,7 +23034,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.76",
     "adj_quarter_out": "23.54",
-    "adj_decel": "12.78"
+    "adj_decel": "12.79"
   },
   {
     "rank": "173",
@@ -23066,7 +23066,7 @@
     "adj_decel": "11.86"
   },
   {
-    "rank": "12",
+    "rank": "11",
     "hip": "822",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -23079,7 +23079,7 @@
     "eighth_out": "10.72",
     "quarter_out": "23.08",
     "decel": "12.36",
-    "rating": "83.6",
+    "rating": "83.5",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -23092,7 +23092,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.71",
     "adj_quarter_out": "23.05",
-    "adj_decel": "12.34"
+    "adj_decel": "12.35"
   },
   {
     "rank": "64",
@@ -23174,7 +23174,7 @@
     "btprod": false
   },
   {
-    "rank": "148",
+    "rank": "146",
     "hip": "826",
     "st": "KY",
     "sire": "Complexity",
@@ -23200,7 +23200,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.83",
     "adj_quarter_out": "23.45",
-    "adj_decel": "12.62"
+    "adj_decel": "12.63"
   },
   {
     "rank": "",
@@ -23254,10 +23254,10 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.08",
     "adj_quarter_out": "23.81",
-    "adj_decel": "12.73"
+    "adj_decel": "12.74"
   },
   {
-    "rank": "40",
+    "rank": "41",
     "hip": "829",
     "st": "KY",
     "sire": "Frosted",
@@ -23270,7 +23270,7 @@
     "eighth_out": "10.53",
     "quarter_out": "23.01",
     "decel": "12.48",
-    "rating": "74.0",
+    "rating": "73.9",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -23283,7 +23283,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.52",
     "adj_quarter_out": "22.98",
-    "adj_decel": "12.46"
+    "adj_decel": "12.47"
   },
   {
     "rank": "",
@@ -23398,7 +23398,7 @@
     "adj_decel": "12.89"
   },
   {
-    "rank": "157",
+    "rank": "161",
     "hip": "834",
     "st": "KY",
     "sire": "Maxfield",
@@ -23411,7 +23411,7 @@
     "eighth_out": "10.77",
     "quarter_out": "23.77",
     "decel": "13.0",
-    "rating": "58.1",
+    "rating": "58.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -23424,7 +23424,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "10.76",
     "adj_quarter_out": "23.74",
-    "adj_decel": "12.98"
+    "adj_decel": "12.99"
   },
   {
     "rank": "311",
@@ -23602,7 +23602,7 @@
     "eighth_out": "11.38",
     "quarter_out": "23.56",
     "decel": "12.18",
-    "rating": "48.0",
+    "rating": "47.9",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -23615,7 +23615,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.37",
     "adj_quarter_out": "23.53",
-    "adj_decel": "12.16"
+    "adj_decel": "12.17"
   },
   {
     "rank": "",
@@ -23827,7 +23827,7 @@
     "adj_time": "10.6",
     "adj_eighth_out": "13.0",
     "adj_quarter_out": "27.99",
-    "adj_decel": "14.99"
+    "adj_decel": "15.0"
   },
   {
     "rank": "210",
@@ -23888,7 +23888,7 @@
     "adj_decel": "13.35"
   },
   {
-    "rank": "212",
+    "rank": "214",
     "hip": "852",
     "st": "KY",
     "sire": "Bolt d'Oro",
@@ -23901,7 +23901,7 @@
     "eighth_out": "11.11",
     "quarter_out": "24.25",
     "decel": "13.14",
-    "rating": "53.9",
+    "rating": "53.8",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -23914,7 +23914,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "10.84",
     "adj_quarter_out": "23.7",
-    "adj_decel": "12.86"
+    "adj_decel": "12.87"
   },
   {
     "rank": "6",
@@ -23930,7 +23930,7 @@
     "eighth_out": "10.9",
     "quarter_out": "22.92",
     "decel": "12.02",
-    "rating": "88.0",
+    "rating": "87.8",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -23943,7 +23943,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.63",
     "adj_quarter_out": "22.37",
-    "adj_decel": "11.74"
+    "adj_decel": "11.75"
   },
   {
     "rank": "109",
@@ -24029,7 +24029,7 @@
     "btprod": false
   },
   {
-    "rank": "204",
+    "rank": "205",
     "hip": "857",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -24042,7 +24042,7 @@
     "eighth_out": "10.81",
     "quarter_out": "23.63",
     "decel": "12.82",
-    "rating": "54.3",
+    "rating": "54.2",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -24055,7 +24055,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.8",
     "adj_quarter_out": "23.6",
-    "adj_decel": "12.8"
+    "adj_decel": "12.81"
   },
   {
     "rank": "8",
@@ -24071,7 +24071,7 @@
     "eighth_out": "10.76",
     "quarter_out": "22.99",
     "decel": "12.23",
-    "rating": "87.2",
+    "rating": "87.1",
     "tier": "ELITE",
     "sex": "C",
     "section": "1/8",
@@ -24084,10 +24084,10 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.49",
     "adj_quarter_out": "22.44",
-    "adj_decel": "11.95"
+    "adj_decel": "11.96"
   },
   {
-    "rank": "324",
+    "rank": "325",
     "hip": "859",
     "st": "KY",
     "sire": "Tiz the Law",
@@ -24100,7 +24100,7 @@
     "eighth_out": "11.46",
     "quarter_out": "23.91",
     "decel": "12.45",
-    "rating": "38.7",
+    "rating": "38.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -24113,7 +24113,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.29",
     "adj_quarter_out": "23.75",
-    "adj_decel": "12.46"
+    "adj_decel": "12.47"
   },
   {
     "rank": "",
@@ -24266,7 +24266,7 @@
     "eighth_out": "11.4",
     "quarter_out": "24.59",
     "decel": "13.19",
-    "rating": "45.7",
+    "rating": "45.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -24279,7 +24279,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "11.39",
     "adj_quarter_out": "24.56",
-    "adj_decel": "13.17"
+    "adj_decel": "13.18"
   },
   {
     "rank": "10",
@@ -24336,7 +24336,7 @@
     "btprod": false
   },
   {
-    "rank": "173",
+    "rank": "175",
     "hip": "868",
     "st": "FL",
     "sire": "Early Voting",
@@ -24349,7 +24349,7 @@
     "eighth_out": "11.13",
     "quarter_out": "24.61",
     "decel": "13.48",
-    "rating": "56.4",
+    "rating": "56.3",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -24362,7 +24362,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.86",
     "adj_quarter_out": "24.06",
-    "adj_decel": "13.2"
+    "adj_decel": "13.21"
   },
   {
     "rank": "347",
@@ -24528,7 +24528,7 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.21",
     "adj_quarter_out": "25.24",
-    "adj_decel": "14.03"
+    "adj_decel": "14.04"
   },
   {
     "rank": "382",
@@ -24544,8 +24544,8 @@
     "eighth_out": "11.42",
     "quarter_out": "25.12",
     "decel": "13.7",
-    "rating": "20.0",
-    "tier": "BELOW AVG",
+    "rating": "19.9",
+    "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
     "sale_status": "",
@@ -24557,10 +24557,10 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.25",
     "adj_quarter_out": "24.96",
-    "adj_decel": "13.71"
+    "adj_decel": "13.72"
   },
   {
-    "rank": "183",
+    "rank": "185",
     "hip": "876",
     "st": "KY",
     "sire": "Nashville",
@@ -24573,7 +24573,7 @@
     "eighth_out": "10.88",
     "quarter_out": "23.45",
     "decel": "12.57",
-    "rating": "55.7",
+    "rating": "55.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -24586,10 +24586,10 @@
     "adj_time": "10.2",
     "adj_eighth_out": "10.71",
     "adj_quarter_out": "23.29",
-    "adj_decel": "12.58"
+    "adj_decel": "12.59"
   },
   {
-    "rank": "63",
+    "rank": "64",
     "hip": "877",
     "st": "KY",
     "sire": "Gun Runner",
@@ -24602,7 +24602,7 @@
     "eighth_out": "10.63",
     "quarter_out": "22.82",
     "decel": "12.19",
-    "rating": "70.5",
+    "rating": "70.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -24615,7 +24615,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.62",
     "adj_quarter_out": "22.79",
-    "adj_decel": "12.17"
+    "adj_decel": "12.18"
   },
   {
     "rank": "151",
@@ -24644,7 +24644,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.8",
     "adj_quarter_out": "23.59",
-    "adj_decel": "12.79"
+    "adj_decel": "12.8"
   },
   {
     "rank": "230",
@@ -24727,7 +24727,7 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.43",
     "adj_quarter_out": "24.2",
-    "adj_decel": "12.77"
+    "adj_decel": "12.78"
   },
   {
     "rank": "158",
@@ -24759,7 +24759,7 @@
     "adj_decel": "12.23"
   },
   {
-    "rank": "140",
+    "rank": "141",
     "hip": "883",
     "st": "KY",
     "sire": "Liam's Map",
@@ -24772,7 +24772,7 @@
     "eighth_out": "11.05",
     "quarter_out": "23.52",
     "decel": "12.47",
-    "rating": "59.5",
+    "rating": "59.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -24785,7 +24785,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.88",
     "adj_quarter_out": "23.36",
-    "adj_decel": "12.48"
+    "adj_decel": "12.49"
   },
   {
     "rank": "",
@@ -25013,7 +25013,7 @@
     "eighth_out": "11.48",
     "quarter_out": "24.2",
     "decel": "12.72",
-    "rating": "37.7",
+    "rating": "37.6",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -25026,7 +25026,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.47",
     "adj_quarter_out": "24.17",
-    "adj_decel": "12.7"
+    "adj_decel": "12.71"
   },
   {
     "rank": "22",
@@ -25553,7 +25553,7 @@
     "eighth_out": "10.97",
     "quarter_out": "23.11",
     "decel": "12.14",
-    "rating": "54.5",
+    "rating": "54.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -25566,7 +25566,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "10.96",
     "adj_quarter_out": "23.08",
-    "adj_decel": "12.12"
+    "adj_decel": "12.13"
   },
   {
     "rank": "47",
@@ -25582,7 +25582,7 @@
     "eighth_out": "10.98",
     "quarter_out": "23.72",
     "decel": "12.74",
-    "rating": "72.5",
+    "rating": "72.4",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -25595,7 +25595,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.71",
     "adj_quarter_out": "23.17",
-    "adj_decel": "12.46"
+    "adj_decel": "12.47"
   },
   {
     "rank": "309",
@@ -25611,7 +25611,7 @@
     "eighth_out": "11.45",
     "quarter_out": "24.65",
     "decel": "13.2",
-    "rating": "41.5",
+    "rating": "41.4",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -25624,7 +25624,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "11.18",
     "adj_quarter_out": "24.1",
-    "adj_decel": "12.92"
+    "adj_decel": "12.93"
   },
   {
     "rank": "3",
@@ -25711,10 +25711,10 @@
     "adj_time": "9.6",
     "adj_eighth_out": "10.48",
     "adj_quarter_out": "22.73",
-    "adj_decel": "12.25"
+    "adj_decel": "12.26"
   },
   {
-    "rank": "128",
+    "rank": "127",
     "hip": "918",
     "st": "KY",
     "sire": "Speaker's Corner",
@@ -25727,7 +25727,7 @@
     "eighth_out": "10.82",
     "quarter_out": "23.69",
     "decel": "12.87",
-    "rating": "62.1",
+    "rating": "62.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -25740,7 +25740,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.81",
     "adj_quarter_out": "23.66",
-    "adj_decel": "12.85"
+    "adj_decel": "12.86"
   },
   {
     "rank": "374",
@@ -25868,7 +25868,7 @@
     "eighth_out": "11.66",
     "quarter_out": "23.73",
     "decel": "12.07",
-    "rating": "43.9",
+    "rating": "43.8",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -25881,7 +25881,7 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.39",
     "adj_quarter_out": "23.18",
-    "adj_decel": "11.79"
+    "adj_decel": "11.8"
   },
   {
     "rank": "",
@@ -25964,7 +25964,7 @@
     "adj_time": "10.4",
     "adj_eighth_out": "10.82",
     "adj_quarter_out": "23.43",
-    "adj_decel": "12.61"
+    "adj_decel": "12.62"
   },
   {
     "rank": "384",
@@ -25980,7 +25980,7 @@
     "eighth_out": "11.55",
     "quarter_out": "24.3",
     "decel": "12.75",
-    "rating": "19.2",
+    "rating": "19.1",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -25993,7 +25993,7 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.38",
     "adj_quarter_out": "24.14",
-    "adj_decel": "12.76"
+    "adj_decel": "12.77"
   },
   {
     "rank": "",
@@ -26088,7 +26088,7 @@
     "eighth_out": "11.35",
     "quarter_out": "24.36",
     "decel": "13.01",
-    "rating": "48.9",
+    "rating": "48.8",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -26101,7 +26101,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.08",
     "adj_quarter_out": "23.81",
-    "adj_decel": "12.73"
+    "adj_decel": "12.74"
   },
   {
     "rank": "",
@@ -26196,7 +26196,7 @@
     "eighth_out": "10.84",
     "quarter_out": "23.72",
     "decel": "12.88",
-    "rating": "45.5",
+    "rating": "45.4",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -26209,7 +26209,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "10.83",
     "adj_quarter_out": "23.69",
-    "adj_decel": "12.86"
+    "adj_decel": "12.87"
   },
   {
     "rank": "130",
@@ -26225,7 +26225,7 @@
     "eighth_out": "10.92",
     "quarter_out": "23.27",
     "decel": "12.35",
-    "rating": "61.1",
+    "rating": "61.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -26238,7 +26238,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.75",
     "adj_quarter_out": "23.11",
-    "adj_decel": "12.36"
+    "adj_decel": "12.37"
   },
   {
     "rank": "9",
@@ -26379,7 +26379,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.94",
     "adj_quarter_out": "23.71",
-    "adj_decel": "12.77"
+    "adj_decel": "12.78"
   },
   {
     "rank": "60",
@@ -26461,7 +26461,7 @@
     "btprod": false
   },
   {
-    "rank": "189",
+    "rank": "190",
     "hip": "945",
     "st": "KY",
     "sire": "Happy Saver",
@@ -26474,7 +26474,7 @@
     "eighth_out": "11.26",
     "quarter_out": "23.32",
     "decel": "12.06",
-    "rating": "55.1",
+    "rating": "55.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -26487,7 +26487,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.09",
     "adj_quarter_out": "23.16",
-    "adj_decel": "12.07"
+    "adj_decel": "12.08"
   },
   {
     "rank": "",
@@ -26528,7 +26528,7 @@
     "eighth_out": "10.51",
     "quarter_out": "23.02",
     "decel": "12.51",
-    "rating": "67.2",
+    "rating": "67.1",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -26541,7 +26541,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.5",
     "adj_quarter_out": "22.99",
-    "adj_decel": "12.49"
+    "adj_decel": "12.5"
   },
   {
     "rank": "65",
@@ -26573,7 +26573,7 @@
     "adj_decel": "12.26"
   },
   {
-    "rank": "323",
+    "rank": "324",
     "hip": "949",
     "st": "KY",
     "sire": "Mitole",
@@ -26586,7 +26586,7 @@
     "eighth_out": "11.01",
     "quarter_out": "23.84",
     "decel": "12.83",
-    "rating": "38.8",
+    "rating": "38.7",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -26599,7 +26599,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.0",
     "adj_quarter_out": "23.81",
-    "adj_decel": "12.81"
+    "adj_decel": "12.82"
   },
   {
     "rank": "",
@@ -26627,7 +26627,7 @@
     "btprod": false
   },
   {
-    "rank": "107",
+    "rank": "108",
     "hip": "951",
     "st": "KY",
     "sire": "Charlatan",
@@ -26654,7 +26654,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.61",
     "adj_quarter_out": "23.75",
-    "adj_decel": "13.14"
+    "adj_decel": "13.15"
   },
   {
     "rank": "261",
@@ -26683,10 +26683,10 @@
     "adj_time": "10.2",
     "adj_eighth_out": "10.92",
     "adj_quarter_out": "23.52",
-    "adj_decel": "12.6"
+    "adj_decel": "12.61"
   },
   {
-    "rank": "291",
+    "rank": "290",
     "hip": "953",
     "st": "KY",
     "sire": "Cyberknife",
@@ -26699,7 +26699,7 @@
     "eighth_out": "11.77",
     "quarter_out": "24.88",
     "decel": "13.11",
-    "rating": "44.0",
+    "rating": "43.9",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -26712,7 +26712,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.5",
     "adj_quarter_out": "24.33",
-    "adj_decel": "12.83"
+    "adj_decel": "12.84"
   },
   {
     "rank": "",
@@ -26861,7 +26861,7 @@
     "eighth_out": "10.78",
     "quarter_out": "23.75",
     "decel": "12.97",
-    "rating": "61.1",
+    "rating": "61.0",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -26874,7 +26874,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.77",
     "adj_quarter_out": "23.72",
-    "adj_decel": "12.95"
+    "adj_decel": "12.96"
   },
   {
     "rank": "41",
@@ -26919,7 +26919,7 @@
     "eighth_out": "10.78",
     "quarter_out": "23.16",
     "decel": "12.38",
-    "rating": "66.0",
+    "rating": "65.9",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -26932,7 +26932,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.77",
     "adj_quarter_out": "23.13",
-    "adj_decel": "12.36"
+    "adj_decel": "12.37"
   },
   {
     "rank": "61",
@@ -27101,7 +27101,7 @@
     "adj_decel": "13.1"
   },
   {
-    "rank": "102",
+    "rank": "104",
     "hip": "968",
     "st": "KY",
     "sire": "Authentic",
@@ -27114,7 +27114,7 @@
     "eighth_out": "10.89",
     "quarter_out": "23.04",
     "decel": "12.15",
-    "rating": "64.7",
+    "rating": "64.6",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -27127,7 +27127,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.88",
     "adj_quarter_out": "23.01",
-    "adj_decel": "12.13"
+    "adj_decel": "12.14"
   },
   {
     "rank": "33",
@@ -27143,7 +27143,7 @@
     "eighth_out": "10.72",
     "quarter_out": "23.59",
     "decel": "12.87",
-    "rating": "75.4",
+    "rating": "75.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -27157,7 +27157,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.45",
     "adj_quarter_out": "23.04",
-    "adj_decel": "12.59"
+    "adj_decel": "12.6"
   },
   {
     "rank": "99",
@@ -27173,7 +27173,7 @@
     "eighth_out": "11.11",
     "quarter_out": "23.28",
     "decel": "12.17",
-    "rating": "66.0",
+    "rating": "65.9",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -27186,7 +27186,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.1",
     "adj_quarter_out": "23.25",
-    "adj_decel": "12.15"
+    "adj_decel": "12.16"
   },
   {
     "rank": "",
@@ -27272,7 +27272,7 @@
     "adj_decel": "12.61"
   },
   {
-    "rank": "244",
+    "rank": "242",
     "hip": "974",
     "st": "KY",
     "sire": "By My Standards",
@@ -27298,7 +27298,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.05",
     "adj_quarter_out": "23.82",
-    "adj_decel": "12.77"
+    "adj_decel": "12.78"
   },
   {
     "rank": "375",
@@ -27397,7 +27397,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.71",
     "decel": "12.75",
-    "rating": "54.2",
+    "rating": "54.1",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -27410,10 +27410,10 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.79",
     "adj_quarter_out": "23.55",
-    "adj_decel": "12.76"
+    "adj_decel": "12.77"
   },
   {
-    "rank": "353",
+    "rank": "352",
     "hip": "979",
     "st": "KY",
     "sire": "Corniche",
@@ -27439,7 +27439,7 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.16",
     "adj_quarter_out": "24.31",
-    "adj_decel": "13.15"
+    "adj_decel": "13.16"
   },
   {
     "rank": "",
@@ -27492,7 +27492,7 @@
     "btprod": false
   },
   {
-    "rank": "146",
+    "rank": "147",
     "hip": "982",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -27505,7 +27505,7 @@
     "eighth_out": "10.94",
     "quarter_out": "23.54",
     "decel": "12.6",
-    "rating": "59.2",
+    "rating": "59.1",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -27518,7 +27518,7 @@
     "adj_time": "10.2",
     "adj_eighth_out": "10.93",
     "adj_quarter_out": "23.51",
-    "adj_decel": "12.58"
+    "adj_decel": "12.59"
   },
   {
     "rank": "245",
@@ -27605,10 +27605,10 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.04",
     "adj_quarter_out": "23.02",
-    "adj_decel": "11.98"
+    "adj_decel": "11.99"
   },
   {
-    "rank": "141",
+    "rank": "142",
     "hip": "986",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -27621,7 +27621,7 @@
     "eighth_out": "10.97",
     "quarter_out": "23.69",
     "decel": "12.72",
-    "rating": "59.5",
+    "rating": "59.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -27634,7 +27634,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.8",
     "adj_quarter_out": "23.53",
-    "adj_decel": "12.73"
+    "adj_decel": "12.74"
   },
   {
     "rank": "",
@@ -27704,7 +27704,7 @@
     "eighth_out": "11.25",
     "quarter_out": "23.61",
     "decel": "12.36",
-    "rating": "72.1",
+    "rating": "72.0",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -27717,7 +27717,7 @@
     "adj_time": "10.0",
     "adj_eighth_out": "10.98",
     "adj_quarter_out": "23.06",
-    "adj_decel": "12.08"
+    "adj_decel": "12.09"
   },
   {
     "rank": "34",
@@ -27733,7 +27733,7 @@
     "eighth_out": "10.6",
     "quarter_out": "23.04",
     "decel": "12.44",
-    "rating": "75.4",
+    "rating": "75.3",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -27746,7 +27746,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.59",
     "adj_quarter_out": "23.01",
-    "adj_decel": "12.42"
+    "adj_decel": "12.43"
   },
   {
     "rank": "160",
@@ -27845,7 +27845,7 @@
     "eighth_out": "11.3",
     "quarter_out": "23.76",
     "decel": "12.46",
-    "rating": "36.9",
+    "rating": "36.8",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -27858,7 +27858,7 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.29",
     "adj_quarter_out": "23.73",
-    "adj_decel": "12.44"
+    "adj_decel": "12.45"
   },
   {
     "rank": "204",
@@ -28027,7 +28027,7 @@
     "adj_decel": "12.2"
   },
   {
-    "rank": "342",
+    "rank": "343",
     "hip": "1001",
     "st": "KY",
     "sire": "Practical Joke",
@@ -28053,7 +28053,7 @@
     "adj_time": "10.4",
     "adj_eighth_out": "11.3",
     "adj_quarter_out": "24.18",
-    "adj_decel": "12.88"
+    "adj_decel": "12.89"
   },
   {
     "rank": "101",
@@ -28302,7 +28302,7 @@
     "btprod": false
   },
   {
-    "rank": "347",
+    "rank": "348",
     "hip": "1011",
     "st": "KY",
     "sire": "Midshipman",
@@ -28328,10 +28328,10 @@
     "adj_time": "10.2",
     "adj_eighth_out": "11.45",
     "adj_quarter_out": "24.54",
-    "adj_decel": "13.09"
+    "adj_decel": "13.1"
   },
   {
-    "rank": "133",
+    "rank": "134",
     "hip": "1012",
     "st": "KY",
     "sire": "Bolt d'Oro",
@@ -28357,7 +28357,7 @@
     "adj_time": "9.8",
     "adj_eighth_out": "10.9",
     "adj_quarter_out": "24.04",
-    "adj_decel": "13.14"
+    "adj_decel": "13.15"
   },
   {
     "rank": "",
@@ -28489,7 +28489,7 @@
     "adj_decel": "13.38"
   },
   {
-    "rank": "184",
+    "rank": "183",
     "hip": "1018",
     "st": "KY",
     "sire": "Hard Spun",
@@ -28502,7 +28502,7 @@
     "eighth_out": "11.02",
     "quarter_out": "23.91",
     "decel": "12.89",
-    "rating": "55.7",
+    "rating": "55.8",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -28659,7 +28659,7 @@
     "adj_decel": "13.48"
   },
   {
-    "rank": "59",
+    "rank": "60",
     "hip": "1024",
     "st": "KY",
     "sire": "Cairo Prince",
@@ -28780,7 +28780,7 @@
     "eighth_out": "11.26",
     "quarter_out": "24.25",
     "decel": "12.99",
-    "rating": "40.0",
+    "rating": "40.1",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -28796,7 +28796,7 @@
     "adj_decel": "12.92"
   },
   {
-    "rank": "111",
+    "rank": "110",
     "hip": "1029",
     "st": "KY",
     "sire": "Yaupon",
@@ -28908,7 +28908,7 @@
     "adj_decel": "12.84"
   },
   {
-    "rank": "228",
+    "rank": "225",
     "hip": "1033",
     "st": "KY",
     "sire": "Early Voting",
@@ -29397,7 +29397,7 @@
     "adj_decel": "11.98"
   },
   {
-    "rank": "210",
+    "rank": "207",
     "hip": "1050",
     "st": "KY",
     "sire": "Twirling Candy",
@@ -29410,7 +29410,7 @@
     "eighth_out": "11.21",
     "quarter_out": "23.55",
     "decel": "12.34",
-    "rating": "54.0",
+    "rating": "54.1",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -29497,7 +29497,7 @@
     "eighth_out": "11.08",
     "quarter_out": "23.89",
     "decel": "12.81",
-    "rating": "46.1",
+    "rating": "46.2",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -29596,7 +29596,7 @@
     "adj_decel": "11.93"
   },
   {
-    "rank": "181",
+    "rank": "182",
     "hip": "1057",
     "st": "KY",
     "sire": "Coal Front",
@@ -29696,7 +29696,7 @@
     "eighth_out": "11.15",
     "quarter_out": "23.71",
     "decel": "12.56",
-    "rating": "35.9",
+    "rating": "36.0",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -29712,7 +29712,7 @@
     "adj_decel": "12.49"
   },
   {
-    "rank": "302",
+    "rank": "301",
     "hip": "1061",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -29725,7 +29725,7 @@
     "eighth_out": "10.75",
     "quarter_out": "23.26",
     "decel": "12.51",
-    "rating": "42.2",
+    "rating": "42.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -29878,7 +29878,7 @@
     "btprod": false
   },
   {
-    "rank": "276",
+    "rank": "274",
     "hip": "1067",
     "st": "KY",
     "sire": "Maclean's Music",
@@ -29936,7 +29936,7 @@
     "adj_decel": "13.03"
   },
   {
-    "rank": "76",
+    "rank": "74",
     "hip": "1069",
     "st": "KY",
     "sire": "Gun Runner",
@@ -29949,7 +29949,7 @@
     "eighth_out": "10.65",
     "quarter_out": "22.91",
     "decel": "12.26",
-    "rating": "68.6",
+    "rating": "68.7",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -30024,7 +30024,7 @@
     "adj_decel": "13.19"
   },
   {
-    "rank": "167",
+    "rank": "168",
     "hip": "1072",
     "st": "KY",
     "sire": "Mystic Guide",
@@ -30037,7 +30037,7 @@
     "eighth_out": "10.93",
     "quarter_out": "24.6",
     "decel": "13.67",
-    "rating": "57.1",
+    "rating": "57.2",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -30136,7 +30136,7 @@
     "adj_decel": "13.31"
   },
   {
-    "rank": "36",
+    "rank": "35",
     "hip": "1076",
     "st": "KY",
     "sire": "Uncle Mo",
@@ -30277,7 +30277,7 @@
     "adj_decel": "12.5"
   },
   {
-    "rank": "120",
+    "rank": "118",
     "hip": "1081",
     "st": "KY",
     "sire": "Nashville",
@@ -30335,7 +30335,7 @@
     "adj_decel": "12.43"
   },
   {
-    "rank": "318",
+    "rank": "317",
     "hip": "1083",
     "st": "KY",
     "sire": "Yaupon",
@@ -30348,7 +30348,7 @@
     "eighth_out": "11.38",
     "quarter_out": "24.8",
     "decel": "13.42",
-    "rating": "39.8",
+    "rating": "39.9",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -30377,7 +30377,7 @@
     "eighth_out": "10.9",
     "quarter_out": "24.1",
     "decel": "13.2",
-    "rating": "43.2",
+    "rating": "43.3",
     "tier": "AVERAGE",
     "sex": "C",
     "section": "1/8",
@@ -30393,7 +30393,7 @@
     "adj_decel": "13.22"
   },
   {
-    "rank": "296",
+    "rank": "294",
     "hip": "1085",
     "st": "KY",
     "sire": "McKinzie",
@@ -30501,7 +30501,7 @@
     "adj_decel": "13.9"
   },
   {
-    "rank": "106",
+    "rank": "105",
     "hip": "1089",
     "st": "KY",
     "sire": "Mandaloun",
@@ -30514,7 +30514,7 @@
     "eighth_out": "10.97",
     "quarter_out": "23.91",
     "decel": "12.94",
-    "rating": "64.3",
+    "rating": "64.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -30667,7 +30667,7 @@
     "adj_decel": "12.77"
   },
   {
-    "rank": "25",
+    "rank": "24",
     "hip": "1095",
     "st": "KY",
     "sire": "Instagrand",
@@ -30974,7 +30974,7 @@
     "btprod": false
   },
   {
-    "rank": "127",
+    "rank": "125",
     "hip": "1106",
     "st": "KY",
     "sire": "Rock Your World",
@@ -30987,7 +30987,7 @@
     "eighth_out": "10.98",
     "quarter_out": "23.99",
     "decel": "13.01",
-    "rating": "62.2",
+    "rating": "62.3",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -31104,7 +31104,7 @@
     "eighth_out": "11.54",
     "quarter_out": "24.97",
     "decel": "13.43",
-    "rating": "15.9",
+    "rating": "16.0",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -31344,7 +31344,7 @@
     "btprod": false
   },
   {
-    "rank": "215",
+    "rank": "211",
     "hip": "1119",
     "st": "NY",
     "sire": "Tiz the Law",
@@ -31357,7 +31357,7 @@
     "eighth_out": "11.02",
     "quarter_out": "23.1",
     "decel": "12.08",
-    "rating": "53.8",
+    "rating": "53.9",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -31452,7 +31452,7 @@
     "adj_decel": "11.86"
   },
   {
-    "rank": "233",
+    "rank": "234",
     "hip": "1123",
     "st": "FL",
     "sire": "Magic On Tap",
@@ -31481,7 +31481,7 @@
     "adj_decel": "12.43"
   },
   {
-    "rank": "71",
+    "rank": "68",
     "hip": "1124",
     "st": "KY",
     "sire": "Frosted",
@@ -31494,7 +31494,7 @@
     "eighth_out": "10.89",
     "quarter_out": "23.54",
     "decel": "12.65",
-    "rating": "69.4",
+    "rating": "69.5",
     "tier": "STRONG",
     "sex": "C",
     "section": "1/8",
@@ -31560,7 +31560,7 @@
     "btprod": true
   },
   {
-    "rank": "64",
+    "rank": "61",
     "hip": "1127",
     "st": "LA",
     "sire": "Yaupon",
@@ -31842,7 +31842,7 @@
     "adj_decel": "12.64"
   },
   {
-    "rank": "236",
+    "rank": "235",
     "hip": "1137",
     "st": "FL",
     "sire": "Cyberknife",
@@ -31855,7 +31855,7 @@
     "eighth_out": "10.96",
     "quarter_out": "23.74",
     "decel": "12.78",
-    "rating": "50.2",
+    "rating": "50.3",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -31921,7 +31921,7 @@
     "btprod": true
   },
   {
-    "rank": "100",
+    "rank": "97",
     "hip": "1140",
     "st": "KY",
     "sire": "Charlatan",
@@ -31979,7 +31979,7 @@
     "adj_decel": "13.49"
   },
   {
-    "rank": "221",
+    "rank": "220",
     "hip": "1142",
     "st": "KY",
     "sire": "Epicenter",
@@ -32046,7 +32046,7 @@
     "eighth_out": "10.93",
     "quarter_out": "24.08",
     "decel": "13.15",
-    "rating": "52.3",
+    "rating": "52.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -32091,7 +32091,7 @@
     "adj_decel": "13.41"
   },
   {
-    "rank": "297",
+    "rank": "295",
     "hip": "1146",
     "st": "NY",
     "sire": "Solomini",
@@ -32228,7 +32228,7 @@
     "btprod": false
   },
   {
-    "rank": "121",
+    "rank": "120",
     "hip": "1151",
     "st": "FL",
     "sire": "By My Standards",
@@ -32329,7 +32329,7 @@
     "eighth_out": "11.46",
     "quarter_out": "24.79",
     "decel": "13.33",
-    "rating": "18.4",
+    "rating": "18.5",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -32387,7 +32387,7 @@
     "eighth_out": "11.6",
     "quarter_out": "24.67",
     "decel": "13.07",
-    "rating": "15.9",
+    "rating": "16.0",
     "tier": "WEAK",
     "sex": "C",
     "section": "1/8",
@@ -32511,7 +32511,7 @@
     "btprod": false
   },
   {
-    "rank": "145",
+    "rank": "144",
     "hip": "1161",
     "st": "KY",
     "sire": "Vekoma",
@@ -32735,7 +32735,7 @@
     "btprod": false
   },
   {
-    "rank": "234",
+    "rank": "232",
     "hip": "1169",
     "st": "KY",
     "sire": "Candy Ride (ARG)",
@@ -32748,7 +32748,7 @@
     "eighth_out": "11.05",
     "quarter_out": "23.67",
     "decel": "12.62",
-    "rating": "50.3",
+    "rating": "50.4",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -33034,7 +33034,7 @@
     "btprod": false
   },
   {
-    "rank": "284",
+    "rank": "282",
     "hip": "1180",
     "st": "KY",
     "sire": "Mo Town",
@@ -33175,7 +33175,7 @@
     "adj_decel": "12.67"
   },
   {
-    "rank": "69",
+    "rank": "67",
     "hip": "1185",
     "st": "KY",
     "sire": "Olympiad",
@@ -33623,7 +33623,7 @@
     "adj_decel": "12.99"
   },
   {
-    "rank": "92",
+    "rank": "91",
     "hip": "1201",
     "st": "KY",
     "sire": "Cyberknife",
@@ -33988,7 +33988,7 @@
     "adj_decel": "12.93"
   },
   {
-    "rank": "114",
+    "rank": "113",
     "hip": "1214",
     "st": "KY",
     "sire": "Jack Christopher",
@@ -34001,7 +34001,7 @@
     "eighth_out": "10.71",
     "quarter_out": "23.4",
     "decel": "12.69",
-    "rating": "63.4",
+    "rating": "63.5",
     "tier": "ABOVE AVG",
     "sex": "C",
     "section": "1/8",
@@ -34212,7 +34212,7 @@
     "adj_decel": "12.74"
   },
   {
-    "rank": "56",
+    "rank": "53",
     "hip": "1222",
     "st": "KY",
     "sire": "Karakontie (JPN)",
