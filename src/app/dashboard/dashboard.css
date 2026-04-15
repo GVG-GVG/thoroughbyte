@@ -1073,6 +1073,13 @@
 .rl-tier-below { background: rgba(200,122,90,0.12); color: #c87a5a; }
 .rl-tier-weak { background: rgba(184,60,60,0.12); color: #b83c3c; }
 
+.rl-sale-status { font-size: 11px; white-space: nowrap; }
+.rl-status-sold { color: #16a34a; font-weight: 600; }
+.rl-status-rna { color: #dc2626; font-weight: 600; }
+.rl-status-post { color: #2563eb; font-weight: 600; }
+.rl-sale-price { font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.rl-buyer { max-width: 200px; overflow: hidden; text-overflow: ellipsis; font-size: 12px; }
+
 .rl-value-tag {
   display: inline-block;
   font-size: 9px;

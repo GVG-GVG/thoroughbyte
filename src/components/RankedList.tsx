@@ -24,13 +24,14 @@ interface Horse {
   day: number;
   saleStatus: string;
   salePrice: number;
+  buyer: string;
   btw: boolean;
   btp: boolean;
   btprod: boolean;
   valueFlag: boolean;
 }
 
-type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'dam' | 'consigner' | 'state' | 'valueFlag';
+type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'dam' | 'consigner' | 'state' | 'valueFlag' | 'salePrice' | 'saleStatus' | 'buyer';
 type SortDir = 'asc' | 'desc';
 
 const TIER_ORDER: Record<string, number> = {
@@ -217,7 +218,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     }
 
     // Sort — always push horses without breeze data (0 values) to the bottom
-    const NUMERIC_FIELDS = new Set<SortField>(['rank', 'rating', 'time', 'stride', 'decel', 'eighthOut', 'quarterOut']);
+    const NUMERIC_FIELDS = new Set<SortField>(['rank', 'rating', 'time', 'stride', 'decel', 'eighthOut', 'quarterOut', 'salePrice']);
     result = [...result].sort((a, b) => {
       let av: number | string, bv: number | string;
       if (sortField === 'valueFlag') {
@@ -226,7 +227,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
       } else if (sortField === 'tier') {
         av = TIER_ORDER[a.tier] ?? 99;
         bv = TIER_ORDER[b.tier] ?? 99;
-      } else if (sortField === 'sire' || sortField === 'dam' || sortField === 'state' || sortField === 'sex' || sortField === 'consigner') {
+      } else if (sortField === 'sire' || sortField === 'dam' || sortField === 'state' || sortField === 'sex' || sortField === 'consigner' || sortField === 'buyer' || sortField === 'saleStatus') {
         av = a[sortField].toLowerCase();
         bv = b[sortField].toLowerCase();
       } else {
@@ -299,7 +300,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
 
     autoTable(doc, {
       startY: 54,
-      head: [['Hip', 'Rank', 'Tier', 'Score', 'Sex', 'Sire', 'Dam', 'Time', '1/8 Out', '1/4 Out', 'Stride', 'Decel', 'State', 'Consigner', 'Value']],
+      head: [['Hip', 'Rank', 'Tier', 'Score', 'Sex', 'Sire', 'Dam', 'Time', '1/8 Out', '1/4 Out', 'Stride', 'Decel', 'State', 'Consigner', 'Status', 'Price', 'Buyer', 'Value']],
       body: rows.map(h => [
         h.hip, h.rank ? `#${h.rank}` : '\u2014', h.tier || '\u2014', h.rating ? h.rating.toFixed(1) : '\u2014',
         h.sex === 'C' ? 'Colt' : 'Filly', h.sire,
@@ -307,7 +308,9 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
         h.time ? `${h.time.toFixed(1)}s` : '\u2014', h.eighthOut ? `${h.eighthOut.toFixed(1)}s` : '\u2014',
         h.quarterOut ? `${h.quarterOut.toFixed(1)}s` : '\u2014',
         h.stride ? `${h.stride.toFixed(1)}'` : '\u2014', h.decel ? `${h.decel.toFixed(2)}s` : '\u2014',
-        h.state, h.consigner, h.valueFlag ? 'VALUE' : '',
+        h.state, h.consigner, h.saleStatus || '\u2014',
+        h.salePrice ? `$${h.salePrice.toLocaleString()}` : '\u2014',
+        h.buyer || '\u2014', h.valueFlag ? 'VALUE' : '',
       ]),
       styles: { fontSize: 7, cellPadding: 3 },
       headStyles: { fillColor: [18, 30, 50], fontSize: 7, fontStyle: 'bold' },
@@ -504,12 +507,15 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
               <th onClick={() => handleSort('decel')} className="rl-sortable">Decel{sortIcon('decel')}</th>
               <th onClick={() => handleSort('state')} className="rl-sortable">State{sortIcon('state')}</th>
               <th onClick={() => handleSort('consigner')} className="rl-sortable">Consigner{sortIcon('consigner')}</th>
+              <th onClick={() => handleSort('saleStatus')} className="rl-sortable">Status{sortIcon('saleStatus')}</th>
+              <th onClick={() => handleSort('salePrice')} className="rl-sortable">Sale Price{sortIcon('salePrice')}</th>
+              <th onClick={() => handleSort('buyer')} className="rl-sortable">Buyer{sortIcon('buyer')}</th>
               <th onClick={() => handleSort('valueFlag')} className="rl-sortable">Value{sortIcon('valueFlag')}</th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={17} className="rl-empty">No horses match your filters.</td></tr>
+              <tr><td colSpan={20} className="rl-empty">No horses match your filters.</td></tr>
             ) : (
               filtered.map(h => (
                 <tr
@@ -556,6 +562,9 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                   <td>{h.decel ? `${h.decel.toFixed(2)}s` : '\u2014'}</td>
                   <td>{h.state}</td>
                   <td className="rl-consigner">{h.consigner}</td>
+                  <td className="rl-sale-status">{h.saleStatus === 'SOLD' ? <span className="rl-status-sold">SOLD</span> : h.saleStatus === 'RNA' ? <span className="rl-status-rna">RNA</span> : h.saleStatus === 'POST-SALE' ? <span className="rl-status-post">POST-SALE</span> : '\u2014'}</td>
+                  <td className="rl-sale-price">{h.salePrice ? `$${h.salePrice.toLocaleString()}` : '\u2014'}</td>
+                  <td className="rl-buyer">{h.buyer || '\u2014'}</td>
                   <td>{h.valueFlag && <span className="rl-value-tag">VALUE</span>}</td>
                 </tr>
               ))

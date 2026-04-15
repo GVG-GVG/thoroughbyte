@@ -26,6 +26,7 @@ interface RawHorse {
   section: string;
   sale_status: string;
   sale_price: string;
+  buyer: string;
   btw?: boolean;
   btp?: boolean;
   btprod?: boolean;
@@ -88,6 +89,7 @@ function transform(rawData: RawHorse[]) {
         day: safeInt(h.day),
         saleStatus,
         salePrice,
+        buyer: h.buyer || '',
         btw: h.btw ?? false,
         btp: h.btp ?? false,
         btprod: h.btprod ?? false,
