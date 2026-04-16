@@ -17,6 +17,8 @@ interface Horse {
   decel: number;
   eighthOut: number;
   quarterOut: number;
+  saleStatus: string;
+  salePrice: number;
   btw: boolean;
   btp: boolean;
   btprod: boolean;
@@ -33,6 +35,10 @@ interface SireRow {
   eliteCount: number;
   strongCount: number;
   avgStride: number;
+  soldCount: number;
+  avgSalePrice: number;
+  lowSalePrice: number;
+  highSalePrice: number;
 }
 
 function getTier(rating: number): string {
@@ -62,7 +68,7 @@ const TIER_CLASSES: Record<string, string> = {
   'WEAK': 'rl-tier-weak',
 };
 
-type SortField = 'rank' | 'sire' | 'runners' | 'avgRating' | 'bestRating' | 'eliteCount' | 'avgStride' | 'avgTier';
+type SortField = 'rank' | 'sire' | 'runners' | 'avgRating' | 'bestRating' | 'eliteCount' | 'avgStride' | 'avgTier' | 'avgSalePrice' | 'highSalePrice' | 'lowSalePrice';
 type SortDir = 'asc' | 'desc';
 
 interface Props {
@@ -116,6 +122,14 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
         ? withStride.reduce((a, h) => a + h.stride, 0) / withStride.length
         : 0;
       const roundedAvg = Math.round(avgRating * 10) / 10;
+      const soldPrices = group
+        .filter(h => h.saleStatus === 'SOLD' || h.saleStatus === 'POST-SALE')
+        .map(h => h.salePrice)
+        .filter(p => p > 0);
+      const soldCount = soldPrices.length;
+      const avgSalePrice = soldCount > 0 ? soldPrices.reduce((a, b) => a + b, 0) / soldCount : 0;
+      const lowSalePrice = soldCount > 0 ? Math.min(...soldPrices) : 0;
+      const highSalePrice = soldCount > 0 ? Math.max(...soldPrices) : 0;
       rows.push({
         rank: 0,
         sire,
@@ -127,6 +141,10 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
         eliteCount: group.filter(h => h.tier === 'ELITE').length,
         strongCount: group.filter(h => h.tier === 'ELITE' || h.tier === 'STRONG').length,
         avgStride: Math.round(avgStride * 10) / 10,
+        soldCount,
+        avgSalePrice: Math.round(avgSalePrice),
+        lowSalePrice,
+        highSalePrice,
       });
     }
 
@@ -209,11 +227,14 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
 
     autoTable(doc, {
       startY: 54,
-      head: [['Rank', 'Sire', 'Runners', 'Avg Rating', 'Avg Tier', 'Best Rating', 'Best Hip', 'Elite', 'Elite+Strong', 'Avg Stride']],
+      head: [['Rank', 'Sire', 'Runners', 'Avg Rating', 'Avg Tier', 'Best Rating', 'Best Hip', 'Elite', 'Elite+Strong', 'Avg Stride', 'Avg Sale', 'Low Sale', 'High Sale']],
       body: rows.map(r => [
         r.rank, r.sire, r.runners, r.avgRating.toFixed(1), r.avgTier, r.bestRating.toFixed(1),
         r.bestHip, r.eliteCount, r.strongCount,
         `${r.avgStride.toFixed(1)}'`,
+        r.avgSalePrice > 0 ? `$${r.avgSalePrice.toLocaleString()}` : '\u2014',
+        r.lowSalePrice > 0 ? `$${r.lowSalePrice.toLocaleString()}` : '\u2014',
+        r.highSalePrice > 0 ? `$${r.highSalePrice.toLocaleString()}` : '\u2014',
       ]),
       styles: { fontSize: 7, cellPadding: 3 },
       headStyles: { fillColor: [18, 30, 50], fontSize: 7, fontStyle: 'bold' },
@@ -290,11 +311,14 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
               <th className="rl-sortable">Best Hip</th>
               <th onClick={() => handleSort('eliteCount')} className="rl-sortable">Elite{sortIcon('eliteCount')}</th>
               <th onClick={() => handleSort('avgStride')} className="rl-sortable">Avg Stride{sortIcon('avgStride')}</th>
+              <th onClick={() => handleSort('avgSalePrice')} className="rl-sortable">Avg Sale{sortIcon('avgSalePrice')}</th>
+              <th onClick={() => handleSort('lowSalePrice')} className="rl-sortable">Low Sale{sortIcon('lowSalePrice')}</th>
+              <th onClick={() => handleSort('highSalePrice')} className="rl-sortable">High Sale{sortIcon('highSalePrice')}</th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={9} className="rl-empty">No sires match your filters.</td></tr>
+              <tr><td colSpan={12} className="rl-empty">No sires match your filters.</td></tr>
             ) : (
               filtered.map(r => (
                 <tr key={r.sire} className={`rl-row ${TIER_ROW_CLASSES[r.avgTier] ?? ''}`}>
@@ -307,6 +331,9 @@ export default function SirePerformance({ sale = 'obs-march-2026', saleLabel }: 
                   <td className="rl-hip">{r.bestHip}</td>
                   <td>{r.eliteCount > 0 ? r.eliteCount : '—'}</td>
                   <td>{r.avgStride.toFixed(1)}&prime;</td>
+                  <td className="rl-sale-price">{r.avgSalePrice > 0 ? `$${r.avgSalePrice.toLocaleString()}` : '\u2014'}</td>
+                  <td className="rl-sale-price">{r.lowSalePrice > 0 ? `$${r.lowSalePrice.toLocaleString()}` : '\u2014'}</td>
+                  <td className="rl-sale-price">{r.highSalePrice > 0 ? `$${r.highSalePrice.toLocaleString()}` : '\u2014'}</td>
                 </tr>
               ))
             )}
