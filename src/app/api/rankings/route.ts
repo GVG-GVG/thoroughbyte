@@ -30,6 +30,11 @@ interface RawHorse {
   btw?: boolean;
   btp?: boolean;
   btprod?: boolean;
+  race_name?: string;
+  race_record?: string;
+  race_earnings?: number;
+  race_class?: string;
+  race_fig?: number | null;
 }
 
 const SALE_MAP: Record<string, RawHorse[]> = {
@@ -93,6 +98,12 @@ function transform(rawData: RawHorse[]) {
         btw: h.btw ?? false,
         btp: h.btp ?? false,
         btprod: h.btprod ?? false,
+        raceName: h.race_name ?? '',
+        raceRecord: h.race_record ?? '',
+        raceEarnings: h.race_earnings ?? 0,
+        raceClass: h.race_class ?? '',
+        raceFig: h.race_fig ?? null,
+        hasRacing: h.race_record !== undefined,
         valueFlag: isValueFlag(tier, saleStatus, salePrice),
       };
     });
