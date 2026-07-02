@@ -28,10 +28,16 @@ interface Horse {
   btw: boolean;
   btp: boolean;
   btprod: boolean;
+  raceName?: string;
+  raceRecord?: string;
+  raceEarnings?: number;
+  raceClass?: string;
+  raceFig?: number | null;
+  hasRacing?: boolean;
   valueFlag: boolean;
 }
 
-type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'dam' | 'consigner' | 'state' | 'valueFlag' | 'salePrice' | 'saleStatus' | 'buyer';
+type SortField = 'hip' | 'rank' | 'rating' | 'tier' | 'time' | 'stride' | 'decel' | 'eighthOut' | 'quarterOut' | 'sex' | 'sire' | 'dam' | 'consigner' | 'state' | 'valueFlag' | 'salePrice' | 'saleStatus' | 'buyer' | 'raceEarnings' | 'raceClass' | 'raceName';
 type SortDir = 'asc' | 'desc';
 
 const TIER_ORDER: Record<string, number> = {
@@ -185,6 +191,8 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     );
   }, []);
 
+  const showRacing = useMemo(() => horses.some(h => h.hasRacing), [horses]);
+
   const filtered = useMemo(() => {
     let result = horses;
 
@@ -218,7 +226,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
     }
 
     // Sort — always push horses without breeze data (0 values) to the bottom
-    const NUMERIC_FIELDS = new Set<SortField>(['rank', 'rating', 'time', 'stride', 'decel', 'eighthOut', 'quarterOut', 'salePrice']);
+    const NUMERIC_FIELDS = new Set<SortField>(['rank', 'rating', 'time', 'stride', 'decel', 'eighthOut', 'quarterOut', 'salePrice', 'raceEarnings']);
     result = [...result].sort((a, b) => {
       let av: number | string, bv: number | string;
       if (sortField === 'valueFlag') {
@@ -230,6 +238,15 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
       } else if (sortField === 'sire' || sortField === 'dam' || sortField === 'state' || sortField === 'sex' || sortField === 'consigner' || sortField === 'buyer' || sortField === 'saleStatus') {
         av = a[sortField].toLowerCase();
         bv = b[sortField].toLowerCase();
+      } else if (sortField === 'raceName' || sortField === 'raceClass') {
+        av = (a[sortField] ?? '').toLowerCase();
+        bv = (b[sortField] ?? '').toLowerCase();
+        // empty values to the bottom
+        if (!av && bv) return 1;
+        if (av && !bv) return -1;
+      } else if (sortField === 'raceEarnings') {
+        av = a.raceEarnings ?? 0;
+        bv = b.raceEarnings ?? 0;
       } else {
         av = a[sortField];
         bv = b[sortField];
@@ -511,6 +528,13 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
               <th onClick={() => handleSort('salePrice')} className="rl-sortable">Sale Price{sortIcon('salePrice')}</th>
               <th onClick={() => handleSort('buyer')} className="rl-sortable">Buyer{sortIcon('buyer')}</th>
               <th onClick={() => handleSort('valueFlag')} className="rl-sortable">Value{sortIcon('valueFlag')}</th>
+              {showRacing && <>
+                <th onClick={() => handleSort('raceName')} className="rl-sortable">Name{sortIcon('raceName')}</th>
+                <th title="Starts-Wins-2nds-3rds">Record</th>
+                <th onClick={() => handleSort('raceEarnings')} className="rl-sortable">Earnings{sortIcon('raceEarnings')}</th>
+                <th onClick={() => handleSort('raceClass')} className="rl-sortable" title="Best race class (Jockey Club)">Class{sortIcon('raceClass')}</th>
+                <th title="Best speed figure">Fig</th>
+              </>}
             </tr>
           </thead>
           <tbody>
@@ -566,6 +590,13 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                   <td className="rl-sale-price">{h.salePrice ? `$${h.salePrice.toLocaleString()}` : '\u2014'}</td>
                   <td className="rl-buyer">{h.buyer || '\u2014'}</td>
                   <td>{h.valueFlag && <span className="rl-value-tag">VALUE</span>}</td>
+                  {showRacing && <>
+                    <td className="rl-race-name">{h.raceName || '\u2014'}</td>
+                    <td className="rl-race-record">{h.raceRecord || '\u2014'}</td>
+                    <td className="rl-race-earn">{h.raceEarnings ? `$${h.raceEarnings.toLocaleString()}` : '\u2014'}</td>
+                    <td className="rl-race-class">{h.raceClass || '\u2014'}</td>
+                    <td className="rl-race-fig">{h.raceFig ?? '\u2014'}</td>
+                  </>}
                 </tr>
               ))
             )}
