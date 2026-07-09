@@ -34,6 +34,7 @@ interface Horse {
   raceClass?: string;
   raceFig?: number | null;
   hasRacing?: boolean;
+  partial?: boolean;
   valueFlag: boolean;
 }
 
@@ -570,7 +571,7 @@ export default function RankedList({ sale = 'obs-march-2026', saleLabel, onSelec
                   <td className="rl-hip">{h.hip}</td>
                   <td className="rl-rank">{h.rank ? `#${h.rank}` : '\u2014'}</td>
                   <td className="rl-tier-cell">{h.tier ? <span className={`rl-tier-tag ${TIER_CLASSES[h.tier]}`}>{h.tier}</span> : '\u2014'}</td>
-                  <td className="rl-score">{h.rating ? h.rating.toFixed(1) : '\u2014'}</td>
+                  <td className="rl-score" title={h.partial ? 'Scored on partial breeze data (incomplete EQUIX metrics)' : undefined}>{h.rating ? `${h.rating.toFixed(1)}${h.partial ? '*' : ''}` : '\u2014'}</td>
                   <td>{h.sex === 'C' ? 'Colt' : 'Filly'}</td>
                   <td className="rl-sire">{h.sire}</td>
                   <td className={`rl-dam${(h.btw || h.btp || h.btprod) ? ' rl-dam-bt' : ''}`}>
