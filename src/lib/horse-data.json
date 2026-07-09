@@ -2086,8 +2086,8 @@
   "eighth_out": "10.78",
   "quarter_out": "23.76",
   "decel": "12.98",
-  "rating": "",
-  "tier": "",
+  "rating": "54.6",
+  "tier": "ABOVE AVG",
   "sex": "C",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -2095,7 +2095,8 @@
   "buyer": "Robin Smullen-Tagg",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "146",
@@ -2504,8 +2505,8 @@
   "eighth_out": "11.40",
   "quarter_out": "24.02",
   "decel": "12.62",
-  "rating": "",
-  "tier": "",
+  "rating": "31.3",
+  "tier": "BELOW AVG",
   "sex": "F",
   "section": "1/8",
   "sale_status": "RNA",
@@ -2513,7 +2514,8 @@
   "buyer": "",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "17",
@@ -3119,8 +3121,8 @@
   "eighth_out": "11.25",
   "quarter_out": "24.30",
   "decel": "13.05",
-  "rating": "",
-  "tier": "",
+  "rating": "33.7",
+  "tier": "BELOW AVG",
   "sex": "C",
   "section": "1/8",
   "sale_status": "",
@@ -3128,7 +3130,8 @@
   "buyer": "",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "71",
@@ -4256,8 +4259,8 @@
   "eighth_out": "11.26",
   "quarter_out": "24.93",
   "decel": "13.67",
-  "rating": "",
-  "tier": "",
+  "rating": "26.5",
+  "tier": "BELOW AVG",
   "sex": "F",
   "section": "1/8",
   "sale_status": "",
@@ -4265,7 +4268,8 @@
   "buyer": "",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "54",
@@ -6351,8 +6355,8 @@
   "eighth_out": "10.92",
   "quarter_out": "23.07",
   "decel": "12.15",
-  "rating": "",
-  "tier": "",
+  "rating": "62.9",
+  "tier": "ABOVE AVG",
   "sex": "F",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -6360,7 +6364,8 @@
   "buyer": "Taproot Bloodstock, Agent for Lee Lewis",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "23",
@@ -8055,8 +8060,8 @@
   "eighth_out": "11.24",
   "quarter_out": "24.49",
   "decel": "13.25",
-  "rating": "",
-  "tier": "",
+  "rating": "33.5",
+  "tier": "BELOW AVG",
   "sex": "C",
   "section": "1/8",
   "sale_status": "",
@@ -8064,7 +8069,8 @@
   "buyer": "",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "98",
@@ -8670,8 +8676,8 @@
   "eighth_out": "11.30",
   "quarter_out": "23.77",
   "decel": "12.47",
-  "rating": "",
-  "tier": "",
+  "rating": "43.3",
+  "tier": "AVERAGE",
   "sex": "C",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -8679,7 +8685,8 @@
   "buyer": "Shea D Boys Stable",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "50",
@@ -10375,8 +10382,8 @@
   "eighth_out": "10.92",
   "quarter_out": "24.28",
   "decel": "13.36",
-  "rating": "",
-  "tier": "",
+  "rating": "42.3",
+  "tier": "AVERAGE",
   "sex": "F",
   "section": "1/8",
   "sale_status": "",
@@ -10384,7 +10391,8 @@
   "buyer": "",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "251",
@@ -10620,8 +10628,8 @@
   "eighth_out": "11.01",
   "quarter_out": "23.84",
   "decel": "12.83",
-  "rating": "",
-  "tier": "",
+  "rating": "50.4",
+  "tier": "ABOVE AVG",
   "sex": "F",
   "section": "1/8",
   "sale_status": "RNA",
@@ -10629,7 +10637,8 @@
   "buyer": "",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "144",
@@ -10792,8 +10801,8 @@
   "eighth_out": "11.25",
   "quarter_out": "24.19",
   "decel": "12.94",
-  "rating": "",
-  "tier": "",
+  "rating": "35.3",
+  "tier": "AVERAGE",
   "sex": "C",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -10801,7 +10810,8 @@
   "buyer": "Abdulaziz Alyousef",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "5",
@@ -11890,8 +11900,8 @@
   "eighth_out": "10.62",
   "quarter_out": "23.40",
   "decel": "12.78",
-  "rating": "",
-  "tier": "",
+  "rating": "80.3",
+  "tier": "ELITE",
   "sex": "C",
   "section": "1/8",
   "sale_status": "RNA",
@@ -11899,7 +11909,8 @@
   "buyer": "",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "24",
@@ -11965,8 +11976,8 @@
   "eighth_out": "10.91",
   "quarter_out": "24.41",
   "decel": "13.50",
-  "rating": "",
-  "tier": "",
+  "rating": "42.9",
+  "tier": "AVERAGE",
   "sex": "F",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -11974,7 +11985,8 @@
   "buyer": "Ricardo Rivera",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "275",
@@ -13540,8 +13552,8 @@
   "eighth_out": "10.70",
   "quarter_out": "22.98",
   "decel": "12.28",
-  "rating": "",
-  "tier": "",
+  "rating": "82.7",
+  "tier": "ELITE",
   "sex": "C",
   "section": "1/8",
   "sale_status": "RNA",
@@ -13549,7 +13561,8 @@
   "buyer": "",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "1",
@@ -13940,8 +13953,8 @@
   "eighth_out": "10.89",
   "quarter_out": "23.66",
   "decel": "12.77",
-  "rating": "",
-  "tier": "",
+  "rating": "56.6",
+  "tier": "ABOVE AVG",
   "sex": "G",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -13949,7 +13962,8 @@
   "buyer": "Mike Cloonan",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": false
  },
  {
   "rank": "17",
@@ -14665,8 +14679,8 @@
   "eighth_out": "10.99",
   "quarter_out": "23.99",
   "decel": "13.00",
-  "rating": "",
-  "tier": "",
+  "rating": "47.7",
+  "tier": "AVERAGE",
   "sex": "C",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -14674,7 +14688,8 @@
   "buyer": "K.O.I.D.",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "11",
@@ -15040,8 +15055,8 @@
   "eighth_out": "11.13",
   "quarter_out": "24.12",
   "decel": "12.99",
-  "rating": "",
-  "tier": "",
+  "rating": "43.4",
+  "tier": "AVERAGE",
   "sex": "C",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -15049,7 +15064,8 @@
   "buyer": "McMahon and Hill Bloodstock",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "178",
@@ -15640,8 +15656,8 @@
   "eighth_out": "11.71",
   "quarter_out": "24.19",
   "decel": "12.48",
-  "rating": "",
-  "tier": "",
+  "rating": "21.7",
+  "tier": "BELOW AVG",
   "sex": "F",
   "section": "1/8",
   "sale_status": "SOLD",
@@ -15649,7 +15665,8 @@
   "buyer": "William Sacco, Agent for Joseph Grant",
   "btw": false,
   "btp": false,
-  "btprod": false
+  "btprod": false,
+  "partial": true
  },
  {
   "rank": "79",
