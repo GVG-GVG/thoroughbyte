@@ -35,6 +35,7 @@ interface RawHorse {
   race_earnings?: number;
   race_class?: string;
   race_fig?: number | null;
+  partial?: boolean;
 }
 
 const SALE_MAP: Record<string, RawHorse[]> = {
@@ -104,6 +105,7 @@ function transform(rawData: RawHorse[]) {
         raceClass: h.race_class ?? '',
         raceFig: h.race_fig ?? null,
         hasRacing: h.race_record !== undefined,
+        partial: h.partial ?? false,
         valueFlag: isValueFlag(tier, saleStatus, salePrice),
       };
     });
