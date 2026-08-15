@@ -30,9 +30,15 @@ export async function updateSession(request: NextRequest) {
   );
 
   // Refresh the session — important for Server Components
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // Wrapped in try/catch so the site still loads if Supabase is paused/unreachable
+  let user = null;
+  try {
+    const { data } = await supabase.auth.getUser();
+    user = data?.user ?? null;
+  } catch {
+    // Supabase unreachable (e.g. paused free tier) — proceed without auth
+    return supabaseResponse;
+  }
 
   // Protected routes: redirect unauthenticated users to sign-in
   const protectedPaths = ['/dashboard', '/admin'];
@@ -49,16 +55,20 @@ export async function updateSession(request: NextRequest) {
 
   // Admin routes: check role
   if (request.nextUrl.pathname.startsWith('/admin') && user) {
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', user.id)
-      .single();
+    try {
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('role')
+        .eq('id', user.id)
+        .single();
 
-    if (!profile || profile.role !== 'admin') {
-      const url = request.nextUrl.clone();
-      url.pathname = '/dashboard';
-      return NextResponse.redirect(url);
+      if (!profile || profile.role !== 'admin') {
+        const url = request.nextUrl.clone();
+        url.pathname = '/dashboard';
+        return NextResponse.redirect(url);
+      }
+    } catch {
+      // Supabase unreachable — skip admin check
     }
   }
 
